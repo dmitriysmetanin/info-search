@@ -1,5 +1,6 @@
-# Как запустить код?
+# Пример результирующего файла: https://github.com/dmitriysmetanin/info-search/blob/main/pages_removed/page_11.txt
 
+# Как запустить код?
 
 ## Шаг 1. Клонирование репозитория
 1) Откройте терминал
