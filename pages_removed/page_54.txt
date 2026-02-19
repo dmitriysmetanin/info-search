@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <title>Реверс-инжиниринг процедурной генерации в No Man&#x27;s Sky &#x2F; Хабр</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+  </head>
+  <body>
+    
+    <div id="mount"><div id="app"><div class="tm-layout__wrapper"><!--[--><!----><div></div><div class="header-banner-wrapper"><div class="element-wrapper above-header" style="--754c4550:100%;--56cb6579:auto;"><!--[--><div class="placeholder-wrapper banner-container__placeholder"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="adfox-banner-placeholder above-header" data-v-24012b5e><div class="image loads" data-v-24012b5e></div><div class="lines" data-v-24012b5e><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div></div></div><!----><!----><!----></div><!--[--><div id="adfox_175449164307199013_aboveHeader" class="banner-target"></div><!--]--><!--]--></div></div><header class="tm-header tm-header" data-test-id="header"><!----><!----><div class="tm-page-width"><!--[--><div class="tm-header__container"><button aria-expanded="false" aria-label="Toggle menu" class="burger-button tm-header__button tm-header__burger" data-v-56ed7aae><span class="line top" data-v-56ed7aae></span><span class="line middle" data-v-56ed7aae></span><span class="line bottom" data-v-56ed7aae></span></button><span class="tm-header__logo-wrap"><a class="tm-header__logo tm-header__logo_hl-ru tm-header__logo" href="/ru/feed"><svg class="tm-svg-img tm-header__icon" height="16" width="16"><title>Хабр</title><use xlink:href="/img/habr-logo-ru.svg#logo"></use></svg></a></span><span class="tm-header__divider"></span><!--[--><a class="tm-header__all-flows" href="/ru/articles/">Все потоки</a><!--]--><!----><div class="tm-header-user-menu tm-base-layout__user-menu"><a href="/ru/search/" class="tm-header-user-menu__item tm-header-user-menu__search" data-test-id="search-button"><svg class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_search" height="24" width="24"><title>Поиск</title><use xlink:href="/img/megazord-v28.cba4c116..svg#search"></use></svg></a><!----><!----><div class="tm-header-user-menu__item tm-header-user-menu__write"><a href="/ru/sandbox/start/" class=""><svg class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_write" height="24" width="24"><title>Написать публикацию</title><use xlink:href="/img/megazord-v28.cba4c116..svg#write"></use></svg></a><!----></div><!--[--><div class="tm-header-user-menu__item"><button class="tm-header-user-menu__toggle" data-test-id="user-menu-settings"><svg class="tm-svg-img tm-header-user-menu__icon" height="24" width="24"><title>Настройки</title><use xlink:href="/img/megazord-v28.cba4c116..svg#page-settings"></use></svg></button></div><a href="https://habr.com/kek/v1/auth/habrahabr/?back=/ru/articles/312998/&amp;hl=ru" rel="nofollow" class="tm-header-user-menu__item tm-header-user-menu__login" role="button"><!--[-->Войти<!--]--></a><!--]--><template><!----></template><!--teleport start--><!--teleport end--></div></div><!--]--></div></header><div class="tm-layout"><div class="tm-page-progress-bar"></div><!----><div class="tm-page-width"><!--[--><!----><!----><!----><!--]--></div><main class="tm-layout__container"><div class="tm-page" hl="ru" data-async-called="true" style="--a414e232:300px;--10c4682a:0;--19620736:0;"><!----><div class="tm-page-width"><!--[--><!----><div class="tm-page__wrapper"><!----><div class="tm-page__main_has-sidebar tm-page__main"><div class="pull-down"><!----><div class="pull-down__header" style="height:0px;"><div class="pull-down__content" style="bottom:10px;"><svg class="tm-svg-img pull-down__icon pull-down__arrow" height="24" width="24"><title>Обновить</title><use xlink:href="/img/megazord-v28.cba4c116..svg#pull-arrow"></use></svg></div></div><!--[--><div><!--[--><!----><div class="tm-article-presenter" data-async-called="true"><!--[--><!--]--><div class="tm-article-presenter__body" data-test-id="article-body"><div class="tm-misprint-area"><div class="tm-misprint-area__wrapper"><!--[--><article class="tm-article-presenter__content tm-article-presenter__content_narrow"><!--[--><div class="tm-article-presenter__header"><!--[--><!--]--><div class="article-snippet tm-article-presenter__snippet" data-v-085cd854><!--[--><!--]--><div class="meta-container" data-v-085cd854><div class="meta" data-v-085cd854><span class="tm-user-info author" data-v-085cd854><a href="/ru/users/PatientZero/" class="tm-user-info__userpic" data-test-id="user-info-pic"><!--[--><div class="tm-entity-image"></div><!--]--></a><span class="tm-user-info__user tm-user-info__user_appearance-default" data-test-id="user-info-description"><a href="/ru/users/PatientZero/" class="tm-user-info__username" data-test-id="user-info-username"><!--[-->PatientZero<!--]--></a><!----><!--[--><span class="tm-article-datetime-published" data-v-085cd854><time data-allow-mismatch datetime="2016-10-18T17:45:09.000Z" title="2016-10-18, 17:45">18  окт  2016 в 17:45</time></span><!--]--></span></span></div><div class="controls" data-v-085cd854><!----><!----><!----><!----></div></div><h1 class="tm-title tm-title_h1" lang="ru" data-test-id="articleTitle" data-v-085cd854><span>Реверс-инжиниринг процедурной генерации в No Man's Sky</span></h1><div class="stats" data-test-id="articleStats" data-v-085cd854><!----><div class="tm-article-reading-time" data-v-085cd854><span class="tm-svg-icon__wrapper tm-article-reading-time__icon"><svg class="tm-svg-img tm-svg-icon" height="24" width="24"><title>Время на прочтение</title><use xlink:href="/img/megazord-v28.cba4c116..svg#clock"></use></svg></span><span class="tm-article-reading-time__label">20 мин</span></div><span class="tm-icon-counter tm-data-icons__item reach-counter" data-v-085cd854><svg class="tm-svg-img tm-icon-counter__icon" height="24" width="24"><title>Охват и читатели</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-views"></use></svg><span class="tm-icon-counter__value" title="46623">47K</span></span></div><div class="tm-publication-hubs__container" data-test-id="articleHubsList" data-v-085cd854><div class="tm-publication-hubs"><!--[--><span class="tm-publication-hub__link-container"><a href="/ru/hubs/gamedev/" class="tm-publication-hub__link"><!--[--><span>Разработка игр</span><span class="tm-article-snippet__profiled-hub" title="Профильный хаб"> * </span><!--]--></a></span><span class="tm-publication-hub__link-container"><a href="/ru/hubs/reverse-engineering/" class="tm-publication-hub__link"><!--[--><span>Реверс-инжиниринг</span><span class="tm-article-snippet__profiled-hub" title="Профильный хаб"> * </span><!--]--></a></span><!--]--></div></div><div class="tm-article-labels" data-test-id="articleLabels" data-v-085cd854 data-v-bfa2437b><div class="tm-article-labels__container" data-v-bfa2437b><!----><!--[--><!----><!--[--><div class="tm-publication-label tm-publication-label_variant-translation" data-v-bfa2437b><span>Перевод</span></div><!--]--><!--]--></div></div><!----><!----><!--teleport start--><!--teleport end--></div></div><!--[--><div class="tm-article-presenter__origin"><a class="tm-article-presenter__origin-link" href="http://3dgamedevblog.com/wordpress/?p=836" target="_blank">Автор оригинала: <span>gregkwaste</span></a></div><div class="article-body" data-gallery-root lang="ru" data-v-aad06d04><div data-v-aad06d04><!--[--><!--]--></div><div id="post-content-body" data-v-aad06d04><div><div class="article-formatted-body article-formatted-body article-formatted-body_version-1"><div xmlns="http://www.w3.org/1999/xhtml"><br/>
+<br/>
+No Man’s Sky — это игра про исследование космоса, в которой используется технология процедурной генерации игрового окружения и ресурсов (текстур, моделей, рельефа и т.д.). Я был в восторге, когда объявили о её разработке в 2013 году, не только из-за самой игры, но в основном из-за возможности изучить игровые файлы и узнать, как она работает. После выпуска игра получила самые противоречивые отзывы, но мне всё равно интересно, что же происходит у неё внутри.<br/>
+<br/>
+Если вы установите игру, то увидите, что по объёму она очень невелика, и это действительно так. Основная причина этого в том, что игра работает с очень ограниченным набором ресурсов и с помощью процедурной генерации создаёт на их основе буквально сотни вариантов. Я сосредоточусь на контенте, связанном с 3D-моделями игры, потому что для меня они всегда наиболее интересны. Статья будет разделена на три основные категории: геометрия, текстуры и анимации.<br/>
+<a name="habracut"></a><br/>
+<h1>Геометрия</h1><br/>
+Итак, в игре файлы геометрии (вершин, буферов индексов и т.д.) хранятся в файлах с расширением ".GEOMETRY.MBIN". Уже с помощью этих файлов можно создать довольно простые парсеры, преобразующие геометрию для работы в ПО 3D-моделирования. Но этого файла недостаточно самого по себе. Такой файл с геометрией используется как контейнер для чистых геометрических данных.<br/>
+<br/>
+Игра загружает ресурсы как сцены. Это значит, что все ресурсы моделей определяются как файлы отдельных сцен с собственными иерархиями объектов, несколькими частями сеток, несколькими типами объектов (шарниры, источники освещения, точки взаимодействия, коллизии, другие файлы сцены) и т.д. Этот тип информации хранится в файлах ".SCENE.MBIN". Они являются настоящими дескрипторами конкретной сцены, и обычно такие файлы ссылаются на один контейнер геометрии, из которого все части сеток в сцене получают соответствующую информацию о геометрии.<br/>
+<br/>
+Пока в этом нет ничего нового. Такая же ситуация во множестве разных игр. No Man’s Sky отличается от других игр (по крайней мере, раньше я с таким не сталкивался) тем, что в этом файле сцены не просто одно готовое существо, которое можно заспаунить в игре при определённых условиях, здесь вступает в дело процедурная генерация.<br/>
+<br/>
+Я кратко объясню, как это выглядит, приложив несколько изображений из созданного мной NMS Model Viewer.<br/>
+<br/>
+<br/>
+<em>Модель трицератопса</em><br/>
+<br/>
+Как вы видите, на первый взгляд сцена представляет собой полный хаос, нельзя даже точно сказать, что мы видим. Конечно такую модель нельзя заспаунить в сцене.<br/>
+<br/>
+Самое важное в этих данных — фактические названия объектов. Можно чётко увидеть, что есть определённая связь между ними и способом, которым игра узнаёт о том, как комбинировать эти части и исключать ненужные при создании модели.<br/>
+<br/>
+Заметив это, я начал искать другие файлы, которые могут управлять организацией сцены, и оказалось, что это файлы ".DESCRIPTOR.MBIN". Не у всех моделей есть такие файлы. Выяснилось, что они есть только у процедурно генерируемых моделей, а у статических моделей (таких как модель астронавта или материалы, созданные для трейлера) их нет.<br/>
+<br/>
+Реверс-инжиниринг формата файлов NMS я начал с парсинга этих файлов дескрипторов. Но на тот момент они казались мне какой-то кашей, я не мог понять, что они делают. После парсинга сцен я уже осознал, что нужно искать, и вернулся к этим файлам дескрипторов. Они очень сильно похожи на файлы сцен. В них применён тот же способ определения частей и всего остального, <em>но</em> они могут ссылаться только на другие части сеток или целые файлы сцен. Эти файлы работают следующим образом:<br/>
+<br/>
+<pre><code class="xml">&lt;Data template="TkModelDescriptorList"&gt;
+  &lt;Property name="List"&gt;
+    &lt;Property value="TkResourceDescriptorList.xml"&gt;
+      &lt;Property name="TypeId" value="_HEAD_" /&gt;
+      &lt;Property name="Descriptors"&gt;
+        &lt;Property value="TkResourceDescriptorData.xml"&gt;
+          &lt;Property name="Id" value="_HEAD_ALIEN" /&gt;
+          &lt;Property name="Name" value="_Head_Alien" /&gt;
+          &lt;Property name="ReferencePaths" /&gt;
+          &lt;Property name="Chance" value="0" /&gt;
+          &lt;Property name="Children"&gt;
+             ......;
+          &lt;/Property&gt;
+        &lt;/Property&gt;
+        &lt;Property value="TkResourceDescriptorData.xml"&gt;
+          &lt;Property name="Id" value="_HEAD_DIPLO" /&gt;
+          &lt;Property name="Name" value="_Head_Diplo" /&gt;
+          &lt;Property name="ReferencePaths" /&gt;
+          &lt;Property name="Chance" value="0" /&gt;
+          &lt;Property name="Children"&gt;
+            ......;
+          &lt;/Property&gt;
+        &lt;/Property&gt;
+        &lt;Property value="TkResourceDescriptorData.xml"&gt;
+          &lt;Property name="Id" value="_HEAD_HIPPO" /&gt;
+          &lt;Property name="Name" value="_Head_Hippo" /&gt;
+          &lt;Property name="ReferencePaths" /&gt;
+          &lt;Property name="Chance" value="0" /&gt;
+          &lt;Property name="Children"&gt;
+            ......;
+          &lt;/Property&gt;
+        &lt;/Property&gt;
+        &lt;Property value="TkResourceDescriptorData.xml"&gt;
+          &lt;Property name="Id" value="_HEAD_RHINO" /&gt;
+          &lt;Property name="Name" value="_Head_Rhino" /&gt;
+          &lt;Property name="ReferencePaths" /&gt;
+          &lt;Property name="Chance" value="0" /&gt;
+          &lt;Property name="Children"&gt;
+            ......;
+          &lt;/Property&gt;
+        &lt;/Property&gt;
+        &lt;Property value="TkResourceDescriptorData.xml"&gt;
+          &lt;Property name="Id" value="_HEAD_STEG" /&gt;
+          &lt;Property name="Name" value="_Head_Steg" /&gt;
+          &lt;Property name="ReferencePaths" /&gt;
+          &lt;Property name="Chance" value="0" /&gt;
+          &lt;Property name="Children"&gt;
+            .....;
+          &lt;/Property&gt;
+        &lt;/Property&gt;</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+Процедура такова: существует основная часть, которая решает, чем она будет являться, в нашем примере это _HEAD_. Обычно части, названия которых начинаются с нижнего подчёркивания, означают, что они относятся к группе дескрипторов и только одна из них будет выбрана для финальной модели. Как вы видите, это часть определена в списке TkResourceDescriptorList. Его элементы содержат свойство «Descriptors», дочерние элементы которого являются кандидатами на выбор. Дальше нужно просто выбрать один из дочерних элементов свойства Descriptors. Так, например, выбирается модель головы. После выбора этой конкретной модели головы есть ещё одно свойство «Descriptors», имеющее собственный список возможных вариантов, и из него опять нужно выбрать один. И так далее.<br/>
+<br/>
+После выполнения этих операций для всех элементов в файле descriptor.mbin мы в результате получим набор выбранных частей, из которого создаётся уникальная полная модель.<br/>
+<br/>
+<br/>
+<em>Пример SHARKRIG</em><br/>
+<br/>
+<br/>
+<em>Истребитель, экспортированный из программы просмотра моделей No Man's Model Viewer</em><br/>
+<br/>
+<br/>
+<em>Стражи</em><br/>
+<br/>
+Вся процедура на самом деле является обходом вершин дерева. Корневой узел — это сцена со всеми частями, а в конце мы получаем уникальную ветвь дерева, представляющую собой полную модель с необходимыми частями.<br/>
+<br/>
+Важнейшим в этой процедуре является способ выбора части. Если внимательно посмотреть на представленный выше XML-код, можно увидеть, что у каждой части есть свойство «Chance», но довольно у многих частей его значение равно 0. Думаю, что настоящие вероятности выбора частей или определяются движком при выполнении игры, или устанавливаются в других файлах параметров игры. В моей программе просмотра моделей я рандомизировал выбор. Все части имеют одинаковую вероятность выбора и это приводит к появлению довольно отличающихся моделей.<br/>
+<br/>
+<br/>
+<em>Случайная генерация существ на основании модели трицератопса</em><br/>
+<br/>
+<br/>
+<em>Процедурная генерация истребителей (кубы — это ненанесённые декали)</em><br/>
+<br/>
+<br/>
+<em>Процедурная генерация посадочных шлюпок</em><br/>
+<br/>
+<br/>
+<em>Процедурная генерация SHARKRIG</em><br/>
+<br/>
+Я провёл в игре около 70 часов, и за всё это время я <em>ни разу</em> не встретил существо, похожее на диплодока. Это значит, что либо движок содержит ошибку и эти части не выбираются (в чём я сомневаюсь), либо вероятность выбора этих частей настолько мала, что они чрезвычайно редко появляются в игре. Множество обсуждений (в основном разгневанных) затрагивало отсутствующий в игре контент и контент, присутствующий только в игровых трейлерах, а также похожие темы. Я не могу судить о работе игры или о геймплейных возможностях, но судя по изученному мной количеству моделей существ, в игре существует КУЧА контента, который из-за решений движка (?) появляется в игре не очень часто (или не появляется совсем). По-моему, процедурно генерируемые модели диплодоков в 10 раз лучше статических, и если бы разработчики захотели, они смогли бы заставить движок загружать статические модели (и, разумеется, весь контент из трейлера) в любой момент, поэтому, хорошо это или плохо, но это, скорее всего, дизайнерское решение.<br/>
+<br/>
+<br/>
+<em>Модель диплодока из трейлера на E3</em><br/>
+<br/>
+Вот как работает основная часть процедурной генерации моделей. Это очень элегантная и разумная процедура, потому что художники могут очень удобно добавлять новый контент для процедурной генерации. На самом деле, при добавлении каждой новой части число комбинаций увеличивается экспоненциально (если эта часть доступна на всех путях дерева). Насколько я знаю, у разработчиков над моделями работало два или три художника. Взрывающий мозг факт о процедурной генерации: если бы они удвоили количество людей, работающих <em>только</em> над этой частью работы, игровой контент (касающийся существ) был бы в сотни раз больше. И этот факт сам по себе доказывает возможности и потенциал игрового движка NMS.<br/>
+<br/>
+<h1>Текстуры</h1><br/>
+Текстуры — это ещё один сложнейший аспект моделей NMS. Как я упомянул в разделе «Геометрия», все части сеток определяются в файлах SCENE.MBIN. Элементы этих файлов выглядят примерно вот так:<br/>
+<br/>
+<pre><code class="xml">&lt;Property value="TkSceneNodeData.xml"&gt;
+      &lt;Property name="Name" value="_Head_Tri" /&gt;
+      &lt;Property name="Type" value="MESH" /&gt;
+      &lt;Property name="Transform" value="TkTransformData.xml"&gt;
+        &lt;Property name="TransX" value="0" /&gt;
+        &lt;Property name="TransY" value="0" /&gt;
+        &lt;Property name="TransZ" value="0" /&gt;
+        &lt;Property name="RotX" value="0" /&gt;
+        &lt;Property name="RotY" value="0" /&gt;
+        &lt;Property name="RotZ" value="0" /&gt;
+        &lt;Property name="ScaleX" value="1" /&gt;
+        &lt;Property name="ScaleY" value="1" /&gt;
+        &lt;Property name="ScaleZ" value="1" /&gt;
+      &lt;/Property&gt;
+      &lt;Property name="Attributes"&gt;
+        &lt;Property value="TkSceneNodeAttributeData.xml"&gt;
+          &lt;Property name="Name" value="BATCHSTART" /&gt;
+          &lt;Property name="AltID" value="" /&gt;
+          &lt;Property name="Value" value="19140" /&gt;
+        &lt;/Property&gt;
+        &lt;Property value="TkSceneNodeAttributeData.xml"&gt;
+          &lt;Property name="Name" value="BATCHCOUNT" /&gt;
+          &lt;Property name="AltID" value="" /&gt;
+          &lt;Property name="Value" value="5772" /&gt;
+        &lt;/Property&gt;
+        &lt;Property value="TkSceneNodeAttributeData.xml"&gt;
+          &lt;Property name="Name" value="VERTRSTART" /&gt;
+          &lt;Property name="AltID" value="" /&gt;
+          &lt;Property name="Value" value="3777" /&gt;
+        &lt;/Property&gt;
+        &lt;Property value="TkSceneNodeAttributeData.xml"&gt;
+          &lt;Property name="Name" value="VERTREND" /&gt;
+          &lt;Property name="AltID" value="" /&gt;
+          &lt;Property name="Value" value="4894" /&gt;
+        &lt;/Property&gt;
+        &lt;Property value="TkSceneNodeAttributeData.xml"&gt;
+          &lt;Property name="Name" value="FIRSTSKINMAT" /&gt;
+          &lt;Property name="AltID" value="" /&gt;
+          &lt;Property name="Value" value="97" /&gt;
+        &lt;/Property&gt;
+        &lt;Property value="TkSceneNodeAttributeData.xml"&gt;
+          &lt;Property name="Name" value="LASTSKINMAT" /&gt;
+          &lt;Property name="AltID" value="" /&gt;
+          &lt;Property name="Value" value="124" /&gt;
+        &lt;/Property&gt;
+        &lt;Property value="TkSceneNodeAttributeData.xml"&gt;
+          &lt;Property name="Name" value="MATERIAL" /&gt;
+          &lt;Property name="AltID" value="" /&gt;
+          &lt;Property name="Value" value="MODELS\PLANETS\CREATURES\TRICERATOPSRIG\TRICERATOPS\HEADTRIMAT.MATERIAL.MBIN" /&gt;
+        &lt;/Property&gt;
+      &lt;/Property&gt;
+      &lt;Property name="Children"&gt;</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+Как вы видите, здесь есть несколько атрибутов, которые я сейчас описывать не буду, и поговорю только о последнем. Он определяет материал, используемый для сетки. Как видно, этот узел ссылается на файл материала, который нужно использовать. Давайте рассмотрим этот файл материала:<br/>
+<br/>
+<pre><code class="xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;Data template="TkMaterialData"&gt;
+  &lt;Property name="Name" value="DiploHeadMat" /&gt;
+  &lt;Property name="Class" value="Opaque" /&gt;
+  &lt;Property name="TransparencyLayerID" value="0" /&gt;
+  &lt;Property name="CastShadow" value="True" /&gt;
+  &lt;Property name="DisableZTest" value="False" /&gt;
+  &lt;Property name="Link" value="" /&gt;
+  &lt;Property name="Shader" value="SHADERS/UBERSHADER.SHADER.BIN" /&gt;
+  &lt;Property name="Flags"&gt;
+    ...
+  &lt;/Property&gt;
+  &lt;Property name="Uniforms"&gt;
+    ...
+  &lt;/Property&gt;
+  &lt;Property name="Samplers"&gt;
+    &lt;Property value="TkMaterialSampler.xml"&gt;
+      &lt;Property name="Name" value="gDiffuseMap" /&gt;
+      &lt;Property name="Map" value="TEXTURES/PLANETS/CREATURES/TRICERATOPSRIG/DIPLOHEAD.DDS" /&gt;
+      &lt;Property name="IsCube" value="False" /&gt;
+      &lt;Property name="UseCompression" value="True" /&gt;
+      &lt;Property name="UseMipMaps" value="True" /&gt;
+      &lt;Property name="IsSRGB" value="True" /&gt;
+      &lt;Property name="MaterialAlternativeId" value="" /&gt;
+      &lt;Property name="TextureAddressMode" value="Wrap" /&gt;
+      &lt;Property name="TextureFilterMode" value="Trilinear" /&gt;
+      &lt;Property name="Anisotropy" value="0" /&gt;
+    &lt;/Property&gt;
+    &lt;Property value="TkMaterialSampler.xml"&gt;
+      &lt;Property name="Name" value="gMasksMap" /&gt;
+      &lt;Property name="Map" value="TEXTURES/PLANETS/CREATURES/TRICERATOPSRIG/DIPLOHEAD.MASKS.DDS" /&gt;
+      &lt;Property name="IsCube" value="False" /&gt;
+      &lt;Property name="UseCompression" value="True" /&gt;
+      &lt;Property name="UseMipMaps" value="True" /&gt;
+      &lt;Property name="IsSRGB" value="False" /&gt;
+      &lt;Property name="MaterialAlternativeId" value="" /&gt;
+      &lt;Property name="TextureAddressMode" value="Wrap" /&gt;
+      &lt;Property name="TextureFilterMode" value="Trilinear" /&gt;
+      &lt;Property name="Anisotropy" value="0" /&gt;
+    &lt;/Property&gt;
+    &lt;Property value="TkMaterialSampler.xml"&gt;
+      &lt;Property name="Name" value="gNormalMap" /&gt;
+      &lt;Property name="Map" value="TEXTURES/PLANETS/CREATURES/TRICERATOPSRIG/DIPLOHEAD.BASE.NORMAL.DDS" /&gt;
+      &lt;Property name="IsCube" value="False" /&gt;
+      &lt;Property name="UseCompression" value="True" /&gt;
+      &lt;Property name="UseMipMaps" value="True" /&gt;
+      &lt;Property name="IsSRGB" value="False" /&gt;
+      &lt;Property name="MaterialAlternativeId" value="" /&gt;
+      &lt;Property name="TextureAddressMode" value="Wrap" /&gt;
+      &lt;Property name="TextureFilterMode" value="Trilinear" /&gt;
+      &lt;Property name="Anisotropy" value="0" /&gt;
+    &lt;/Property&gt;
+  &lt;/Property&gt;
+&lt;/Data&gt;</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+Важная часть файлов материалов — раздел «Samplers». Очевидно, что в этом разделе определяются текстуры, используемые в части модели. И вот что интересно: для статических моделей все текстуры являются очень качественными текстурами, которые без всяких проблем можно использовать непосредственно на моделях. Но если сетка используется для процедурно генерируемой модели, правильной является только текстура нормалей. Диффузная текстура, которая содержит всю цветовую информацию о части, представляет собой пустую белую текстуру.<br/>
+<br/>
+Сначала я решил, что все цвета и текстуры тоже выбираются при выполнении игры, но на самом деле это не так. Эти файлы текстур всегда сопровождаются файлами ".TEXTURE.MBIN", которые, как можно догадаться, работают в точности как файлы дескрипторов моделей. Они определяют способ комбинирования текстур для создания финальной диффузной текстуры модели. Художники игры не только создали различные части моделей, но и нарисовали множество разных текстур для каждой части. Поэтому, проходя по этому файлу таким же образом, как и по файлу дескриптора, можно вычислить финальную диффузную текстуру процедурно генерируемой модели. Более того: даже если две модели одинаковы с точки зрения геометрии, благодаря процедурной генерации текстур они могут иметь абсолютно разные цвета, отметины, формы и т.д.<br/>
+<br/>
+<br/>
+<em>Пример текстуры с пятнами</em><br/>
+<br/>
+Детали текстуры при процедурной генерации могут очень сильно отличаться. Похоже, что текстуры создаются послойно. Я покажу пример сборки процедурно генерируемой текстуры существа. Обычно нижним слоем служит базовая текстура, добавляющая основной цвет и оттенок модели (имена таких текстур заканчиваются на .BASE.DDS). На следующем слое находится текстура подбрюшья (.UNDERBELLY.DDS), которая добавляет деталей на брюхе животного. Затем идёт ещё один слой, добавляющий больше деталей на случайных участках модели (.UNDERLAYER.X.DDS). Потом идут отметины (.MARKINGS.X.DDS), определяющие наиболее заметные детали кожи модели. На следующем слое снова находятся детали кожи, расположенные поверх отметин (.SKIN.DDS), а на последнем слое накладывается ещё одна текстура (TOP.X.DDS), добавляющая деталей на отдельные части модели.<br/>
+<br/>
+Похоже, что максимальное количество слоёв в процедурных текстурах равно 8 (обычно используется 5 или 6). Очевидно, что существует множество текстур, которые нужно смешать вместе. Поэтому все текстуры сопровождаются соответствующей текстурой маски, содержащей необходимую информацию об альфа-канале, чтобы смешивание было как можно более точным. Чаще всего текстуры также сопровождаются соответствующей картой нормалей, которая создаёт детали на каждой части.<br/>
+<br/>
+Но всего этого хаоса с текстурами недостаточно, даже со всеми смешиваниями финальная текстура не имеет правильной раскраски. И разработчики придумали ещё один гениальный технический трюк. Они хотели, чтобы существа имели цвет, соответствующий цветам среды, и реализовали это в игре с помощью палитр. Я не уверен на 100%, как они работают в игре, но опишу, что они делают по моему мнению. Я применил свой способ реализации в программе просмотра, и, судя по всему, он довольно точен.<br/>
+<br/>
+<br/>
+<em>FURPALETTE.DDS</em><br/>
+<br/>
+<br/>
+<em>PAINTPALETTE.DDS</em><br/>
+<br/>
+Итак, в процессе создания планеты (или создания звёздной системы) выбираются определённые цвета, которые будут использованы для живых существ всей планеты. Я говорю о выборе цвета, потому что в игровых файлах есть конкретные цветовые палитры размером 8×8 (в папке PCBANKS/TEXTURES/PALETTES). Вероятно, эти палитры составляют различные формы. Это значит, что 64 цвета, содержащиеся в палитрах, обычно объединяются в группы по 4 или 8 цветов. Поэтому когда игра создаёт среду планеты, она выбирает из этих групп, которые будут использованы позже. Эти группы легко определить, глядя на палитры, потому что они на самом деле являются градиентом двух граничных цветов.<br/>
+<br/>
+Индексирование в выбранной группе выполняется с информацией, содержащейся в файле .texture.mbin file. Описание текстуры в таких файлах выглядит следующим образом:<br/>
+<br/>
+<pre><code class="xml">&lt;Property value="TkProceduralTexture.xml"&gt;
+        &lt;Property name="Name" value="GRADIENT" /&gt;
+        &lt;Property name="Palette" value="TkPaletteTexture.xml"&gt;
+          &lt;Property name="Palette" value="Fur" /&gt;
+          &lt;Property name="ColourAlt" value="Alternative1" /&gt;
+        &lt;/Property&gt;
+        &lt;Property name="Probability" value="1" /&gt;
+        &lt;Property name="TextureGameplayUse" value="IgnoreName" /&gt;
+        &lt;Property name="OverrideAverageColour" value="False" /&gt;
+        &lt;Property name="AverageColour" value="Colour.xml"&gt;
+          &lt;Property name="R" value="0" /&gt;
+          &lt;Property name="G" value="0" /&gt;
+          &lt;Property name="B" value="0" /&gt;
+          &lt;Property name="A" value="0" /&gt;
+        &lt;/Property&gt;
+        &lt;Property name="Diffuse" value="TEXTURES/PLANETS/CREATURES/TRICERATOPSRIG/ALIENDIPLO.MARKINGS.GRADIENT.DDS" /&gt;
+        &lt;Property name="Normal" value="TEXTURES/PLANETS/CREATURES/TRICERATOPSRIG/ALIENDIPLO.MARKINGS.GRADIENT.NORMAL.DDS" /&gt;
+        &lt;Property name="Mask" value="TEXTURES/PLANETS/CREATURES/TRICERATOPSRIG/ALIENDIPLO.MARKINGS.GRADIENT.MASKS.DDS" /&gt;
+      &lt;/Property&gt;</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+Я снова не буду говорить о том, что делают остальные опции. Нас волнует только описание в свойстве «Palette». Из информации в этом свойстве мы можем узнать, какой цвет нам нужно выбрать для части. В нашем случае видно, что требуется индекс палитры «Fur» (мех) (которая, как мы видели ранее, состоит из групп по 4 цвета), и в выбранной группе нам нужен цвет «Alternative1». Вот как индексируются цвета в палитрах. Эти значения свойства «ColourAlt» могут быть равны «Primary», «Alternative1», «Alternative2», «Alternative3» и т.д. Значит, primary будет первым цветом в группе, alternative1 — вторым, и т.д. Тут я тоже не на 100% уверен, но я использую палитры так, и это логично, исходя из принципа групп цветов в палитре.<br/>
+<br/>
+Итак, у нас есть один базовый цвет для определённой текстуры, что же нам с ним делать? Нужно просто умножить его на цвет текстуры. Обычно игровые текстуры по умолчанию имеют голубоватый цвет, который выглядит нейтральным. После умножения на цвет палитры текстура получает нужный насыщенный цвет.<br/>
+<br/>
+Повторюсь, эта операция выполняется для каждой отдельной текстуры, наносимой на модель. Всего их может быть 8, мы получаем их, комбинируем с подходящими цветами палитры, смешиваем слои снизу доверху и наносим на модель.<br/>
+<br/>
+Благодаря таким комбинациям текстур диффузные текстуры могут <em>очень</em> отличаться и у геометрически одинаковых моделей может быть совершенно разная кожа. Такой техники процедурной генерации текстур вмести с процедурной генерацией моделей достаточно для придания сгенерированным моделям уникального внешнего вида. Как я писал выше, если бы художники работали только над добавлением вариаций слоёв и более детализированными цветовыми палитрами, получившийся мир стал бы богаче и детализированней.<br/>
+<br/>
+<h1>Анимации</h1><br/>
+<div class="oembed"><div><div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 56.25%;"><video controls="controls" style="top: 0px; left: 0px; width: 100%; height: 100%; position: absolute;">Your browser does not support HTML5 video.<source src="https://i.gyazo.com/7f1c8c37287011e721ac9f690d57b7e8.mp4" type="video/mp4"></source></video></div></div></div><br/>
+<em>Скелетная анимация модели трицератопса</em><br/>
+<br/>
+<div class="oembed"><div><div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 56.25%;"><video controls="controls" style="top: 0px; left: 0px; width: 100%; height: 100%; position: absolute;">Your browser does not support HTML5 video.<source src="https://i.gyazo.com/b18c89e5d7a249237425af5230963fda.mp4" type="video/mp4"></source></video></div></div></div><br/>
+<em>Цикл анимации ходьбы астронавта</em><br/>
+<br/>
+<div class="oembed"><div><div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 56.25%;"><video controls="controls" style="top: 0px; left: 0px; width: 100%; height: 100%; position: absolute;">Your browser does not support HTML5 video.<source src="https://i.gyazo.com/8d4ed25fbd19282bb5275f47e6d277a7.mp4" type="video/mp4"></source></video></div></div></div><br/>
+<em>Анимация медленной ходьбы процедурно сгенерированной модели Spiderrig</em><br/>
+<br/>
+Честно говоря, я не исследовал анимации так подробно, как геометрию и текстуры. Всё что я сделал (и это было не так просто, как кажется :P) — выполнил парсинг анимаций и успешно воспроизвёл их в моей программе просмотра моделей. В этой категории тоже есть множество интересных и уникальных деталей.<br/>
+<br/>
+Во-первых, скелеты моделей определяются в файлах «SCENE.MBIN». Они представляют собой иерархическую систему шарниров, к которой с помощью скиннинга вершин прикрепляются части моделей. В этом нет ничего удивительного. Интересно то, что, как я упомянул в разделе «Геометрия», в файле SCENE.MBIN есть множество частей сеток. Поэтому для управления анимацией и движением всех этих частей назначенная система шарниров влияет на <em>все</em> части сцены.<br/>
+<br/>
+Анимации работают точно так же, они анимируют весь скелет, даже если не все шарниры используются для финальной сгенерированной модели. На первый взгляд это выглядит бессмысленной тратой ресурсов. На самом деле единственной тратой является здесь парсинг всего файла анимации. При выполнении игры файлы MBIN SCENE и GEOMETRY предоставляют достаточно информации, чтобы загружать в графический процессор только данные, необходимые для каждой конкретной части модели.<br/>
+<br/>
+Играя в игру, я понимаю, что существует финальная процедура генерирования, обрабатывающая шарнирный скелет. Каким-то образом движок может изменять скелет. Опускать центр тяжести модели, делать ноги длиннее или короче, изменять размер головы и т.д. Я недостаточно долго его исследовал, чтобы выяснить, как это контролируется, но я знаю, что это происходит, и добавляет совершенно новое измерение в процедурную генерацию существ, потому что это способ изменения финальной формы модели. На самом деле финальная форма может быть изменена до такой степени, что не будет походить на базовую модель. Кроме того, необходимые расчёты инверсной кинематики, которые должны выполняться для применения старых анимаций к новому шарнирному скелету, приводят к изменению анимаций. Такое изменение может заставить существа выглядеть совершенно иначе.<br/>
+<br/>
+<h1>Выводы</h1><br/>
+Я попытался объяснить, как работает игра, насколько я понял её после трёх недель работы. Я сосредоточился на генерировании существ, но те же принципы применяются и к другим аспектам (корабли, NPC, здания, растения). Когда я начинал работать с файлами, все были восхищены игрой, искали новизны и разнообразия. Прошли недели, и игру стали считать монотонной. Вопрос в следующем: <strong>стоила ли процедурная генерация использования в NMS?</strong> <br/>
+<br/>
+Однозначного ответа на этот вопрос нет.<br/>
+<br/>
+Как разработчик ПО и реверс-разработчик видеоигр я отвечаю: да, определённо стоила. С технической точки зрения я никогда не видел игровых механик, похожих на механику NMS, и я сомневаюсь, что увижу в новых играх, использующих технологию процедурной генерации. Потому что никто не будет пытаться создавать вымышленные миры с таким уровнем случайности. Технически No Man’s Sky стала настоящим <em>сокровищем</em>, и каждый, кто пытается отрицать это, просто лжёт себе, или не знает о том, как работает игра (или не интересуется этим). Игровой движок имеет очень большой потенциал, и я постоянно думаю о том, какой могла стать игра, если бы движок был в руках большой игровой студии. Даже с учётом ограниченности ресурсов мне всё равно нравится многообразие существ, которое я вижу в игре (и я считаю, что с помощью более тонкой настройки мы можем выжать даже больше из имеющихся ресурсов).<br/>
+<br/>
+Мои чувства как игрока противоречивы. Хотя это и не мой стиль игры, но с самого предзаказа No Man’s Sky я знал, что это будет игра, в которой я смогу просто расслабиться. Изучать окружающую среду, растения и животных. Сначала все они кажутся одинаковыми, но приглядевшись, мы увидим в большинстве из них отличия. Может быть, отличаются только текстуры, но они разные: это может быть маленький рог на голове существа, или разные пятна, или отличающаяся деталь корабля. Контент <em>есть</em> в игре (даже геймплейный, который бы разработчики могли заспаунить, если бы хотели), нельзя сказать, что его нет. Всё, что мы получаем — это результат чрезвычайно хорошей процедуры генерации. Фактически, контент, создаваемый движком NMS для системы из 2-3 планет, <em>намного</em> превосходит ресурсы, которые можно видеть, например в ARK. Разумеется, никакие существа не будут полностью идеальными, как динозавры в ARK, но в этом и состоит их прелесть. Именно движок может создавать роскошных и величественных созданий, и в то же время — самых невразумительных животных, которые были в компьютерных играх. Вот почему я купил эту игру, и почему я люблю её. Я живу ради тех моментов, когда после исследования разной утомительной ерунды я внезапно приземляюсь на самую красивую планету, которую когда-либо видел. Повторюсь, я не сравниваю элементы RPG или возможности геймплея. Я говорю только о процедурном контенте. Это не значит, что игра не могла быть лучше. Я верю, что могла, и жду, что разработчики её улучшат.<br/>
+<br/>
+С другой стороны, если вы не настроены на расслабление, терпеливость и внимание к деталям, игра не стоит покупки, и вся процедурная генерация для вас будет простой тратой ресурсов. Это не шутер, где за вами постоянно охотятся и вы постоянно находитесь в напряжении. Разработчики чётко дают это понять. Для тех, кто выбрал такой стиль игры, всё будет выглядеть одинаковым. Даже если бы контент из трейлера создавался в игре, и на каждой второй планете была пышная растительность, динозавры и песчаные черви, игра всё равно наскучила бы вам. После третьей звёздной системы вам показалось бы всё одинаковым, потому что вы бы не приглядывались внимательно. Нельзя винить игру или разработчиков за то, что вы не занимаетесь исследованиями в игре про исследования. Кроме того, процедурная генерация никогда не была и не станет способом создания достойного контента «с нуля». По крайней мере, не в ближайшем будущем. Нельзя просто написать математическое выражение и создать новое животное. Такое сгодится для рельефа, растений, камней или кораблей (при этом текстурирование всё равно будет под большим вопросом), но для живых подвижных объектов, таких как существа или NPC всё становится настолько сложным, что это практически невозможно. (Разумеется, если бы это было возможно, у разработчиков не было причин не сделать этого, ведь они уже сделали подобное с остальными объектами.) Поэтому если вы ожидаете через каждые пять шагов видеть нового инопланетянина, то простите, это проблема ваших ожиданий, а не разработчиков. Если и есть способ создания такого контента, то это именно способ движка NMS.<br/>
+<br/>
+В конце концов, после всех моих исследований я знаю, что в игре есть достаточно контента, чтобы по крайней мере создавать всё по-новому на каждой планете, так что я не могу винить игру или движок. Я могу обвинить настройку и конфигурирование движка. Ещё я могу обвинит проклятые многоплатформенные релизы и издателя. Я уверен на 10000000000000000000%, что разработчики были вынуждены торопиться при выпуске игры. Игра, которую мы получили, далека от завершённости, и даже не приближается на 80% к возможностям, которые предусмотрены движком. После изучения файлов мне это <em>абсолютно ясно</em>. Она ближе к технической демке, а не к игре. Попытка запихнуть одинаковый контент на PC и PS4 просто растерзала игру, а стремление заставить работать её на слабых машинах ещё больше снизило качество. Лично я жду обновлений, и их должно быть <em>много</em>. Я могу простить множество ошибок Hello Games при релизе игры, завышенную стоимость, нехватку связи с потребителями, даже отсутствие многих возможностей (например, многопользовательского режима, на который, честно говоря, мне наплевать). Но даже с учётом неразберихи и напряжения перед релизом я не могу простить того, что они не смогли полностью показать, на что способен движок с правильной конфигурацией. Моддеры сейчас погружаются в дебри файлов и пытаются найти способы создания <em>тем же самым движком</em> более богатого и разнообразного контента. И чаще всего у них это получается, потому что движок <em>может</em> обеспечивать гораздо более качественную игру. Все эти опции должны быть доступными любому игроку, а не только моддерам. Очевидно, разработчики решили не давать игрокам такой возможности, чтобы все они находились в одинаковой вселенной и могли иметь общие точки маршрута, существ и планеты. Но они должны были оставить такую возможность. Сделать упор на одиночной игре и показать всем игрокам, на что способен движок.<br/>
+<br/>
+Почему-то мне кажется, что рано или поздно HG так и поступят. Они не могут просто забыть четыре с лишним года работы над движком, который на самом деле замечателен. А всем любителям конспирологических теорий о Hello Games я могу сказать, что у разработчиков была тысяча способов получить ваши деньги, и если бы у них было такое желание, это могло бы произойти гораздо раньше.<br/>
+<br/>
+Ещё до того, как движок игры станет настолько прекрасным…</div></div></div><!----><!----></div><!----><!----></div><!--]--><!----><div class="tm-article-presenter__meta" data-test-id="article-meta-links"><div class="tm-separated-list tag-list tm-article-presenter__meta-list"><span class="tm-separated-list__title">Теги:</span><ul class="tm-separated-list__list"><!--[--><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[no+man&#39;s+sky]" class="link"><span>no man's sky</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D0%B4%D1%83%D1%80%D0%BD%D0%B0%D1%8F+%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F]" class="link"><span>процедурная генерация</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[3D-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8]" class="link"><span>3D-модели</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[3D-%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D1%8F]" class="link"><span>3D-анимация</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[%D0%B8%D0%B3%D1%80%D1%8B]" class="link"><span>игры</span></a><!--]--></li><!--]--><!----></ul></div><div class="tm-separated-list tm-article-presenter__meta-list"><span class="tm-separated-list__title">Хабы:</span><ul class="tm-separated-list__list"><!--[--><li class="tm-separated-list__item"><!--[--><a href="/ru/hubs/gamedev/" class="link"><!--[--><span>Разработка игр</span><!--]--></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/hubs/reverse-engineering/" class="link"><!--[--><span>Реверс-инжиниринг</span><!--]--></a><!--]--></li><!--]--><!----></ul></div></div><!----><!--]--></article><!--]--></div><!----></div><div style="" class="tm-article-sticky-panel" data-test-id="article-sticky-panel"><div class="tm-data-icons tm-data-icons tm-data-icons_space-big tm-article-sticky-panel__icons" data-test-id="article-stats-icons"><div class="article-rating tm-data-icons__item" data-v-b9b05a90><div class="tm-votes-meter votes-switcher" data-v-b9b05a90><svg class="tm-svg-img tm-votes-meter__icon tm-votes-meter__icon tm-votes-meter__icon_appearance-article" height="24" width="24"><title>Всего голосов 91: ↑90 и ↓1</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-rating"></use></svg><span class="tm-votes-meter__value tm-votes-meter__value_positive tm-votes-meter__value_appearance-article tm-votes-meter__value_rating tm-votes-meter__value" data-test-id="votes-meter-value" title="Всего голосов 91: ↑90 и ↓1">+87</span></div><!--teleport start--><!--teleport end--><!----></div><!----><!----><button class="bookmarks-button tm-data-icons__item" title="Добавить в закладки" type="button" data-v-861e2740><span class="tm-svg-icon__wrapper icon" data-v-861e2740><svg class="tm-svg-img tm-svg-icon" height="24" width="24"><title>Добавить в закладки</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-favorite"></use></svg></span><span class="counter" title="Количество пользователей, добавивших публикацию в закладки" data-v-861e2740>156</span></button><div class="sharing tm-data-icons__item" title="Поделиться" data-v-daf6ee1d><button class="sharing-button" type="button" data-v-daf6ee1d><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon" data-v-daf6ee1d><path fill="currentColor" d="M13.8 13.8V18l7.2-6.6L13.8 5v3.9C5 8.9 3 18.6 3 18.6c2.5-4.4 6-4.8 10.8-4.8z"></path></svg></button><!--teleport start--><!--teleport end--></div><div class="article-comments-counter-link-wrapper tm-data-icons__item" title="Читать комментарии" data-v-8d952463><a href="/ru/articles/312998/comments/" class="article-comments-counter-link" data-test-id="counter-comments" data-v-8d952463><!--[--><svg class="tm-svg-img icon" height="24" width="24" data-v-8d952463><title>Комментарии</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-comments"></use></svg><span class="value" data-v-8d952463>39</span><!--]--></a><!----></div><!--[--><!--[--><!--[--><!----><!--]--><!--]--><!--]--><!--teleport start--><!--teleport end--><!----></div></div></div><!--[--><!--]--><div class="tm-article-presenter__footer"><!--[--><!--[--><div class="tm-article-blocks"><!----><!--[--><section class="tm-block tm-block tm-block_spacing-bottom"><!----><!--[--><div class="tm-block__body tm-block__body tm-block__body_variant-balanced"><!--[--><div class="article-author" data-test-id="article-author-info" data-async-called="true" data-v-af0d0f90><!--[--><!--]--><div class="tm-user-card tm-user-card tm-user-card_variant-article user-card" data-async-called="true" data-v-af0d0f90><div class="tm-user-card__info-container"><div class="tm-user-card__header"><div class="tm-user-card__header-data"><a href="/ru/users/PatientZero/" class="tm-user-card__userpic tm-user-card__userpic_size-40"><!--[--><div class="tm-entity-image"></div><!--]--></a><div class="tm-user-card__meta"><div class="tm-counter-container karma" title=" 2207 голосов " data-v-544d285f><div class="tm-counter-container__header"><!--[--><div class="karma-display positive" data-v-544d285f data-v-3881f4ba>1991</div><!----><!--]--></div><div class="tm-counter-container__footer"><!--[--><div class="karma-text" data-v-544d285f>Карма</div><!--teleport start--><!--teleport end--><!--]--></div></div><div class="tm-counter-container"><div class="tm-counter-container__header"><!--[--><!--[--><!--]--><div class="tm-votes-lever tm-votes-lever tm-votes-lever_appearance-rating"><!----><div class="tm-votes-lever__score tm-votes-lever__score_appearance-rating tm-votes-lever__score_no-margin tm-votes-lever__score" data-test-id="lever-score"><!--[--><span><span class="tm-votes-lever__score-counter tm-votes-lever__score-counter_rating tm-votes-lever__score-counter" data-test-id="votes-score-counter">179.6</span></span><!--]--></div><!----></div><!--]--></div><div class="tm-counter-container__footer"><!--[--><span class="tm-rating__text tm-rating__text">Общий рейтинг</span><!--]--></div></div></div></div></div><div class="tm-user-card__info tm-user-card__info_variant-article tm-user-card__info"><div class="tm-user-card__title tm-user-card__title_variant-article tm-user-card__title"><!----><a href="/ru/users/PatientZero/" class="tm-user-card__nickname tm-user-card__nickname tm-user-card__nickname_variant-article"><!--[-->@PatientZero<!--]--></a><!----></div><p class="tm-user-card__short-info tm-user-card__short-info_variant-article tm-user-card__short-info" data-test-id="user-card-speciality">Переводчик-фрилансер</p></div></div><!----><div class="tm-user-card__buttons tm-user-card__buttons_variant-article tm-user-card__buttons"><!----><div class="tm-user-card__button"><div class="tm-button-follow tm-user-card__button-follow"><!----><button class="tm-button-follow__button tm-button-follow__button_big" data-test-id="follow-button" type="button">Подписаться</button></div></div><!----><!--[--><div class="tm-user-card__button tm-user-card__button_write" data-test-id="user-card-conversations"><svg class="tm-svg-img tm-user-card__button-icon" height="16" width="16"><title>Отправить сообщение</title><use xlink:href="/img/megazord-v28.cba4c116..svg#mail"></use></svg></div><!--]--><!----><!----></div><!----></div><div class="author-contacts" data-test-id="author-contacts" data-v-af0d0f90><!----><!----><!----></div></div><!--]--></div><!--]--><!----></section><!----><!--[--><div class="sponsor-block" style="--d75346b8:0;--11dbf66e:100%;" data-v-580b3119><div class="title" data-v-580b3119>Хабр доступен 24/7 благодаря поддержке друзей</div><div class="content-container" data-v-580b3119><div class="content" data-v-580b3119><div class="content-title-container" data-v-580b3119><div class="content-title" data-v-580b3119>Хабр Курсы для всех</div><div class="sponsor-mark" data-v-580b3119>РЕКЛАМА</div></div><div class="content-text" data-v-580b3119> Практикум, Хекслет, SkyPro, авторские курсы — собрали всех и попросили скидки. Осталось выбрать! </div><a class="content-action" href="https://career.habr.com/courses/?erid=2VSb5wDLYUH&amp;utm_source=habr&amp;utm_medium=sponsorship_hub" target="_blank" data-v-580b3119><button class="btn btn_solid btn_small tm-button_color-horizon" tabindex="0" type="button" data-v-580b3119><!--[--><!--[-->Перейти<!--]--><!--]--></button></a></div></div><div class="footer" data-v-580b3119><!----></div><!----></div><!--]--><!--]--><div class="tm-article-blocks__comments"><div id="publication-comments" class="tm-article-page-comments"><div><!--[--><div class="article-comments-counter-link-wrapper tm-article-comments-counter-button" data-v-8d952463><a href="/ru/articles/312998/comments/" class="article-comments-counter-link button-style" data-test-id="counter-comments" data-v-8d952463><!--[--><svg class="tm-svg-img icon icon--contrasted" height="24" width="24" data-v-8d952463><title>Комментарии</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-comments"></use></svg><span class="value value--contrasted" data-v-8d952463> Комментарии 39 </span><!--]--></a><!----></div><!--]--></div></div></div><!--[--><!--[--><!--]--><section class="tm-block tm-block tm-block_spacing-bottom"><header class="tm-block__header tm-block__header tm-block__header_variant-borderless"><div class="tm-block__header-container"><h2 class="tm-block__title tm-block__title tm-block__title_variant-large">Публикации</h2><!--[--><!--]--></div><!----></header><!--[--><div class="tm-block__body tm-block__body tm-block__body_variant-condensed-slim"><!--[--><!--[--><div class="tabs" data-test-id="container" data-v-681e7545><div class="" data-test-id="scroll-area" data-v-681e7545><!--[--><span class="tab-item" data-v-681e7545><button class="active slim tab-link" data-v-681e7545>Лучшие за сутки</button></span><span class="tab-item" data-v-681e7545><button class="slim tab-link" data-v-681e7545>Похожие</button></span><!--]--></div><!----></div><div class="similar-and-daily__tab-view"><div class="daily-articles-list"><ul class="article-card-list" data-v-7f7081d6><!--[--><!--]--><div class="tm-bordered-card" data-v-7f7081d6><!----><!--[--><!--]--></div></ul><div class="daily-articles-block__button-container"><button class="btn btn_transparent btn_small tm-button_color-horizon" tabindex="0" type="button"><!--[--><!--[-->Показать лучшие за всё время<!--]--><!--]--></button></div></div><!----></div><!--]--><!--]--></div><!--]--><!----></section><!--[--><div><div class="placeholder-wrapper"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="tm-placeholder-promo"><div class="tm-placeholder-promo__header"><div class="tm-placeholder__line tm-placeholder__line_promo-title"></div></div><div class="tm-placeholder-promo__body"><div class="tm-placeholder-promo__posts"><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div></div><div class="tm-placeholder-promo__dots"><div class="tm-placeholder-promo__dot"></div><div class="tm-placeholder-promo__dot"></div><div class="tm-placeholder-promo__dot"></div></div></div></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div></div><div class="placeholder-wrapper"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="tm-placeholder-inset tm-placeholder-courses"><div class="tm-placeholder-inset__header"><div class="tm-placeholder__line tm-placeholder__line_inset-header loads"></div></div><div class="tm-placeholder-inset__body"><ul class="tm-placeholder-list"><!--[--><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder-list__title-container"><div class="tm-placeholder__company-avatar"></div><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder-list__title-container"><div class="tm-placeholder__company-avatar"></div><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder-list__title-container"><div class="tm-placeholder__company-avatar"></div><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder-list__title-container"><div class="tm-placeholder__company-avatar"></div><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder-list__title-container"><div class="tm-placeholder__company-avatar"></div><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><!--]--></ul></div><div class="tm-placeholder-inset__footer"><div class="tm-placeholder__line tm-placeholder__line_inset-footer loads"></div></div></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div><!--]--><!----><!--[--><!--]--><!--]--></div><!----><!--]--><!--]--></div></div><!--]--></div><!--]--></div></div><div class="tm-page__sidebar"><!--[--><div class="sidebar" data-v-0050f56d><div id="sidebar-window-placement" data-v-0050f56d></div><!--[--><!--]--></div><!--]--></div></div><!--]--></div><!----></div></main><!----></div><div class="tm-footer-menu"><div class="tm-page-width"><!--[--><div class="tm-footer-menu__container"><!--[--><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Ваш аккаунт</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr/?back=/ru/articles/312998/&amp;hl=ru" rel="nofollow" target="_self">Войти</a></li><li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr-register/?back=/ru/articles/312998/&amp;hl=ru" rel="nofollow" target="_self">Регистрация</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Разделы</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/ru/articles/" class="footer-menu__item-link">Статьи</a></li><li class="tm-footer-menu__list-item"><a href="/ru/news/" class="footer-menu__item-link">Новости</a></li><li class="tm-footer-menu__list-item"><a href="/ru/hubs/" class="footer-menu__item-link">Хабы</a></li><li class="tm-footer-menu__list-item"><a href="/ru/companies/" class="footer-menu__item-link">Компании</a></li><li class="tm-footer-menu__list-item"><a href="/ru/users/" class="footer-menu__item-link">Авторы</a></li><li class="tm-footer-menu__list-item"><a href="/ru/sandbox/" class="footer-menu__item-link">Песочница</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Информация</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/ru/docs/help/" class="footer-menu__item-link">Устройство сайта</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/authors/codex/" class="footer-menu__item-link">Для авторов</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/companies/corpblogs/" class="footer-menu__item-link">Для компаний</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/docs/transparency/" class="footer-menu__item-link">Документы</a></li><li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/agreement/?hl=ru_RU" target="_blank">Соглашение</a></li><li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/confidential/?hl=ru_RU" target="_blank">Конфиденциальность</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Услуги</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/corporate-blogs/" target="_blank">Корпоративный блог</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/advertising/" target="_blank">Медийная реклама</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/native-special/" target="_blank">Нативные проекты</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/education-programs/" target="_blank">Образовательные программы</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/hello-startup/" target="_blank">Стартапам</a></li><!--]--></ul></div></div><!--]--></div><!--]--></div></div><div class="tm-footer"><div class="tm-page-width"><!--[--><div class="tm-footer__container"><!----><div class="social-icons tm-footer__social" data-v-d6e8cb42><!--[--><a class="tm-svg-icon__wrapper social-icon" href="https://vk.com/habr" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>VK</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-vk"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="https://telegram.me/habr_com" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Telegram</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-telegram"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="http://www.youtube.com/@Habr_com" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Youtube</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-youtube"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="https://dzen.ru/habr" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Яндекс Дзен</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-dzen"></use></svg></a><!--]--></div><!--teleport start--><!--teleport end--><button class="tm-footer__link"><!----> Настройка языка</button><a href="/ru/feedback/" class="tm-footer__link">Техническая поддержка</a><div class="tm-footer-copyright"><span class="tm-copyright"><span class="tm-copyright__years">© 2006–2026,</span><span class="tm-copyright__name"><a class="tm-copyright__link" href="https://company.habr.com/" rel="noopener" target="_blank"> Habr </a></span></span></div></div><!--]--></div></div><!----><!----><!--]--></div><!----></div></div>
+    <div id="overlays"><!--teleport start anchor--><template><!----></template><!--teleport anchor--><!--teleport start anchor--><template><!----></template><!--teleport anchor--><!--teleport start anchor--><template><!----></template><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--></div>
+    
+    
+    
+    
+  
+  
+    
+  
+    </body>
+
+    </html>

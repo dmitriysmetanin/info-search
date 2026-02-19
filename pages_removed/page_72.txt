@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <title>Разработка и тестирование chef кукбуков с помощью инструмента Sparrowdo &#x2F; Хабр</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+  </head>
+  <body>
+    
+    <div id="mount"><div id="app"><div class="tm-layout__wrapper"><!--[--><!----><div></div><div class="header-banner-wrapper"><div class="element-wrapper above-header" style="--754c4550:100%;--56cb6579:auto;"><!--[--><div class="placeholder-wrapper banner-container__placeholder"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="adfox-banner-placeholder above-header" data-v-24012b5e><div class="image loads" data-v-24012b5e></div><div class="lines" data-v-24012b5e><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div></div></div><!----><!----><!----></div><!--[--><div id="adfox_175449164307199013_aboveHeader" class="banner-target"></div><!--]--><!--]--></div></div><header class="tm-header tm-header" data-test-id="header"><!----><!----><div class="tm-page-width"><!--[--><div class="tm-header__container"><button aria-expanded="false" aria-label="Toggle menu" class="burger-button tm-header__button tm-header__burger" data-v-56ed7aae><span class="line top" data-v-56ed7aae></span><span class="line middle" data-v-56ed7aae></span><span class="line bottom" data-v-56ed7aae></span></button><span class="tm-header__logo-wrap"><a class="tm-header__logo tm-header__logo_hl-ru tm-header__logo" href="/ru/feed"><svg class="tm-svg-img tm-header__icon" height="16" width="16"><title>Хабр</title><use xlink:href="/img/habr-logo-ru.svg#logo"></use></svg></a></span><span class="tm-header__divider"></span><!--[--><a class="tm-header__all-flows" href="/ru/articles/">Все потоки</a><!--]--><!----><div class="tm-header-user-menu tm-base-layout__user-menu"><a href="/ru/search/" class="tm-header-user-menu__item tm-header-user-menu__search" data-test-id="search-button"><svg class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_search" height="24" width="24"><title>Поиск</title><use xlink:href="/img/megazord-v28.cba4c116..svg#search"></use></svg></a><!----><!----><div class="tm-header-user-menu__item tm-header-user-menu__write"><a href="/ru/sandbox/start/" class=""><svg class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_write" height="24" width="24"><title>Написать публикацию</title><use xlink:href="/img/megazord-v28.cba4c116..svg#write"></use></svg></a><!----></div><!--[--><div class="tm-header-user-menu__item"><button class="tm-header-user-menu__toggle" data-test-id="user-menu-settings"><svg class="tm-svg-img tm-header-user-menu__icon" height="24" width="24"><title>Настройки</title><use xlink:href="/img/megazord-v28.cba4c116..svg#page-settings"></use></svg></button></div><a href="https://habr.com/kek/v1/auth/habrahabr/?back=/ru/articles/313034/&amp;hl=ru" rel="nofollow" class="tm-header-user-menu__item tm-header-user-menu__login" role="button"><!--[-->Войти<!--]--></a><!--]--><template><!----></template><!--teleport start--><!--teleport end--></div></div><!--]--></div></header><div class="tm-layout"><div class="tm-page-progress-bar"></div><!----><div class="tm-page-width"><!--[--><!----><!----><!----><!--]--></div><main class="tm-layout__container"><div class="tm-page" hl="ru" data-async-called="true" style="--a414e232:300px;--10c4682a:0;--19620736:0;"><!----><div class="tm-page-width"><!--[--><!----><div class="tm-page__wrapper"><!----><div class="tm-page__main_has-sidebar tm-page__main"><div class="pull-down"><!----><div class="pull-down__header" style="height:0px;"><div class="pull-down__content" style="bottom:10px;"><svg class="tm-svg-img pull-down__icon pull-down__arrow" height="24" width="24"><title>Обновить</title><use xlink:href="/img/megazord-v28.cba4c116..svg#pull-arrow"></use></svg></div></div><!--[--><div><!--[--><!----><div class="tm-article-presenter" data-async-called="true"><!--[--><!--]--><div class="tm-article-presenter__body" data-test-id="article-body"><div class="tm-misprint-area"><div class="tm-misprint-area__wrapper"><!--[--><article class="tm-article-presenter__content tm-article-presenter__content_narrow"><!--[--><div class="tm-article-presenter__header"><!--[--><!--]--><div class="article-snippet tm-article-presenter__snippet" data-v-085cd854><!--[--><!--]--><div class="meta-container" data-v-085cd854><div class="meta" data-v-085cd854><span class="tm-user-info author" data-v-085cd854><a href="/ru/users/alexey_melezhik/" class="tm-user-info__userpic" data-test-id="user-info-pic"><!--[--><div class="tm-entity-image"><!--[--><!--]--></div><!--]--></a><span class="tm-user-info__user tm-user-info__user_appearance-default" data-test-id="user-info-description"><a href="/ru/users/alexey_melezhik/" class="tm-user-info__username" data-test-id="user-info-username"><!--[-->alexey_melezhik<!--]--></a><!----><!--[--><span class="tm-article-datetime-published" data-v-085cd854><time data-allow-mismatch datetime="2016-10-19T12:34:23.000Z" title="2016-10-19, 12:34">19  окт  2016 в 12:34</time></span><!--]--></span></span></div><div class="controls" data-v-085cd854><!----><!----><!----><!----></div></div><h1 class="tm-title tm-title_h1" lang="ru" data-test-id="articleTitle" data-v-085cd854><span>Разработка и тестирование chef кукбуков с помощью инструмента Sparrowdo</span></h1><div class="stats" data-test-id="articleStats" data-v-085cd854><!----><div class="tm-article-reading-time" data-v-085cd854><span class="tm-svg-icon__wrapper tm-article-reading-time__icon"><svg class="tm-svg-img tm-svg-icon" height="24" width="24"><title>Время на прочтение</title><use xlink:href="/img/megazord-v28.cba4c116..svg#clock"></use></svg></span><span class="tm-article-reading-time__label">11 мин</span></div><span class="tm-icon-counter tm-data-icons__item reach-counter" data-v-085cd854><svg class="tm-svg-img tm-icon-counter__icon" height="24" width="24"><title>Охват и читатели</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-views"></use></svg><span class="tm-icon-counter__value" title="2677">2.7K</span></span></div><div class="tm-publication-hubs__container" data-test-id="articleHubsList" data-v-085cd854><div class="tm-publication-hubs"><!--[--><span class="tm-publication-hub__link-container"><a href="/ru/hubs/nix/" class="tm-publication-hub__link"><!--[--><span>*nix</span><span class="tm-article-snippet__profiled-hub" title="Профильный хаб"> * </span><!--]--></a></span><span class="tm-publication-hub__link-container"><a href="/ru/hubs/devops/" class="tm-publication-hub__link"><!--[--><span>DevOps</span><span class="tm-article-snippet__profiled-hub" title="Профильный хаб"> * </span><!--]--></a></span><!--]--></div></div><div class="tm-article-labels" data-test-id="articleLabels" data-v-085cd854 data-v-bfa2437b><div class="tm-article-labels__container" data-v-bfa2437b><!----><!--[--><!----><!--[--><!--]--><!--]--></div></div><!----><!----><!--teleport start--><!--teleport end--></div></div><!--[--><!----><div class="article-body" data-gallery-root lang="ru" data-v-aad06d04><div data-v-aad06d04><!--[--><!--]--></div><div id="post-content-body" data-v-aad06d04><div><div class="article-formatted-body article-formatted-body article-formatted-body_version-1"><div xmlns="http://www.w3.org/1999/xhtml"><p>Здравствуйте! О разработке <a href="https://docs.chef.io/cookbooks.html">chef кукбуков</a> и связанной с ней инфраструктурой написано немало, да и инструментов в этой области существует уже предостаточно. Среди них можно перечислить такие решения как <a href="https://www.vagrantup.com/">vagrant</a>, <a href="http://kitchen.ci/">test kitchen</a>, <a href="http://www.foodcritic.io/">food critic</a>, <a href="https://docs.chef.io/chefspec.html">chef spec</a>, <a href="https://github.com/chef/minitest-chef-handler">minitest-chef-handler</a>, <a href="http://serverspec.org/">serverspec</a>, <a href="https://github.com/chef/inspec">inspec</a>. Все они, в той или иной степени упрощают и ускоряют промышленную разработку и тестирование chef кукбуков и настраиваемой ими инфраструктуры.</p><br/>
+<p>Если данная область близка для вас и вы так же имеет некоторое отношение к языку Perl ( точнее к <a href="http://perl6.org/">Perl6</a> ) — то добро пожаловать в топик.</p><br/>
+<p>Итак, сегодня я расскажу как я использую <a href="https://habrahabr.ru/post/304982/">Sparrowdo</a> при разработке и тестировании chef кукбуков.</p><br/>
+<a name="habracut"></a><br/>
+<p>Для начала немного вводной.</p><br/>
+<h1 id="chto-takoe-sparrowdo">Что такое Sparrowdo?</h1><br/>
+<p><a href="https://github.com/melezhik/sparrowdo">Sparrowdo</a> — это надстройка на системой плагинов sparrow, позволяющая запускать данные плагины по ssh на удаленных серверах. В свою очередь, плагины <a href="https://sparrowhub.org">sparrow</a> — различные сценарии автоматизации, написанных в основном ( но не ограничивающиеся данными языками ) на <a href="https://www.perl.org/">Perl5</a> и <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a>. Об всем этом мной уже был написан целый ряд статей на habrahabr, кому интересно, может набрать поисковый <a href="https://habrahabr.ru/search/?q=sparrow#h">запрос</a> со словом sparrow и, соответственно почитать. Но, что бы для непосвященного читателя было понятно, все это очень похоже на идеологию <a href="https://www.ansible.com/">ansible</a>, когда у вас есть централизованный сервер, с которого вы запускаете разные задачи на других удаленных серверах.</p><br/>
+<p>Итак, вы можете запускать различные плагины sparrow <em>после</em> или <em>до</em> запуска chef клиента на сервере, и выполнять различные проверки, определяющие что процедура деплоймента прошла успешна или удовлетворяет определенным условиям. </p><br/>
+<p>Все это очень похоже на написание сценариев в стиле serverspec или inspec с той лишь разницей, что плагины sparrow — многоцелевые, и не ограничиваются задачами тестирования и аудита, в принципе через sparrow вы можете реализовать любую другую логику, которую вы по тем или иным причинам не хотели бы запихивать в chef кукбуки.</p><br/>
+<p>На самом деле sparrowdo так удобно "вписался" в задачи по автоматической настройке серверов, что я даже запускаю им собственно chef клиент… Но, довольно теории, давайте рассмотрим конкретный простой, но показательный пример ...</p><br/>
+<h1 id="pishem-kukbuk-dlya-ustanovki-nginx--tomcat-i-testiruem-ego-s-pomoschyu-sparrowdo">Пишем кукбук для установки nginx + tomcat и тестируем его с помощью sparrowdo</h1><br/>
+<p>Для простоты примера буду использовать ec2 инстанс с предустановленным chef клиентом и настроенным на локальный chef сервер. Т.е. все вопросы, связанные с первоначальной настройкой системы оставим "за скобками". Далee у нас есть ssh ключ к нашему инстансу и логин с sudo:</p><br/>
+<pre><code>$ ssh remote.server </code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Теперь отойдем немного в сторону от вопросов доступа к серверу и напишем наш символический кукбук, нам нужно:</p><br/>
+<ul>
+<li>установить <a href="https://nginx.org/ru/">nginx</a> сервер</li>
+<li>установить <a href="http://tomcat.apache.org/">tomcat</a> сервер</li>
+<li>если задан атрибут tomcat_redirect настроить проксирование всех запросов, приходящих в nginx в tomcat сервер, запущенный на localhost порт 8080</li>
+</ul><br/>
+<h1 id="pishem-kukbuk">Пишем кукбук</h1><br/>
+<p>Код тривиальный, опять-таки же фокус данной статьи не на обучении написанию chef кукбуков, а на использовании chef в связке со sparrowdo/sparrow</p><br/>
+<pre><code># recipes/default.rb
+
+package 'nginx'
+
+package 'tomcat7'
+
+service 'nginx' do
+  action [ :enable, :start ]
+end
+
+service 'tomcat7' do
+  action [ :enable, :start ]
+end
+
+template '/etc/nginx/conf.d/default.conf' do
+   source 'nginx.conf'
+   mode '644'
+   variables :tomcat_redirect =&gt; node[:tomcat_redirect]
+   notifies :restart, 'service[nginx]', :delayed
+end
+
+# attributes/default.rb
+
+default[:tomcat_redirect] = false
+
+# cat templates/default/nginx.conf
+
+server {
+
+    listen       80 default_server;
+
+    server_name  _;
+
+    root   /usr/share/nginx/html;
+    index  index.html index.htm;
+
+    &lt;% if @tomcat_redirect %&gt;
+
+    location / {
+      proxy_pass http://127.0.0.1:8080;
+    }
+
+    &lt;% else %&gt;
+    location / {
+      try_files $uri $uri/ $uri.html =404;
+    }
+    &lt;% end %&gt;
+
+    error_page  404              /404.html;
+      location = /404.html {
+    }
+
+    # redirect server error pages to the static page /50x.html
+    #
+
+    error_page   500 502 503 504  /50x.html;
+      location = /50x.html {
+    }
+
+}</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Думаю, что комментарии по коду кукбука излишни, замечу лишь, что по дефолту nginx не выполняет проксирование на tomcat, так как атрибут <code>tomcat_redirect</code> установлен в false. Ну и напоследок назовем кукбук nginx-app и загрузим его в chef сервер:</p><br/>
+<pre><code># cat metadata.rb
+name 'app-nginx'
+version '0.0.1'
+
+$ knife cookbook upload app-nginx -o ../</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Теперь, собственно запустим созданный кукбук на нашем сервере.</p><br/>
+<h1 id="pishem-sparrowdo-scenariy">Пишем sparrowdo сценарий</h1><br/>
+<p>Sparrowdo сценарий — код написанный на Perl6 и запускающий задачи на удаленном сервере. Задачи — это не что иное как sparrow плагины с параметрами. Как я уже говорил, мы будем использовать sparrow в том числе и для запуска chef клиента</p><br/>
+<pre><code>$ cat  sparrowfile
+
+task_run %(
+  task =&gt; "set up chef run list an attributes",
+  plugin =&gt; "file",
+  parameters =&gt; %(
+    target =&gt; "/tmp/chef.json",
+    content =&gt; q:to/JSON/,
+    {
+      "run_list" : [
+        "recipe[nginx-app]",
+      ],
+        "tomcat_redirect" : false
+    }
+    JSON
+  ),
+);
+
+task_run %(
+   task =&gt; "run chef-client",
+   plugin =&gt; "bash",
+   parameters =&gt; %(
+   command =&gt; "chef-client --color --json /tmp/chef.json"
+ ),
+
+);</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Небольшие пояснения по коду. </p><br/>
+<ul>
+<li><p>Файл со сценарием должен называться <code>sparrowfile</code> и лежать в той же директории откуда вы будете запускать sparrowdo клиента, есть смысл держать его в каталоге кукбука — наглядно и всегда под рукой.</p><br/>
+</li>
+<li>В данном примере используются два sparrow плагина: <a href="https://sparrowhub.org/info/bash">file</a> — для создания файлов и <a href="https://sparrowhub.org/info/bash">bash</a> — для запуска произвольных команд на Bash, как уже говорилось они запускаются с параметрами с помощью функции <code>task_run</code>, также параметр <code>task</code> в вызовах данной функции добавляет произвольное текстовое описание выполняемой задачи.</li>
+</ul><br/>
+<p>Теперь можно запускать сценарий. Т.к. на заданном сервере sparrow клиент еще не установлен, запускаемся с опцией --bootstrap, попросив sparrowdo установить сначала клиента, который и будет выполнять все задачи:</p><br/>
+<pre><code>$ sparrowdo --http_proxy=$http_proxy --https_proxy=$https_proxy --host=remote.server  --ssh_user=root  --no_sudo --no_index_update
+running sparrow tasks on remote.server ...
+target OS is - centos6
+push task &lt;set up chef run list an attributes&gt; plg &lt;file&gt; OK
+push task &lt;run chef-client&gt; plg &lt;bash&gt; OK
+set up task box file - /tmp/sparrowdo-box.json - OK
+public@file is uptodate (0.0.2)
+public@bash is uptodate (0.1.1)
+
+running task box from /tmp/sparrowdo-box.json ...
+
+&lt;set-up-chef-run-list-an-attributes&gt;
+
+/ started
+
+set target content
+target created
+set target mode to 644
+ok      scenario succeeded
+ok      output match /target (created|removed)/
+ok      output match 'set target content'
+STATUS  SUCCEED
+
+&lt;run-chef-client&gt;
+
+/ started
+
+[2016-10-19T10:02:48+00:00] INFO: Forking chef instance to converge...
+[2016-10-19T10:02:48+00:00] INFO: *** Chef 11.16.4 ***
+[2016-10-19T10:02:48+00:00] INFO: Chef-client pid: 5389
+[2016-10-19T10:02:49+00:00] INFO: Setting the run_list to ["recipe[nginx-app]"] from CLI options
+[2016-10-19T10:02:49+00:00] INFO: Run List is [recipe[nginx-app]]
+[2016-10-19T10:02:49+00:00] INFO: Run List expands to [nginx-app]
+[2016-10-19T10:02:49+00:00] INFO: Starting Chef Run for sandbox-generic-ci-i-ef7cbedf
+[2016-10-19T10:02:49+00:00] INFO: Running start handlers
+[2016-10-19T10:02:49+00:00] INFO: Start handlers complete.
+[2016-10-19T10:02:49+00:00] INFO: HTTP Request Returned 404 Not Found:
+[2016-10-19T10:02:50+00:00] INFO: Loading cookbooks [nginx-app@0.0.1]
+[2016-10-19T10:02:50+00:00] INFO: Processing package[nginx] action install (nginx-app::default line 1)
+[2016-10-19T10:02:53+00:00] INFO: Processing package[tomcat7] action install (nginx-app::default line 3)
+[2016-10-19T10:02:53+00:00] INFO: Processing service[nginx] action enable (nginx-app::default line 5)
+[2016-10-19T10:02:53+00:00] INFO: Processing service[nginx] action start (nginx-app::default line 5)
+[2016-10-19T10:02:53+00:00] INFO: Processing service[tomcat7] action enable (nginx-app::default line 9)
+[2016-10-19T10:02:53+00:00] INFO: Processing service[tomcat7] action start (nginx-app::default line 9)
+[2016-10-19T10:02:53+00:00] INFO: Processing template[/etc/nginx/conf.d/default.conf] action create (nginx-app::default line 13)
+[2016-10-19T10:02:53+00:00] INFO: Chef Run complete in 3.604494597 seconds
+[2016-10-19T10:02:53+00:00] INFO: Running report handlers
+[2016-10-19T10:02:53+00:00] INFO: Report handlers complete
+bash-command-done
+ok      scenario succeeded
+ok      output match 'bash-command-done'
+STATUS  SUCCEED</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Первый запуск сценария отработал усешно, мы видим, что chef клиент установил требуемые пакеты и настроил их, следуя логике, заданной в кукбуке.</p><br/>
+<p>Немного поменяем sparrowdo сценарий, минимизировав вывод от шеф клиента при следующих запусках:</p><br/>
+<pre><code>task_run %(
+    task =&gt; "run chef-client",
+    plugin =&gt; "bash",
+    parameters =&gt; %(
+    command =&gt; "chef-client --color --json /tmp/chef.json -l error"
+  ),
+);</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Теперь пора добавить пару проверок, что наш деплоймент завершился успехом, в именно:</p><br/>
+<ul>
+<li>сервис nginx виден в списке процессов</li>
+<li>сервис tomcat виден в списке процессов</li>
+</ul><br/>
+<p>Это может показаться излишним, т.к. chef гарантирует нам обработку/вывод всех ошибок, связанных с запуском сервисов, однако опыт показывает, что это не всегда <em>достаточно</em>, например сервис может упасть чуть позже, после того, как chef клиент успешно отработал. И потом никогда не помешает написать еще пару "параллельных" тестов ( которые кстати можно запускать <em>вне контекста</em> chef клиента ), тем более, что со sparrowdo это сделать очень просто. Добавим в наш sparrowdo сценарий пару задач :</p><br/>
+<pre><code>task_run  %(
+  task =&gt; 'check nginx process',
+  plugin =&gt; 'proc-validate',
+  parameters =&gt; %(
+    pid_file =&gt; '/var/run/nginx.pid',
+    footprint =&gt; 'nginx.*master'
+  )
+);
+
+task_run  %(
+  task =&gt; 'check tomcat7 process',
+  plugin =&gt; 'proc-validate',
+  parameters =&gt; %(
+    pid_file =&gt; '/var/run/tomcat7.pid',
+    footprint =&gt; 'java'
+  )
+);</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Здесь мы использовали плагин <a href="https://sparrowhub.org/info/proc-validate">proc-validate</a>, который по заданному PID файлу проверяет существование процесса, так же ищет его по "следу" в списке запущенных процессов:</p><br/>
+<pre><code>  $ sparrowdo --http_proxy=$http_proxy --https_proxy=$https_proxy --host=remote.server  --ssh_user=root  --no_sudo --no_index_update
+  running sparrow tasks on remote.server ...
+  target OS is - centos6
+  push task &lt;set up chef run list an attributes&gt; plg &lt;file&gt; OK
+  push task &lt;run chef-client&gt; plg &lt;bash&gt; OK
+  push task &lt;check nginx process&gt; plg &lt;proc-validate&gt; OK
+  push task &lt;check tomcat7 process&gt; plg &lt;proc-validate&gt; OK
+  set up task box file - /tmp/sparrowdo-box.json - OK
+  public@file is uptodate (0.0.2)
+  public@bash is uptodate (0.1.1)
+  public@proc-validate is uptodate (0.0.5)
+
+  running task box from /tmp/sparrowdo-box.json ...
+
+  &lt;set-up-chef-run-list-an-attributes&gt;
+
+  / started
+
+  set target content
+  target created
+  set target mode to 644
+  ok      scenario succeeded
+  ok      output match /target (created|removed)/
+  ok      output match 'set target content'
+  STATUS  SUCCEED
+
+  &lt;run-chef-client&gt;
+
+  / started
+
+  bash-command-done
+  ok      scenario succeeded
+  ok      output match 'bash-command-done'
+  STATUS  SUCCEED
+
+  &lt;check-nginx-process&gt;
+
+  / started
+
+  pid_file - /var/run/nginx.pid
+  pid file exists
+  pid:4526
+  process footprint:  4526 nginx: master process /usr/       31:47
+  ok      scenario succeeded
+  ok      output match /pid_file - \S+/
+  ok      output match 'pid file exists'
+  ok      output match /pid:\d+/
+  ok      output match /process footprint:/
+  ok      'process footprint:  4526 nginx: master process /usr/       31:47' match /nginx.*master/
+  STATUS  SUCCEED
+
+  &lt;check-tomcat7-process&gt;
+
+  / started
+
+  pid_file - /var/run/tomcat7.pid
+  pid file exists
+  pid:29458
+  process footprint: 29458 /usr/lib/jvm/java-1.6.0/bin    22:11:25
+  ok      scenario succeeded
+  ok      output match /pid_file - \S+/
+  ok      output match 'pid file exists'
+  ok      output match /pid:\d+/
+  ok      output match /process footprint:/
+  ok      'process footprint: 29458 /usr/lib/jvm/java-1.6.0/bin    22:11:25' match /java/
+  STATUS  SUCCEED</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Отлично. Мы видим, что наши сервисы действительно запущены. Еще одним приимуществом данного подхода является то, что вы всгеда можете запустить <em>подобные</em> проверки на уже задеплоенном сервере, не запуская при этом самого chef клиента.</p><br/>
+<p>Ок, идем дальше. Проверим доступность наших сервисов по <em>http</em>. Для этого воспользуемся утилитой <a href="http://curl.haxx.se/">curl</a>, вот что нужно добавить в наш sparrowdo сценарий:</p><br/>
+<pre><code>task_run  %(
+  task =&gt; 'install curl',
+  plugin =&gt; 'package-generic',
+  parameters =&gt; %(
+    list =&gt; 'curl',
+  )
+);
+
+task_run  %(
+  task =&gt; 'check nginx http port',
+  plugin =&gt; 'bash',
+  parameters =&gt; %(
+    command =&gt; 'sleep 5; curl --retry 2  --noproxy 127.0.0.1  -f -o /dev/null -D - http://127.0.0.1',
+  )
+);
+
+task_run  %(
+  task =&gt; 'check tomcat http port',
+  plugin =&gt; 'bash',
+  parameters =&gt; %(
+    command =&gt; 'sleep 5; curl --retry 2  --noproxy 127.0.0.1  -f -o /dev/null -D - http://127.0.0.1:8080',
+  )
+);</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>...</p><br/>
+<p>Запустим сценарий:</p><br/>
+<p><code>$ sparrowdo --http_proxy=$http_proxy --https_proxy=$https_proxy --host=remote.server --ssh_user=root --no_sudo --no_index_update</code> </p><br/>
+<pre><code># часть вывода опущена ...
+
+&lt;install-curl&gt;
+
+/ started
+
+package installer
+
+/modules/yum/ started
+
+trying to install curl ...
+installer - yum
+Installed Packages
+curl.x86_64                  7.19.7-37.el6_4                   @base/$releasever
+ok      scenario succeeded
+ok      output match 'Installed'
+STATUS  SUCCEED
+
+&lt;check-nginx-http-port&gt;
+
+/ started
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+102  3698  102  3698    0     0  3218k      0 --:--:-- --:--:-- --:--:--     0
+HTTP/1.1 200 OK
+Server: nginx/1.0.15
+Date: Wed, 19 Oct 2016 11:30:51 GMT
+Content-Type: text/html
+Content-Length: 3698
+Last-Modified: Fri, 26 Apr 2013 20:36:51 GMT
+Connection: keep-alive
+Accept-Ranges: bytes
+
+bash-command-done
+ok      scenario succeeded
+ok      output match 'bash-command-done'
+STATUS  SUCCEED
+
+&lt;check-tomcat-http-port&gt;
+
+/ started
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 11197    0 11197    0     0  1195k      0 --:--:-- --:--:-- --:--:-- 1366k
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: text/html;charset=ISO-8859-1
+Transfer-Encoding: chunked
+Date: Wed, 19 Oct 2016 11:30:56 GMT
+
+bash-command-done
+ok      scenario succeeded
+ok      output match 'bash-command-done'
+STATUS  SUCCEED</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Как мы видим наши сервисы доступны по http. Замечу, предварительно мы установили утилиту curl, воспользовашись плагином <a href="https://sparrowhub.org/info/package-generic">package-generic</a> для установки пакетов.</p><br/>
+<p>Ну, и наконец выставим атрибут <code>tomcat_redirect</code> в true, заставив nginx проксировать все запросы в tomcat и проверим что это происходит.</p><br/>
+<p>Устанавливаем атрибут:</p><br/>
+<pre><code>task_run %(
+  task =&gt; "set up chef run list an attributes",
+  plugin =&gt; "file",
+  parameters =&gt; %(
+    target =&gt; "/tmp/chef.json",
+    content =&gt; q:to/JSON/,
+    {
+      "run_list" : [
+        "recipe[nginx-app]",
+      ],
+        "tomcat_redirect" : true
+    }
+    JSON
+  ),
+);</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Добавляем параметр <code>expect_stdout</code> в запуск плагина <code>bash</code>, который заставит его проверить STDOUT выполняемой команды по заданному regex:</p><br/>
+<pre><code>task_run  %(
+  task =&gt; 'check nginx http port',
+  plugin =&gt; 'bash',
+  parameters =&gt; %(
+    command =&gt; 'sleep 5; curl --retry 2  --noproxy 127.0.0.1  -f  http://127.0.0.1 | head -n 10',
+    expect_stdout =&gt; 'Apache Tomcat'
+  )
+);</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Запустим сценарий:</p><br/>
+<pre><code>$ sparrowdo --http_proxy=$http_proxy --https_proxy=$https_proxy --host=remote.server  --ssh_user=root  --no_sudo --no_index_update
+
+# часть вывода опущена ...
+
+&lt;check-nginx-http-port&gt;
+
+/ started
+
+&lt;!DOCTYPE html&gt;
+
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;Apache Tomcat/7.0.57&lt;/title&gt;
+        &lt;link href="favicon.ico" rel="icon" type="image/x-icon" /&gt;
+        &lt;link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /&gt;
+        &lt;link href="tomcat.css" rel="stylesheet" type="text/css" /&gt;
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (23) Failed writing body (146 != 3151)
+bash-command-done
+ok      scenario succeeded
+ok      output match 'bash-command-done'
+ok      output match /Apache Tomcat/
+STATUS  SUCCEED
+
+&lt;check-tomcat-http-port&gt;
+
+/ started
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 11197    0 11197    0     0  3364k      0 --:--:-- --:--:-- --:--:--     0
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Content-Type: text/html;charset=ISO-8859-1
+Transfer-Encoding: chunked
+Date: Wed, 19 Oct 2016 12:03:02 GMT
+
+bash-command-done
+ok      scenario succeeded
+ok      output match 'bash-command-done'
+STATUS  SUCCEED</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<h1 id="zaklyuchenie">Заключение</h1><br/>
+<p>На данном простом примере мы научились как использовать sparrowdo/sparrow в процессах разработки и тестирования chef кукбуков, а именно:</p><br/>
+<ul>
+<li>запускать chef клиента с заданными параметрами и атрибутами на указанных хостах</li>
+<li>проверять существование процессов </li>
+<li>делать простейшие проверки на доступность web сервисов</li>
+<li>устанавливать инструменты, необходимые для тестирования.</li>
+</ul><br/>
+<p>На самом деле написать можно было еще много чего. Кейсов для использования sparrowdo и chef действительно большое количество. Просто возьмите готовые плагины <a href="http://sparrowhub.org/search">тут</a> или же напишите свой, ведь это действительно <a href="https://habrahabr.ru/post/300876/">не сложно</a> и начните использовать sparrowdo в вашей разработке.</p><br/>
+<p>Вся фишка системы sparrow, выгодно отличающая ee от других похожих инструментов, таких как serverspec/inspec в том, что функциональность не зашита жестко "в ядре", но пользователь может легко и быстро <a href="https://habrahabr.ru/post/300876/">писать</a> свои плагины, подходящие под его реалии и тут же использовать их посредством sparrowdo, вы даже можете "компилировать" более сложные сценарии, на основе sparrow плагинов с помощью так называемых sparrowdo <a href="https://github.com/melezhik/sparrowdo#sparrowdo-modules">модулей</a>, которые пишутся на Perl6 ( об этом, если будет интерес, можно будет написать отдельную статью ).</p><br/>
+<p>Если данная статья вызвала у вас интерес — пишите, комментируйте, задавайте вопросы и… конструктивно критикуйте :)) буду признателен. Как обычно, единым центром для документации и репозиторием плагинов sparrow является сайт <a href="https://sparrowhub.org">https://sparrowhub.org</a></p><br/>
+<p>Спасибо.</p><br/>
+<p>PS В конце статьи, как обычно, простенький вопрос, косвенно относящийся к теме статьи.</p></div></div></div><!----><!----></div><!----><div class="article-poll-container" data-v-aad06d04><!--[--><div class="article-poll bordered" data-v-aad06d04 data-v-7bca6df0><div class="tm-notice tm-notice_positive notice" data-v-7bca6df0><!----><div class="tm-notice__inner"><!----><div class="tm-notice__content" data-test-id="notice-content"><!--[--><span data-v-7bca6df0>Только зарегистрированные пользователи могут участвовать в опросе. <a rel="nofollow" href="/kek/v1/auth/habrahabr/?back=&hl=ru">Войдите</a>, пожалуйста.</span><!--]--></div></div></div><!--[--><div class="header" data-v-7bca6df0>Используете ли вы языки программирования Perl5 или Perl6?</div><div class="answers" data-v-7bca6df0><!--[--><div class="answer" data-v-7bca6df0><div class="answer-data" data-v-7bca6df0><span class="answer-percent" data-v-7bca6df0>7.69%</span><span class="answer-label" data-v-7bca6df0>Вы используете на своей работе язык программирования Perl5</span><span class="answer-votes" data-v-7bca6df0>1</span></div><div class="answer-bar" data-v-7bca6df0><div class="answer-progress" style="width: 7.69%" data-v-7bca6df0></div></div></div><div class="answer" data-v-7bca6df0><div class="answer-data" data-v-7bca6df0><span class="answer-percent" data-v-7bca6df0>0%</span><span class="answer-label" data-v-7bca6df0>Вы используете на своей работе язык программирования Perl6</span><span class="answer-votes" data-v-7bca6df0>0</span></div><div class="answer-bar" data-v-7bca6df0><div class="answer-progress" style="width: 0%" data-v-7bca6df0></div></div></div><div class="answer" data-v-7bca6df0><div class="answer-data" data-v-7bca6df0><span class="answer-percent" data-v-7bca6df0>7.69%</span><span class="answer-label" data-v-7bca6df0>Вы используете на своей работе язык программирования Perl5 и Perl6</span><span class="answer-votes" data-v-7bca6df0>1</span></div><div class="answer-bar" data-v-7bca6df0><div class="answer-progress" style="width: 7.69%" data-v-7bca6df0></div></div></div><div class="answer" data-v-7bca6df0><div class="answer-data" data-v-7bca6df0><span class="answer-percent answer-percent_winning" data-v-7bca6df0>84.62%</span><span class="answer-label" data-v-7bca6df0>Вы не программируете ( не используете на своей работе ) ни на одном из указанных языков программированния ( Perl5, Perl6 )</span><span class="answer-votes" data-v-7bca6df0>11</span></div><div class="answer-bar" data-v-7bca6df0><div class="answer-progress answer-progress_winning" style="width: 84.62%" data-v-7bca6df0></div></div></div><!--]--></div><div class="stats" data-v-7bca6df0> Проголосовали 13 пользователей.   Воздержались 6 пользователей. </div><!--]--></div><!--]--></div></div><!--]--><!----><div class="tm-article-presenter__meta" data-test-id="article-meta-links"><div class="tm-separated-list tag-list tm-article-presenter__meta-list"><span class="tm-separated-list__title">Теги:</span><ul class="tm-separated-list__list"><!--[--><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[chef]" class="link"><span>chef</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[sparrowdo]" class="link"><span>sparrowdo</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[perl6]" class="link"><span>perl6</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[perl5]" class="link"><span>perl5</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[perl]" class="link"><span>perl</span></a><!--]--></li><!--]--><!----></ul></div><div class="tm-separated-list tm-article-presenter__meta-list"><span class="tm-separated-list__title">Хабы:</span><ul class="tm-separated-list__list"><!--[--><li class="tm-separated-list__item"><!--[--><a href="/ru/hubs/nix/" class="link"><!--[--><span>*nix</span><!--]--></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/hubs/devops/" class="link"><!--[--><span>DevOps</span><!--]--></a><!--]--></li><!--]--><!----></ul></div></div><!----><!--]--></article><!--]--></div><!----></div><div style="" class="tm-article-sticky-panel" data-test-id="article-sticky-panel"><div class="tm-data-icons tm-data-icons tm-data-icons_space-big tm-article-sticky-panel__icons" data-test-id="article-stats-icons"><div class="article-rating tm-data-icons__item" data-v-b9b05a90><div class="tm-votes-meter votes-switcher" data-v-b9b05a90><svg class="tm-svg-img tm-votes-meter__icon tm-votes-meter__icon tm-votes-meter__icon_appearance-article" height="24" width="24"><title>Всего голосов 7: ↑7 и ↓0</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-rating"></use></svg><span class="tm-votes-meter__value tm-votes-meter__value_positive tm-votes-meter__value_appearance-article tm-votes-meter__value_rating tm-votes-meter__value" data-test-id="votes-meter-value" title="Всего голосов 7: ↑7 и ↓0">+5</span></div><!--teleport start--><!--teleport end--><!----></div><!----><!----><button class="bookmarks-button tm-data-icons__item" title="Добавить в закладки" type="button" data-v-861e2740><span class="tm-svg-icon__wrapper icon" data-v-861e2740><svg class="tm-svg-img tm-svg-icon" height="24" width="24"><title>Добавить в закладки</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-favorite"></use></svg></span><span class="counter" title="Количество пользователей, добавивших публикацию в закладки" data-v-861e2740>20</span></button><div class="sharing tm-data-icons__item" title="Поделиться" data-v-daf6ee1d><button class="sharing-button" type="button" data-v-daf6ee1d><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon" data-v-daf6ee1d><path fill="currentColor" d="M13.8 13.8V18l7.2-6.6L13.8 5v3.9C5 8.9 3 18.6 3 18.6c2.5-4.4 6-4.8 10.8-4.8z"></path></svg></button><!--teleport start--><!--teleport end--></div><div class="article-comments-counter-link-wrapper tm-data-icons__item" title="Читать комментарии" data-v-8d952463><a href="/ru/articles/313034/comments/" class="article-comments-counter-link" data-test-id="counter-comments" data-v-8d952463><!--[--><svg class="tm-svg-img icon" height="24" width="24" data-v-8d952463><title>Комментарии</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-comments"></use></svg><span class="value" data-v-8d952463>0</span><!--]--></a><!----></div><!--[--><!--[--><!--[--><!----><!--]--><!--]--><!--]--><!--teleport start--><!--teleport end--><!----></div></div></div><!--[--><!--]--><div class="tm-article-presenter__footer"><!--[--><!--[--><div class="tm-article-blocks"><!----><!--[--><section class="tm-block tm-block tm-block_spacing-bottom"><!----><!--[--><div class="tm-block__body tm-block__body tm-block__body_variant-balanced"><!--[--><div class="article-author" data-test-id="article-author-info" data-async-called="true" data-v-af0d0f90><!--[--><!--]--><div class="tm-user-card tm-user-card tm-user-card_variant-article user-card" data-async-called="true" data-v-af0d0f90><div class="tm-user-card__info-container"><div class="tm-user-card__header"><div class="tm-user-card__header-data"><a href="/ru/users/alexey_melezhik/" class="tm-user-card__userpic tm-user-card__userpic_size-40"><!--[--><div class="tm-entity-image"><!--[--><!--]--></div><!--]--></a><div class="tm-user-card__meta"><div class="tm-counter-container karma" title=" 21 голос " data-v-544d285f><div class="tm-counter-container__header"><!--[--><div class="karma-display positive" data-v-544d285f data-v-3881f4ba>13</div><!----><!--]--></div><div class="tm-counter-container__footer"><!--[--><div class="karma-text" data-v-544d285f>Карма</div><!--teleport start--><!--teleport end--><!--]--></div></div><div class="tm-counter-container"><div class="tm-counter-container__header"><!--[--><!--[--><!--]--><div class="tm-votes-lever tm-votes-lever tm-votes-lever_appearance-rating"><!----><div class="tm-votes-lever__score tm-votes-lever__score_appearance-rating tm-votes-lever__score" data-test-id="lever-score"><!--[--><span><span class="tm-votes-lever__score-counter tm-votes-lever__score-counter_rating tm-votes-lever__score-counter" data-test-id="votes-score-counter">0</span></span><!--]--></div><!----></div><!--]--></div><div class="tm-counter-container__footer"><!--[--><span class="tm-rating__text tm-rating__text">Общий рейтинг</span><!--]--></div></div></div></div></div><div class="tm-user-card__info tm-user-card__info_variant-article tm-user-card__info"><div class="tm-user-card__title tm-user-card__title_variant-article tm-user-card__title"><span class="tm-user-card__name tm-user-card__name_variant-article tm-user-card__name">Sparrowdo</span><a href="/ru/users/alexey_melezhik/" class="tm-user-card__nickname tm-user-card__nickname tm-user-card__nickname_variant-article"><!--[-->@alexey_melezhik<!--]--></a><!----></div><p class="tm-user-card__short-info tm-user-card__short-info_variant-article tm-user-card__short-info" data-test-id="user-card-speciality">Author of Sparrow — Raku Automaton System</p></div></div><!----><div class="tm-user-card__buttons tm-user-card__buttons_variant-article tm-user-card__buttons"><!----><div class="tm-user-card__button"><div class="tm-button-follow tm-user-card__button-follow"><!----><button class="tm-button-follow__button tm-button-follow__button_big" data-test-id="follow-button" type="button">Подписаться</button></div></div><!----><!--[--><div class="tm-user-card__button tm-user-card__button_write" data-test-id="user-card-conversations"><svg class="tm-svg-img tm-user-card__button-icon" height="16" width="16"><title>Отправить сообщение</title><use xlink:href="/img/megazord-v28.cba4c116..svg#mail"></use></svg></div><!--]--><!----><!----></div><!----></div><div class="author-contacts" data-test-id="author-contacts" data-v-af0d0f90><!----><!----><!----></div></div><!--]--></div><!--]--><!----></section><!----><!--[--><div class="sponsor-block" style="--d75346b8:0;--11dbf66e:100%;" data-v-580b3119><div class="title" data-v-580b3119>Хабр доступен 24/7 благодаря поддержке друзей</div><div class="content-container" data-v-580b3119><div class="content" data-v-580b3119><div class="content-title-container" data-v-580b3119><div class="content-title" data-v-580b3119>Хабр Курсы для всех</div><div class="sponsor-mark" data-v-580b3119>РЕКЛАМА</div></div><div class="content-text" data-v-580b3119> Практикум, Хекслет, SkyPro, авторские курсы — собрали всех и попросили скидки. Осталось выбрать! </div><a class="content-action" href="https://career.habr.com/courses/?erid=2VSb5wDLYUH&amp;utm_source=habr&amp;utm_medium=sponsorship_hub" target="_blank" data-v-580b3119><button class="btn btn_solid btn_small tm-button_color-horizon" tabindex="0" type="button" data-v-580b3119><!--[--><!--[-->Перейти<!--]--><!--]--></button></a></div></div><div class="footer" data-v-580b3119><!----></div><!----></div><!--]--><!--]--><div class="tm-article-blocks__comments"><div id="publication-comments" class="tm-article-page-comments"><div><!--[--><div class="article-comments-counter-link-wrapper tm-article-comments-counter-button" data-v-8d952463><a href="/ru/articles/313034/comments/" class="article-comments-counter-link button-style" data-test-id="counter-comments" data-v-8d952463><!--[--><svg class="tm-svg-img icon icon--contrasted" height="24" width="24" data-v-8d952463><title>Комментарии</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-comments"></use></svg><span class="value value--contrasted" data-v-8d952463> Комментировать </span><!--]--></a><!----></div><!--]--></div></div></div><!--[--><!--[--><!--]--><section class="tm-block tm-block tm-block_spacing-bottom"><header class="tm-block__header tm-block__header tm-block__header_variant-borderless"><div class="tm-block__header-container"><h2 class="tm-block__title tm-block__title tm-block__title_variant-large">Публикации</h2><!--[--><!--]--></div><!----></header><!--[--><div class="tm-block__body tm-block__body tm-block__body_variant-condensed-slim"><!--[--><!--[--><div class="tabs" data-test-id="container" data-v-681e7545><div class="" data-test-id="scroll-area" data-v-681e7545><!--[--><span class="tab-item" data-v-681e7545><button class="active slim tab-link" data-v-681e7545>Лучшие за сутки</button></span><span class="tab-item" data-v-681e7545><button class="slim tab-link" data-v-681e7545>Похожие</button></span><!--]--></div><!----></div><div class="similar-and-daily__tab-view"><div class="daily-articles-list"><ul class="article-card-list" data-v-7f7081d6><!--[--><!--]--><div class="tm-bordered-card" data-v-7f7081d6><!----><!--[--><!--]--></div></ul><div class="daily-articles-block__button-container"><button class="btn btn_transparent btn_small tm-button_color-horizon" tabindex="0" type="button"><!--[--><!--[-->Показать лучшие за всё время<!--]--><!--]--></button></div></div><!----></div><!--]--><!--]--></div><!--]--><!----></section><!--[--><div><div class="placeholder-wrapper"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="tm-placeholder-promo"><div class="tm-placeholder-promo__header"><div class="tm-placeholder__line tm-placeholder__line_promo-title"></div></div><div class="tm-placeholder-promo__body"><div class="tm-placeholder-promo__posts"><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div></div><div class="tm-placeholder-promo__dots"><div class="tm-placeholder-promo__dot"></div><div class="tm-placeholder-promo__dot"></div><div class="tm-placeholder-promo__dot"></div></div></div></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div></div><div class="placeholder-wrapper"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="tm-placeholder-inset tm-placeholder-questions"><div class="tm-placeholder-inset__header"><div class="tm-placeholder__line tm-placeholder__line_inset-header loads"></div></div><div class="tm-placeholder-inset__body"><ul class="tm-placeholder-list"><!--[--><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><!--]--></ul></div><div class="tm-placeholder-inset__footer"><div class="tm-placeholder__line tm-placeholder__line_inset-footer loads"></div></div></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div><!--]--><!----><!--[--><!--]--><!--]--></div><!----><!--]--><!--]--></div></div><!--]--></div><!--]--></div></div><div class="tm-page__sidebar"><!--[--><div class="sidebar" data-v-0050f56d><div id="sidebar-window-placement" data-v-0050f56d></div><!--[--><!--]--></div><!--]--></div></div><!--]--></div><!----></div></main><!----></div><div class="tm-footer-menu"><div class="tm-page-width"><!--[--><div class="tm-footer-menu__container"><!--[--><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Ваш аккаунт</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr/?back=/ru/articles/313034/&amp;hl=ru" rel="nofollow" target="_self">Войти</a></li><li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr-register/?back=/ru/articles/313034/&amp;hl=ru" rel="nofollow" target="_self">Регистрация</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Разделы</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/ru/articles/" class="footer-menu__item-link">Статьи</a></li><li class="tm-footer-menu__list-item"><a href="/ru/news/" class="footer-menu__item-link">Новости</a></li><li class="tm-footer-menu__list-item"><a href="/ru/hubs/" class="footer-menu__item-link">Хабы</a></li><li class="tm-footer-menu__list-item"><a href="/ru/companies/" class="footer-menu__item-link">Компании</a></li><li class="tm-footer-menu__list-item"><a href="/ru/users/" class="footer-menu__item-link">Авторы</a></li><li class="tm-footer-menu__list-item"><a href="/ru/sandbox/" class="footer-menu__item-link">Песочница</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Информация</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/ru/docs/help/" class="footer-menu__item-link">Устройство сайта</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/authors/codex/" class="footer-menu__item-link">Для авторов</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/companies/corpblogs/" class="footer-menu__item-link">Для компаний</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/docs/transparency/" class="footer-menu__item-link">Документы</a></li><li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/agreement/?hl=ru_RU" target="_blank">Соглашение</a></li><li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/confidential/?hl=ru_RU" target="_blank">Конфиденциальность</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Услуги</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/corporate-blogs/" target="_blank">Корпоративный блог</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/advertising/" target="_blank">Медийная реклама</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/native-special/" target="_blank">Нативные проекты</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/education-programs/" target="_blank">Образовательные программы</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/hello-startup/" target="_blank">Стартапам</a></li><!--]--></ul></div></div><!--]--></div><!--]--></div></div><div class="tm-footer"><div class="tm-page-width"><!--[--><div class="tm-footer__container"><!----><div class="social-icons tm-footer__social" data-v-d6e8cb42><!--[--><a class="tm-svg-icon__wrapper social-icon" href="https://vk.com/habr" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>VK</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-vk"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="https://telegram.me/habr_com" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Telegram</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-telegram"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="http://www.youtube.com/@Habr_com" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Youtube</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-youtube"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="https://dzen.ru/habr" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Яндекс Дзен</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-dzen"></use></svg></a><!--]--></div><!--teleport start--><!--teleport end--><button class="tm-footer__link"><!----> Настройка языка</button><a href="/ru/feedback/" class="tm-footer__link">Техническая поддержка</a><div class="tm-footer-copyright"><span class="tm-copyright"><span class="tm-copyright__years">© 2006–2026,</span><span class="tm-copyright__name"><a class="tm-copyright__link" href="https://company.habr.com/" rel="noopener" target="_blank"> Habr </a></span></span></div></div><!--]--></div></div><!----><!----><!--]--></div><!----></div></div>
+    <div id="overlays"><!--teleport start anchor--><template><!----></template><!--teleport anchor--><!--teleport start anchor--><template><!----></template><!--teleport anchor--><!--teleport start anchor--><template><!----></template><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--></div>
+    
+    
+    
+    
+  
+  
+    
+  
+    </body>
+
+    </html>

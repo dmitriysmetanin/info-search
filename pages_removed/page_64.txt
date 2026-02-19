@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <title>18 экспертов, за которыми стоит следить, если вы работаете в медиа &#x2F; Хабр</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+  </head>
+  <body>
+    
+    <div id="mount"><div id="app"><div class="tm-layout__wrapper"><!--[--><!----><div></div><div class="header-banner-wrapper"><div class="element-wrapper above-header" style="--754c4550:100%;--56cb6579:auto;"><!--[--><div class="placeholder-wrapper banner-container__placeholder"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="adfox-banner-placeholder above-header" data-v-24012b5e><div class="image loads" data-v-24012b5e></div><div class="lines" data-v-24012b5e><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div></div></div><!----><!----><!----></div><!--[--><div id="adfox_175449164307199013_aboveHeader" class="banner-target"></div><!--]--><!--]--></div></div><header class="tm-header tm-header" data-test-id="header"><!----><!----><div class="tm-page-width"><!--[--><div class="tm-header__container"><button aria-expanded="false" aria-label="Toggle menu" class="burger-button tm-header__button tm-header__burger" data-v-56ed7aae><span class="line top" data-v-56ed7aae></span><span class="line middle" data-v-56ed7aae></span><span class="line bottom" data-v-56ed7aae></span></button><span class="tm-header__logo-wrap"><a class="tm-header__logo tm-header__logo_hl-ru tm-header__logo" href="/ru/feed"><svg class="tm-svg-img tm-header__icon" height="16" width="16"><title>Хабр</title><use xlink:href="/img/habr-logo-ru.svg#logo"></use></svg></a></span><span class="tm-header__divider"></span><!--[--><a class="tm-header__all-flows" href="/ru/articles/">Все потоки</a><!--]--><!----><div class="tm-header-user-menu tm-base-layout__user-menu"><a href="/ru/search/" class="tm-header-user-menu__item tm-header-user-menu__search" data-test-id="search-button"><svg class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_search" height="24" width="24"><title>Поиск</title><use xlink:href="/img/megazord-v28.cba4c116..svg#search"></use></svg></a><!----><!----><div class="tm-header-user-menu__item tm-header-user-menu__write"><a href="/ru/sandbox/start/" class=""><svg class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_write" height="24" width="24"><title>Написать публикацию</title><use xlink:href="/img/megazord-v28.cba4c116..svg#write"></use></svg></a><!----></div><!--[--><div class="tm-header-user-menu__item"><button class="tm-header-user-menu__toggle" data-test-id="user-menu-settings"><svg class="tm-svg-img tm-header-user-menu__icon" height="24" width="24"><title>Настройки</title><use xlink:href="/img/megazord-v28.cba4c116..svg#page-settings"></use></svg></button></div><a href="https://habr.com/kek/v1/auth/habrahabr/?back=/ru/companies/surfingbird/articles/313018/&amp;hl=ru" rel="nofollow" class="tm-header-user-menu__item tm-header-user-menu__login" role="button"><!--[-->Войти<!--]--></a><!--]--><template><!----></template><!--teleport start--><!--teleport end--></div></div><!--]--></div></header><div class="tm-layout"><div class="tm-page-progress-bar"></div><!----><div class="tm-page-width"><!--[--><!----><!----><!----><!--]--></div><main class="tm-layout__container"><div class="tm-page" hl="ru" companyname="surfingbird" data-async-called="true" style="--a414e232:300px;--10c4682a:0;--19620736:0;"><!----><div class="tm-page-width"><!--[--><div class="tm-page__header"><!--[--><!--]--></div><div class="tm-page__wrapper"><!----><div class="tm-page__main_has-sidebar tm-page__main"><div class="pull-down"><!----><div class="pull-down__header" style="height:0px;"><div class="pull-down__content" style="bottom:10px;"><svg class="tm-svg-img pull-down__icon pull-down__arrow" height="24" width="24"><title>Обновить</title><use xlink:href="/img/megazord-v28.cba4c116..svg#pull-arrow"></use></svg></div></div><!--[--><div><!--[--><div class="tm-article-presenter" data-async-called="true"><!--[--><!--[--><!----><div class="tm-company-profile-card tm-company-article__profile-card"><div class="tm-company-card tm-company-profile-card__info"><div class="tm-company-card__header"><a href="/ru/companies/surfingbird/profile/" class="tm-company-card__avatar"><div class="tm-entity-image"></div></a><!--[--><!----><div class="tm-counter-container tm-company-card__rating"><div class="tm-counter-container__header"><!--[--><!--[--><!--]--><div class="tm-votes-lever tm-votes-lever tm-votes-lever_appearance-rating"><!----><div class="tm-votes-lever__score tm-votes-lever__score_appearance-rating tm-votes-lever__score" data-test-id="lever-score"><!--[--><span><span class="tm-votes-lever__score-counter tm-votes-lever__score-counter_rating tm-votes-lever__score-counter" data-test-id="votes-score-counter">0</span></span><!--]--></div><!----></div><!--]--></div><div class="tm-counter-container__footer"><!--[--><span class="tm-rating__text tm-rating__text">Общий рейтинг</span><!--]--></div></div><!----><!--]--></div><div class="tm-company-card__info"><a href="/ru/companies/surfingbird/profile/" class="tm-company-card__name"><span>Surfingbird</span></a><!----></div></div><div class="tm-company-profile-card__buttons"><div class="tm-button-follow tm-company-profile-card__button tm-company-profile-card__button_follow"><!----><button class="tm-button-follow__button tm-button-follow__button_big" data-test-id="follow-button" type="button">Подписаться</button></div><!----><!----><!----></div></div><!----><!--]--><!--]--><div class="tm-article-presenter__body" data-test-id="article-body"><div class="tm-misprint-area"><div class="tm-misprint-area__wrapper"><!--[--><article class="tm-article-presenter__content tm-article-presenter__content_narrow"><!--[--><div class="tm-article-presenter__header"><!--[--><!--]--><div class="article-snippet tm-article-presenter__snippet" data-v-085cd854><!--[--><!--]--><div class="meta-container" data-v-085cd854><div class="meta" data-v-085cd854><span class="tm-user-info author" data-v-085cd854><a href="/ru/users/kozyrevskaya/" class="tm-user-info__userpic" data-test-id="user-info-pic"><!--[--><div class="tm-entity-image"></div><!--]--></a><span class="tm-user-info__user tm-user-info__user_appearance-default" data-test-id="user-info-description"><a href="/ru/users/kozyrevskaya/" class="tm-user-info__username" data-test-id="user-info-username"><!--[-->kozyrevskaya<!--]--></a><!----><!--[--><span class="tm-article-datetime-published" data-v-085cd854><time data-allow-mismatch datetime="2016-10-18T12:33:22.000Z" title="2016-10-18, 12:33">18  окт  2016 в 12:33</time></span><!--]--></span></span></div><div class="controls" data-v-085cd854><!----><!----><!----><!----></div></div><h1 class="tm-title tm-title_h1" lang="ru" data-test-id="articleTitle" data-v-085cd854><span>18 экспертов, за которыми стоит следить, если вы работаете в медиа</span></h1><div class="stats" data-test-id="articleStats" data-v-085cd854><!----><div class="tm-article-reading-time" data-v-085cd854><span class="tm-svg-icon__wrapper tm-article-reading-time__icon"><svg class="tm-svg-img tm-svg-icon" height="24" width="24"><title>Время на прочтение</title><use xlink:href="/img/megazord-v28.cba4c116..svg#clock"></use></svg></span><span class="tm-article-reading-time__label">7 мин</span></div><span class="tm-icon-counter tm-data-icons__item reach-counter" data-v-085cd854><svg class="tm-svg-img tm-icon-counter__icon" height="24" width="24"><title>Охват и читатели</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-views"></use></svg><span class="tm-icon-counter__value" title="4986">5K</span></span></div><div class="tm-publication-hubs__container" data-test-id="articleHubsList" data-v-085cd854><div class="tm-publication-hubs"><!--[--><span class="tm-publication-hub__link-container"><a href="/ru/companies/surfingbird/articles/" class="tm-publication-hub__link"><!--[--><span>Блог компании Surfingbird</span><!----><!--]--></a></span><span class="tm-publication-hub__link-container"><a href="/ru/hubs/contentmarketing/" class="tm-publication-hub__link"><!--[--><span>Контент и копирайтинг</span><span class="tm-article-snippet__profiled-hub" title="Профильный хаб"> * </span><!--]--></a></span><span class="tm-publication-hub__link-container"><a href="/ru/hubs/display_adv/" class="tm-publication-hub__link"><!--[--><span>Медийная реклама</span><span class="tm-article-snippet__profiled-hub" title="Профильный хаб"> * </span><!--]--></a></span><!--]--></div></div><div class="tm-article-labels" data-test-id="articleLabels" data-v-085cd854 data-v-bfa2437b><div class="tm-article-labels__container" data-v-bfa2437b><!----><!--[--><!----><!--[--><!--]--><!--]--></div></div><!----><!----><!--teleport start--><!--teleport end--></div></div><!--[--><!----><div class="article-body" data-gallery-root lang="ru" data-v-aad06d04><div data-v-aad06d04><!--[--><!--]--></div><div id="post-content-body" data-v-aad06d04><div><div class="article-formatted-body article-formatted-body article-formatted-body_version-1"><div xmlns="http://www.w3.org/1999/xhtml"><br/>
+<br/>
+Собрали блоги экспертов, за которыми полезно следить, если вы работаете в медиа. Пишут о технологиях в издательском деле, сильном тексте и контент-маркетинге.<br/>
+<a name="habracut"></a><br/>
+<h1><a href="http://sethgodin.typepad.com">Сет Годин</a></h1><br/>
+<br/>
+<br/>
+Автор деловых книг, маркетолог, колумнист в Fast Company.<br/>
+<br/>
+Автор бестселлеров о маркетинге, — «Фиолетовая корова» и «Подарок в придачу». Объясняет маркетинг с позиции предпринимателя.<br/>
+<br/>
+Из книги «Фиолетовая корова»:<br/>
+<br/>
+<em>Нужно освоить науку прогнозирования, то есть создать отрасль знания о запуске продукта на рынок, о наблюдении и многократном измерении его поведения на рынке. Очевидно, что этот метод не подходит для сложных продуктов с длительным циклом продажи, таких, например, как реактивные самолеты, но он подходит для большинства всех остальных товаров — от серийных автомобилей до детских игрушек".</em><br/>
+<hr/><br/>
+<br/>
+<h1><a href="https://twitter.com/crestodina">Энди Крестодина</a></h1><br/>
+<br/>
+<br/>
+Сооснователь маркетингового агентства Orbit Media, контент-маркетолог.<br/>
+<br/>
+Рассказывает о контент-маркетинге доступным языком, без заумных теорий и стратегий.<br/>
+<br/>
+Публикует статьи <a href="https://www.orbitmedia.com/blog/">в блоге Orbit Media</a>, ведет Twitter.<br/>
+<br/>
+Сколько зарабатывают маркетологи. 7 специализаций с указанием зарплат:<br/>
+<div class="oembed"><blockquote class="twitter-tweet" align="center"><p lang="en" dir="ltr">How Much Money Do Marketers Make? <a href="https://t.co/W6SipjMN14">https://t.co/W6SipjMN14</a> ☜ 7 Job Descriptions (plus a salary guide) <a href="https://t.co/L6n9LZhVfn">pic.twitter.com/L6n9LZhVfn</a></p>— Andy Crestodina (@crestodina) <a href="https://twitter.com/crestodina/status/785489065584066560">October 10, 2016</a></blockquote>
+</div><br/>
+<hr/><br/>
+<br/>
+<h1><a href="http://neilpatel.com/blog/">Нейл Патель</a></h1><br/>
+<br/>
+<br/>
+Маркетолог, основатель KISSmetrics.<br/>
+<br/>
+Специализируется на конверсионном маркетинге и продвижении бизнеса с помощью контента.<br/>
+<br/>
+Мы публиковали перевод его статьи <a href="https://blog.relap.ru/2015/12/neil_patel_614/">«Что я понял о контент-маркетинге, когда проанализировал 614 постов»</a>:<br/>
+<br/>
+<p><em>«Расплывчатые заголовки, вроде «Как стать богатым» получают в среднем на 44% больше трафика с электронной почты. Но с точки зрения социальных сетей, посты с более конкретными заголовками набирают на 29,1% больше репостов.</em></p><br/>
+<p><em>Когда я изучал долгосрочные данные (год и больше), я обнаружил, что содержательные заголовки занимают более высокие места гораздо дольше и в целом получают на 65,2% больше трафика.».</em></p><br/>
+<hr/><br/>
+<br/>
+<h1><a href="http://www.enchantingmarketing.com/">Хенеки Дюстермат</a></h1><br/>
+<br/>
+<br/>
+Копирайтер и маркетолог.<br/>
+<br/>
+Рассказывает, как писать хорошие статьи. Корреспондент в KISSmetrics, Copyblogger и других изданиях о маркетинге.<br/>
+<br/>
+Перевод ее статьи в нашем блоге — <a href="https://blog.relap.ru/2015/11/so_what/">«И что? Как превратить функции товара в преимущества».</a><br/>
+<br/>
+<a href="https://twitter.com/HennekeD">Хенеки Дюстермат в Twitter.</a><br/>
+<hr/><br/>
+<br/>
+<h1><a href="http://austinkleon.com/">Остин Клеон</a></h1><br/>
+<br/>
+<br/>
+Автор бестселлеров «Кради как художник» и «Покажи свою работу!».<br/>
+<br/>
+Пишет о творчестве и как стать известным, занимаясь любимым делом.<br/>
+<br/>
+Из книги «Покажи свою работу»:<br/>
+<br/>
+<p><em>«Будьте первооткрывателем. Зарегистрируйтесь на новой площадке и смотри те, можете ли вы как-нибудь ее использовать. Будьте креативными. Слепой от рождения кинокритик Томми Эдисон делает снимки своей повседневной жизни и размещает их в социальной сети Instagram под ником @blindfi lmcritic. У него более 30 000 подписчиков!»</em></p><br/>
+<br/>
+<a href="https://twitter.com/austinkleon">Остин Клеон в Twitter.</a><br/>
+<hr/><br/>
+<br/>
+<h1><a href="https://www.facebook.com/kendoctor">Кен Доктор</a></h1><br/>
+<br/>
+<br/>
+Аналитик <a href="http://www.niemanlab.org/">Nieman Journalist Lab</a>..<br/>
+<br/>
+Исследует медиа и различные форматы донесения информации.<br/>
+<br/>
+Он <a href="https://blog.relap.ru/2015/11/5_new_media_men/">уверен</a>, что через 50 лет информация будет доноситься напрямую в человеческий мозг с помощью биотехнологий и кибернетических возможностей. Сейчас все устройства, с которых люди получают информацию, внешние, а усваиваются данные внутренне. В будущем разрыв устранят.<br/>
+<br/>
+Публикует <a href="http://www.niemanlab.org/author/kdoctor/">статьи о медиа в NJL</a>.<br/>
+<hr/><br/>
+<br/>
+<h1><a href="https://twitter.com/filloux">Фредерик Филлу</a></h1><br/>
+<br/>
+<br/>
+Редактор <a href="https://mondaynote.com/">Monday Note</a>.<br/>
+<br/>
+Пишет о журналистике, технологиях, дизайне и науке.<br/>
+<br/>
+В <a href="https://mondaynote.com/journalistic-and-economic-values-are-unfortunately-not-correlated-for-now-9011693a468e#.nf50lcq95">статье</a> на Monday Note рассуждает о несоответствии журналистских и экономических ценностей:<br/>
+<br/>
+<p><em>«Экономика СМИ до сих пор не имеет ничего общего с размером, глубиной, уникальностью материала, с его авторством.</em></p><br/>
+<p><em>Видео на <a href="http://themedia.center/tag/bloomberg/">Bloomberg</a>, <a href="http://www.bloomberg.com/news/articles/2016-09-29/musk-needs-more-than-an-enormous-rocket-to-build-his-city-on-mars">заимствующее</a> большую свою часть из промоматериалов SpaceX, продает рекламу по тем же расценкам, что и видео, созданное командой в студии.</em></p><br/>
+<p><em>Сеть наполнена специализированным и уникальным контентом большой журналистской ценности, однако отыскать его непросто.</em></p><br/>
+<p><em>Чтобы пересмотреть журналистские и экономические/коммерческие ценности, способ продажи рекламы надо придумать заново. С нуля».</em></p><br/>
+<hr/><br/>
+<br/>
+<h1><a href="https://www.facebook.com/andriy.brodetsky/">Андрей Бродецкий</a></h1><br/>
+<br/>
+ <br/>
+Главный редактор <a href="http://apparat.cc/">«Аппарата»</a>.<br/>
+ <br/>
+Рассказывает о новинках в медиа и технологиях быстрее тематических изданий. Следите за ним, будете на шаг впереди.Ведет <a href="https://telegram.me/brodetsky">канал в Телеграме</a><br/>
+<hr/><br/>
+<h1><a href="https://www.facebook.com/jeff.jarvis">Джефф Джарвис</a></h1><br/>
+<br/>
+<br/>
+Директор программы интерактивной журналистики в Университете Нью-Йорка.<br/>
+<br/>
+Пишет о настоящем и будущем журналистики.<br/>
+<br/>
+Ведет блог <a href="http://buzzmachine.com/">Buzzmachine</a>.<br/>
+<br/>
+<p><em>«Медиа — это сервис. СМИ должны перестать воспринимать аудиторию как массу. Такое понимание осталось от прошлых средств передачи информации: журналист производит сообщение и имеет возможность его распространить.</em></p><br/>
+<p><em>Медиа сами создали идею массы, и она их убивает. СМИ должны по-другому взглянуть на свой бизнес. Это не производство контента. Их бизнес — сервис. Сервис — это то, что улучшает жизнь: делает ее удобной и комфортной. Для этого нужно воспринимать аудиторию как конкретных людей и сообщества.</em></p><br/>
+<hr/><br/>
+<br/>
+<h1><a href="https://www.facebook.com/alexander.d8pusher.sarychev">Александр Сарычев</a></h1><br/>
+<br/>
+<br/>
+Интернет-маркетолог.<br/>
+<br/>
+Пишет о маркетинге, дизайне, книгах, эффективности и мотивации.<br/>
+<br/>
+Практик, поэтому рассуждает о маркетинге с позиции результата и без розовых единорогов.<br/>
+<br/>
+О контент-маркетинге — <a href="http://d8pusher.com/lifeflow/inbound/">«Если не контент-маркетинг, то что»</a>:<br/>
+<br/>
+<p><em>»В основной массе те статьи, что мне попадаются в интернете про КМ не имеют отношения к задачам бизнеса, которые хотят решать клиенты. У проблемы две стороны.</em></p><br/>
+<p><em>Исполнитель не может дать гарантии продаж и роста прибыли, так как не может контролировать весь процесс привлечения клиентов. Даже если ты настроишь крутой контекст по горячим запросам в неконкурентной нише, менеджер по продажам может запороть сделку, или форма заказа на сайте сломается, письма попадут в спам, а телефонную трубку не будут брать. С контент-маркетингом так же, и даже сложнее".</em></p><br/>
+Делает полезные подборки статей за месяц. Вот <a href="http://d8pusher.com/lifeflow/digest-092016/">за август</a>.<br/>
+<br/>
+Ведет <a href="http://d8pusher.com/">блог</a>.<br/>
+<hr/><br/>
+<br/>
+<h1><a href="https://www.facebook.com/profile.php?id=100001279269374">Андрей Мирошниченко</a></h1><br/>
+<br/>
+<br/>
+Медиафутурист.<br/>
+<br/>
+Эксперт в медиа, активен в Facebook, время от времени пишет для roem.ru и «Текстерры». Рассуждает о рынке медиа и будущем СМИ.<br/>
+<br/>
+Статья <a href="https://roem.ru/05-04-2016/221936/kiss-of-death/">«Взасос с брендом — поцелуй смерти для СМИ»</a>, в которой рассуждает о проникновении коммерческих брендов в медиа:<br/>
+<br/>
+<p><em>«Как <a href="http://www.aka-media.ru/corporate_media/725/">сказал</a> один аналитик, «Red Bull — это, в сущности, медиа-компания, которая выпускает еще и напитки». С таким охватом Red Bull Media House достигает аудитории, которая по размеру может быть даже сопоставима с аудиторией Reuters, только с куда более четким целевым попаданием.</em></p><br/>
+<p><em>Что же нужно Ред Булу от Reuters? Нужно прокачать свой контент по «независимому» медийному каналу. Новости Ред Була, публикабельные сами по себе, станут и вовсе общественно-значимыми, а не корпоративными новостями, если придут в СМИ (и к публике) по каналам Reuters, а не напрямую от Ред Була. Ред Булу нужно поженить свой брендированный контент на «независимом» статусе новостного агентства».</em></p><br/>
+Статья о том, <a href="http://texterra.ru/blog/zachem-kuratory-feysbuka-vpryskivayut-nuzhnye-temy.html">зачем кураторы Fb впрыскивают нужные темы</a>.<br/>
+<hr/><br/>
+<br/>
+<h1><a href="https://www.facebook.com/skaplichniy">Сергей Капличный</a></h1><br/>
+<br/>
+<br/>
+Копирайтер в «Манн, Иванов и Фербер».<br/>
+<br/>
+Пишет рецензии на книги, много рассказывает о саморазвитии и удаленной работе. Всегда на позитиве и открыт идеям.<br/>
+<br/>
+Ведет <a href="http://blog.skaplichniy.ru/">блог</a> и <a href="http://skaplichniy.us12.list-manage.com/subscribe?u=a084901dcd0b98617001b194a&amp;id=7da0dbd99f">рассылку</a>.<br/>
+<br/>
+Пост о том, <a href="http://blog.skaplichniy.ru/all/enjoy-the-silence/">как избавиться от информационного шума</a>:<br/>
+<br/>
+<p><em>«Быть первым в курсе новостей не делает никого сверхсильными. Интересные фактики — мусор, если их никак нельзя применить в своей реальности. В общем, я сократил количество подписок до сотни, которые держат меня в курсе новостей в интересных мне отраслях и вдохновляют на классные штуки. А ещё я подписался на несколько <a href="http://blog.skaplichniy.ru/all/best-mail/">классных имейл-рассылок</a>, которые порционно выдают мне самый интересный контент».</em></p><br/>
+<hr/><br/>
+<br/>
+<h1><a href="https://www.facebook.com/maxim.ilyahov">Максим Ильяхов</a></h1><br/>
+<br/>
+<br/>
+Ответственный редактор бюро Артема Горбунова, соавтор книги «Пиши, сокращай».<br/>
+<br/>
+Ведет <a href="http://maximilyahov.ru/">блог о сильном тексте</a>, преподает в Школе редакторов, автор сервиса проверки текста <a href="https://glvrd.ru/">«Главред»</a> и одноименной рассылки. Учит информационному стилю.<br/>
+<br/>
+Полезно всем, кто пишет по работе.<br/>
+<br/>
+<a href="http://maximilyahov.ru/blog/all/webinar-structure/">Скелет статьи и промостраницы. Вебинар для Школы редакторов.</a><br/>
+<br/>
+<a href="http://maximilyahov.ru/blog/all/examples/">Как приводить примеры:</a><br/>
+<br/>
+<p><em>«Представьте, что вы печатаете свою абстрактную идею на 3Д-принтере: загружаете модель, подаете материал, получаете физический предмет. Это то, как работают примеры: они делают ваш текст реальным и осязаемым. Теория — это то, чему вы хотите научить. Примеры — это то, благодаря чему люди научатся».</em></p><br/>
+<hr/><br/>
+<br/>
+<h1><a href="https://twitter.com/kompotique">Людмила Сарычева</a></h1><br/>
+<br/>
+<br/>
+Редактор, соавтор книги «Пиши, сокращай».<br/>
+<br/>
+Соавтор рассылки «Главреда». Ведет <a href="http://kompotique.ru/">блог о редактуре и работе редактора</a>.<br/>
+<br/>
+Заметка <a href="http://kompotique.ru/eng-rus/">«Здесь говорят по-русски»</a>.<br/>
+<br/>
+Статья о том, <a href="http://kompotique.ru/spend-less/">как экономить время на рабочей переписке</a>.<br/>
+<br/>
+По тегу #скрщ показывает, как упростить фразы и сделать их более понятными:<br/>
+<br/>
+<blockquote><p><a href="https://twitter.com/hashtag/%D1%81%D0%BA%D1%80%D1%89?src=hash">#скрщ</a> Способствует быстрой регенерации кожных покровов → Заживляет ранки</p>— Люда Сарычева (@kompotique) <a href="https://twitter.com/kompotique/status/771679335996612609">September 2, 2016</a></blockquote><br/>
+<br/>
+<hr/><br/>
+<br/>
+<h1><a href="https://www.facebook.com/aBBsol">Павел Федоров</a></h1><br/>
+<br/>
+<br/>
+Главный редактор блога <a href="http://netology.ru/">«Нетологии»</a>.<br/>
+<br/>
+Рассказывает о редакторской работе, грамотном письме и приемах художественной литературы.<br/>
+<br/>
+Полезно всем, кто хочет начать писать грамотнее и интересуется, как создаются сюжеты. Ведет <a href="http://pavelf.ru/">личный блог</a>. И <a href="https://telegram.me/abbsol">канал в Телеграме</a>.<br/>
+<br/>
+Заметка <a href="http://pavelf.ru/numbers/">«Чем отличаются цифры и числа»:</a><br/>
+<br/>
+<p><em>«Числа — количественный показатель. Чтобы записывать числа, используют цифры. Так же, как и для записи слов используют буквы.</em></p><br/>
+<p><em>Поэтому, если речь идёт о данных из отчётов, графиков или статистики, вы видите числа. Не цифры.».</em></p><br/>
+<hr/><br/>
+<br/>
+<h1><a href="https://www.facebook.com/kalashnikov.mikhail">Михаил Калашников</a></h1><br/>
+<br/>
+<br/>
+Руководитель новых проектов Sports.ru.<br/>
+<br/>
+Пишет о медиа, управлении проектами и цифровом мире в целом.<br/>
+<br/>
+Ведет блог <a href="http://mediaskunk.ru/">Media Skunk</a>.<br/>
+<br/>
+Статья <a href="http://mediaskunk.ru/2016/10/fragmentation-hell/">«Фрагментация аудитории как проблема медиа»</a>:<br/>
+<br/>
+<p><em>«Стать достаточно большими, чтобы иметь возможность занима��ься каждым каналом, сложно. На Sports.ru мы к этому только-только подошли; для проектов меньшего масштаба это почти не возможно. Времени, которое у меня есть на блог, еле-еле хватает на то, чтобы написать, элементарно оформить и кое-как раздать пост (всего один в день, напомню). Поддерживать все каналы сразу и полноценно — занятие не для одного и даже не для нескольких человек».</em></p><br/>
+Делает еженедельные подборки интересных статей о медиа и технологиях. Вот <a href="http://mediaskunk.ru/2016/10/newsletter-74/">подборка от 11 октября.</a><br/>
+<hr/><br/>
+<br/>
+<h1><a href="https://www.facebook.com/tintorero">Илья Красильщик</a></h1><br/>
+<br/>
+<br/>
+Издатель «Медузы».<br/>
+<br/>
+Пишет об издательском деле и нативной рекламе.<br/>
+<br/>
+Ведет канал <a href="https://telegram.me/thisisnative">«Логотип побольше»</a> в Телеграме.<br/>
+<br/>
+<p><em>«У The New York Times материал про то, как Штаты стали меньше портить экологию, несмотря на рост экономики (сделанный вместе с нефтяной компанией Chevron, хехе). Ну вот честно, я не могу понять, зачем все так сложно делать — фактически, это очень короткий и простой материал: Как экология улучшается несмотря ни на что: объясняем на 5 графиках. Но на это накручена куча кастомного дизайна, анимации, картинок — все это дорого, нужно согласовывать каждый пиксель с рекламодателем и агентством. Где тут выхлоп, я не понимаю — кроме того, что читатель попадет в незнакомую среду, и ему нужно больше времени, чтобы понять, как этим пользоваться. Больше на пару секунд, наверное, но они тоже могут быть критическими. Зачем так делать? Я не знаю и не вижу смысла».</em></p><br/>
+Полезно тем, кто интересуется спонсорским контентом и спецпроектами.<br/>
+<hr/><br/>
+<br/>
+<h1><a href="https://www.facebook.com/alamzin">Александр Амзин</a></h1><br/>
+<br/>
+<br/>
+Журналист и медиаконсультант.<br/>
+<br/>
+Много пишет о медиа и современной журналистике. Автор книги <a href="http://alex-alex.ru/nij.php">«Новостная интернет-журналистика»</a>.<br/>
+<br/>
+Пишет о медиа в <a href="http://themedia.center/">«Мы и Жо»</a>:<br/>
+<br/>
+<p><em>«Wired <a href="https://www.wired.com/2016/09/bestseller-code/">рассказывает</a> о статистическом исследовании успеха романов-бестселлеров. Результатом стал труд Bestseller Code, благодаря которому можно с 80-процентной вероятностью предсказать успех романа.</em></p><br/>
+<p><em>Исследование опирается на базу из 5000 романов, написанных в течение последних тридцати лет. Всего выделено 2799 черт удачного романа;</em></p><br/>
+<p><em>Читателям нравятся молодые сильные героини-неудачницы. Секс в книге не обязателен, важнее человеческие отношения. Лучше продаются книги, где часто употребляется глагол «нуждаться» (need), много сокращений, не очень много восклицательных знаков. Собак читатели любят больше, чем кошек.</em></p><br/>
+<p><em>Подобные исследования — часть книгоиздательского тренда на замену ощущений данными. Несколько стартапов уже создали рекомендательные системы, подбирающие для читателей романы и даже нон-фикшн».</em></p><br/>
+Полезно, чтобы быть в курсе происходящего в цифровых медиа.</div></div></div><!----><!----></div><!----><!----></div><!--]--><!----><div class="tm-article-presenter__meta" data-test-id="article-meta-links"><div class="tm-separated-list tag-list tm-article-presenter__meta-list"><span class="tm-separated-list__title">Теги:</span><ul class="tm-separated-list__list"><!--[--><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0]" class="link"><span>медиа</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[%D0%B1%D0%BB%D0%BE%D0%B3%D0%B3%D0%B5%D1%80%D1%8B]" class="link"><span>блоггеры</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[%D0%B1%D0%BB%D0%BE%D0%B3%D0%B3%D0%B5%D1%80%D1%8B+%D1%80%D1%83%D0%BD%D0%B5%D1%82%D0%B0]" class="link"><span>блоггеры рунета</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82]" class="link"><span>контент</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D1%82-%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%B8%D0%BD%D0%B3]" class="link"><span>контент-маркетинг</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[%D0%BD%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F+%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0]" class="link"><span>нативная реклама</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C+%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8]" class="link"><span>писать статьи</span></a><!--]--></li><!--]--><!----></ul></div><div class="tm-separated-list tm-article-presenter__meta-list"><span class="tm-separated-list__title">Хабы:</span><ul class="tm-separated-list__list"><!--[--><li class="tm-separated-list__item"><!--[--><a href="/ru/companies/surfingbird/articles/" class="link"><!--[--><span>Блог компании Surfingbird</span><!--]--></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/hubs/contentmarketing/" class="link"><!--[--><span>Контент и копирайтинг</span><!--]--></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/hubs/display_adv/" class="link"><!--[--><span>Медийная реклама</span><!--]--></a><!--]--></li><!--]--><!----></ul></div></div><!----><!--]--></article><!--]--></div><!----></div><div style="" class="tm-article-sticky-panel" data-test-id="article-sticky-panel"><div class="tm-data-icons tm-data-icons tm-data-icons_space-big tm-article-sticky-panel__icons" data-test-id="article-stats-icons"><div class="article-rating tm-data-icons__item" data-v-b9b05a90><div class="tm-votes-meter votes-switcher" data-v-b9b05a90><svg class="tm-svg-img tm-votes-meter__icon tm-votes-meter__icon tm-votes-meter__icon_appearance-article" height="24" width="24"><title>Всего голосов 13: ↑8 и ↓5</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-rating"></use></svg><span class="tm-votes-meter__value tm-votes-meter__value_positive tm-votes-meter__value_appearance-article tm-votes-meter__value_rating tm-votes-meter__value" data-test-id="votes-meter-value" title="Всего голосов 13: ↑8 и ↓5">+1</span></div><!--teleport start--><!--teleport end--><!----></div><!----><!----><button class="bookmarks-button tm-data-icons__item" title="Добавить в закладки" type="button" data-v-861e2740><span class="tm-svg-icon__wrapper icon" data-v-861e2740><svg class="tm-svg-img tm-svg-icon" height="24" width="24"><title>Добавить в закладки</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-favorite"></use></svg></span><span class="counter" title="Количество пользователей, добавивших публикацию в закладки" data-v-861e2740>27</span></button><div class="sharing tm-data-icons__item" title="Поделиться" data-v-daf6ee1d><button class="sharing-button" type="button" data-v-daf6ee1d><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon" data-v-daf6ee1d><path fill="currentColor" d="M13.8 13.8V18l7.2-6.6L13.8 5v3.9C5 8.9 3 18.6 3 18.6c2.5-4.4 6-4.8 10.8-4.8z"></path></svg></button><!--teleport start--><!--teleport end--></div><div class="article-comments-counter-link-wrapper tm-data-icons__item" title="Читать комментарии" data-v-8d952463><a href="/ru/companies/surfingbird/articles/313018/comments/" class="article-comments-counter-link" data-test-id="counter-comments" data-v-8d952463><!--[--><svg class="tm-svg-img icon" height="24" width="24" data-v-8d952463><title>Комментарии</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-comments"></use></svg><span class="value" data-v-8d952463>2</span><!--]--></a><!----></div><!--[--><!--[--><!--[--><!----><!--]--><!--]--><!--]--><!--teleport start--><!--teleport end--><!----></div></div></div><!--[--><!--]--><div class="tm-article-presenter__footer"><!--[--><!--[--><div class="tm-article-blocks"><!----><!--[--><section class="tm-block tm-block tm-block_spacing-bottom"><!----><!--[--><div class="tm-block__body tm-block__body tm-block__body_variant-balanced"><!--[--><div class="article-author" data-test-id="article-author-info" data-async-called="true" data-v-af0d0f90><!--[--><!--[--><div class="tm-article-author__company" data-v-af0d0f90-s><div class="tm-article-author__company-card"><div class="tm-company-snippet"><div class="tm-company-snippet__image-wrapper"><a href="/ru/companies/surfingbird/profile/" class="tm-company-snippet__logo-link"><div class="tm-entity-image"></div></a><!----></div><div class="tm-company-snippet__info-wrapper"><div class="tm-company-snippet__info"><a href="/ru/companies/surfingbird/profile/" class="tm-company-snippet__title" data-test-id="company-title"><span>Surfingbird</span></a><div class="tm-company-snippet__description">Компания</div><!--[--><!--]--></div><!--[--><!--]--></div></div><div class="tm-article-author__buttons"><!----><!----></div></div><!----><div class="tm-article-author__separator"></div></div><!--]--><!--]--><div class="tm-user-card tm-user-card tm-user-card_variant-article user-card" data-async-called="true" data-v-af0d0f90><div class="tm-user-card__info-container"><div class="tm-user-card__header"><div class="tm-user-card__header-data"><a href="/ru/users/kozyrevskaya/" class="tm-user-card__userpic tm-user-card__userpic_size-40"><!--[--><div class="tm-entity-image"></div><!--]--></a><div class="tm-user-card__meta"><div class="tm-counter-container karma" title=" 9 голосов " data-v-544d285f><div class="tm-counter-container__header"><!--[--><div class="karma-display negative" data-v-544d285f data-v-3881f4ba>-1</div><!----><!--]--></div><div class="tm-counter-container__footer"><!--[--><div class="karma-text" data-v-544d285f>Карма</div><!--teleport start--><!--teleport end--><!--]--></div></div><div class="tm-counter-container"><div class="tm-counter-container__header"><!--[--><!--[--><!--]--><div class="tm-votes-lever tm-votes-lever tm-votes-lever_appearance-rating"><!----><div class="tm-votes-lever__score tm-votes-lever__score_appearance-rating tm-votes-lever__score" data-test-id="lever-score"><!--[--><span><span class="tm-votes-lever__score-counter tm-votes-lever__score-counter_rating tm-votes-lever__score-counter" data-test-id="votes-score-counter">0</span></span><!--]--></div><!----></div><!--]--></div><div class="tm-counter-container__footer"><!--[--><span class="tm-rating__text tm-rating__text">Общий рейтинг</span><!--]--></div></div></div></div></div><div class="tm-user-card__info tm-user-card__info_variant-article tm-user-card__info"><div class="tm-user-card__title tm-user-card__title_variant-article tm-user-card__title"><span class="tm-user-card__name tm-user-card__name_variant-article tm-user-card__name">Анна Козыревская</span><a href="/ru/users/kozyrevskaya/" class="tm-user-card__nickname tm-user-card__nickname tm-user-card__nickname_variant-article"><!--[-->@kozyrevskaya<!--]--></a><!----></div><p class="tm-user-card__short-info tm-user-card__short-info_variant-article tm-user-card__short-info" data-test-id="user-card-speciality">Пользователь</p></div></div><!----><div class="tm-user-card__buttons tm-user-card__buttons_variant-article tm-user-card__buttons"><!----><div class="tm-user-card__button"><div class="tm-button-follow tm-user-card__button-follow"><!----><button class="tm-button-follow__button tm-button-follow__button_big" data-test-id="follow-button" type="button">Подписаться</button></div></div><!----><!--[--><div class="tm-user-card__button tm-user-card__button_write" data-test-id="user-card-conversations"><svg class="tm-svg-img tm-user-card__button-icon" height="16" width="16"><title>Отправить сообщение</title><use xlink:href="/img/megazord-v28.cba4c116..svg#mail"></use></svg></div><!--]--><!----><!----></div><!----></div><div class="author-contacts" data-test-id="author-contacts" data-v-af0d0f90><!----><!----><!----></div></div><!--]--></div><!--]--><!----></section><!----><!--[--><!--[--><div class="sponsor-block" style="--d75346b8:0;--11dbf66e:100%;" data-v-580b3119><div class="title" data-v-580b3119>Хабр доступен 24/7 благодаря поддержке друзей</div><div class="content-container" data-v-580b3119><div class="content" data-v-580b3119><div class="content-title-container" data-v-580b3119><div class="content-title" data-v-580b3119>Хабр Курсы для всех</div><div class="sponsor-mark" data-v-580b3119>РЕКЛАМА</div></div><div class="content-text" data-v-580b3119> Практикум, Хекслет, SkyPro, авторские курсы — собрали всех и попросили скидки. Осталось выбрать! </div><a class="content-action" href="https://career.habr.com/courses/?erid=2VSb5wDLYUH&amp;utm_source=habr&amp;utm_medium=sponsorship_hub" target="_blank" data-v-580b3119><button class="btn btn_solid btn_small tm-button_color-horizon" tabindex="0" type="button" data-v-580b3119><!--[--><!--[-->Перейти<!--]--><!--]--></button></a></div></div><div class="footer" data-v-580b3119><!----></div><!----></div><!--]--><!----><!--]--><!--]--><div class="tm-article-blocks__comments"><div id="publication-comments" class="tm-article-page-comments"><div><!--[--><div class="article-comments-counter-link-wrapper tm-article-comments-counter-button" data-v-8d952463><a href="/ru/companies/surfingbird/articles/313018/comments/" class="article-comments-counter-link button-style" data-test-id="counter-comments" data-v-8d952463><!--[--><svg class="tm-svg-img icon icon--contrasted" height="24" width="24" data-v-8d952463><title>Комментарии</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-comments"></use></svg><span class="value value--contrasted" data-v-8d952463> Комментарии 2 </span><!--]--></a><!----></div><!--]--></div></div></div><!--[--><!--[--><!--]--><section class="tm-block tm-block tm-block_spacing-bottom"><header class="tm-block__header tm-block__header tm-block__header_variant-borderless"><div class="tm-block__header-container"><h2 class="tm-block__title tm-block__title tm-block__title_variant-large">Публикации</h2><!--[--><!--]--></div><!----></header><!--[--><div class="tm-block__body tm-block__body tm-block__body_variant-condensed-slim"><!--[--><!--[--><div class="tabs" data-test-id="container" data-v-681e7545><div class="" data-test-id="scroll-area" data-v-681e7545><!--[--><span class="tab-item" data-v-681e7545><button class="active slim tab-link" data-v-681e7545>Лучшие за сутки</button></span><span class="tab-item" data-v-681e7545><button class="slim tab-link" data-v-681e7545>Похожие</button></span><!--]--></div><!----></div><div class="similar-and-daily__tab-view"><div class="placeholder-wrapper"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="tm-placeholder-article-cards"><!--[--><div class="tm-placeholder-article-card"><div class="tm-placeholder__user"><div class="tm-placeholder__user-pic loads"></div><div class="tm-placeholder__user-date loads"></div></div><div class="tm-placeholder-article-card__title"><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div></div><div class="tm-placeholder-article-card__icons tm-placeholder__counters"><!--[--><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><!--]--></div></div><div class="tm-placeholder-article-card"><div class="tm-placeholder__user"><div class="tm-placeholder__user-pic loads"></div><div class="tm-placeholder__user-date loads"></div></div><div class="tm-placeholder-article-card__title"><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div></div><div class="tm-placeholder-article-card__icons tm-placeholder__counters"><!--[--><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><!--]--></div></div><div class="tm-placeholder-article-card"><div class="tm-placeholder__user"><div class="tm-placeholder__user-pic loads"></div><div class="tm-placeholder__user-date loads"></div></div><div class="tm-placeholder-article-card__title"><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div></div><div class="tm-placeholder-article-card__icons tm-placeholder__counters"><!--[--><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><!--]--></div></div><div class="tm-placeholder-article-card"><div class="tm-placeholder__user"><div class="tm-placeholder__user-pic loads"></div><div class="tm-placeholder__user-date loads"></div></div><div class="tm-placeholder-article-card__title"><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div></div><div class="tm-placeholder-article-card__icons tm-placeholder__counters"><!--[--><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><!--]--></div></div><div class="tm-placeholder-article-card"><div class="tm-placeholder__user"><div class="tm-placeholder__user-pic loads"></div><div class="tm-placeholder__user-date loads"></div></div><div class="tm-placeholder-article-card__title"><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div></div><div class="tm-placeholder-article-card__icons tm-placeholder__counters"><!--[--><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><!--]--></div></div><!--]--></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div><!----></div><!--]--><!--]--></div><!--]--><!----></section><!--[--><!--[--><div><div class="placeholder-wrapper"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="tm-placeholder-promo"><div class="tm-placeholder-promo__header"><div class="tm-placeholder__line tm-placeholder__line_promo-title"></div></div><div class="tm-placeholder-promo__body"><div class="tm-placeholder-promo__posts"><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div></div><div class="tm-placeholder-promo__dots"><div class="tm-placeholder-promo__dot"></div><div class="tm-placeholder-promo__dot"></div><div class="tm-placeholder-promo__dot"></div></div></div></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div></div><!----><!--]--><!--]--><!----><!--[--><!--]--><!--]--></div><!----><!--]--><!--]--></div></div><!--]--></div><!--]--></div></div><div class="tm-page__sidebar"><!--[--><div class="tm-layout-sidebar"><!--[--><!--]--><div id="sidebar-window-placement"></div><div class="tm-layout-sidebar__placeholder_initial"></div><div class="tm-sexy-sidebar_initial tm-sexy-sidebar" style="margin-top:0px;"><!--[--><!--]--><!----><div class="tm-layout-sidebar__ads_initial tm-layout-sidebar__ads"><div class="element-wrapper half-page tm-layout-sidebar__banner tm-layout-sidebar__banner_top" style="--754c4550:600px;--56cb6579:auto;"><!--[--><div class="placeholder-wrapper banner-container__placeholder"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="adfox-banner-placeholder half-page" data-v-24012b5e><div class="image loads" data-v-24012b5e></div><div class="lines" data-v-24012b5e><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div></div></div><!----><!----><!----></div><!--[--><div id="adfox_164725680533065327_sidebarBanner" class="banner-target"></div><!--]--><!--]--></div></div><!--[--><section class="tm-block tm-block tm-block_spacing-bottom"><header class="tm-block__header tm-block__header"><div class="tm-block__header-container"><h2 class="tm-block__title tm-block__title">Информация</h2><!--[--><!--]--></div><!----></header><!--[--><div class="tm-block__body tm-block__body"><!--[--><div class="tm-company-basic-info"><dl class="tm-description-list tm-description-list tm-description-list_variant-columns-nowrap"><dt class="tm-description-list__title tm-description-list__title_variant-columns-nowrap tm-description-list__title">Сайт</dt><dd class="tm-description-list__body tm-description-list__body_variant-columns-nowrap tm-description-list__body"><!--[--><a class="tm-company-basic-info__link" href="http://surfingbird.ru/" target="_blank">surfingbird.ru</a><!--]--></dd></dl><dl class="tm-description-list tm-description-list tm-description-list_variant-columns-nowrap"><dt class="tm-description-list__title tm-description-list__title_variant-columns-nowrap tm-description-list__title">Дата регистрации</dt><dd class="tm-description-list__body tm-description-list__body_variant-columns-nowrap tm-description-list__body"><!--[--><time data-allow-mismatch datetime="2012-02-04T08:34:25.000Z" title="2012-02-04, 08:34">4  февраля  2012</time><!--]--></dd></dl><!----><dl class="tm-description-list tm-description-list tm-description-list_variant-columns-nowrap"><dt class="tm-description-list__title tm-description-list__title_variant-columns-nowrap tm-description-list__title">Численность</dt><dd class="tm-description-list__body tm-description-list__body_variant-columns-nowrap tm-description-list__body"><!--[-->11–30 человек<!--]--></dd></dl><dl class="tm-description-list tm-description-list tm-description-list_variant-columns-nowrap"><dt class="tm-description-list__title tm-description-list__title_variant-columns-nowrap tm-description-list__title">Местоположение</dt><dd class="tm-description-list__body tm-description-list__body_variant-columns-nowrap tm-description-list__body"><!--[-->Россия<!--]--></dd></dl><!----></div><!--]--></div><!--]--><!----></section><!----><!----><div></div><!--]--><!--[--><div class="element-wrapper medium-rectangle tm-layout-sidebar__banner tm-layout-sidebar__banner_bottom" style="--754c4550:250px;--56cb6579:auto;"><!--[--><div class="placeholder-wrapper banner-container__placeholder"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="adfox-banner-placeholder medium-rectangle" data-v-24012b5e><div class="image loads" data-v-24012b5e></div><div class="lines" data-v-24012b5e><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div></div></div><!----><!----><!----></div><!--[--><div id="adfox_164725691003361602_sidebarBannerBottom" class="banner-target"></div><!--]--><!--]--></div><!--]--></div></div><!--]--></div></div><!--]--></div><!----></div></main><!----></div><div class="tm-footer-menu"><div class="tm-page-width"><!--[--><div class="tm-footer-menu__container"><!--[--><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Ваш аккаунт</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr/?back=/ru/companies/surfingbird/articles/313018/&amp;hl=ru" rel="nofollow" target="_self">Войти</a></li><li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr-register/?back=/ru/companies/surfingbird/articles/313018/&amp;hl=ru" rel="nofollow" target="_self">Регистрация</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Разделы</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/ru/articles/" class="footer-menu__item-link">Статьи</a></li><li class="tm-footer-menu__list-item"><a href="/ru/news/" class="footer-menu__item-link">Новости</a></li><li class="tm-footer-menu__list-item"><a href="/ru/hubs/" class="footer-menu__item-link">Хабы</a></li><li class="tm-footer-menu__list-item"><a href="/ru/companies/" class="footer-menu__item-link">Компании</a></li><li class="tm-footer-menu__list-item"><a href="/ru/users/" class="footer-menu__item-link">Авторы</a></li><li class="tm-footer-menu__list-item"><a href="/ru/sandbox/" class="footer-menu__item-link">Песочница</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Информация</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/ru/docs/help/" class="footer-menu__item-link">Устройство сайта</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/authors/codex/" class="footer-menu__item-link">Для авторов</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/companies/corpblogs/" class="footer-menu__item-link">Для компаний</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/docs/transparency/" class="footer-menu__item-link">Документы</a></li><li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/agreement/?hl=ru_RU" target="_blank">Соглашение</a></li><li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/confidential/?hl=ru_RU" target="_blank">Конфиденциальность</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Услуги</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/corporate-blogs/" target="_blank">Корпоративный блог</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/advertising/" target="_blank">Медийная реклама</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/native-special/" target="_blank">Нативные проекты</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/education-programs/" target="_blank">Образовательные программы</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/hello-startup/" target="_blank">Стартапам</a></li><!--]--></ul></div></div><!--]--></div><!--]--></div></div><div class="tm-footer"><div class="tm-page-width"><!--[--><div class="tm-footer__container"><!----><div class="social-icons tm-footer__social" data-v-d6e8cb42><!--[--><a class="tm-svg-icon__wrapper social-icon" href="https://vk.com/habr" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>VK</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-vk"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="https://telegram.me/habr_com" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Telegram</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-telegram"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="http://www.youtube.com/@Habr_com" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Youtube</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-youtube"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="https://dzen.ru/habr" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Яндекс Дзен</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-dzen"></use></svg></a><!--]--></div><!--teleport start--><!--teleport end--><button class="tm-footer__link"><!----> Настройка языка</button><a href="/ru/feedback/" class="tm-footer__link">Техническая поддержка</a><div class="tm-footer-copyright"><span class="tm-copyright"><span class="tm-copyright__years">© 2006–2026,</span><span class="tm-copyright__name"><a class="tm-copyright__link" href="https://company.habr.com/" rel="noopener" target="_blank"> Habr </a></span></span></div></div><!--]--></div></div><!----><!----><!--]--></div><!----></div></div>
+    <div id="overlays"><!--teleport start anchor--><template><!----></template><!--teleport anchor--><!--teleport start anchor--><template><!----></template><!--teleport anchor--><!--teleport start anchor--><template><!----></template><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--></div>
+    
+    
+    
+    
+  
+  
+    
+  
+    </body>
+
+    </html>

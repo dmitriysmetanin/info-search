@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <title>Термосопротивления: Теория &#x2F; Хабр</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+  </head>
+  <body>
+    
+    <div id="mount"><div id="app"><div class="tm-layout__wrapper"><!--[--><!----><div></div><div class="header-banner-wrapper"><div class="element-wrapper above-header" style="--754c4550:100%;--56cb6579:auto;"><!--[--><div class="placeholder-wrapper banner-container__placeholder"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="adfox-banner-placeholder above-header" data-v-24012b5e><div class="image loads" data-v-24012b5e></div><div class="lines" data-v-24012b5e><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div></div></div><!----><!----><!----></div><!--[--><div id="adfox_175449164307199013_aboveHeader" class="banner-target"></div><!--]--><!--]--></div></div><header class="tm-header tm-header" data-test-id="header"><!----><!----><div class="tm-page-width"><!--[--><div class="tm-header__container"><button aria-expanded="false" aria-label="Toggle menu" class="burger-button tm-header__button tm-header__burger" data-v-56ed7aae><span class="line top" data-v-56ed7aae></span><span class="line middle" data-v-56ed7aae></span><span class="line bottom" data-v-56ed7aae></span></button><span class="tm-header__logo-wrap"><a class="tm-header__logo tm-header__logo_hl-ru tm-header__logo" href="/ru/feed"><svg class="tm-svg-img tm-header__icon" height="16" width="16"><title>Хабр</title><use xlink:href="/img/habr-logo-ru.svg#logo"></use></svg></a></span><span class="tm-header__divider"></span><!--[--><a class="tm-header__all-flows" href="/ru/articles/">Все потоки</a><!--]--><!----><div class="tm-header-user-menu tm-base-layout__user-menu"><a href="/ru/search/" class="tm-header-user-menu__item tm-header-user-menu__search" data-test-id="search-button"><svg class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_search" height="24" width="24"><title>Поиск</title><use xlink:href="/img/megazord-v28.cba4c116..svg#search"></use></svg></a><!----><!----><div class="tm-header-user-menu__item tm-header-user-menu__write"><a href="/ru/sandbox/start/" class=""><svg class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_write" height="24" width="24"><title>Написать публикацию</title><use xlink:href="/img/megazord-v28.cba4c116..svg#write"></use></svg></a><!----></div><!--[--><div class="tm-header-user-menu__item"><button class="tm-header-user-menu__toggle" data-test-id="user-menu-settings"><svg class="tm-svg-img tm-header-user-menu__icon" height="24" width="24"><title>Настройки</title><use xlink:href="/img/megazord-v28.cba4c116..svg#page-settings"></use></svg></button></div><a href="https://habr.com/kek/v1/auth/habrahabr/?back=/ru/companies/efo/articles/312898/&amp;hl=ru" rel="nofollow" class="tm-header-user-menu__item tm-header-user-menu__login" role="button"><!--[-->Войти<!--]--></a><!--]--><template><!----></template><!--teleport start--><!--teleport end--></div></div><!--]--></div></header><div class="tm-layout"><div class="tm-page-progress-bar"></div><!----><div class="tm-page-width"><!--[--><!----><!----><!----><!--]--></div><main class="tm-layout__container"><div class="tm-page" hl="ru" companyname="efo" data-async-called="true" style="--a414e232:300px;--10c4682a:0;--19620736:0;"><!----><div class="tm-page-width"><!--[--><div class="tm-page__header"><!--[--><!--]--></div><div class="tm-page__wrapper"><!----><div class="tm-page__main_has-sidebar tm-page__main"><div class="pull-down"><!----><div class="pull-down__header" style="height:0px;"><div class="pull-down__content" style="bottom:10px;"><svg class="tm-svg-img pull-down__icon pull-down__arrow" height="24" width="24"><title>Обновить</title><use xlink:href="/img/megazord-v28.cba4c116..svg#pull-arrow"></use></svg></div></div><!--[--><div><!--[--><div class="tm-article-presenter" data-async-called="true"><!--[--><!--[--><!----><div class="tm-company-profile-card tm-company-article__profile-card"><div class="tm-company-card tm-company-profile-card__info"><div class="tm-company-card__header"><a href="/ru/companies/efo/profile/" class="tm-company-card__avatar"><div class="tm-entity-image"></div></a><!--[--><!----><div class="tm-counter-container tm-company-card__rating"><div class="tm-counter-container__header"><!--[--><!--[--><!--]--><div class="tm-votes-lever tm-votes-lever tm-votes-lever_appearance-rating"><!----><div class="tm-votes-lever__score tm-votes-lever__score_appearance-rating tm-votes-lever__score" data-test-id="lever-score"><!--[--><span><span class="tm-votes-lever__score-counter tm-votes-lever__score-counter_rating tm-votes-lever__score-counter" data-test-id="votes-score-counter">0</span></span><!--]--></div><!----></div><!--]--></div><div class="tm-counter-container__footer"><!--[--><span class="tm-rating__text tm-rating__text">Общий рейтинг</span><!--]--></div></div><!----><!--]--></div><div class="tm-company-card__info"><a href="/ru/companies/efo/profile/" class="tm-company-card__name"><span>ЭФО</span></a><div class="tm-company-card__description">Поставки электронных компонентов</div></div></div><div class="tm-company-profile-card__buttons"><div class="tm-button-follow tm-company-profile-card__button tm-company-profile-card__button_follow"><!----><button class="tm-button-follow__button tm-button-follow__button_big" data-test-id="follow-button" type="button">Подписаться</button></div><!----><!----><!----></div></div><!----><!--]--><!--]--><div class="tm-article-presenter__body" data-test-id="article-body"><div class="tm-misprint-area"><div class="tm-misprint-area__wrapper"><!--[--><article class="tm-article-presenter__content tm-article-presenter__content_narrow"><!--[--><div class="tm-article-presenter__header"><!--[--><!--]--><div class="article-snippet tm-article-presenter__snippet" data-v-085cd854><!--[--><!--]--><div class="meta-container" data-v-085cd854><div class="meta" data-v-085cd854><span class="tm-user-info author" data-v-085cd854><a href="/ru/users/uuuulala/" class="tm-user-info__userpic" data-test-id="user-info-pic"><!--[--><div class="tm-entity-image"></div><!--]--></a><span class="tm-user-info__user tm-user-info__user_appearance-default" data-test-id="user-info-description"><a href="/ru/users/uuuulala/" class="tm-user-info__username" data-test-id="user-info-username"><!--[-->uuuulala<!--]--></a><!----><!--[--><span class="tm-article-datetime-published" data-v-085cd854><time data-allow-mismatch datetime="2016-11-07T11:45:09.000Z" title="2016-11-07, 11:45">7  ноя  2016 в 11:45</time></span><!--]--></span></span></div><div class="controls" data-v-085cd854><!----><!----><!----><!----></div></div><h1 class="tm-title tm-title_h1" lang="ru" data-test-id="articleTitle" data-v-085cd854><span>Термосопротивления: Теория</span></h1><div class="stats" data-test-id="articleStats" data-v-085cd854><!----><div class="tm-article-reading-time" data-v-085cd854><span class="tm-svg-icon__wrapper tm-article-reading-time__icon"><svg class="tm-svg-img tm-svg-icon" height="24" width="24"><title>Время на прочтение</title><use xlink:href="/img/megazord-v28.cba4c116..svg#clock"></use></svg></span><span class="tm-article-reading-time__label">8 мин</span></div><span class="tm-icon-counter tm-data-icons__item reach-counter" data-v-085cd854><svg class="tm-svg-img tm-icon-counter__icon" height="24" width="24"><title>Охват и читатели</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-views"></use></svg><span class="tm-icon-counter__value" title="103958">104K</span></span></div><div class="tm-publication-hubs__container" data-test-id="articleHubsList" data-v-085cd854><div class="tm-publication-hubs"><!--[--><span class="tm-publication-hub__link-container"><a href="/ru/companies/efo/articles/" class="tm-publication-hub__link"><!--[--><span>Блог компании ЭФО</span><!----><!--]--></a></span><span class="tm-publication-hub__link-container"><a href="/ru/hubs/industrial_control_system/" class="tm-publication-hub__link"><!--[--><span>Промышленное программирование</span><span class="tm-article-snippet__profiled-hub" title="Профильный хаб"> * </span><!--]--></a></span><span class="tm-publication-hub__link-container"><a href="/ru/hubs/robot/" class="tm-publication-hub__link"><!--[--><span>Робототехника</span><!----><!--]--></a></span><span class="tm-publication-hub__link-container"><a href="/ru/hubs/internet_of_things/" class="tm-publication-hub__link"><!--[--><span>Интернет вещей</span><!----><!--]--></a></span><!--]--></div></div><div class="tm-article-labels" data-test-id="articleLabels" data-v-085cd854 data-v-bfa2437b><div class="tm-article-labels__container" data-v-bfa2437b><!----><!--[--><!----><!--[--><!--]--><!--]--></div></div><!----><!----><!--teleport start--><!--teleport end--></div></div><!--[--><!----><div class="article-body" data-gallery-root lang="ru" data-v-aad06d04><div data-v-aad06d04><!--[--><!--]--></div><div id="post-content-body" data-v-aad06d04><div><div class="article-formatted-body article-formatted-body article-formatted-body_version-1"><div xmlns="http://www.w3.org/1999/xhtml">Недавно мне повезло побывать на производстве датчиков температуры, а точнее на швейцарском предприятии IST-AG, где делают платиновые и никелевые термосопротивления (RTD).<br/>
+<br/>
+По этому поводу публикую две статьи, в которых читатель найдет довольно подробное описание этого типа датчиков, путеводитель по основным этапам производственного процесса и обзор возможностей, которые появляются при использовании тонкопленочных технологий.<br/>
+<br/>
+<br/>
+<br/>
+В первой статье разбираемся с теоретической базой. Не слишком увлекательно, но весьма полезно.<br/>
+<a name="habracut"></a><br/>
+<h1>Что такое термометры сопротивления</h1><i>(они же — термосопротивления или RTD)</i><hr/><br/>
+Сначала имеет смысл разобраться с терминологией. Если вы хорошо знакомы с вопросом, то смело переходите ко второй части статьи. А может быть и сразу к третьей.<br/>
+<br/>
+Итак, под определение «датчик температуры» попадают тысячи самых разных изделий. Под датчиком можно понимать и готовое измерительное устройство, где на дисплее отображается значение температуры в градусах, и интегральную микросхему с цифровым сигналом на выходе, и просто чувствительный элемент, на базе которого строятся все остальные решения. Сегодня мы говорим только о чувствительных элементах, которые, впрочем, тоже будем называть словом «датчик». <br/>
+<br/>
+Термометры сопротивления, которые также известны как термосопротивления и RTD (Resistance Temperature Detector) — это чувствительные элементы, принцип работы которого хорошо понятен из названия — электрическое сопротивление элемента растет с увеличением температуры окружающей среды и наоборот. Вероятно вы слышали о термосопротивлениях как о платиновых датчиках температуры типа Pt100, Pt500 и Pt1000 или как о датчиках 50М, 50П, 100М или 100П.<br/>
+<br/>
+Иногда термосопротивления путают с термисторами или термопарами. Все эти датчики используются в похожих задачах, но, даже несмотря на то что термисторы тоже являются преобразователями температура-сопротивление, нельзя путать термосопротивления, термисторы и термопары между собой. О разнице в строении и назначении этих элементов написана уже тысяча статьей, так что я, пожалуй, не буду повторяться.<br/>
+<br/>
+Отмечу главное: средний термометр сопротивления стоит в разы дороже, чем средний термистор и термопара, но только термосопротивления имеют линейную выходную характеристику. Линейность характеристики, а также гораздо более высокие показатели по точности и повторяемости результатов измерений, делают термосопротивления востребованными несмотря на разницу в цене.<br/>
+<br/>
+<h1>Основные характеристики термосопротивлений</h1><hr/><br/>
+Если коротко, характеристики термосопротивлений можно разбить на три группы:<br/>
+<br/>
+<ol>
+<li>Номинальная статическая характеристика (НСХ) и точность</li>
+<li>Диапазон температур, на котором определяется НСХ и обеспечивается заявленная точность</li>
+<li>Корпус датчика, тип и длина выводов</li>
+</ol><br/>
+На мой взгляд, пояснений требует только первый пункт.<br/>
+<br/>
+<b><u>Номинальная статическая характеристика (НСХ)</u></b><br/>
+<br/>
+НСХ — это функция (на практике чаще таблица значений), которая определяет зависимость сопротивление-температура. <br/>
+<br/>
+Зависимость R(T), конечно, не является абсолютно линейной — на самом деле выходная характеристика термосопротивления описывается полиномом с известными коэффициентами. В простейшем случае это полином второй степени R(T) = R0 (1 + A x T + B x T<sup>2</sup>), где R0 — номинальное сопротивление датчика, то есть значение сопротивления при 0°C.<br/>
+<br/>
+<br/>
+Вид полинома и его коэффициенты описываются в различных национальных и международных стандартах. Действующий российский стандарт — <a href="http://temperatures.ru/pdf/GOST/gost6651-2009.pdf">ГОСТ 6651-2009</a>. В Европе чаще используют DIN 60751 (он же IEC-751), однако одновременно с ним действует DIN 43760, в Северной Америке популярен стандарт ASTM E1137 и так далее. Несмотря на то что некоторые стандарты согласованы между собой, в целом картина довольно печальная и единого индустриального стандарта по факту не существует. <br/>
+<br/>
+Наиболее популярные типы термосопротивлений — это платиновые датчики (Pt 3850, Pt 3750, Pt 3911 и др.), никелевые (Ni 6180, Ni 6720 и др.) и медные термосопротивления, например Cu 4280. Каждому типу датчиков соответствует свой полином R(T). <br/>
+<br/>
+<br/>
+Приведенные наименования содержат название металла, который используется при изготовлении датчика, и коэффициент, который описывает отношение сопротивления датчика при 0 к сопротивлению при 100°C. Этот коэффициент, вместе со значением R0, определяет наклон функции R(T).<br/>
+<br/>
+<br/>
+В разношерстных стандартах и, как следствие, в спецификациях на конкретные датчики, этот коэффициент может выражаться по-разному. Например, для платинового датчика может быть указан коэффициент альфа равный 0.00385 °C<sup>-1</sup>, или температурный коэффициент 0.385%/°C, или TCR = 3850 ppm/K, однако во всех трех случаях подразумевается одна и та же зависимость R(T).<br/>
+<br/>
+Используемый металл однозначно определяет степень полинома R(T), а коэффициенты полинома определяются температурным коэффициентом металла. <br/>
+<br/>
+Например, для всех платиновых датчиков функция R(T) имеет следующий вид:<br/>
+<br/>
+<b>R(T) = R0 (1 + A x T + B x T<sup>2</sup>)</b> при T &gt; 0<br/>
+<b>R(T) = R0 (1 + A x T + B x T<sup>2</sup> + C x (T-100) x T<sup>3</sup>)</b> при T &lt; 0<br/>
+где коэффициенты выбираются в зависимости от типа платины:<br/>
+<br/>
+<ul>
+<li>Pt 3850 ppm/K (наиболее распространенная характеристика современных термосопротивлений) <br/>
+A = 3.9083 x 10<sup>-3</sup> °C<sup>-1</sup><br/>
+B = -5.775 x 10<sup>-7</sup> °C<sup>-2</sup><br/>
+C = -4.183 x 10<sup>-12</sup>°C<sup>-4</sup><br/>
+<br/>
+</li>
+<li>Pt 3911 ppm/K (характеристика остается востребованной в РФ, т.к. в прошлом только она была внесена в ГОСТ)<br/>
+A = 3.9692 x 10<sup>-3</sup> °C<sup>-1</sup><br/>
+B = -5.829 x 10<sup>-7</sup> °C<sup>-2</sup><br/>
+C = -4.3303 x 10<sup>-12</sup>°C<sup>-4</sup><br/>
+</li>
+</ul><br/>
+Автомобильному стандарту Pt 3770 ppm/K, американскому Pt 3750 ppm/K или японскому Pt 3916 ppm/K будут соответствовать другие наборы коэффициентов.<br/>
+<br/>
+Та же логика действует для меди и никеля. Например, НСХ всех никелевых датчиков описывается полиномом шестой степени:<br/>
+<br/>
+<b>R(T) = R0 (1 + A x T + B x T<sup>2</sup> + C x T<sup>3</sup> + D x T<sup>4</sup> + E x T<sup>5</sup> + F x T<sup>6</sup>)</b><br/>
+где коэффициенты определяются температурным коэффициентом никеля (Ni 6180 ppm/K, Ni 6720 ppm/K и т.д.).<br/>
+<br/>
+Осталось сказать о последнем параметре НСХ термометров сопротивления — о номинальном сопротивлении R0. Чаще всего используются датчики со стандартным R0 — 50, 100, 500 или 1000 Ом, однако иногда требуются тремосопротивления с R0 = 2000 и даже 10000 Ом, а также датчики с «не кратным» номинальным сопротивлением.<br/>
+<br/>
+<br/>
+То есть каждому типу термосопротивления может соответствовать несколько НСХ с разными номинальными сопротивлениями R0. Для наиболее распространенных в РФ характеристик использу��т стандартные обозначения: Pt100 и Pt1000 соответствуют платине с температурным коэффициентом 3850 ppm/K и R0 = 100 и 1000 Ом соответственно. Унаследованные из советских справочников обозначения 50П и 100П — это датчики из платины с коэффициентом 3911 ppm/K и R0 = 50 и 100 Ом, а датчики известные как 50М и 100М — это медь 4280 ppm/K с номинальным сопротивлением 50 и 100 Ом.<br/>
+<br/>
+<b><u>Точность датчика</u></b><br/>
+Точность термосопротивления — это то, насколько зависимость R(T) реального датчика может отклониться от идеальной НСХ. Для обозначения точности термосопротивлений используют понятие класса допуска (от же класс точности).<br/>
+<br/>
+Класс допуска определяет максимальное допустимое отклонение от номинальной характеристики, причем задается это отклонение как функция температуры — при нуле градусов фиксируется наименьшее допустимое отклонение, а при уменьшении или увеличении температуры диапазон допустимых значений линейно увеличивается.<br/>
+<br/>
+<br/>
+Когда дело касается классов допуска, бардак в действующих стандартах только усугубляется — даже названия классов в разных источниках могут отличаться. <br/>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<td> </td>
+<td>Другие названия</td>
+<td> Допуск, °С<br/>
+ </td>
+</tr>
+<tr>
+<td> Класс АA<br/>
+ </td>
+<td> Class Y<br/>
+ 1/3 DIN<br/>
+1/3 B<br/>
+ F 0.1 (если речь о тонкопленочном датчике)<br/>
+ W 0.1 (если речь о намоточном датчике)<br/>
+ </td>
+<td> ±(0.1 + 0.0017 |T|)<br/>
+ </td>
+</tr>
+<tr>
+<td> Класс A<br/>
+ </td>
+<td> 1/2 DIN<br/>
+1/2 B<br/>
+ F 0.15 (если речь о тонкопленочном датчике)<br/>
+ W 0.15 (если речь о намоточном датчике)<br/>
+ </td>
+<td> ±(0.15 + 0.002 |T|)<br/>
+ </td>
+</tr>
+<tr>
+<td> Класс B<br/>
+ </td>
+<td> DIN<br/>
+ F 0.3 (если речь о тонкопленочном датчике)<br/>
+ W 0.3 (если речь о намоточном датчике)<br/>
+ </td>
+<td> ±(0.3 + 0.005 |T|)<br/>
+ </td>
+</tr>
+<tr>
+<td> Класс C<br/>
+ </td>
+<td> Class 2B<br/>
+ Class BB<br/>
+ F 0.6 (если речь о тонкопленочном датчике)<br/>
+ W 0.6 (если речь о намоточном датчике)<br/>
+ </td>
+<td> ±(0.6 + 0.01 |T|)<br/>
+ </td>
+</tr>
+<tr>
+<td>-</td>
+<td> Class K<br/>
+ 1/10 DIN<br/>
+ </td>
+<td>±(0.03 + 0.0005 |T|)</td>
+</tr>
+<tr>
+<td>-</td>
+<td> Class K<br/>
+ 1/5 DIN<br/>
+ </td>
+<td> ±(0.06 + 0.001 |T|)<br/>
+ </td>
+</tr>
+</tbody>
+</table><br/>
+Приведенные в таблице допуски соответствуют большинству действующих стандартов <i><b>для платиновых датчиков 3850 ppm/K</b></i>, включая ГОСТ и европейский DIN 60751 (IEC-751), который с большой натяжкой можно назвать общепринятым. <br/>
+<br/>
+<div class="spoiler"><b class="spoiler_title">Однако и здесь есть исключения</b><div class="spoiler_text">Например, в американском стандарте ASTM E1137 классы допуска платиновых датчиков именуются Grade и определяются иначе:<br/>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<td>Grade A</td>
+<td>±(0.25 + 0.0042 |T|)</td>
+</tr>
+<tr>
+<td>Grade B</td>
+<td>±(0.13 + 0.0017 |T|)</td>
+</tr>
+</tbody>
+</table><br/>
+</div></div><br/>
+Если же говорить о платине с другими температурными коэффициентами или о никелевых и медных датчиках, то можно обнаружить и другие определения допусков.<br/>
+<br/>
+Класс допуска описывает не только максимальную величину допуска, но и диапазон температур, на котором этот допуск гарантируется. Вы, наверное, уже догадались, что в разных стандартах эти диапазоны могут существенно отличаться. Это действительно так, причем диапазон температур зависит не только от класса допуска и типа датчика, но и от технологии, по которой выполнен датчик — у намоточных датчиков диапазон всегда шире.<br/>
+<blockquote>О том, что такое намоточные и тонкопленочные датчики — чуть ниже.</blockquote><br/>
+На картинке — кассы допуска для платиновых датчиков с температурным коэффициентом 3850 по стандарту DIN 60751 (IEC-751).<br/>
+<br/>
+<br/>
+<br/>
+<div class="spoiler"><b class="spoiler_title">Определения классов допуска для тонкопленочных и намоточных платиновых датчиков Pt 3850 ppm/K</b><div class="spoiler_text"><table border="1" cellpadding="1" cellspacing="1">
+<tbody>
+<tr>
+<td colspan="3" rowspan="1">Тонкопленочный датчик Pt 3850 ppm/K</td>
+<td colspan="3" rowspan="1">Намоточный датчик Pt 3850 ppm/K</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="2">Класс допуска</td>
+<td colspan="2" rowspan="1">Диапазон температур</td>
+<td colspan="1" rowspan="2">Класс допуска</td>
+<td colspan="2" rowspan="1">Диапазон температур</td>
+</tr>
+<tr>
+<td colspan="2" rowspan="1">DIN 60751 (IEC-751) / ГОСТ</td>
+<td>DIN 60751 (IEC-751)</td>
+<td>ГОСТ</td>
+</tr>
+<tr>
+<td>Класс АА<br/>
+(F 0.1)</td>
+<td colspan="2" rowspan="1">0… +150°С</td>
+<td>Класс АА<br/>
+(W 0.1)</td>
+<td>-100… +350°С</td>
+<td>-50… +250°С</td>
+</tr>
+<tr>
+<td>Класс А<br/>
+(F 0.15)</td>
+<td colspan="2">-30… +300°С</td>
+<td>Класс А<br/>
+(W 0.15)</td>
+<td colspan="2">-100… +450°С</td>
+</tr>
+<tr>
+<td>Класс B<br/>
+(F 0.3)</td>
+<td colspan="2">-50… +500°С</td>
+<td>Класс B<br/>
+(W 0.3)</td>
+<td>-196… +600°С</td>
+<td>-196… +660°С</td>
+</tr>
+<tr>
+<td>Класс С<br/>
+(F 0.6)</td>
+<td colspan="2">-50… +600°С</td>
+<td>Класс С<br/>
+(W 0.6)</td>
+<td>-196… +600°С</td>
+<td>-196… +660°С</td>
+</tr>
+</tbody>
+</table><br/>
+</div></div><br/>
+К слову, если в документации на термосопротивление указан диапазон измеряемых температур, который шире диапазона, предусмотренного указанным классом допуска, то заявленный класс допуска не будет действовать на всём рабочем диапазоне. Например, если датчик Pt1000 класса A предназначен для измерения температур от -200 до +600°C, то он будет иметь точность ±(0.15+0.002|T|) только при температурах до +300°C, а дальше скорее всего будет обеспечиваться класс В. <br/>
+<br/>
+Я привожу все эти подробности о терминологии и разночтениях в стандартах чтобы донести одну простую мысль: выбирая термосопротивление легко запутаться и неверно истолковать характеристики элемента. Важно понимать какие именно требования вы предъявляете к элементу (в абсолютных цифрах, а не в классах) и сравнивать их с абсолютными цифрами из документации на конкретный датчик. <br/>
+<br/>
+<h1>Структура термометров сопротивления</h1><hr/><br/>
+Итак, термосопротивления представляют собой резисторы, выполненные из платины или, реже, из никеля или меди. Выше уже упоминались две технологии — намоточная (проволочная) и тонкопленочная. <br/>
+<br/>
+Намоточные датчики — это термосопротивления, выполненные на основе спиралей из металлической проволоки. Существует два основных способа изготовления намоточных датчиков. В первом случае проволока наматывается на стеклянный или керамический цилиндр, после чего конструкция покрывается изолирующим слоем из стекла. Второй способ — это помещение металлических спиралей в каналы внутри керамического цилиндра.<br/>
+<br/>
+При изготовлении тонкопленочных датчиков на керамическую подложку напыляется тонкий слой металла, который образует токопроводящую дорожку, так называемый меандр. После этого датчик покрывается изолирующим слоем из стекла. <br/>
+<br/>
+<br/>
+Большинство современных термосопротивлений выполняется по одной из этих трёх техн��логий. В источниках встречаются противоречивые мнения о том, какая конструкция более устойчива к вибрациям или перепадам температур. Оценки стоимости датчиков разных конструкций тоже сильно разнятся. <br/>
+<br/>
+На деле принципиальных отличий между характеристиками датчиков разной конструкции нет, цены на тонкопленочные и намоточные датчики также находятся в одном диапазоне. <br/>
+<br/>
+В большинстве случаев совершенно не важно как именно устроен датчик — при выборе компонента имеет значение только соотношение цены и характеристик конкретного элемента (нужно только не забывать что классы допуска для тонкопленочных датчиков определены на более узком диапазоне температур). Однако в некоторых задачах тонкопленочные датчики осознанно предпочитают намоточным. На это есть три главных причины:<br/>
+<br/>
+<ol>
+<li>Высокие номинальные сопротивления. Тонкопленочная технология позволяет производить датчики с R0=1000 Ом той же ценой, что и датчики с номинальным сопротивлением 50, 100 или 500 Ом. К тому же, изготавливаются датчики и с более высоким номинальным сопротивлением, например 2000 и 10000 Ом.<br/>
+ <br/>
+ </li>
+<li>Малый размер. Тонкопленочный датчик можно сделать гораздо более миниатюрным по сравнению с намоточным. Стандартный датчик Pt1000, например, может иметь габариты всего 1.6 x 1.2 мм.<br/>
+ <br/>
+ </li>
+<li>Прямоугольная форма и миниатюрный размер пленочных датчиков позволяют выпускать не только выводные термосопротивления, но и SMD-компоненты стандартных размеров — 1206, 0805 и так далее.</li>
+</ol><br/>
+У тонкопленочной технологии есть и другие интересные свойства, позволяющие, например, сократить время отклика датчика температуры или изготовить на базе термосопротивлений датчики скорости потока. Об этом будем говорить в следующей статье, которая полностью посвящена процессу изготовления тонкопленочных датчиков.<br/>
+<br/>
+<h1>Заключение</h1><hr/>В заключении традиционно благодарю читателя за внимание и напоминаю, что вопросы по применению продукции, о которой мы пишем на хабре, можно также задавать на email, указанный в моем профиле.<br/>
+<br/>
+<b>upd #1:</b> Статья «Термосопротивления: производственный процесс» <a href="https://habrahabr.ru/company/efo/blog/314192/">опубликована</a>.<br/>
+<br/>
+<b>upd #2:</b> все упомянутые датчики и модули доступны со склада. Больше информации на <a href="http://efo-sensor.ru">efo-sensor.ru</a></div></div></div><!----><!----></div><!----><!----></div><!--]--><!----><div class="tm-article-presenter__meta" data-test-id="article-meta-links"><div class="tm-separated-list tag-list tm-article-presenter__meta-list"><span class="tm-separated-list__title">Теги:</span><ul class="tm-separated-list__list"><!--[--><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[%D0%B4%D0%B0%D1%82%D1%87%D0%B8%D0%BA+%D1%82%D0%B5%D0%BC%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D1%8B]" class="link"><span>датчик температуры</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[Pt100]" class="link"><span>Pt100</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[Pt500]" class="link"><span>Pt500</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[Pt1000]" class="link"><span>Pt1000</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[IST-AG]" class="link"><span>IST-AG</span></a><!--]--></li><!--]--><!----></ul></div><div class="tm-separated-list tm-article-presenter__meta-list"><span class="tm-separated-list__title">Хабы:</span><ul class="tm-separated-list__list"><!--[--><li class="tm-separated-list__item"><!--[--><a href="/ru/companies/efo/articles/" class="link"><!--[--><span>Блог компании ЭФО</span><!--]--></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/hubs/industrial_control_system/" class="link"><!--[--><span>Промышленное программирование</span><!--]--></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/hubs/robot/" class="link"><!--[--><span>Робототехника</span><!--]--></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/hubs/internet_of_things/" class="link"><!--[--><span>Интернет вещей</span><!--]--></a><!--]--></li><!--]--><!----></ul></div></div><!----><!--]--></article><!--]--></div><!----></div><div style="" class="tm-article-sticky-panel" data-test-id="article-sticky-panel"><div class="tm-data-icons tm-data-icons tm-data-icons_space-big tm-article-sticky-panel__icons" data-test-id="article-stats-icons"><div class="article-rating tm-data-icons__item" data-v-b9b05a90><div class="tm-votes-meter votes-switcher" data-v-b9b05a90><svg class="tm-svg-img tm-votes-meter__icon tm-votes-meter__icon tm-votes-meter__icon_appearance-article" height="24" width="24"><title>Всего голосов 33: ↑32 и ↓1</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-rating"></use></svg><span class="tm-votes-meter__value tm-votes-meter__value_positive tm-votes-meter__value_appearance-article tm-votes-meter__value_rating tm-votes-meter__value" data-test-id="votes-meter-value" title="Всего голосов 33: ↑32 и ↓1">+29</span></div><!--teleport start--><!--teleport end--><!----></div><!----><!----><button class="bookmarks-button tm-data-icons__item" title="Добавить в закладки" type="button" data-v-861e2740><span class="tm-svg-icon__wrapper icon" data-v-861e2740><svg class="tm-svg-img tm-svg-icon" height="24" width="24"><title>Добавить в закладки</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-favorite"></use></svg></span><span class="counter" title="Количество пользователей, добавивших публикацию в закладки" data-v-861e2740>87</span></button><div class="sharing tm-data-icons__item" title="Поделиться" data-v-daf6ee1d><button class="sharing-button" type="button" data-v-daf6ee1d><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon" data-v-daf6ee1d><path fill="currentColor" d="M13.8 13.8V18l7.2-6.6L13.8 5v3.9C5 8.9 3 18.6 3 18.6c2.5-4.4 6-4.8 10.8-4.8z"></path></svg></button><!--teleport start--><!--teleport end--></div><div class="article-comments-counter-link-wrapper tm-data-icons__item" title="Читать комментарии" data-v-8d952463><a href="/ru/companies/efo/articles/312898/comments/" class="article-comments-counter-link" data-test-id="counter-comments" data-v-8d952463><!--[--><svg class="tm-svg-img icon" height="24" width="24" data-v-8d952463><title>Комментарии</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-comments"></use></svg><span class="value" data-v-8d952463>15</span><!--]--></a><!----></div><!--[--><!--[--><!--[--><!----><!--]--><!--]--><!--]--><!--teleport start--><!--teleport end--><!----></div></div></div><!--[--><!--]--><div class="tm-article-presenter__footer"><!--[--><!--[--><div class="tm-article-blocks"><!----><!--[--><section class="tm-block tm-block tm-block_spacing-bottom"><!----><!--[--><div class="tm-block__body tm-block__body tm-block__body_variant-balanced"><!--[--><div class="article-author" data-test-id="article-author-info" data-async-called="true" data-v-af0d0f90><!--[--><!--[--><div class="tm-article-author__company" data-v-af0d0f90-s><div class="tm-article-author__company-card"><div class="tm-company-snippet"><div class="tm-company-snippet__image-wrapper"><a href="/ru/companies/efo/profile/" class="tm-company-snippet__logo-link"><div class="tm-entity-image"></div></a><!----></div><div class="tm-company-snippet__info-wrapper"><div class="tm-company-snippet__info"><a href="/ru/companies/efo/profile/" class="tm-company-snippet__title" data-test-id="company-title"><span>ЭФО</span></a><div class="tm-company-snippet__description">Поставки электронных компонентов</div><!--[--><!--]--></div><!--[--><!--]--></div></div><div class="tm-article-author__buttons"><!----><!----></div></div><div class="tm-article-author__company-contacts"><!--[--><a class="tm-article-author__contact" href="http://www.efo.ru" rel="noopener" target="_blank">Сайт</a><a class="tm-article-author__contact" href="http://www.efo-sensor.ru" rel="noopener" target="_blank">Сайт</a><!--]--></div><div class="tm-article-author__separator"></div></div><!--]--><!--]--><div class="tm-user-card tm-user-card tm-user-card_variant-article user-card" data-async-called="true" data-v-af0d0f90><div class="tm-user-card__info-container"><div class="tm-user-card__header"><div class="tm-user-card__header-data"><a href="/ru/users/uuuulala/" class="tm-user-card__userpic tm-user-card__userpic_size-40"><!--[--><div class="tm-entity-image"></div><!--]--></a><div class="tm-user-card__meta"><div class="tm-counter-container karma" title=" 57 голосов " data-v-544d285f><div class="tm-counter-container__header"><!--[--><div class="karma-display positive" data-v-544d285f data-v-3881f4ba>49</div><!----><!--]--></div><div class="tm-counter-container__footer"><!--[--><div class="karma-text" data-v-544d285f>Карма</div><!--teleport start--><!--teleport end--><!--]--></div></div><div class="tm-counter-container"><div class="tm-counter-container__header"><!--[--><!--[--><!--]--><div class="tm-votes-lever tm-votes-lever tm-votes-lever_appearance-rating"><!----><div class="tm-votes-lever__score tm-votes-lever__score_appearance-rating tm-votes-lever__score" data-test-id="lever-score"><!--[--><span><span class="tm-votes-lever__score-counter tm-votes-lever__score-counter_rating tm-votes-lever__score-counter" data-test-id="votes-score-counter">0</span></span><!--]--></div><!----></div><!--]--></div><div class="tm-counter-container__footer"><!--[--><span class="tm-rating__text tm-rating__text">Общий рейтинг</span><!--]--></div></div></div></div></div><div class="tm-user-card__info tm-user-card__info_variant-article tm-user-card__info"><div class="tm-user-card__title tm-user-card__title_variant-article tm-user-card__title"><span class="tm-user-card__name tm-user-card__name_variant-article tm-user-card__name">Ksenia Kondrashova</span><a href="/ru/users/uuuulala/" class="tm-user-card__nickname tm-user-card__nickname tm-user-card__nickname_variant-article"><!--[-->@uuuulala<!--]--></a><!----></div><p class="tm-user-card__short-info tm-user-card__short-info_variant-article tm-user-card__short-info" data-test-id="user-card-speciality">Пользователь</p></div></div><!----><div class="tm-user-card__buttons tm-user-card__buttons_variant-article tm-user-card__buttons"><!----><div class="tm-user-card__button"><div class="tm-button-follow tm-user-card__button-follow"><!----><button class="tm-button-follow__button tm-button-follow__button_big" data-test-id="follow-button" type="button">Подписаться</button></div></div><!----><!--[--><div class="tm-user-card__button tm-user-card__button_write" data-test-id="user-card-conversations"><svg class="tm-svg-img tm-user-card__button-icon" height="16" width="16"><title>Отправить сообщение</title><use xlink:href="/img/megazord-v28.cba4c116..svg#mail"></use></svg></div><!--]--><!----><!----></div><!----></div><div class="author-contacts" data-test-id="author-contacts" data-v-af0d0f90><!----><!----><!----></div></div><!--]--></div><!--]--><!----></section><!----><!--[--><!--[--><div class="sponsor-block" style="--d75346b8:0;--11dbf66e:100%;" data-v-580b3119><div class="title" data-v-580b3119>Хабр доступен 24/7 благодаря поддержке друзей</div><div class="content-container" data-v-580b3119><div class="content" data-v-580b3119><div class="content-title-container" data-v-580b3119><div class="content-title" data-v-580b3119>Хабр Курсы для всех</div><div class="sponsor-mark" data-v-580b3119>РЕКЛАМА</div></div><div class="content-text" data-v-580b3119> Практикум, Хекслет, SkyPro, авторские курсы — собрали всех и попросили скидки. Осталось выбрать! </div><a class="content-action" href="https://career.habr.com/courses/?erid=2VSb5wDLYUH&amp;utm_source=habr&amp;utm_medium=sponsorship_hub" target="_blank" data-v-580b3119><button class="btn btn_solid btn_small tm-button_color-horizon" tabindex="0" type="button" data-v-580b3119><!--[--><!--[-->Перейти<!--]--><!--]--></button></a></div></div><div class="footer" data-v-580b3119><!----></div><!----></div><!--]--><!----><!--]--><!--]--><div class="tm-article-blocks__comments"><div id="publication-comments" class="tm-article-page-comments"><div><!--[--><div class="article-comments-counter-link-wrapper tm-article-comments-counter-button" data-v-8d952463><a href="/ru/companies/efo/articles/312898/comments/" class="article-comments-counter-link button-style" data-test-id="counter-comments" data-v-8d952463><!--[--><svg class="tm-svg-img icon icon--contrasted" height="24" width="24" data-v-8d952463><title>Комментарии</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-comments"></use></svg><span class="value value--contrasted" data-v-8d952463> Комментарии 15 </span><!--]--></a><!----></div><!--]--></div></div></div><!--[--><!--[--><!--]--><section class="tm-block tm-block tm-block_spacing-bottom"><header class="tm-block__header tm-block__header tm-block__header_variant-borderless"><div class="tm-block__header-container"><h2 class="tm-block__title tm-block__title tm-block__title_variant-large">Публикации</h2><!--[--><!--]--></div><!----></header><!--[--><div class="tm-block__body tm-block__body tm-block__body_variant-condensed-slim"><!--[--><!--[--><div class="tabs" data-test-id="container" data-v-681e7545><div class="" data-test-id="scroll-area" data-v-681e7545><!--[--><span class="tab-item" data-v-681e7545><button class="active slim tab-link" data-v-681e7545>Лучшие за сутки</button></span><span class="tab-item" data-v-681e7545><button class="slim tab-link" data-v-681e7545>Похожие</button></span><!--]--></div><!----></div><div class="similar-and-daily__tab-view"><div class="placeholder-wrapper"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="tm-placeholder-article-cards"><!--[--><div class="tm-placeholder-article-card"><div class="tm-placeholder__user"><div class="tm-placeholder__user-pic loads"></div><div class="tm-placeholder__user-date loads"></div></div><div class="tm-placeholder-article-card__title"><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div></div><div class="tm-placeholder-article-card__icons tm-placeholder__counters"><!--[--><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><!--]--></div></div><div class="tm-placeholder-article-card"><div class="tm-placeholder__user"><div class="tm-placeholder__user-pic loads"></div><div class="tm-placeholder__user-date loads"></div></div><div class="tm-placeholder-article-card__title"><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div></div><div class="tm-placeholder-article-card__icons tm-placeholder__counters"><!--[--><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><!--]--></div></div><div class="tm-placeholder-article-card"><div class="tm-placeholder__user"><div class="tm-placeholder__user-pic loads"></div><div class="tm-placeholder__user-date loads"></div></div><div class="tm-placeholder-article-card__title"><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div></div><div class="tm-placeholder-article-card__icons tm-placeholder__counters"><!--[--><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><!--]--></div></div><div class="tm-placeholder-article-card"><div class="tm-placeholder__user"><div class="tm-placeholder__user-pic loads"></div><div class="tm-placeholder__user-date loads"></div></div><div class="tm-placeholder-article-card__title"><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div></div><div class="tm-placeholder-article-card__icons tm-placeholder__counters"><!--[--><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><!--]--></div></div><div class="tm-placeholder-article-card"><div class="tm-placeholder__user"><div class="tm-placeholder__user-pic loads"></div><div class="tm-placeholder__user-date loads"></div></div><div class="tm-placeholder-article-card__title"><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div><div class="tm-placeholder__line tm-placeholder-article-card__title-line loads"></div></div><div class="tm-placeholder-article-card__icons tm-placeholder__counters"><!--[--><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><div class="tm-placeholder-data-icon"><div class="tm-placeholder__icon tm-placeholder__icon_large loads"></div><div class="tm-placeholder__line tm-placeholder__line_icon-text"></div></div><!--]--></div></div><!--]--></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div><!----></div><!--]--><!--]--></div><!--]--><!----></section><!--[--><!--[--><div><div class="placeholder-wrapper"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="tm-placeholder-promo"><div class="tm-placeholder-promo__header"><div class="tm-placeholder__line tm-placeholder__line_promo-title"></div></div><div class="tm-placeholder-promo__body"><div class="tm-placeholder-promo__posts"><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div></div><div class="tm-placeholder-promo__dots"><div class="tm-placeholder-promo__dot"></div><div class="tm-placeholder-promo__dot"></div><div class="tm-placeholder-promo__dot"></div></div></div></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div></div><!----><!--]--><!--]--><!----><!--[--><!--]--><!--]--></div><!----><!--]--><!--]--></div></div><!--]--></div><!--]--></div></div><div class="tm-page__sidebar"><!--[--><div class="tm-layout-sidebar"><!--[--><!--]--><div id="sidebar-window-placement"></div><div class="tm-layout-sidebar__placeholder_initial"></div><div class="tm-sexy-sidebar_initial tm-sexy-sidebar" style="margin-top:0px;"><!--[--><!--]--><!----><div class="tm-layout-sidebar__ads_initial tm-layout-sidebar__ads"><div class="element-wrapper half-page tm-layout-sidebar__banner tm-layout-sidebar__banner_top" style="--754c4550:600px;--56cb6579:auto;"><!--[--><div class="placeholder-wrapper banner-container__placeholder"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="adfox-banner-placeholder half-page" data-v-24012b5e><div class="image loads" data-v-24012b5e></div><div class="lines" data-v-24012b5e><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div></div></div><!----><!----><!----></div><!--[--><div id="adfox_164725680533065327_sidebarBanner" class="banner-target"></div><!--]--><!--]--></div></div><!--[--><section class="tm-block tm-block tm-block_spacing-bottom"><header class="tm-block__header tm-block__header"><div class="tm-block__header-container"><h2 class="tm-block__title tm-block__title">Информация</h2><!--[--><!--]--></div><!----></header><!--[--><div class="tm-block__body tm-block__body"><!--[--><div class="tm-company-basic-info"><dl class="tm-description-list tm-description-list tm-description-list_variant-columns-nowrap"><dt class="tm-description-list__title tm-description-list__title_variant-columns-nowrap tm-description-list__title">Сайт</dt><dd class="tm-description-list__body tm-description-list__body_variant-columns-nowrap tm-description-list__body"><!--[--><a class="tm-company-basic-info__link" href="http://www.efo.ru/" target="_blank">www.efo.ru</a><!--]--></dd></dl><dl class="tm-description-list tm-description-list tm-description-list_variant-columns-nowrap"><dt class="tm-description-list__title tm-description-list__title_variant-columns-nowrap tm-description-list__title">Дата регистрации</dt><dd class="tm-description-list__body tm-description-list__body_variant-columns-nowrap tm-description-list__body"><!--[--><time data-allow-mismatch datetime="2016-02-18T08:29:03.000Z" title="2016-02-18, 08:29">18  февраля  2016</time><!--]--></dd></dl><dl class="tm-description-list tm-description-list tm-description-list_variant-columns-nowrap"><dt class="tm-description-list__title tm-description-list__title_variant-columns-nowrap tm-description-list__title">Дата основания</dt><dd class="tm-description-list__body tm-description-list__body_variant-columns-nowrap tm-description-list__body"><!--[--><time data-allow-mismatch datetime="1991-08-01T00:00:00.000Z" title="1991-08-01, 00:00">1  августа  1991</time><!--]--></dd></dl><dl class="tm-description-list tm-description-list tm-description-list_variant-columns-nowrap"><dt class="tm-description-list__title tm-description-list__title_variant-columns-nowrap tm-description-list__title">Численность</dt><dd class="tm-description-list__body tm-description-list__body_variant-columns-nowrap tm-description-list__body"><!--[-->201–500 человек<!--]--></dd></dl><dl class="tm-description-list tm-description-list tm-description-list_variant-columns-nowrap"><dt class="tm-description-list__title tm-description-list__title_variant-columns-nowrap tm-description-list__title">Местоположение</dt><dd class="tm-description-list__body tm-description-list__body_variant-columns-nowrap tm-description-list__body"><!--[-->Россия<!--]--></dd></dl><!----></div><!--]--></div><!--]--><!----></section><!----><!----><div></div><!--]--><!--[--><div class="element-wrapper medium-rectangle tm-layout-sidebar__banner tm-layout-sidebar__banner_bottom" style="--754c4550:250px;--56cb6579:auto;"><!--[--><div class="placeholder-wrapper banner-container__placeholder"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="adfox-banner-placeholder medium-rectangle" data-v-24012b5e><div class="image loads" data-v-24012b5e></div><div class="lines" data-v-24012b5e><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div></div></div><!----><!----><!----></div><!--[--><div id="adfox_164725691003361602_sidebarBannerBottom" class="banner-target"></div><!--]--><!--]--></div><!--]--></div></div><!--]--></div></div><!--]--></div><!----></div></main><!----></div><div class="tm-footer-menu"><div class="tm-page-width"><!--[--><div class="tm-footer-menu__container"><!--[--><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Ваш аккаунт</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr/?back=/ru/companies/efo/articles/312898/&amp;hl=ru" rel="nofollow" target="_self">Войти</a></li><li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr-register/?back=/ru/companies/efo/articles/312898/&amp;hl=ru" rel="nofollow" target="_self">Регистрация</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Разделы</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/ru/articles/" class="footer-menu__item-link">Статьи</a></li><li class="tm-footer-menu__list-item"><a href="/ru/news/" class="footer-menu__item-link">Новости</a></li><li class="tm-footer-menu__list-item"><a href="/ru/hubs/" class="footer-menu__item-link">Хабы</a></li><li class="tm-footer-menu__list-item"><a href="/ru/companies/" class="footer-menu__item-link">Компании</a></li><li class="tm-footer-menu__list-item"><a href="/ru/users/" class="footer-menu__item-link">Авторы</a></li><li class="tm-footer-menu__list-item"><a href="/ru/sandbox/" class="footer-menu__item-link">Песочница</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Информация</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/ru/docs/help/" class="footer-menu__item-link">Устройство сайта</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/authors/codex/" class="footer-menu__item-link">Для авторов</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/companies/corpblogs/" class="footer-menu__item-link">Для компаний</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/docs/transparency/" class="footer-menu__item-link">Документы</a></li><li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/agreement/?hl=ru_RU" target="_blank">Соглашение</a></li><li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/confidential/?hl=ru_RU" target="_blank">Конфиденциальность</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Услуги</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/corporate-blogs/" target="_blank">Корпоративный блог</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/advertising/" target="_blank">Медийная реклама</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/native-special/" target="_blank">Нативные проекты</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/education-programs/" target="_blank">Образовательные программы</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/hello-startup/" target="_blank">Стартапам</a></li><!--]--></ul></div></div><!--]--></div><!--]--></div></div><div class="tm-footer"><div class="tm-page-width"><!--[--><div class="tm-footer__container"><!----><div class="social-icons tm-footer__social" data-v-d6e8cb42><!--[--><a class="tm-svg-icon__wrapper social-icon" href="https://vk.com/habr" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>VK</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-vk"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="https://telegram.me/habr_com" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Telegram</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-telegram"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="http://www.youtube.com/@Habr_com" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Youtube</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-youtube"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="https://dzen.ru/habr" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Яндекс Дзен</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-dzen"></use></svg></a><!--]--></div><!--teleport start--><!--teleport end--><button class="tm-footer__link"><!----> Настройка языка</button><a href="/ru/feedback/" class="tm-footer__link">Техническая поддержка</a><div class="tm-footer-copyright"><span class="tm-copyright"><span class="tm-copyright__years">© 2006–2026,</span><span class="tm-copyright__name"><a class="tm-copyright__link" href="https://company.habr.com/" rel="noopener" target="_blank"> Habr </a></span></span></div></div><!--]--></div></div><!----><!----><!--]--></div><!----></div></div>
+    <div id="overlays"><!--teleport start anchor--><template><!----></template><!--teleport anchor--><!--teleport start anchor--><template><!----></template><!--teleport anchor--><!--teleport start anchor--><template><!----></template><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--></div>
+    
+    
+    
+    
+  
+  
+    
+  
+    </body>
+
+    </html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <title>Препарируем OpenVPN. Часть 1. Статические ключи &#x2F; Хабр</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+  </head>
+  <body>
+    
+    <div id="mount"><div id="app"><div class="tm-layout__wrapper"><!--[--><!----><div></div><div class="header-banner-wrapper"><div class="element-wrapper above-header" style="--754c4550:100%;--56cb6579:auto;"><!--[--><div class="placeholder-wrapper banner-container__placeholder"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="adfox-banner-placeholder above-header" data-v-24012b5e><div class="image loads" data-v-24012b5e></div><div class="lines" data-v-24012b5e><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div></div></div><!----><!----><!----></div><!--[--><div id="adfox_175449164307199013_aboveHeader" class="banner-target"></div><!--]--><!--]--></div></div><header class="tm-header tm-header" data-test-id="header"><!----><!----><div class="tm-page-width"><!--[--><div class="tm-header__container"><button aria-expanded="false" aria-label="Toggle menu" class="burger-button tm-header__button tm-header__burger" data-v-56ed7aae><span class="line top" data-v-56ed7aae></span><span class="line middle" data-v-56ed7aae></span><span class="line bottom" data-v-56ed7aae></span></button><span class="tm-header__logo-wrap"><a class="tm-header__logo tm-header__logo_hl-ru tm-header__logo" href="/ru/feed"><svg class="tm-svg-img tm-header__icon" height="16" width="16"><title>Хабр</title><use xlink:href="/img/habr-logo-ru.svg#logo"></use></svg></a></span><span class="tm-header__divider"></span><!--[--><a class="tm-header__all-flows" href="/ru/articles/">Все потоки</a><!--]--><!----><div class="tm-header-user-menu tm-base-layout__user-menu"><a href="/ru/search/" class="tm-header-user-menu__item tm-header-user-menu__search" data-test-id="search-button"><svg class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_search" height="24" width="24"><title>Поиск</title><use xlink:href="/img/megazord-v28.cba4c116..svg#search"></use></svg></a><!----><!----><div class="tm-header-user-menu__item tm-header-user-menu__write"><a href="/ru/sandbox/start/" class=""><svg class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_write" height="24" width="24"><title>Написать публикацию</title><use xlink:href="/img/megazord-v28.cba4c116..svg#write"></use></svg></a><!----></div><!--[--><div class="tm-header-user-menu__item"><button class="tm-header-user-menu__toggle" data-test-id="user-menu-settings"><svg class="tm-svg-img tm-header-user-menu__icon" height="24" width="24"><title>Настройки</title><use xlink:href="/img/megazord-v28.cba4c116..svg#page-settings"></use></svg></button></div><a href="https://habr.com/kek/v1/auth/habrahabr/?back=/ru/articles/313052/&amp;hl=ru" rel="nofollow" class="tm-header-user-menu__item tm-header-user-menu__login" role="button"><!--[-->Войти<!--]--></a><!--]--><template><!----></template><!--teleport start--><!--teleport end--></div></div><!--]--></div></header><div class="tm-layout"><div class="tm-page-progress-bar"></div><!----><div class="tm-page-width"><!--[--><!----><!----><!----><!--]--></div><main class="tm-layout__container"><div class="tm-page" hl="ru" data-async-called="true" style="--a414e232:300px;--10c4682a:0;--19620736:0;"><!----><div class="tm-page-width"><!--[--><!----><div class="tm-page__wrapper"><!----><div class="tm-page__main_has-sidebar tm-page__main"><div class="pull-down"><!----><div class="pull-down__header" style="height:0px;"><div class="pull-down__content" style="bottom:10px;"><svg class="tm-svg-img pull-down__icon pull-down__arrow" height="24" width="24"><title>Обновить</title><use xlink:href="/img/megazord-v28.cba4c116..svg#pull-arrow"></use></svg></div></div><!--[--><div><!--[--><!----><div class="tm-article-presenter" data-async-called="true"><!--[--><!--]--><div class="tm-article-presenter__body" data-test-id="article-body"><div class="tm-misprint-area"><div class="tm-misprint-area__wrapper"><!--[--><article class="tm-article-presenter__content tm-article-presenter__content_narrow"><!--[--><div class="tm-article-presenter__header"><!--[--><!--]--><div class="article-snippet tm-article-presenter__snippet" data-v-085cd854><!--[--><!--]--><div class="meta-container" data-v-085cd854><div class="meta" data-v-085cd854><span class="tm-user-info author" data-v-085cd854><a href="/ru/users/Nokta_strigo/" class="tm-user-info__userpic" data-test-id="user-info-pic"><!--[--><div class="tm-entity-image"></div><!--]--></a><span class="tm-user-info__user tm-user-info__user_appearance-default" data-test-id="user-info-description"><a href="/ru/users/Nokta_strigo/" class="tm-user-info__username" data-test-id="user-info-username"><!--[-->Nokta_strigo<!--]--></a><!----><!--[--><span class="tm-article-datetime-published" data-v-085cd854><time data-allow-mismatch datetime="2017-10-31T07:59:31.000Z" title="2017-10-31, 07:59">31  окт  2017 в 07:59</time></span><!--]--></span></span></div><div class="controls" data-v-085cd854><!----><!----><!----><!----></div></div><h1 class="tm-title tm-title_h1" lang="ru" data-test-id="articleTitle" data-v-085cd854><span>Препарируем OpenVPN. Часть 1. Статические ключи</span></h1><div class="stats" data-test-id="articleStats" data-v-085cd854><!----><div class="tm-article-reading-time" data-v-085cd854><span class="tm-svg-icon__wrapper tm-article-reading-time__icon"><svg class="tm-svg-img tm-svg-icon" height="24" width="24"><title>Время на прочтение</title><use xlink:href="/img/megazord-v28.cba4c116..svg#clock"></use></svg></span><span class="tm-article-reading-time__label">10 мин</span></div><span class="tm-icon-counter tm-data-icons__item reach-counter" data-v-085cd854><svg class="tm-svg-img tm-icon-counter__icon" height="24" width="24"><title>Охват и читатели</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-views"></use></svg><span class="tm-icon-counter__value" title="45166">45K</span></span></div><div class="tm-publication-hubs__container" data-test-id="articleHubsList" data-v-085cd854><div class="tm-publication-hubs"><!--[--><span class="tm-publication-hub__link-container"><a href="/ru/hubs/infosecurity/" class="tm-publication-hub__link"><!--[--><span>Информационная безопасность</span><span class="tm-article-snippet__profiled-hub" title="Профильный хаб"> * </span><!--]--></a></span><span class="tm-publication-hub__link-container"><a href="/ru/hubs/crypto/" class="tm-publication-hub__link"><!--[--><span>Криптография</span><span class="tm-article-snippet__profiled-hub" title="Профильный хаб"> * </span><!--]--></a></span><span class="tm-publication-hub__link-container"><a href="/ru/hubs/network_technologies/" class="tm-publication-hub__link"><!--[--><span>Сетевые технологии</span><span class="tm-article-snippet__profiled-hub" title="Профильный хаб"> * </span><!--]--></a></span><!--]--></div></div><div class="tm-article-labels" data-test-id="articleLabels" data-v-085cd854 data-v-bfa2437b><div class="tm-article-labels__container" data-v-bfa2437b><!----><!--[--><!----><!--[--><!--]--><!--]--></div></div><!----><!----><!--teleport start--><!--teleport end--></div></div><!--[--><!----><div class="article-body" data-gallery-root lang="ru" data-v-aad06d04><div data-v-aad06d04><!--[--><!--]--></div><div id="post-content-body" data-v-aad06d04><div><div class="article-formatted-body article-formatted-body article-formatted-body_version-1"><div xmlns="http://www.w3.org/1999/xhtml"><p>Однажды столкнулся с непонятной ошибкой в установлении OpenVPN соединения и ощутил нехватку понимания того, как он устроен внутри. Под катом рассказ о том, как устроена криптографическая часть протокола, как это всё выглядит в реальности (т.е. в Wireshark) и как заглянуть внутрь VPN, т.е. расшифровать трафик руками (при наличии ключей, конечно ;-) ). В этой части рассмотрим только режим со статическими ключами.</p><br/>
+<a name="habracut"></a><br/>
+<h1 id="rezhimy-raboty">Режимы работы</h1><br/>
+<p>Сам OpenVPN без плагинов поддерживает 2 варианта установления соединения:</p><br/>
+<ul>
+<li><b>PSK</b> (PreSharedKey или <b>static key mode</b>) – с симметричным ключом, который генерируется и записывается на все машины в процессе настройки VPN. В первой части статьи рассматривается только этот режим.</li>
+<li><b>TLS</b> – основанный на <a href="https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%84%D1%80%D0%B0%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D1%85_%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%B9">инфраструктуре открытых ключей (PKI)</a>. В начале устанавливается TLS соединение с аутентификацией обеих сторон по сертификатам, через которое производится обмен ключевым материалом. Из этого ключевого материала генерируются симметричные ключи и трафик внутри VPN шифруется уже этими ключами так же как в режиме PSK. Внутри TLS канала пользовательского трафика нет – исключительно служебная информация самого OpenVPN. Планирую написать вторую часть про препарирование OpenVPN в этом режиме.</li>
+</ul><br/>
+<h1 id="podrobnee-pro-psk-rezhim">Подробнее про PSK режим</h1><br/>
+<p>Режим PSK включается опцией <i>secret</i>, первым параметром которой является имя файла со статическими ключами, которые генерируются на этапе настройки VPN. В файле находятся 2 пары 512 битных случайных ключей (в каждой паре ключ для шифрования и ключ для HMAC), записанные один за другим (без заголовков и прочего) и закодированные в HEX. Одинаковый файл с ключами должен быть на всех компьютерах, соединяемых VPN. Если для опции <i>secret</i> не задать второй необязательный параметр — <i>direction</i>, то будет использоваться только первая пара ключей, т. е. в обе стороны трафик будет подписываться и шифроваться одинаковыми ключами.</p><br/>
+<p>В режиме static key может использоваться только <i>CBC</i> и <i>No-crypto</i> форматы пакетов с данными (<i>data channel crypto format</i>). Дальше рассматриваем формат <i>CBC</i>, т.к. <i>No-crypto</i> не так интересен.</p><br/>
+<p>По умолчанию для шифрования используется <a href="https://ru.wikipedia.org/wiki/Blowfish">BlowFish</a> в режиме <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B6%D0%B8%D0%BC_%D1%81%D1%86%D0%B5%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F_%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE%D0%B2_%D1%88%D0%B8%D1%84%D1%80%D0%BE%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0">CBC</a> c 128 битным ключом, а для <a href="https://ru.wikipedia.org/wiki/HMAC">HMAC</a> используется <a href="https://ru.wikipedia.org/wiki/SHA-1">SHA1</a> и 160 битный ключ. В качестве ключей используются соответственно первые 128 и 160 бит от 512 битных ключей из файла со статическим ключом.</p><br/>
+<p>Так как вся ключевая информация и настройки задаются заранее, то, если адрес удалённого хоста (опция <em>remote</em>) задан, инкапсулированный трафик может передаваться сразу после запуска OpenVPN ещё до обмена управляющими пакетами (о них будет ниже).</p><br/>
+<h1 id="testovyy-stend">Тестовый стенд</h1><br/>
+<p>Для тестов использовался следующий ключ (генерируется командой <em>openvpn --genkey --secret psk.key</em>):</p><br/>
+<pre><code class="bash">#
+# 2048 bit OpenVPN static key
+#
+-----BEGIN OpenVPN Static key V1-----
+5234f60f846bb1d5f059c70e75434be6    &lt;-- Тут начинается первый ключ шифрования
+89f41113ef56e2bf69253fad6a30ab5f
+a449204f52f64a0265fd5744a9489f41
+cefd95a1d642830e9cf9cdce13c55245
+270cf7d367ddc6b56eb1ba749be40e42    &lt;-- Тут начинается первый ключ для HMAC
+80cdf7cfbad178348a0e057f1fdc87f0
+e5ba84717475b868a7fd617fee8c561c
+b4575d983534ef71dd8aaa48a53ed469
+0ae85faf4522f7defd89ba373a0d22ee    &lt;-- Тут начинается второй ключ шифрования
+f9356e487fdfa0796b0b1fc393fd3ab5
+52db7a1ed691ddd50eeb7be2cc32d912
+52df93987f4878ec42a12e3a7cda5a40
+b1aa850a05821b300359a796313cbcec    &lt;-- Тут начинается второй ключ для HMAC
+4076483ec7692708c32d323ed080beba
+60c58d9281fb5d27c688ac271d3b6d15
+1695093291fb788dbbfefb8b7c7f9bef
+-----END OpenVPN Static key V1-----</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Фактически каждые 4 строчки с HEX — это 512 битный ключ. 1-ый и 3-ий — ключи для шифрования, из каждого в примере будут использоваться только первые 128 бит (остальные 384 бита никак не используются), 2-ой и 4-ый — ключи для <a href="https://ru.wikipedia.org/wiki/HMAC">HMAC</a>, из каждого будут использоваться первые 160 бит. Другими словами:</p><br/>
+<pre><code class="python">key_encrypt_0 = unhexlify("5234f60f846bb1d5f059c70e75434be689f41113ef56e2bf69253fad6a30ab5fa449204f52f64a0265fd5744a9489f41cefd95a1d642830e9cf9cdce13c55245")[:16]
+key_hmac_0 = unhexlify("270cf7d367ddc6b56eb1ba749be40e4280cdf7cfbad178348a0e057f1fdc87f0e5ba84717475b868a7fd617fee8c561cb4575d983534ef71dd8aaa48a53ed469")[:20]
+key_encrypt_1 = unhexlify("0ae85faf4522f7defd89ba373a0d22eef9356e487fdfa0796b0b1fc393fd3ab552db7a1ed691ddd50eeb7be2cc32d91252df93987f4878ec42a12e3a7cda5a40")[:16]
+key_hmac_1 = unhexlify("b1aa850a05821b300359a796313cbcec4076483ec7692708c32d323ed080beba60c58d9281fb5d27c688ac271d3b6d151695093291fb788dbbfefb8b7c7f9bef")[:20]</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<div class="spoiler"><b class="spoiler_title">Для тех, кто не знаком с Python</b><div class="spoiler_text"><p><em>unhexlify</em> просто превращает HEX строку в массив байт.<br/>
+Индекс [:16] значит что мы берём первые 16 элементов (байт) от последовательности.<br/>
+Индекс [16:] значит что мы берём всё, кроме первых 16 байт от последовательности.<br/>
+Индекс [16:20] значит что мы берём первые 20 байт и отбрасываем первые 16 из них.</p></div></div><br/>
+<p>Файлы настроек при работе через UDP в режиме static key с использованием обеих пар ключей (каждое направление шифруется своей парой):</p><br/>
+<pre><code class="bash"># Первый хост
+dev tun
+ifconfig 192.168.1.1 192.168.1.2
+remote 192.168.0.2
+secret psk.key 0</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<pre><code class="bash"># Второй хост
+dev tun
+ifconfig 192.168.1.2 192.168.1.1
+remote 192.168.0.1
+secret psk.key 1</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Где 192.168.0.1 и 192.168.0.2 — адреса физических интерфейсов машин, а 192.168.1.1 и 192.168.1.2 — соответствующие им адреса внутри туннеля.</p><br/>
+<p>Опцию <em>remote</em> достаточно указать только в одном из конфигурационных файлов. В таком случае хост, которому <em>remote</em> не задана, будет просто ждать входящего соединения (в данном случае UDP пакета).</p><br/>
+<h1 id="prepariruem">Препарируем</h1><br/>
+<p>Формат передаваемого пакета такой:</p><br/>
+<pre><code>[Len (2 байта)] | HMAC (20 байт) | IV (8 байт) | packet ID (4 байта) | timestamp (4 байта) | packet payload</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p><i>Len</i> — длина всего пакета, кроме первых двух байт; используется только при работе через TCP. При работе через UDP длина пакета OpenVPN рассчитывается из длины UDP пакета, а поля Len в OpenVPN пакете нет.<br/>
+<i>HMAC</i> — HMAC-SHA1 от всего, что идёт после HMAC (IV и зашифрованные данные)<br/>
+<i>IV</i> — вектор инициализации для режима CBC.<br/>
+Всё, что идёт после IV, передаётся зашифрованным.<br/>
+<i>Packet ID</i> — номер пакета. Он включён сюда для защиты от повторов, и не используется для организации гарантированной доставки данных.<br/>
+<i>timestamp</i> — так же используется для защиты от повторов.<br/>
+<i>packet payload</i> — данные, которые несёт пакет. Это либо служебная информация OpenVPN, либо сам инкапсулированный трафик.</p><br/>
+<div class="spoiler"><b class="spoiler_title">Что такое HMAC</b><div class="spoiler_text"><p><a href="https://ru.wikipedia.org/wiki/HMAC">HMAC</a>(key, message) — функция на основе криптографической хэш-функции (в данном случае на основе SHA1), которая генерирует код аутентификации — строку бит, служащую подписью для сообщения. Имея <strong>секретный ключ</strong>, сообщение и код аутентификации любой может проверить правильность кода аутентификации. Если код правильный — значит сообщение (в нашем случае пакет) не менялось с того момента как его подписал кто-то, у кого есть <b>такой же</b> ключ. Т.е. для проверки HMAC, в отличии от ЭЦП, обе стороны должны иметь один и тот же секретный ключ.</p></div></div><br/>
+<h3 id="rasshifrovyvaem-sluzhebnye-pakety">Расшифровываем служебные пакеты</h3><br/>
+<p>Теперь обещанный wireshark (вопреки утверждению на <a href="https://wiki.wireshark.org/OpenVPN">странице диссектора</a>, OpenVPN в режиме static key он не понимает):</p><br/>
+<br/>
+<p>Возьмём первый пакет и попробуем его расшифровать. Т.к. VPN настроен на работу через UDP, то поля Len нет, пакет начинается сразу с HMAC. Попробуем посчитать чему должен равняться HMAC от этого пакета без поля HMAC:</p><br/>
+<pre><code class="python">packet = unhexlify("7c0a45b025b3225c9a60051699fc87bae44dec9026e792a7ff3842aabd7cc77b439564b42002e5e327cba04c620cd80ca92c60139e2345a2c5d99b0f")
+print("HMAC = %s" % HMAC(key_hmac_0, packet[20:], 'sha1').hexdigest())</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<pre><code class="markdown">HMAC = 7c0a45b025b3225c9a60051699fc87bae44dec90</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Видим, что рассчитанный нами HMAC точно совпадает с HMAC, вставленным в пакет. Значит аутентификация пакета пройдена, а мы на правильном пути! Теперь пора его расшифровать.</p><br/>
+<pre><code class="python">iv = packet[20:28]
+encrypted_part = packet[28:]
+decrypted = Blowfish.new(key_encrypt_0, mode=Blowfish.MODE_CBC, IV=iv).decrypt(encrypted_part)
+print("Открытый текст: %s" % hexlify(decrypted).decode())</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<pre><code class="markdown">Открытый текст: 00000001 58069a45 287f346bd4ef7a812d56b8d3afc5459c00 07070707070707</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Первые 4 байта — это номер пакета. Всё правильно, пакет мы взяли первый. Вторые 4 байта — временн<em>а</em>я метка. Семь байт 0x07 в конце — это паддинг (байты, добавленные при шифровании для того, что бы длина сообщения была кратна длине блока), он правильный, отбрасываем.</p><br/>
+<pre><code class="python">packet_id = decrypted[:4]
+timestamp = decrypted[4:8]
+decrypted_data = decrypted[8:-decrypted[-1]]  # Убираем packet_id и timestamp из начала и паддинг с конца
+print("ID пакета: %s" % hexlify(packet_id).decode())
+print("Временная метка: %s" % hexlify(timestamp).decode())
+print("Содержимое пакета: %s" % hexlify(decrypted_data).decode())</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<pre><code class="markdown">ID пакета: 00000001
+Временная метка: 58069a45
+Содержимое пакета: 287f346bd4ef7a812d56b8d3afc5459c00</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>На первый взгляд похоже на то, что передаётся 16-байтная случайная строка и нулевой байт. Т.к. OpenVPN — проект с открытым кодом, лезем в код и в файле <em>occ.c</em> находим ответ, частично подтверждающий гипотезу.</p><br/>
+<p>287f346bd4ef7a812d56b8d3afc5459c — это константа <em>occ_magic</em> — признак того, что пакет является управляющим пакетом OpenVPN. После неё следует признак типа управляющего пакета, в данном случае это байт 0x00 == <em>OCC_REQUEST</em>. В пакете с OCC_REQUEST больше ничего не должно передаваться.</p><br/>
+<p>Теперь расшифруем второй пакет:</p><br/>
+<br/>
+<pre><code class="python">packet = unhexlify("91861a4479c376d3013cdcd7f3e657ac093048cdb3a40775fc5804f68842ef06288a9343acb298562aaa4c92c10aae2213441619c3df0d8b89a0f13f5dd69d1eaa0e22667938b68e38a1238e39b76b889b7b6e5dbadd8f3a264f6fc9bb9c225de387d5d17914b2e2853d7fbb706da429f596721ab394febe7e52875183f0e9e10ec16042398c4116c2069ef18f06da45b55581a9997d1f54def143b053226727934404be44379a0172d1b618bbf1b676b60f57889e734af6b54291d07d9c7e13573cc81e")
+# Так как в конфигурационном файле в опции 'secret' указан необязательный параметр 'direction', то трафик в эту сторону шифруется второй парой ключей.
+key_hmac = key_hmac_1
+key_encrypt = key_encrypt_1
+
+print("HMAC = %s" % HMAC(key_hmac, packet[20:], 'sha1').hexdigest())
+iv = packet[20:28]
+encrypted_part = packet[28:]
+decrypted = Blowfish.new(key_encrypt, mode=Blowfish.MODE_CBC, IV=iv).decrypt(encrypted_part)
+print("Открытый текст: %s" % hexlify(decrypted).decode())
+packet_id = decrypted[:4]
+timestamp = decrypted[4:8]
+decrypted_data = decrypted[8:-decrypted[-1]]  # Убираем packet_id и timestamp из начала и паддинг с конца
+print("ID пакета: %s" % hexlify(packet_id).decode())
+print("Временная метка: %s" % hexlify(timestamp).decode())
+print("Содержимое пакета HEX: %s" % hexlify(decrypted_data).decode())
+print("Содержимое пакета: %s" % decrypted_data)</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<pre><code class="markdown">HMAC = 91861a4479c376d3013cdcd7f3e657ac093048cd
+Открытый текст: 0000000158069a45287f346bd4ef7a812d56b8d3afc5459c0156342c6465762d747970652074756e2c6c696e6b2d6d747520313534342c74756e2d6d747520313530302c70726f746f2055445076342c6966636f6e666967203139322e3136382e312e31203139322e3136382e312e322c6b657964697220312c6369706865722042462d4342432c6175746820534841312c6b657973697a65203132382c73656372657400030303
+ID пакета: 00000001
+Временная метка: 58069a45
+Содержимое пакета HEX: 287f346bd4ef7a812d56b8d3afc5459c0156342c6465762d747970652074756e2c6c696e6b2d6d747520313534342c74756e2d6d747520313530302c70726f746f2055445076342c6966636f6e666967203139322e3136382e312e31203139322e3136382e312e322c6b657964697220312c6369706865722042462d4342432c6175746820534841312c6b657973697a65203132382c73656372657400
+Содержимое пакета в ASCII: b'(\x7f4k\xd4\xefz\x81-V\xb8\xd3\xaf\xc5E\x9c\x01V4,dev-type tun,link-mtu 1544,tun-mtu 1500,proto UDPv4,ifconfig 192.168.1.1 192.168.1.2,keydir 1,cipher BF-CBC,auth SHA1,keysize 128,secret\x00'</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Видим, что первые 16 байт этого пакета — <em>occ_magic</em>, а следущий байт (тип управляющего пакета) 0x01 == <em>OCC_REPLY</em>. В пакете OCC_REPLY после типа пакета передаётся си-строка с параметрами. В данном случае передаётся такой текст: <em>V4,dev-type tun,link-mtu 1544,tun-mtu 1500,proto UDPv4,ifconfig 192.168.1.1 192.168.1.2,keydir 1,cipher BF-CBC,auth SHA1,keysize 128,secret</em>. Эту же строку можно найти в логе OpenVPN.</p><br/>
+<p>Следующие два пакета — <em>OCC_REQUEST</em> от второго хоста первому и <em>OCC_REPLY</em> на него. Расшифровываем их аналогичным образом:</p><br/>
+<br/>
+<pre><code class="markdown">HMAC = fc52f6981ccb4d7c2a3c951bd1ce8e882f9155da
+ID пакета: 00000002
+Временная метка: 58069a45
+Содержимое пакета HEX: 287f346bd4ef7a812d56b8d3afc5459c00
+Содержимое пакета: b'(\x7f4k\xd4\xefz\x81-V\xb8\xd3\xaf\xc5E\x9c\x00'</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<br/>
+<pre><code class="markdown">HMAC = e4987efec6d4625e89ba26b69b0d8f54ed391c3c
+ID пакета: 00000002
+Временная метка: 58069a45
+Содержимое пакета HEX: 287f346bd4ef7a812d56b8d3afc5459c0156342c6465762d747970652074756e2c6c696e6b2d6d747520313534342c74756e2d6d747520313530302c70726f746f2055445076342c6966636f6e666967203139322e3136382e312e32203139322e3136382e312e312c6b657964697220302c6369706865722042462d4342432c6175746820534841312c6b657973697a65203132382c73656372657400
+Содержимое пакета: b'(\x7f4k\xd4\xefz\x81-V\xb8\xd3\xaf\xc5E\x9c\x01V4,dev-type tun,link-mtu 1544,tun-mtu 1500,proto UDPv4,ifconfig 192.168.1.2 192.168.1.1,keydir 0,cipher BF-CBC,auth SHA1,keysize 128,secret\x00'</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>После получения настроек удалённого хоста локальный хост проверяет соответствие своих и чужих настроек и выдаёт предупреждение если есть несоответствия. В данном случае видим, что настройки VPN на обеих сторонах совпадают с точностью до направления:</p><br/>
+<p><em>V4,dev-type tun,link-mtu 1544,tun-mtu 1500,proto UDPv4,ifconfig 192.168.1.1 192.168.1.2,keydir 1,cipher BF-CBC,auth SHA1,keysize 128,secret</em><br/>
+<em>V4,dev-type tun,link-mtu 1544,tun-mtu 1500,proto UDPv4,ifconfig 192.168.1.2 192.168.1.1,keydir 0,cipher BF-CBC,auth SHA1,keysize 128,secret</em></p><br/>
+<h3 id="rasshifrovyvaem-inkapsulirovannyy-trafik">Расшифровываем инкапсулированный трафик</h3><br/>
+<p>Следующий пакет в этом дампе трафика несёт пользовательские данные. Расшифровываем их так же, как и раньше:</p><br/>
+<br/>
+<pre><code class="markdown">HMAC = efe4850d41f0e4a7535f13310685d74c2722a0da
+ID пакета: 00000003
+Временная метка: 58069a45
+Содержимое пакета HEX: 4500005420874000400196cec0a80102c0a80101080066ed1a1300014d9a0658000000005a390a0000000000101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Тут нет ни occ_magic, ни ping_magic (другая магическая константа равная <em>2a187bf3641eb4cb07ed2d0a981fc748</em>), значит это пакет с данными. На самом деле 0x45 — это первый байт IPv4 пакета без опциональных полей заголовка. Видим, что это ровно тот же IPv4 пакет с ping-request, что и вышел из tun интерфейса (в hex на картинке IPv4 начинается со 2-ой строчки):</p><br/>
+<br/>
+<p>Ответный пакет:</p><br/>
+<br/>
+<pre><code class="markdown">HMAC = a0a0108cd173e8829b91e8b34bd5cac2ab8a9c0b
+ID пакета: 00000003
+Временная метка: 58069a45
+Содержимое пакета HEX: 450000547f00000040017855c0a80101c0a8010200006eed1a1300014d9a0658000000005a390a0000000000101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Видно, что это ровно тот же IPv4 с ping-reply, который был отправлен в туннель:</p><br/>
+<br/>
+<h1 id="zamechaniya">Замечания</h1><br/>
+<h3 id="openvpn-ping">OpenVPN Ping</h3><br/>
+<p>Есть ещё ping пакеты — служебные пакеты, которые OpenVPN посылает что бы подтвердить наличие соединения если прошло слишком много времени с момента отправки последнего пакета другому хосту (настраивается опциями keepalive, inactive и ping*). В отличии от обычного icmp ping, OpenVPN не отвечает на полученный пакет, а просто запоминает что соединение живо.</p><br/>
+<h3 id="nmap-vs-openvpn">nmap vs OpenVPN</h3><br/>
+<p>UDP порт, на котором слушает OpenVPN в режиме PSK (а так же в режиме TLS с включённой опцией TLS-AUTH), для всех, кто не знает секретный ключ, будет выглядеть как будто все пакеты на нём дропаются. <strong>nmap</strong> покажет статус этого порта как "open|filtered". В логах OpenVPN (при достаточно высоком значении опции verb) при сканировании порта будут записи "Authenticate/Decrypt packet error: packet HMAC authentication failed".</p><br/>
+<h3 id="obnaruzhenie-trafika-openvpn">Обнаружение трафика OpenVPN</h3><br/>
+<p>В режиме PSK при работе через UDP всё содержимое пакетов OpenVPN для стороннего наблюдателя (у которого нет секретных ключей) будут выглядеть случайным, т.е. там нет сигнатур, по которым можно было бы отнести эти пакеты к OpenVPN. Однако выбиваться из образа случайных данных будет длина пакетов — она зависит от используемой хэш-функции и меняется с шагом, равным размеру блока используемого шифра, а также наличие служебных пакетов фиксированной длины (OCC_REQUEST и OpenVPN PING пакеты).</p><br/>
+<p>При работе через TCP кроме того в начале каждого OpenVPN пакета будет незашифрованное 2-х байтное поле длины пакета.</p><br/>
+<h1 id="zaklyuchenie">Заключение</h1><br/>
+<p>Видно, что в режиме PSK всё устроено очень просто. Здесь даже толком нет разделения клиент/сервер.</p><br/>
+<p>В режиме TLS установление соединения проходит намного сложней, но зато он позволяет использовать <a href="https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%84%D1%80%D0%B0%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8B%D1%85_%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%B9">инфраструктуру открытых ключей</a>, обеспечивает регулярную смену сессионных ключей и реализует <a href="https://ru.wikipedia.org/wiki/Perfect_forward_secrecy">Perfect forward secrecy</a>. Но о режиме TLS в следующей части.</p></div></div></div><!----><!----></div><!----><!----></div><!--]--><!----><div class="tm-article-presenter__meta" data-test-id="article-meta-links"><div class="tm-separated-list tag-list tm-article-presenter__meta-list"><span class="tm-separated-list__title">Теги:</span><ul class="tm-separated-list__list"><!--[--><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[openvpn]" class="link"><span>openvpn</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[crypto]" class="link"><span>crypto</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[vpn]" class="link"><span>vpn</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[networking]" class="link"><span>networking</span></a><!--]--></li><!--]--><!----></ul></div><div class="tm-separated-list tm-article-presenter__meta-list"><span class="tm-separated-list__title">Хабы:</span><ul class="tm-separated-list__list"><!--[--><li class="tm-separated-list__item"><!--[--><a href="/ru/hubs/infosecurity/" class="link"><!--[--><span>Информационная безопасность</span><!--]--></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/hubs/crypto/" class="link"><!--[--><span>Криптография</span><!--]--></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/hubs/network_technologies/" class="link"><!--[--><span>Сетевые технологии</span><!--]--></a><!--]--></li><!--]--><!----></ul></div></div><!----><!--]--></article><!--]--></div><!----></div><div style="" class="tm-article-sticky-panel" data-test-id="article-sticky-panel"><div class="tm-data-icons tm-data-icons tm-data-icons_space-big tm-article-sticky-panel__icons" data-test-id="article-stats-icons"><div class="article-rating tm-data-icons__item" data-v-b9b05a90><div class="tm-votes-meter votes-switcher" data-v-b9b05a90><svg class="tm-svg-img tm-votes-meter__icon tm-votes-meter__icon tm-votes-meter__icon_appearance-article" height="24" width="24"><title>Всего голосов 14: ↑14 и ↓0</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-rating"></use></svg><span class="tm-votes-meter__value tm-votes-meter__value_positive tm-votes-meter__value_appearance-article tm-votes-meter__value_rating tm-votes-meter__value" data-test-id="votes-meter-value" title="Всего голосов 14: ↑14 и ↓0">+12</span></div><!--teleport start--><!--teleport end--><!----></div><!----><!----><button class="bookmarks-button tm-data-icons__item" title="Добавить в закладки" type="button" data-v-861e2740><span class="tm-svg-icon__wrapper icon" data-v-861e2740><svg class="tm-svg-img tm-svg-icon" height="24" width="24"><title>Добавить в закладки</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-favorite"></use></svg></span><span class="counter" title="Количество пользователей, добавивших публикацию в закладки" data-v-861e2740>149</span></button><div class="sharing tm-data-icons__item" title="Поделиться" data-v-daf6ee1d><button class="sharing-button" type="button" data-v-daf6ee1d><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon" data-v-daf6ee1d><path fill="currentColor" d="M13.8 13.8V18l7.2-6.6L13.8 5v3.9C5 8.9 3 18.6 3 18.6c2.5-4.4 6-4.8 10.8-4.8z"></path></svg></button><!--teleport start--><!--teleport end--></div><div class="article-comments-counter-link-wrapper tm-data-icons__item" title="Читать комментарии" data-v-8d952463><a href="/ru/articles/313052/comments/" class="article-comments-counter-link" data-test-id="counter-comments" data-v-8d952463><!--[--><svg class="tm-svg-img icon" height="24" width="24" data-v-8d952463><title>Комментарии</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-comments"></use></svg><span class="value" data-v-8d952463>4</span><!--]--></a><!----></div><!--[--><!--[--><!--[--><!----><!--]--><!--]--><!--]--><!--teleport start--><!--teleport end--><!----></div></div></div><!--[--><!--]--><div class="tm-article-presenter__footer"><!--[--><!--[--><div class="tm-article-blocks"><!----><!--[--><section class="tm-block tm-block tm-block_spacing-bottom"><!----><!--[--><div class="tm-block__body tm-block__body tm-block__body_variant-balanced"><!--[--><div class="article-author" data-test-id="article-author-info" data-async-called="true" data-v-af0d0f90><!--[--><!--]--><div class="tm-user-card tm-user-card tm-user-card_variant-article user-card" data-async-called="true" data-v-af0d0f90><div class="tm-user-card__info-container"><div class="tm-user-card__header"><div class="tm-user-card__header-data"><a href="/ru/users/Nokta_strigo/" class="tm-user-card__userpic tm-user-card__userpic_size-40"><!--[--><div class="tm-entity-image"></div><!--]--></a><div class="tm-user-card__meta"><div class="tm-counter-container karma" title=" 33 голоса " data-v-544d285f><div class="tm-counter-container__header"><!--[--><div class="karma-display positive" data-v-544d285f data-v-3881f4ba>27</div><!----><!--]--></div><div class="tm-counter-container__footer"><!--[--><div class="karma-text" data-v-544d285f>Карма</div><!--teleport start--><!--teleport end--><!--]--></div></div><div class="tm-counter-container"><div class="tm-counter-container__header"><!--[--><!--[--><!--]--><div class="tm-votes-lever tm-votes-lever tm-votes-lever_appearance-rating"><!----><div class="tm-votes-lever__score tm-votes-lever__score_appearance-rating tm-votes-lever__score" data-test-id="lever-score"><!--[--><span><span class="tm-votes-lever__score-counter tm-votes-lever__score-counter_rating tm-votes-lever__score-counter" data-test-id="votes-score-counter">0</span></span><!--]--></div><!----></div><!--]--></div><div class="tm-counter-container__footer"><!--[--><span class="tm-rating__text tm-rating__text">Общий рейтинг</span><!--]--></div></div></div></div></div><div class="tm-user-card__info tm-user-card__info_variant-article tm-user-card__info"><div class="tm-user-card__title tm-user-card__title_variant-article tm-user-card__title"><!----><a href="/ru/users/Nokta_strigo/" class="tm-user-card__nickname tm-user-card__nickname tm-user-card__nickname_variant-article"><!--[-->@Nokta_strigo<!--]--></a><!----></div><p class="tm-user-card__short-info tm-user-card__short-info_variant-article tm-user-card__short-info" data-test-id="user-card-speciality">Пользователь</p></div></div><!----><div class="tm-user-card__buttons tm-user-card__buttons_variant-article tm-user-card__buttons"><!----><div class="tm-user-card__button"><div class="tm-button-follow tm-user-card__button-follow"><!----><button class="tm-button-follow__button tm-button-follow__button_big" data-test-id="follow-button" type="button">Подписаться</button></div></div><!----><!--[--><div class="tm-user-card__button tm-user-card__button_write" data-test-id="user-card-conversations"><svg class="tm-svg-img tm-user-card__button-icon" height="16" width="16"><title>Отправить сообщение</title><use xlink:href="/img/megazord-v28.cba4c116..svg#mail"></use></svg></div><!--]--><!----><!----></div><!----></div><div class="author-contacts" data-test-id="author-contacts" data-v-af0d0f90><!----><!----><!----></div></div><!--]--></div><!--]--><!----></section><!----><!--[--><div class="sponsor-block" style="--d75346b8:0;--11dbf66e:100%;" data-v-580b3119><div class="title" data-v-580b3119>Хабр доступен 24/7 благодаря поддержке друзей</div><div class="content-container" data-v-580b3119><div class="content" data-v-580b3119><div class="content-title-container" data-v-580b3119><div class="content-title" data-v-580b3119>Хабр Курсы для всех</div><div class="sponsor-mark" data-v-580b3119>РЕКЛАМА</div></div><div class="content-text" data-v-580b3119> Практикум, Хекслет, SkyPro, авторские курсы — собрали всех и попросили скидки. Осталось выбрать! </div><a class="content-action" href="https://career.habr.com/courses/?erid=2VSb5wDLYUH&amp;utm_source=habr&amp;utm_medium=sponsorship_hub" target="_blank" data-v-580b3119><button class="btn btn_solid btn_small tm-button_color-horizon" tabindex="0" type="button" data-v-580b3119><!--[--><!--[-->Перейти<!--]--><!--]--></button></a></div></div><div class="footer" data-v-580b3119><!----></div><!----></div><!--]--><!--]--><div class="tm-article-blocks__comments"><div id="publication-comments" class="tm-article-page-comments"><div><!--[--><div class="article-comments-counter-link-wrapper tm-article-comments-counter-button" data-v-8d952463><a href="/ru/articles/313052/comments/" class="article-comments-counter-link button-style" data-test-id="counter-comments" data-v-8d952463><!--[--><svg class="tm-svg-img icon icon--contrasted" height="24" width="24" data-v-8d952463><title>Комментарии</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-comments"></use></svg><span class="value value--contrasted" data-v-8d952463> Комментарии 4 </span><!--]--></a><!----></div><!--]--></div></div></div><!--[--><!--[--><!--]--><section class="tm-block tm-block tm-block_spacing-bottom"><header class="tm-block__header tm-block__header tm-block__header_variant-borderless"><div class="tm-block__header-container"><h2 class="tm-block__title tm-block__title tm-block__title_variant-large">Публикации</h2><!--[--><!--]--></div><!----></header><!--[--><div class="tm-block__body tm-block__body tm-block__body_variant-condensed-slim"><!--[--><!--[--><div class="tabs" data-test-id="container" data-v-681e7545><div class="" data-test-id="scroll-area" data-v-681e7545><!--[--><span class="tab-item" data-v-681e7545><button class="active slim tab-link" data-v-681e7545>Лучшие за сутки</button></span><span class="tab-item" data-v-681e7545><button class="slim tab-link" data-v-681e7545>Похожие</button></span><!--]--></div><!----></div><div class="similar-and-daily__tab-view"><div class="daily-articles-list"><ul class="article-card-list" data-v-7f7081d6><!--[--><!--]--><div class="tm-bordered-card" data-v-7f7081d6><!----><!--[--><!--]--></div></ul><div class="daily-articles-block__button-container"><button class="btn btn_transparent btn_small tm-button_color-horizon" tabindex="0" type="button"><!--[--><!--[-->Показать лучшие за всё время<!--]--><!--]--></button></div></div><!----></div><!--]--><!--]--></div><!--]--><!----></section><!--[--><div><div class="placeholder-wrapper"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="tm-placeholder-promo"><div class="tm-placeholder-promo__header"><div class="tm-placeholder__line tm-placeholder__line_promo-title"></div></div><div class="tm-placeholder-promo__body"><div class="tm-placeholder-promo__posts"><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div></div><div class="tm-placeholder-promo__dots"><div class="tm-placeholder-promo__dot"></div><div class="tm-placeholder-promo__dot"></div><div class="tm-placeholder-promo__dot"></div></div></div></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div></div><div class="placeholder-wrapper"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="tm-placeholder-inset tm-placeholder-vacancies"><div class="tm-placeholder-inset__header"><div class="tm-placeholder__line tm-placeholder__line_inset-header loads"></div></div><div class="tm-placeholder-inset__body"><ul class="tm-placeholder-list"><!--[--><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder-list__title-container"><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder-list__title-container"><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder-list__title-container"><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder-list__title-container"><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder-list__title-container"><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><!--]--></ul></div><div class="tm-placeholder-inset__footer"><div class="tm-placeholder__line tm-placeholder__line_inset-footer loads"></div></div></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div><!--]--><!----><!--[--><!--]--><!--]--></div><!----><!--]--><!--]--></div></div><!--]--></div><!--]--></div></div><div class="tm-page__sidebar"><!--[--><div class="sidebar" data-v-0050f56d><div id="sidebar-window-placement" data-v-0050f56d></div><!--[--><!--]--></div><!--]--></div></div><!--]--></div><!----></div></main><!----></div><div class="tm-footer-menu"><div class="tm-page-width"><!--[--><div class="tm-footer-menu__container"><!--[--><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Ваш аккаунт</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr/?back=/ru/articles/313052/&amp;hl=ru" rel="nofollow" target="_self">Войти</a></li><li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr-register/?back=/ru/articles/313052/&amp;hl=ru" rel="nofollow" target="_self">Регистрация</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Разделы</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/ru/articles/" class="footer-menu__item-link">Статьи</a></li><li class="tm-footer-menu__list-item"><a href="/ru/news/" class="footer-menu__item-link">Новости</a></li><li class="tm-footer-menu__list-item"><a href="/ru/hubs/" class="footer-menu__item-link">Хабы</a></li><li class="tm-footer-menu__list-item"><a href="/ru/companies/" class="footer-menu__item-link">Компании</a></li><li class="tm-footer-menu__list-item"><a href="/ru/users/" class="footer-menu__item-link">Авторы</a></li><li class="tm-footer-menu__list-item"><a href="/ru/sandbox/" class="footer-menu__item-link">Песочница</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Информация</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/ru/docs/help/" class="footer-menu__item-link">Устройство сайта</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/authors/codex/" class="footer-menu__item-link">Для авторов</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/companies/corpblogs/" class="footer-menu__item-link">Для компаний</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/docs/transparency/" class="footer-menu__item-link">Документы</a></li><li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/agreement/?hl=ru_RU" target="_blank">Соглашение</a></li><li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/confidential/?hl=ru_RU" target="_blank">Конфиденциальность</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Услуги</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/corporate-blogs/" target="_blank">Корпоративный блог</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/advertising/" target="_blank">Медийная реклама</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/native-special/" target="_blank">Нативные проекты</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/education-programs/" target="_blank">Образовательные программы</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/hello-startup/" target="_blank">Стартапам</a></li><!--]--></ul></div></div><!--]--></div><!--]--></div></div><div class="tm-footer"><div class="tm-page-width"><!--[--><div class="tm-footer__container"><!----><div class="social-icons tm-footer__social" data-v-d6e8cb42><!--[--><a class="tm-svg-icon__wrapper social-icon" href="https://vk.com/habr" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>VK</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-vk"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="https://telegram.me/habr_com" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Telegram</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-telegram"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="http://www.youtube.com/@Habr_com" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Youtube</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-youtube"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="https://dzen.ru/habr" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Яндекс Дзен</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-dzen"></use></svg></a><!--]--></div><!--teleport start--><!--teleport end--><button class="tm-footer__link"><!----> Настройка языка</button><a href="/ru/feedback/" class="tm-footer__link">Техническая поддержка</a><div class="tm-footer-copyright"><span class="tm-copyright"><span class="tm-copyright__years">© 2006–2026,</span><span class="tm-copyright__name"><a class="tm-copyright__link" href="https://company.habr.com/" rel="noopener" target="_blank"> Habr </a></span></span></div></div><!--]--></div></div><!----><!----><!--]--></div><!----></div></div>
+    <div id="overlays"><!--teleport start anchor--><template><!----></template><!--teleport anchor--><!--teleport start anchor--><template><!----></template><!--teleport anchor--><!--teleport start anchor--><template><!----></template><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--></div>
+    
+    
+    
+    
+  
+  
+    
+  
+    </body>
+
+    </html>

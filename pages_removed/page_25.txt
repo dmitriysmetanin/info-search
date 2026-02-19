@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <title>Настройка выделенного сервера Source под Linux, часть 3 &#x2F; Хабр</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+  </head>
+  <body>
+    
+    <div id="mount"><div id="app"><div class="tm-layout__wrapper"><!--[--><!----><div></div><div class="header-banner-wrapper"><div class="element-wrapper above-header" style="--754c4550:100%;--56cb6579:auto;"><!--[--><div class="placeholder-wrapper banner-container__placeholder"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="adfox-banner-placeholder above-header" data-v-24012b5e><div class="image loads" data-v-24012b5e></div><div class="lines" data-v-24012b5e><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div></div></div><!----><!----><!----></div><!--[--><div id="adfox_175449164307199013_aboveHeader" class="banner-target"></div><!--]--><!--]--></div></div><header class="tm-header tm-header" data-test-id="header"><!----><!----><div class="tm-page-width"><!--[--><div class="tm-header__container"><button aria-expanded="false" aria-label="Toggle menu" class="burger-button tm-header__button tm-header__burger" data-v-56ed7aae><span class="line top" data-v-56ed7aae></span><span class="line middle" data-v-56ed7aae></span><span class="line bottom" data-v-56ed7aae></span></button><span class="tm-header__logo-wrap"><a class="tm-header__logo tm-header__logo_hl-ru tm-header__logo" href="/ru/feed"><svg class="tm-svg-img tm-header__icon" height="16" width="16"><title>Хабр</title><use xlink:href="/img/habr-logo-ru.svg#logo"></use></svg></a></span><span class="tm-header__divider"></span><!--[--><a class="tm-header__all-flows" href="/ru/articles/">Все потоки</a><!--]--><!----><div class="tm-header-user-menu tm-base-layout__user-menu"><a href="/ru/search/" class="tm-header-user-menu__item tm-header-user-menu__search" data-test-id="search-button"><svg class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_search" height="24" width="24"><title>Поиск</title><use xlink:href="/img/megazord-v28.cba4c116..svg#search"></use></svg></a><!----><!----><div class="tm-header-user-menu__item tm-header-user-menu__write"><a href="/ru/sandbox/start/" class=""><svg class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_write" height="24" width="24"><title>Написать публикацию</title><use xlink:href="/img/megazord-v28.cba4c116..svg#write"></use></svg></a><!----></div><!--[--><div class="tm-header-user-menu__item"><button class="tm-header-user-menu__toggle" data-test-id="user-menu-settings"><svg class="tm-svg-img tm-header-user-menu__icon" height="24" width="24"><title>Настройки</title><use xlink:href="/img/megazord-v28.cba4c116..svg#page-settings"></use></svg></button></div><a href="https://habr.com/kek/v1/auth/habrahabr/?back=/ru/articles/312934/&amp;hl=ru" rel="nofollow" class="tm-header-user-menu__item tm-header-user-menu__login" role="button"><!--[-->Войти<!--]--></a><!--]--><template><!----></template><!--teleport start--><!--teleport end--></div></div><!--]--></div></header><div class="tm-layout"><div class="tm-page-progress-bar"></div><!----><div class="tm-page-width"><!--[--><!----><!----><!----><!--]--></div><main class="tm-layout__container"><div class="tm-page" hl="ru" data-async-called="true" style="--a414e232:300px;--10c4682a:0;--19620736:0;"><!----><div class="tm-page-width"><!--[--><!----><div class="tm-page__wrapper"><!----><div class="tm-page__main_has-sidebar tm-page__main"><div class="pull-down"><!----><div class="pull-down__header" style="height:0px;"><div class="pull-down__content" style="bottom:10px;"><svg class="tm-svg-img pull-down__icon pull-down__arrow" height="24" width="24"><title>Обновить</title><use xlink:href="/img/megazord-v28.cba4c116..svg#pull-arrow"></use></svg></div></div><!--[--><div><!--[--><!----><div class="tm-article-presenter" data-async-called="true"><!--[--><!--]--><div class="tm-article-presenter__body" data-test-id="article-body"><div class="tm-misprint-area"><div class="tm-misprint-area__wrapper"><!--[--><article class="tm-article-presenter__content tm-article-presenter__content_narrow"><!--[--><div class="tm-article-presenter__header"><!--[--><!--]--><div class="article-snippet tm-article-presenter__snippet" data-v-085cd854><!--[--><!--]--><div class="meta-container" data-v-085cd854><div class="meta" data-v-085cd854><span class="tm-user-info author" data-v-085cd854><a href="/ru/users/abrca/" class="tm-user-info__userpic" data-test-id="user-info-pic"><!--[--><div class="tm-entity-image"><!--[--><!--]--></div><!--]--></a><span class="tm-user-info__user tm-user-info__user_appearance-default" data-test-id="user-info-description"><a href="/ru/users/abrca/" class="tm-user-info__username" data-test-id="user-info-username"><!--[-->abrca<!--]--></a><!----><!--[--><span class="tm-article-datetime-published" data-v-085cd854><time data-allow-mismatch datetime="2016-10-17T16:12:43.000Z" title="2016-10-17, 16:12">17  окт  2016 в 16:12</time></span><!--]--></span></span></div><div class="controls" data-v-085cd854><!----><!----><!----><!----></div></div><h1 class="tm-title tm-title_h1" lang="ru" data-test-id="articleTitle" data-v-085cd854><span>Настройка выделенного сервера Source под Linux, часть 3</span></h1><div class="stats" data-test-id="articleStats" data-v-085cd854><!----><div class="tm-article-reading-time" data-v-085cd854><span class="tm-svg-icon__wrapper tm-article-reading-time__icon"><svg class="tm-svg-img tm-svg-icon" height="24" width="24"><title>Время на прочтение</title><use xlink:href="/img/megazord-v28.cba4c116..svg#clock"></use></svg></span><span class="tm-article-reading-time__label">31 мин</span></div><span class="tm-icon-counter tm-data-icons__item reach-counter" data-v-085cd854><svg class="tm-svg-img tm-icon-counter__icon" height="24" width="24"><title>Охват и читатели</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-views"></use></svg><span class="tm-icon-counter__value" title="12988">13K</span></span></div><div class="tm-publication-hubs__container" data-test-id="articleHubsList" data-v-085cd854><div class="tm-publication-hubs"><!--[--><span class="tm-publication-hub__link-container"><a href="/ru/hubs/nix/" class="tm-publication-hub__link"><!--[--><span>*nix</span><span class="tm-article-snippet__profiled-hub" title="Профильный хаб"> * </span><!--]--></a></span><!--]--></div></div><div class="tm-article-labels" data-test-id="articleLabels" data-v-085cd854 data-v-bfa2437b><div class="tm-article-labels__container" data-v-bfa2437b><!----><!--[--><div class="tm-publication-label tm-publication-label_variant-tutorial" data-v-bfa2437b><span>Туториал</span></div><!--[--><!--]--><!--]--></div></div><!----><!----><!--teleport start--><!--teleport end--></div></div><!--[--><!----><div class="article-body" data-gallery-root lang="ru" data-v-aad06d04><div data-v-aad06d04><!--[--><!--]--></div><div id="post-content-body" data-v-aad06d04><div><div class="article-formatted-body article-formatted-body article-formatted-body_version-1"><div xmlns="http://www.w3.org/1999/xhtml"><ul>
+<li>Установка MetaMod и SourceMod<br/>
+<ul>
+<li>Установка MetaMod:Source</li>
+<li>Установка SourceMod</li>
+</ul></li>
+<li>Автозапуск игровых серверов</li>
+<li>Логи<br/>
+<ul>
+<li>Логи cron</li>
+<li>Логи клиента Steam</li>
+<li>Логи веб-сервера</li>
+<li>Логи SourceMod</li>
+<li>Логи игровых серверов</li>
+<li>Логи сервера статистики</li>
+</ul></li>
+<li>Привязка к Steam и QuickPlay<br/>
+<ul>
+<li>Серверная учётная запись</li>
+<li>QuickPlay<a name="habracut"></a></li>
+</ul></li>
+</ul><br/>
+<h1 id="ustanovka-metamod-i-sourcemod">Установка MetaMod и SourceMod</h1><br/>
+<p>Пришла пора внести свежую струю в процесс настройки совместного сосуществования наших серверов, а именно — добавить MetaMod и SourceMod.</p><br/>
+<h2 id="ustanovka-metamodsource">Установка MetaMod:Source</h2><br/>
+<p>Сначала установим плагин MetaMod:Source, который никаких игровых функций не добавляет, а лишь обеспечивает интерфейс между движком Source, игрой и другими плагинами.</p><br/>
+<p>Домашняя страница — <a href="http://www.metamodsource.net/">http://www.metamodsource.net/</a></p><br/>
+<p>Скачиваем последнюю версию и распаковываем архив.</p><br/>
+<pre><code class="bash">   $ wget http://cdn.probablyaserver.com/sourcemod/mmsource-1.10.6-linux.tar.gz
+   $ tar -xvzf mmsource-1.10.6-linux.tar.gz -C ~/tf2/tf</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>В каталоге ~/tf2/tf будет создан подкаталог addons (в него мы будем устанавливать и другие моды), а в нём каталог metamod с рядом файлов для различных Source игр, в том числе и для Team Fortress 2:</p><br/>
+<pre><code>   addons/
+   addons/metamod.vdf
+   ...
+   addons/metamod/bin/metamod.2.tf2.so
+   addons/metamod/bin/server.so
+   ...
+   addons/metamod/metaplugins.ini</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Игровой сервер srcds при запуске проверяет наличие каталога ~/tf2/tf/addons, ищёт в нём *.vdf файлы, в которых в параметре "file" должны быть указаны пути к библиотекам плагинов. В нашем случае, как раз в таком файле ~/tf2/tf/addons/metamod.vdf подключен плагин MetaMod:Source как "addons/metamod/bin/server" (путь указывается относительно ~/tf2/tf/).</p><br/>
+<p>Теперь мы установим SourceMod и подключим его к MetaMod.</p><br/>
+<h2 id="ustanovka-sourcemod">Установка SourceMod</h2><br/>
+<p>Домашняя страница — <a href="http://www.sourcemod.net/">http://www.sourcemod.net/</a></p><br/>
+<p>Переходим на <a href="http://www.sourcemod.net/downloads.php?branch=stable">http://www.sourcemod.net/downloads.php?branch=stable</a>, скачиваем последнюю версию под Linux и распаковываем архив</p><br/>
+<pre><code class="bash">   $ wget https://sm.alliedmods.net/smdrop/1.8/sourcemod-1.8.0-git5947-linux.tar.gz
+   $ tar -xvzf sourcemod-1.8.0-git5947-linux.tar.gz -C ~/tf2/tf</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>В ~/tf2/tf/addons появился каталог sourcemod, в ~/tf2/tf/cfg/ — каталог sourcemod с файлами конфигурации, а в<br/>
+~/tf2/tf/addons/metamod — файлик sourcemod.vdf.</p><br/>
+<pre><code>   addons/metamod/sourcemod.vdf
+   addons/sourcemod/
+   addons/sourcemod/scripting/
+   addons/sourcemod/configs/core.cfg
+   ...
+   cfg/sourcemod/sm_warmode_off.cfg
+   cfg/sourcemod/sm_warmode_on.cfg
+   cfg/sourcemod/sourcemod.cfg</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Так как одна инсталляция SourceMod <a href="https://wiki.alliedmods.net/Multiple_or_Forked_Servers_(SourceMod)">не может</a> одновременно обслуживать несколько серверов, то нам необходимо растиражировать по количеству серверов. В каталоге addons переименовываем sourcemod в sourcemod1 и копируем со всем содержимым в sourcemod2, предварительно для удобства выполнив dos2unix для файлов настроек:</p><br/>
+<pre><code class="bash">   $ mv ~/tf2/tf/addons/sourcemod ~/tf2/tf/addons/sourcemod1
+   $ cd ~/tf2/tf/addons/sourcemod1/configs
+   $ dos2unix *.cfg *.ini *.txt
+   $ cp -r ~/tf2/tf/addons/sourcemod1 ~/tf2/tf/addons/sourcemod2</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>MetaMod находит и подключает SourceMod благодаря файлу addons/metamod/sourcemod.vdf. Но этот файл один, а нам надо два разных, для каждого сервера. У MetaMod есть параметр, указывающий на каталог (не файл!) с конфигурацией, поэтому создадим два каталога cfg1 и cfg2 и поместим туда sourcemod.vdf, который и будем править.</p><br/>
+<pre><code>   $ mkdir ~/tf2/tf/addons/metamod/cfg{1,2}
+   $ dos2unix ~/tf2/tf/addons/metamod/sourcemod.vdf
+   $ mv ~/tf2/tf/addons/metamod/sourcemod.vdf ~/tf2/tf/addons/metamod/cfg1/sourcemod.vdf
+   $ cp ~/tf2/tf/addons/metamod/cfg1/sourcemod.vdf ~/tf2/tf/addons/metamod/cfg2/sourcemod.vdf</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Редактируем эти файлы, исправляя пути к инсталляциям SourceMod (так же, относительно ~/tf2/tf):</p><br/>
+<p>~/tf2/tf/addons/metamod/cfg1/sourcemod.vdf:</p><br/>
+<div class="spoiler"><b class="spoiler_title">cfg1/sourcemod.vdf</b><div class="spoiler_text"><pre><code>"Metamod Plugin"
+{
+    "alias"     "sourcemod"
+    "file"      "addons/sourcemod1/bin/sourcemod_mm"
+}</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>~/tf2/tf/addons/metamod/cfg2/sourcemod.vdf (исправляем 1 -&gt; 2):</p><br/>
+<div class="spoiler"><b class="spoiler_title">cfg2/sourcemod.vdf</b><div class="spoiler_text"><pre><code>"Metamod Plugin"
+{
+    "alias"     "sourcemod"
+    "file"      "addons/sourcemod2/bin/sourcemod_mm"
+}</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Для удобства делаем символьные ссылки на каталоги с настройками и логами:</p><br/>
+<pre><code class="bash">   $ ln -s ~/tf2/tf/addons/metamod/cfg1 ~/cfg/mm1
+   $ ln -s ~/tf2/tf/addons/metamod/cfg2 ~/cfg/mm2
+   $ ln -s ~/tf2/tf/addons/sourcemod1/configs ~/cfg/sm1
+   $ ln -s ~/tf2/tf/addons/sourcemod2/configs ~/cfg/sm2
+   $ ln -s ~/tf2/tf/addons/sourcemod1/logs ~/log/sm1
+   $ ln -s ~/tf2/tf/addons/sourcemod2/logs ~/log/sm2</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Каких-то отдельных команд для запуска MetaMod прописывать не надо — игровой сервер запустит его автоматически, но нам надо указать различные каталоги для загрузки SourceMod.</p><br/>
+<p>В файле ~/cfg/autoexec1.cfg для первого сервера дописываем в конец:</p><br/>
+<div class="spoiler"><b class="spoiler_title">autoexec1.cfg</b><div class="spoiler_text"><pre><code>//...
+
+// Load SourceMod instance No 1
+mm_basedir addons/metamod/cfg1</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Для второго сервера в ~/cfg/autoexec2.cfg аналогично, только вместо "cfg1" -&gt; "cfg2":</p><br/>
+<div class="spoiler"><b class="spoiler_title">autoexec2.cfg</b><div class="spoiler_text"><pre><code>//...
+
+// Load SourceMod instance No 2
+mm_basedir addons/metamod/cfg2</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Теперь MetaMod знает откуда загружать SourceMod, но последний не знает откуда ему брать свои настройки. Пропишем пути для каждого SourceMod. В отличие от MetaMod, параметры нам придётся указывать аж в командной строке запуска сервера. Ни в autoexec.cfg, ни в server.cfg они не срабатывают.</p><br/>
+<p>В скриптах запусках start1.sh и start2.sh, в CMDLINE дописываем:</p><br/>
+<div class="spoiler"><b class="spoiler_title">start1.sh</b><div class="spoiler_text"><pre><code>CMDLINE="...
+    +sm_basepath addons/sourcemod1 +sm_corecfgfile addons/sourcemod1/configs/core.cfg \
+    ...</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Это для первого сервера. Для второго сервера аналогично, только вместо "sourcemod1" -&gt; "sourcemod2":</p><br/>
+<div class="spoiler"><b class="spoiler_title">start2.sh</b><div class="spoiler_text"><pre><code>CMDLINE="...
+    +sm_basepath addons/sourcemod2 +sm_corecfgfile addons/sourcemod2/configs/core.cfg \
+    ...</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Параметр sm_corecfgfile необходим, так как путь к core.cfg не берётся из sm_basepath, что логично было бы предположить.</p><br/>
+<p>Для проверки можно запустить первый игровой сервер и когда он полностью запустится, в его консоли ввести (команды выделены угловыми скобками):</p><br/>
+<pre><code>   &gt;&gt;&gt; meta version
+   Metamod:Source version 1.10.6
+   Built from: https://github.com/alliedmodders/metamod-source/commit/9fed12f
+   Build ID: 946:9fed12f
+   Loaded As: Valve Server Plugin
+   Compiled on: Sep 12 2015
+   Plugin interface version: 15:14
+   SourceHook version: 5:5
+   http://www.metamodsource.net/
+   &gt;&gt;&gt; mm_basedir
+   "mm_basedir" = "addons/metamod/cfg1" ( def. "addons/metamod" )
+    singleplayer
+    - Metamod:Source Base Folder
+   &gt;&gt;&gt; meta list
+   Listing 4 plugins:
+   [01] SourceMod (1.8.0.5907) by AlliedModders LLC
+   [02] TF2 Tools (1.8.0.5907) by AlliedModders LLC
+   [03] SDK Hooks (1.8.0.5907) by AlliedModders LLC
+   [04] SDK Tools (1.8.0.5907) by AlliedModders LLC
+   &gt;&gt;&gt; meta info 1
+   Plugin 1 is running.
+   Name: "SourceMod" by AlliedModders LLC
+   Version: 1.8.0.5907
+   Description: Extensible administration and scripting system
+   License: See LICENSE.txt
+   URL: http://www.sourcemod.net/
+   Details: API 015, Date: Apr 26 2016
+   File: /home/game/tf2/tf/addons/sourcemod1/bin/sourcemod_mm_i486.so
+
+   &gt;&gt;&gt; sm_basepath
+   "sm_basepath" = "addons/sourcemod1" ( def. "addons/sourcemod" )
+    - SourceMod base path (set via command line)
+   &gt;&gt;&gt; sm_corecfgfile
+   "sm_corecfgfile" = "addons/sourcemod1/configs/core.cfg" ( def. "addons/sourcemod/configs/core.cfg" )
+    - SourceMod core configuration file
+   &gt;&gt;&gt; sm plugins list
+   [SM] Listing 17 plugins:
+   01 "Admin Menu" (1.8.0.5907) by AlliedModders LLC
+   ...
+   17 "Player Commands" (1.8.0.5907) by AlliedModders LLC
+   &gt;&gt;&gt; sm exts list
+   [SM] Displaying 9 extensions:
+   [01] Automatic Updater (1.8.0.5907): Updates SourceMod gamedata files
+   ...
+   [09] SQLite (1.8.0.5907): SQLite Driver</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Ну что же, все пути к каталогам и файлам верны, семнадцать стандартных плагинов и девять расширений запущены. Позже мы разберём кто что делает, а пока продолжим.</p><br/>
+<p>Если же при вводе команд выдаются ошибки вида:</p><br/>
+<pre><code>   &gt;&gt;&gt; meta list
+   Listing 1 plugin:
+     [01] &lt;FAILED&gt;
+   &gt;&gt;&gt; sm_basepath
+   Unknown command "sm_basepath"</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>То значит MetaMod не смог загрузить SourceMod. Надо искать в чём дело.</p><br/>
+<p>Перечень консольных команд MetaMod:Source — <a href="https://wiki.alliedmods.net/Console_Commands_%28SourceMM%29">Console Commands (SourceMM)</a></p><br/>
+<p>Расширения находятся в каталоге ~/tf2/tf/addons/sourcemod{1,2}/extensions — для всех поддерживаемых игр на движке Source, не только TF2.</p><br/>
+<p>Скомпилированные плагины находятся в каталоге ~/tf2/tf/addons/sourcemod{1,2}/plugins. Если требуется отключить какой-нибудь плагин, то его можно просто перенести в подкаталог disabled. Сами исходные тексты плагинов находятся каталоге ~/tf2/tf/addons/sourcemod{1,2}/scripting. Там же есть компилятор и скрипт compile.sh, который компилирует исходники и помещает скомпилированные плагины в подкаталог compiled, откуда их можно перенести в ~/tf2/tf/addons/sourcemod{1.2}/plugins — и они станут доступны для использования SourceMod.</p><br/>
+<p>Теперь можно настроить SourceMod для каждого сервера, редактируя файлы core.cfg в ~/tf2/tf/addons/sourcemod{1,2}/configs. В нашем случае удовлетворимся параметрами по умолчанию. Обратите внимание, что при этом параметром "DisableAutoUpdate No" включено автообновление <a href="http://wiki.alliedmods.net/Gamedata_Updating_(SourceMod)">игровых данных</a> SourceMod в каталогах ~/tf2/tf/addons/sourcemod{1,2}/gamedata.</p><br/>
+<p>Так же можно в core.cfg установить параметру "LogMode" значени "game" — тогда логи станут записываться не в отдельные файлы, а в логи игрового сервера. Подробнее в разделе "Логи"</p><br/>
+<p>Прочие файлы конфигурации разберём позже.</p><br/>
+<p>Однако есть ещё один файл конфигурации — ~/tf2/tf/cfg/sourcemod/sourcemod.cfg — он выполняется при каждой смене карт следом за server.cfg и является общим для всех инсталляций SourceMod. Поэтому оставляем в sourcemod.cfg лишь команды, общие для обоих серверов, а индивидуальные переносим в отдельные файлы для каждого сервера.</p><br/>
+<pre><code class="bash">   $ dos2unix ~/tf2/tf/cfg/sourcemod/sourcemod.cfg
+   $ cp ~/tf2/tf/cfg/sourcemod/sourcemod.cfg ~/cfg/sourcemod_default.cfg
+   $ ln -s ~/tf2/tf/cfg/sourcemod ~/cfg/sm</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Редактируем ~/tf2/tf/cfg/sourcemod/sourcemod.cfg, традиционно добавляем вывод "echo", исправляем "sm_show_activity" и устанавливаем в "sm_datetime_format" привычный формат вывода даты/времени.</p><br/>
+<div class="spoiler"><b class="spoiler_title">sourcemod.cfg</b><div class="spoiler_text"><pre><code>echo "*** ~/tf2/tf/cfg/sourcemod/sourcemod.cfg"
+// SourceMod Configuration File
+// This file is automatically executed by SourceMod every mapchange.
+
+// Specifies how admin activity should be relayed to users.
+sm_show_activity 28
+
+// Default datetime formatting rules when displaying to clients.
+sm_datetime_format "%d %b %Y - %H:%M:%S"</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Всё. Остальное удаляем. Позже, когда захочется установить для серверов свои параметры, то можно взять их из сохранённого ~/cfg/sourcemod_default.cfg и указать в каком-либо файле конфигурации сервера. Почему нельзя оставить всё как есть — в оригинальном sourcemod.cfg? А потому что он выполняется при каждой смене карт следом за server{1,2}.cfg — то есть любые установки, например, касающиеся резервных слотов, прописанные в server{1,2}.cfg будут перезаписаны значениями по умолчанию из этого файла. А те же резервные слоты мы будем настраивать для наших серверов по-разному.</p><br/>
+<blockquote>При установке новых плагинов SourceMod, их файлы конфигурации могут автоматически создаваться в ~/tf2/tf/cfg/sourcemod/ и становиться общими для обеих инсталляций SourceMod. Собственно, там уже лежит файл с настройками для плагина funcommands.smx</blockquote><p>Так же SourceMod по умолчанию периодически скачивает со своего сервера (update.sourcemod.net) обновления файлов с игровыми данными, что найдёт своё отражение в логах. На примере первого сервера (~/tf2/tf/addons/sourcemod1/logs/), строчки 3,4,5:</p><br/>
+<pre><code>   L 03/21/2014 - 14:52:41: SourceMod log file session started (file "L20140321.log") (Version "1.5.3")
+   L 03/21/2014 - 14:52:41: -------- Mapchange to cp_well --------
+   L 03/21/2014 - 14:52:56: [UPDATER] Successfully updated gamedata file "sdkhooks.games/engine.csgo.txt"
+   L 03/21/2014 - 14:52:56: [UPDATER] Successfully updated gamedata file "sdktools.games/engine.csgo.txt"
+   L 03/21/2014 - 14:52:56: [UPDATER] Successfully updated gamedata file "sm-cstrike.games/game.csgo.txt"
+   L 03/21/2014 - 14:52:56: [UPDATER] SourceMod has been updated, please reload it or restart your server.
+   L 03/21/2014 - 14:55:26: SourceMod log file session started (file "L20140321.log") (Version "1.5.3")
+   L 03/21/2014 - 14:55:26: -------- Mapchange to cp_well --------</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Документация по SourceMod — <a href="https://wiki.alliedmods.net/SourceMod_Configuration">настройка</a>, <a href="https://wiki.alliedmods.net/Managing_your_Sourcemod_installation">управление</a>, небольшой <a href="http://forums.alliedmods.net/showthread.php?t=69092">FAQ</a> (eng).</p><br/>
+<p>Так как очередные обновления Team Fortress 2 могут нарушать хрупкое взаимодействие игры и SourceMod, то имеет смысл отслеживать новые версии и билды и регулярно обновляться.</p><br/>
+<p>Продолжение с описанием настройки плагинов и интерактивным взаимодействием игроков с сервером описано в разделе "Плагины SourceMod", а пока двинемся дальше — к настройке запуска серверов.</p><br/>
+<h1 id="avtozapusk-igrovyh-serverov">Автозапуск игровых серверов</h1><br/>
+<p>Наши игровые сервера уже достаточно взрослые для того, чтобы можно было их включать в автозапуск. Для систем с System V init можно переделать ранее созданные скрипты запуска, либо использовать примеры из <a href="http://wiki.teamfortress.com/wiki/Linux_dedicated_server">TF2 Wiki</a>. Для систем с systemd, как у нас, делаем два файла служб, незатейливо именуемых srcds1.service и srcds2.service. </p><br/>
+<p>Справочно, для освежения материала: После всех добавлений (Записи, SourceMod), скрипт запуска того же первого сервера ~/start1.sh в полной комплектации должен был выглядеть как-то так:</p><br/>
+<div class="spoiler"><b class="spoiler_title">start1.sh</b><div class="spoiler_text"><pre><code class="bash">#!/bin/sh
+#
+# Запуск первого сервера.
+
+# Путь к каталогу с игрой, где лежит файл srcds_run
+GAMEFOLDER=/home/game/tf2
+
+CMDLINE="+sv_pure 2 -game tf +maxplayers 24 \
+    -pidfile ${GAMEFOLDER}/tf/srcds1.pid \
+    -ugcpath ${GAMEFOLDER}/steamapps/workshop1 \
+    -replay reply1.cfg -replayserverdir server1 \
+    +exec autoexec1.cfg +servercfgfile server1.cfg \
+    -port 27015 -steamport 26900 +clientport 27005 +tv_port 27020 -strictportbind \
+    +sm_basepath addons/sourcemod1 +sm_corecfgfile addons/sourcemod1/configs/core.cfg"
+
+# Запускаем игровой сервер
+${GAMEFOLDER}/srcds_run ${CMDLINE}</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Мы уже привыкли к скрипту srcds_run, поэтому будем и дальше использовать его. Надо только озаботиться автоматическим перезапуском игрового серевера при выполнении команд <code>quit</code>, <code>_restart</code>. Сейчас скрипт перезапускает сервер только если он закончился аварийно с ненулевым кодом выхода, либо с нулевым при включенном автообновлении.</p><br/>
+<p>Вариантов несколько. Первый — можно просто включить стандартное автообновление (секция "Автоматическое" в разделе "Обновление серверов"). Второй — создать копию скрипта с другим именем и поправить его на предмет вечного перезапуска сервера (исходный скрипт править не стоит — он может замениться при обновлении) и использовать его в дальнейшем. Третий — если планируется обновлять сервера самостоятельно, то можно включить автообновление, добавив -autoupdate и два его параметра-сателлита в командную строку запуска, но в качестве скрипта автообновления использовать файлик типа ~/cfg/tf2_quit, состоящий лишь из одной строчки с командой quit, то есть фактически, обновления не будут проверяться.</p><br/>
+<p>Знания умножают печали. Но выбор за вами. В нашем же случае, для первого сервера мы в файлах конфигурации ещё не прописывали критерии окончания раундов, а второй сервер вообще будет с нестандартными картами, вполне возможно, что и с бесконечными раундами, поэтому в автозапуске будем использовать третий вариант — с фиктивным автообновлением, а настоящее обновление — через регулярный запуск update.sh скрипта в crontab. Опять же, так интереснее.</p><br/>
+<p>Итак, файлы служб. Для удобства мы будем использовать терминальный мультиплексор tmux (желающие могут использовать вместо него screen), который будет запускать скрипт srcds_run. Параметры командной строки перешли практически неизменными из скриптов запуска, которые мы использовали до этого.</p><br/>
+<p>Так как игровые сервера запускаются от имени пользователя game, то по-хорошему, можно было бы создавать файлы запуска в пользовательском окружении, в ~/.config/systemd/user/. Но данный раздел документации тестировался на centos 7, где запуск systemd в пользовательском режиме не функционирует, поэтому файлы служб мы создаём от имени root.</p><br/>
+<p>Заходим как root, создаём файл /etc/systemd/system/srcds1.service для первого сервера.</p><br/>
+<div class="spoiler"><b class="spoiler_title">srcds1.service</b><div class="spoiler_text"><pre><code class="bash"># /etc/systemd/system/srcds1.service
+#
+# Team Fortress 2 Source Dedicated Server
+
+[Unit]
+Description=Team Fortress 2 Source Dedicated Server No 1
+After=network.target
+
+[Service]
+User=game
+Group=game
+WorkingDirectory=/home/game/Steam
+Type=oneshot
+RemainAfterExit=yes
+PIDFile=/home/game/tf2/tf/srcds1.pid
+ExecStart=/usr/bin/tmux -L socket1 new-session -d '/home/game/tf2/srcds_run \
+    +sv_pure 2 -game tf +maxplayers 24 \
+    -pidfile /home/game/tf2/tf/srcds1.pid \
+    -ugcpath /home/game/tf2/steamapps/workshop1 \
+    -replay replay1.cfg -replayserverdir server1 \
+    +exec autoexec1.cfg +servercfgfile server1.cfg \
+    -port 27015 -steamport 26900 +clientport 27005 +tv_port 27020 -strictportbind \
+    -autoupdate -steam_dir /home/game/Steam -steamcmd_script /home/game/cfg/tf2_quit \
+    +sm_basepath addons/sourcemod1 +sm_corecfgfile addons/sourcemod1/configs/core.cfg'
+
+ExecStop=/usr/bin/tmux -L socket1 send-keys "quit" Enter ; /usr/bin/sleep 5s ; /usr/bin/tmux -L socket1 kill-session
+ExecReload=/usr/bin/tmux -L socket1 send-keys "_restart" Enter
+ExecStopPost=/usr/bin/rm -f /home/game/tf2/tf/srcds1.pid
+
+[Install]
+WantedBy=multi-user.target</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Небольшое пояснение по параметрам ExecStop и ExecReload. Для завершения работы сервера мы посылаем ему лучи любви и команду <code>quit</code> в консоль, ждём несколько секунд для завершения работы, и, пока всё не запустилось заново, прибиваем сессию. Схожий механизм для рестарта сервера. При желании можно добавить вывод предупреждения игрокам о грядущем рестарте — как это было в примере одного из скриптов для обновления, в соответствующем разделе.</p><br/>
+<p>Копируем srcds1.service в srcds2.service, корректируем пути, порты и имя tmux сокета. Сохраняем. /etc/systemd/system/srcds2.service:</p><br/>
+<div class="spoiler"><b class="spoiler_title">srcds2.service</b><div class="spoiler_text"><pre><code class="bash"># /etc/systemd/system/srcds2.service
+#
+# Team Fortress 2 Source Dedicated Server
+
+[Unit]
+Description=Team Fortress 2 Source Dedicated Server No 2
+After=network.target
+
+[Service]
+User=game
+Group=game
+WorkingDirectory=/home/game/Steam
+Type=oneshot
+RemainAfterExit=yes
+PIDFile=/home/game/tf2/tf/srcds2.pid
+ExecStart=/usr/bin/tmux -L socket2 new-session -d '/home/game/tf2/srcds_run \
+    +sv_pure 2 -game tf +maxplayers 24 \
+    -pidfile /home/game/tf2/tf/srcds2.pid \
+    -ugcpath /home/game/tf2/steamapps/workshop2 \
+    -replay replay2.cfg -replayserverdir server2 \
+    +exec autoexec2.cfg +servercfgfile server2.cfg \
+    -port 27016 -steamport 26901 +clientport 27006 +tv_port 27021 -strictportbind \
+    -autoupdate -steam_dir /home/game/Steam -steamcmd_script /home/game/cfg/tf2_quit \
+    +sm_basepath addons/sourcemod2 +sm_corecfgfile addons/sourcemod2/configs/core.cfg'
+
+ExecStop=/usr/bin/tmux -L socket2 send-keys "quit" Enter ; /usr/bin/sleep 5s ; /usr/bin/tmux -L socket2 kill-session
+ExecReload=/usr/bin/tmux -L socket2 send-keys "_restart" Enter
+ExecStopPost=/usr/bin/rm -f /home/game/tf2/tf/srcds2.pid
+
+[Install]
+WantedBy=multi-user.target</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Здесь мы специально запускаем две отдельные копии tmux, каждую для своего игрового сервера. Можно было бы, конечно, обойтись сессиями внутри одного tmux (tmux new-session -d -s tf1 и tmux new-session -d -s tf2), но тогда это стало бы дополнительной точкой для epic fail — когда нечаянный Ctrl-C прибил бы все наши сервера.</p><br/>
+<p>Не забываем создать файлик ~/cfg/tf2_quit с содержимым:</p><br/>
+<div class="spoiler"><b class="spoiler_title">tf2_quit</b><div class="spoiler_text"><pre><code>quit</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Проверяем, что оба .service файла доступны на запись только для root, затем запускаем, включаем:</p><br/>
+<pre><code class="dos">   # systemctl start srcds1
+   # systemctl start srcds2
+   # systemctl enable srcds1
+   # systemctl enable srcds2</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Но сейчас у нас глупая ситуация — игровые сервера стартуют при запуске нашего сервера, но пользователь game не может ими управлять стандартными способами с помощью systemctl (start, stop, reload), хотя вполне может ими "управлять" при помощи Ctrl+C в tmux сессии, с последующим запуском вручную. Исправляем несправедливость.</p><br/>
+<p>Пока мы ещё root, запускаем <code>visudo</code>, корректируем файл sudoers, дописав в конец:</p><br/>
+<div class="spoiler"><b class="spoiler_title">sudoers</b><div class="spoiler_text"><pre><code>Defaults:game !requiretty
+game    ALL=    NOPASSWD:    /usr/bin/systemctl start srcds1.service, /usr/bin/systemctl start srcds2.service
+game    ALL=    NOPASSWD:    /usr/bin/systemctl stop srcds1.service, /usr/bin/systemctl stop srcds2.service
+game    ALL=    NOPASSWD:    /usr/bin/systemctl reload srcds1.service, /usr/bin/systemctl reload srcds2.service
+game    ALL=    NOPASSWD:    /usr/bin/systemctl status srcds1.service, /usr/bin/systemctl status srcds2.service
+game    ALL=    NOPASSWD:    /usr/bin/systemctl enable srcds1.service, /usr/bin/systemctl enable srcds2.service
+game    ALL=    NOPASSWD:    /usr/bin/systemctl disable srcds1.service, /usr/bin/systemctl disable srcds2.service</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Здесь мы пользователю game предоставляем возможность посредством sudo, без запроса пароля (которого у него и нет) выполнять команды start, stop, reload, status и для кучи enable с disable для первого и второго сервера. А параметр "Defaults:game !requiretty" позволит нам запускать sudo из crontab файла. По желанию можно добавить разрешение на использование иных команд типа is-* и прочих.</p><br/>
+<p>Разрешения на команды вида <code>systemctl edit [--full]</code> мы предоставлять не будем. Всё-таки безопасность должна быть… безопасной.</p><br/>
+<p>Выходим из-под root, проверяем из-под game:</p><br/>
+<pre><code class="bash">   $ sudo -l</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<pre><code>   Matching Defaults entries for game on this host:
+    ...
+    ..., !requiretty
+
+   User game may run the following commands on this host:
+    (root) NOPASSWD: /usr/bin/systemctl start srcds1.service, (root) /usr/bin/systemctl start srcds2.service
+    (root) NOPASSWD: /usr/bin/systemctl stop srcds1.service, (root) /usr/bin/systemctl stop srcds2.service
+    (root) NOPASSWD: /usr/bin/systemctl reload srcds1.service, (root) /usr/bin/systemctl reload srcds2.service
+    (root) NOPASSWD: /usr/bin/systemctl status srcds1.service, (root) /usr/bin/systemctl status srcds2.service
+    (root) NOPASSWD: /usr/bin/systemctl enable srcds1.service, (root) /usr/bin/systemctl enable srcds2.service
+    (root) NOPASSWD: /usr/bin/systemctl disable srcds1.service, (root) /usr/bin/systemctl disable srcds2.service</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Можно тут же запустить <code>sudo systemctl status srcds1.service</code>, потестировать.</p><br/>
+<p>Команды необходимо будет вводить без сокращения параметров. То есть sudo systemctl status srcds1.service — норм, а вот sudo systemctl status srcds1 — уже не торт.</p><br/>
+<p>Если при манипуляциях с игровыми серверами с помощью systemctl выдаётся ошибка вида "Failed to stop srcds1.service: Interactive authentication required." — то значит вы забыли про sudo :-)</p><br/>
+<p>Когда всё заработает, можно будет работать с консолями серверов уже как пользователь game, подключаясь через tmux:</p><br/>
+<pre><code>   $ tmux -L socket1 attach
+   $ tmux -L socket2 attach</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Отключаться от tmux сессии — Ctrl+b, d.</p><br/>
+<p>Можно прописать алиасы в ~/.bash_profile:</p><br/>
+<div class="spoiler"><b class="spoiler_title">.bash_profile</b><div class="spoiler_text"><pre><code>alias tf1="tmux -L socket1 attach"
+alias tf2="tmux -L socket2 attach"</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>По умолчанию, размер хранимой истории для tmux составляет 2000 строк, но его можно увеличить, например до 10000 строк, создав файл ~/.tmux.conf вида:</p><br/>
+<div class="spoiler"><b class="spoiler_title">.tmux.conf</b><div class="spoiler_text"><pre><code>set-option -g history-limit 10000
+set-option -g set-remain-on-exit on</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Вторая команда не закрывает tmux сессию при завершении основной программы, что даёт возможность почитать её последнее прости в консоли.</p><br/>
+<p>Перемещаться по истории — Ctrl+b, [, а далее обычными клавишами — Up/Down, PgUp/PgDown. Выход из этого режима — q.</p><br/>
+<h1 id="logi">Логи</h1><br/>
+<p>Логов у нас будет много и разных. А именно:</p><br/>
+<h2 id="logi-cron">Логи cron</h2><br/>
+<p>У нас через cron запускаются скрипты проверки обновлений, сервера статистики HLstatsX, удаления устаревших Записей, а их вывод отражается в /var/log/cron в виде</p><br/>
+<pre><code>   Jun 15 12:55:01 server CROND[584]: (game) CMD (cd $HOME/stat/scripts &amp;&amp; ./run_hlstats start 2 27500 1)
+   Jun 15 12:55:01 server CROND[583]: (game) CMDOUT (HLstatsX:CE daemon control)
+   Jun 15 12:55:01 server CROND[583]: (game) CMDOUT (http://www.hlxce.com)
+   Jun 15 12:55:01 server CROND[583]: (game) CMDOUT (---------------------------)
+   Jun 15 12:55:01 server CROND[583]: (game) CMDOUT (Daemon is already running on port 27500)
+   Jun 15 12:55:01 server CROND[583]: (game) CMDOUT (Daemon is already running on port 27501)
+   ...</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Так как /var/log/cron никто прочитать не сможет кроме пользователя root, а ему это не интересно, то хотелось бы дать доступ пользователю game к логам его crontab файла. Конечно, можно для каждого скрипта в конце строки запуска дописать что-то вида "… &gt;&gt; $HOME/log/cron.log" но эти "логи" будут без меток времени, да и вообще, кустарщина. Более культурный варинт "… | /usr/bin/logger --tag srcds" ничего не меняет — ну будут сообщения попадать не в /var/log/cron, а в /var/log/messages, разницы-то.</p><br/>
+<p>Поэтому мы в настройках демона rsyslog сделаем так, что сообщения от cron, начинающиеся с имени пользователя "(game)", перенаправляются в файл /home/game/log/cron.log, владельцем которого является пользователь game, и не попадают в дальнейшую обработку (в "cron.* /var/log/cron")</p><br/>
+<p>У нас установлен rsyslogd версии 8.19, и в /etc/rsyslog.conf директива <code>$IncludeConfig /etc/rsyslog.d/*.conf</code> находится до правила <code>cron.* /var/log/cron</code>, поэтому перехватывать сообщения от наших скриптов будем, создав как пользователь root файл /etc/rsyslog.d/srcds-10-cron.conf с содержимым:</p><br/>
+<div class="spoiler"><b class="spoiler_title">srcds-10-cron.conf</b><div class="spoiler_text"><pre><code># /etc/rsyslog.d/srcds-10-cron.conf
+
+if $syslogfacility-text == "cron" and $msg startswith " (game)" then {
+  action(
+    type = "omfile"
+    fileOwner = "game"
+    fileGroup = "game"
+    file = "/home/game/log/cron.log"
+  )
+  stop
+}</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Подробнее об использованных командах — <a href="http://www.rsyslog.com/doc/master/configuration/modules/omfile.html">omfile</a>, <a href="http://www.rsyslog.com/doc/master/configuration/properties.html">properties</a>.</p><br/>
+<p>Проверяем синтаксис, если всё ok, то перезапускаем демона и наслаждаемся свежесозданным логом.</p><br/>
+<pre><code class="dos">   # rsyslogd -N 2
+   # systemctl restart rsyslog</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Пока мы ещё root, настраиваем ротацию логов, создав файл /etc/logrotate.d/srcds-cron:</p><br/>
+<div class="spoiler"><b class="spoiler_title">srcds-cron</b><div class="spoiler_text"><pre><code>#/etc/logrotate.d/srcds-cron
+
+/home/game/log/cron.log {
+    su game game
+    daily
+    dateext
+    maxage 3
+    missingok
+    copytruncate
+    compress
+    notifempty
+}</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Проверяем:</p><br/>
+<pre><code class="dos">   # logrotate --debug --force /etc/logrotate.d/srcds-cron</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<h2 id="logi-klienta-steam">Логи клиента Steam</h2><br/>
+<p>Эти логи находятся в ~/Steam/logs/. Ротация происходит автоматически, силами самого клиента. Текущий лог переименовывается в <code>*.previous.txt</code>, предыдущий <code>*.previous.txt</code> предварительно удаляется. Специально мы их обрабатывать не будем, какой-то необходимости хранить исторические данные нет — текущие проблемы с подключением можно посмотреть в активных логах, а что было с коннектом к серверам Valve девятого термидора второго года — nobody cares...</p><br/>
+<h2 id="logi-veb-servera">Логи веб-сервера</h2><br/>
+<p>У нас с игровыми серверами сотрудничают три виртуальных веб-сервера, обслуживающих:</p><br/>
+<ul>
+<li>Fast Download, логи в /var/www/fastdl.example.org/log/</li>
+<li>Записи (Replay), логи в /var/www/replay.example.org/log/</li>
+<li>HLstatsX, логи в /var/www/stat.example.org/log/</li>
+</ul><br/>
+<p>Ротация этих логов у нас настроена в /etc/logrotate.d/srcds-nginx, предполагается, что логи с ошибками будем просматривать самостоятельно, а логи доступа можно скармливать хоть Elasticsearch, Kibana и Logstash — но описание ELK стека вне объёма данного проекта.</p><br/>
+<h2 id="logi-sourcemod">Логи SourceMod</h2><br/>
+<p>Эти логи находятся в каталогах ~/tf2/tf/addons/sourcemod{1,2}/logs. Их настройки прописаны в соответствующих ~/tf2/tf/addons/sourcemod{1,2}/configs/core.cfg:</p><br/>
+<p><code>Logging on</code><br/>
+логи вкл/выкл</p><br/>
+<p><code>LogMode daily</code><br/>
+ротация логов — ежедневная (daily), при смене карты (map), и третий режим (game) — писать в логи игрового сервера.</p><br/>
+<p><code>DebugSpew no</code><br/>
+детализировать ли в логах обновление игровых данных</p><br/>
+<p>Логи SourceMod ведутся довольно скромно, поэтому достаточно настроить их регулярную ротацию, либо не заморачиваться и просто в core.cfg прописать <code>LogMode game</code>, тогда они гармонично впишутся в логи игровых серверов, как-то так:</p><br/>
+<pre><code>   L 06/20/2016 - 04:53:24: Executing dedicated server config file server1.cfg
+   L 06/20/2016 - 04:53:32: server_cvar: "sv_tags" "HLstatsX:CE,cp,increased_maxplayers"
+   L 06/20/2016 - 04:53:32: tf_server_identity_account_id not set; not logging into registered account
+   L 06/20/2016 - 04:53:32: server_cvar: "sv_contact" "game@example.org"
+   L 06/20/2016 - 04:53:33: [UPDATER] Successfully updated gamedata file "core.games/common.games.txt"
+   L 06/20/2016 - 04:53:33: [UPDATER] Successfully updated gamedata file "sdkhooks.games/game.doi.txt"
+   L 06/20/2016 - 04:53:33: [UPDATER] Successfully updated gamedata file "sdkhooks.games/master.games.txt"
+   L 06/20/2016 - 04:53:33: [UPDATER] Successfully updated gamedata file "sdktools.games/game.doi.txt"
+   L 06/20/2016 - 04:53:33: [UPDATER] Successfully updated gamedata file "sdktools.games/master.games.txt"
+   L 06/20/2016 - 04:53:33: [UPDATER] SourceMod has been updated, please reload it or restart your server.
+   L 06/20/2016 - 04:53:33: Connection to Steam servers successful.
+   L 06/20/2016 - 04:53:33:    Public IP is 192.0.2.0.
+   L 06/20/2016 - 04:53:33: Assigned anonymous gameserver Steam ID [A:1:123456789:1234].
+   L 06/20/2016 - 04:53:33: VAC secure mode is activated.
+   L 06/20/2016 - 04:53:34: server_cvar: "sm_nextmap" "cp_well"</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<h2 id="logi-igrovyh-serverov">Логи игровых серверов</h2><br/>
+<p>Логи игровых серверов находятся в ~/log/server{1,2}/. Минимальную настройку логов мы провели при написании конфигурационных файлов, но сейчас рассмотрим значение некоторых переменных поподробнее:</p><br/>
+<p><code>log off</code><br/>
+глобально включает (on) ведение логов данного игрового сервера. Логи могут направляться в файл (sv_logfile), на консоль сервера (sv_logecho), транслироваться по UDP (logaddress_add).</p><br/>
+<p><code>sv_logfile 1</code><br/>
+включает запись логов в файл (1), при этом требуется включение предыдущей командой. Каталог для логов и формат имени файлов задаются параметрами sv_logsdir и sv_logfilename_format.</p><br/>
+<p><code>sv_logsdir logs</code><br/>
+каталог для логов. По умолчанию, был бы ~/tf2/tf/logs, но так как мы логи наших двух серверов разводим по разным каталогам, то каталоги /home/game/log/server1 и /home/game/log/server2 соответственно. Хотя, конечно, можно было бы писать в один каталог, но с разным именованием файлов.</p><br/>
+<p><code>sv_log_onefile 0</code><br/>
+вести запись логов в один файл (1), либо при смене карты создавать новый (0), например: l0618000.log -&gt; l0618001.log -&gt; l0618002.log… l0619000.log -&gt; l0619001.log и так далее. Отметим две особенности при включении данного параметра: во-первых, при наступлении новых суток автоматической ротации лога l0618000.log -&gt; l0619000.log не произойдёт; во-вторых, если в консоли или посредством какого-нибудь файла конфигурации сделать log off и тут же log on, то запись начнётся в новый файл, с инкрементированным номером.</p><br/>
+<p><code>sv_logfilecompress 0</code><br/>
+при начале записи в новый файл логов, старый будет сжиматься gzip и переименовываться в <code>&lt;logfilename&gt;.log.gz</code>. Задумка хорошая, реализация под Linux хромает. Так, при установке этой переменной в "1" и смене карты (что, при нашем sv_log_onefile = "0" вызывает запись логов в новый файл), на консоли сервера появляется ругань, создаётся пустой .gz файл, а старый файл лога не удаляется. А всё из-за регистра первого символа в имени файла — "l" vs "L", что принципиально в Linux:</p><br/>
+<pre><code>      ---- Host_Changelevel ----
+      Compressing /home/game/log/server2/L0713019.log to /home/game/log/server2/L0713019000.log.gz...
+      Success. Removing /home/game/log/server2/L0713019.log.
+      Unable to remove /home/game/log/server2/L0713019.log!
+      Unable to remove /home/game/log/server2/L0713019.log!
+      Server logging data to file /home/game/log/server2/L0713020.log
+      Applying new item schema, version 5C0BC93D</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p><code>sv_logfilename_format ""</code><br/>
+формат именования файлов с логами. Должен указываться до параметра "log on". Если специально не указывать, то файлы с логами сейчас именуются как <code>l&lt;Месяц&gt;&lt;День&gt;&lt;000...999&gt;.log</code>, где первый символ — <code>&lt;Latin Small Letter L&gt;</code>, а последнее трёхзначное число в имени инкрементируется для каждого нового лога, в пределах текущих суток. Можно задавать свой формат, с использованием параметров функции <a href="https://www.google.ru/search?q=strftime">strftime</a>. То есть, при указании "sv_logfilename_format %Y%m%d" файл будет выглядеть как "20160714.log". Автонумерация в этом случае будет вида 20160714.log -&gt; 20160714_000.log -&gt; 20160714_001.log и так далее. Забавно, но при явной установке формата, начинает работать параметр sv_logfilecompress — предыдущий файл лога действительно архивируется.</p><br/>
+<p><code>log_verbose_enable 0</code><br/>
+включает (1) подробное ведение логов. Так, каждые несколько секунд (определяется log_verbose_interval) туда пишутся текущие трёхмерные координаты игроков. Лог разрастается неимоверно. Включать, пожалуй, имеет смысл разве что для построения тепловых карт движения игроков, с селекцией по классам. Что-то вроде <a href="http://geit.uk/blog/player-flow/">http://geit.uk/blog/player-flow/</a>.</p><br/>
+<p><code>log_verbose_interval 3.0</code><br/>
+задаёт интервал записи подробного лога. По умолчанию — каждые 3 секунды.</p><br/>
+<p><code>sv_rcon_log 1</code><br/>
+при отключении (0), не выводит на консоль и в лог поступающие rcon команды (результаты выполнения команд выводятся на консоль по-прежнему). Так как в нашей конфигурации rcon использует исключительно HLstatsX, то экономия в части размеров логов невелика, но всё же спама на консоли сервера будет поменьше, без вот этого: </p><br/>
+<pre><code>      rcon from "192.0.2.0:60533": command "status"
+      rcon from "192.0.2.0:60533": command "hlx_sm_psay "30" 2 "Round Over - All actions/frags are ignored &lt;...&gt;
+      rcon from "192.0.2.0:60533": command "hlx_sm_psay "30" 1 "Red got 10 points for Round Win""
+      rcon from "192.0.2.0:60533": command "hlx_sm_psay "30" 1 "Asuka got 2 points (1,025) for Kill Assist""</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p><code>sv_logecho 1</code><br/>
+дублирует вывод лога на консоль. Естественно, отключаем (0).</p><br/>
+<p><code>sv_logbans 0</code><br/>
+при включении (1) фиксирует информацию о бане игрока в лог:</p><br/>
+<pre><code>      L 07/13/2016 - 23:09:31: Addip: "&lt;&gt;&lt;&gt;&lt;&gt;" was banned by IP "for 10.00 minutes" by "Console" (IP "10.1.1.1")</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p><code>logaddress_add</code><br/>
+указывает адрес: порт, куда будут транслироваться логи по UDP, в нашем случае для HLstatsX. Первому серверу мы устанавливали 192.0.2.0:27500, второму — 192.0.2.0:27501</p><br/>
+<p><code>logaddress_del</code><br/>
+удаляет адрес: порт из трансляции.</p><br/>
+<p><code>logaddress_delall</code><br/>
+удаляет все адреса из трансляции</p><br/>
+<p><code>developer 0</code><br/>
+обеспечивает более подробный вывод информации на консоль сервера. Варианты значений — 0 (по умолчанию), 1, 2, 3...</p><br/>
+<p>Вот логи игровых серверов имеет смысл хранить некоторое время, на случай жалоб на того или иного игрока — мат в чате, оскорбление других игроков, двести восемьдесят вторая статья и так далее.</p><br/>
+<p>Обычно логи сервера при полной загрузке и интенсивной движухе растут на 3.5 — 4.0 тыс. строк в час, около 0.5 — 0.6 Мб.</p><br/>
+<p>Запись логов ведётся таким способом, что если запускать ротацию логов с помощью logrotate без параметра copytruncate в файле настроек, то после неё новых логов мы не увидим до смены карты (и то, при sv_log_onefile 0). Запуск же с параметром copytruncate приводит к обрезанию старого лога посередине строки (как повезёт — так как игровые сервера, если не включать sv_logflush 1, буферизируют запись логов в файл, причём не построчно, а покилобайтно) и бинарному мусору в начале нового файла, да так, что при уже его ротации, архив состоит из одной строки "Binary file (standard input) matches".</p><br/>
+<p>Учитывая это, работу с логами серверов можно организовать следующими способами:</p><br/>
+<ol>
+<li><p>Очень ленивый. Ничего не делать. При наличии инстинкта самосохранения всё же обеспечить удаление старых логов. Ну или просто отключить их ведение.</p><br/>
+</li>
+<li><p>Ленивый. Для обеспечения ротации логов и экономии места на диске включить комбинацию "sv_log_onefile 0", "sv_logfilecompress 1" и "sv_logfilename_format %Y%m%d", добавить в crontab <code>find $HOME/log/server{1,2}/*.gz -type f -mtime +30 -delete</code>, что позволит обойтись без logrotate. Хороший, годный вариант. В случае "бесконечных" карт можно либо уповать на время от времени случающиеся обновления серверов, при перезапуске гарантирующие ротацию логов, либо принудительно перезапускать карту хотя бы раз в неделю — добавить в crontab запуск команды <code>tmux -L socket1 send-keys "changelevel_next" Enter</code> в часы минимальной загрузки.</p><br/>
+</li>
+<li>Активный. Если есть необходимость мониторить логи в реальном режиме времени, как-то их анализировать и обрабатывать, то можно использовать возможности rsyslog демона. Плагин omfile — File Output Module мы использовали выше в обработке лога cron, а здесь можно использовать imfile — Text File Input Module.</li>
+</ol><br/>
+<p>Попробуем настроить сохранение чата игроков первого сервера в отдельном логе. Cоздаём (из-под root) файл /etc/rsyslog.d/srcds-20-chat.conf:</p><br/>
+<div class="spoiler"><b class="spoiler_title">srcds-20-chat.conf</b><div class="spoiler_text"><pre><code>#/etc/rsyslog.d/srcds-20-chat.conf
+
+module(load="imfile" mode="inotify")
+
+# Мониторит все *.log файлы первого сервера
+input(
+  type = "imfile"
+  tag = "srcds1:"
+  file = "/home/game/log/server1/*.log"
+  ruleset = "chat-1"
+)
+
+# $now - текущая дата, на момент записи лога, в формате YYYY-MM-DD
+template (name="chat1-log-name" type="string" string="/home/game/log/chat1-%$now%.log")
+
+# Мониторим общий чат (say), командный (say_team), и steam id и ip игроков, входящих на сервер
+ruleset(name = "chat-1") {
+  if ($msg contains [" say ", " say_team ", " connected, address "]) then {
+    action(
+      type = "omfile"
+      fileOwner = "game"
+      fileGroup = "game"
+      dynafile = "chat1-log-name"
+    )
+  }
+}</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>При таких настройках, лог чата будет выглядеть как:</p><br/>
+<pre><code>   Jul 23 10:40:46 server srcds1: L 07/23/2016 - 10:40:27: "Asuka&lt;3&gt;&lt;[U:1:12345678]&gt;&lt;Blue&gt;" say_team "Valar morghūlis"
+   Jul 23 10:40:46 server srcds1: L 07/23/2016 - 10:40:34: "Rei&lt;4&gt;&lt;[U:1:09876543]&gt;&lt;Blue&gt;" say "Valar dohaeris, desu"</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Тут стандартный формат rsyslogd — дата+время, имя сервера (железного), метка из input, и сама строчка лога. Отличие в секундах вызвано буферизацией записи игровых логов. При желании можно настроить дополнительную проверку текста сообщений на ключевые слова с немедленным извещением нас по электронной почте (модуль <a href="http://www.rsyslog.com/doc/v8-stable/configuration/modules/ommail.html">ommail</a> в rsyslog)</p><br/>
+<p>Проверяем синтаксис, если всё ok, то перезапускаем демона.</p><br/>
+<pre><code class="dos">   # rsyslogd -N 2
+   # systemctl restart rsyslog</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<blockquote>Если новый лог будете создавать в том же каталоге, откуда считываются исходные (параметр file в секции input), то убедитесь, что его имя не попадает под маску файлов из секции input, которые мониторит rsyslogd. А то получится очень, гм… рекурсивненько.</blockquote><p>Возвращаясь к настройкам ведения логов, стоит отметить ещё два параметра:</p><br/>
+<p><code>con_logfile ""</code><br/>
+создаёт отдельный файл лога, куда записывается всё что выводится на консоль сервера. Имя файла указывается либо с полным путём, либо относительно каталога ~/tf2/tf/ (не logs!). Если не указывать расширение ".log", то оно добавится автоматически. Имеет аналогичный параметр командной строки <code>-consolelog &lt;file&gt;</code> — только там лучше уже указывать расширение, а то получится забавно — при старте сервера создадутся три консольных лога: сначала запись пойдёт в <code>~/tf2/bin/&lt;file&gt;</code>, затем в <code>~/tf2/tf/&lt;file&gt;</code>, ну и наконец в <code>~/tf2/tf/&lt;file&gt;.log</code>.</p><br/>
+<p><code>con_timestamp 0</code><br/>
+при включении (1), весь вывод в консольный лог будет предваряться метками времени, как в примере ниже. Если указывать в командной строке запуска вместе с предыдущим параметром, как <code>+con_timestamp 1 -consolelog &lt;file&gt;</code>, то метки начнутся лишь с третьего файла.</p><br/>
+<p>В отличие от серверных логов, запись в консольный лог идёт построчно, и вполне корректно работает logrotate с параметром copytruncate.</p><br/>
+<p>Следует быть осторожным с включением записи этого, безусловно полезного лога. Иногда на игровой сервер что-то находит, и он начинает мощно спамить в консоль сообщениями вида:</p><br/>
+<pre><code>   07/15/2016 - 14:59:59: DataTable warning: player: Out-of-range value (72483.898438/65536.000000) in SendPropFloat 'm_flLastDamageTime', clamping.
+   07/15/2016 - 14:59:59: DataTable warning: player: Out-of-range value (72492.539062/65536.000000) in SendPropFloat 'm_flLastDamageTime', clamping.
+   07/15/2016 - 14:59:59: DataTable warning: player: Out-of-range value (72479.742188/65536.000000) in SendPropFloat 'm_flLastDamageTime', clamping.</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>При скорости потока, как правило ~ 125 сообщений в секунду, такими темпами файл с консольным логом прирастает на ~ 64 Мб в час, 1.5 Гб в сутки, что особенно неприятно в случае "долгоиграющих" карт, так как при смене карты эта ошибка обычно исчезает. Лечится либо прописыванием критериев, обеспечивающих регулярную ротацию карты, либо смирением с полуторагигабайтным логом в сутки, тем более, что сжимаются они неплохо, а хранить их можно недолго.</p><br/>
+<p>Настраиваем ротацию и этих логов, создав из-под root файл /etc/logrotate.d/srcds-server:</p><br/>
+<div class="spoiler"><b class="spoiler_title">srcds-server</b><div class="spoiler_text"><pre><code>#/etc/logrotate.d/srcds-server
+
+/home/game/log/console*.log
+{
+    su game game
+    daily
+    dateext
+    rotate 7
+    copytruncate
+    notifempty
+    missingok
+    compress
+#    compresscmd /home/game/logrotate-filter.sh
+}</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Проверяем логику работы:</p><br/>
+<pre><code class="dos">   # logrotate --debug --force /etc/logrotate.d/srcds-server</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Можно туда добавить костыль — строчку "compresscmd /home/game/logrotate-filter.sh", а сам ~/logrotate-filter.sh вида:</p><br/>
+<div class="spoiler"><b class="spoiler_title">logrotate-filter.sh</b><div class="spoiler_text"><pre><code>#!/bin/sh
+
+/bin/grep -v ": DataTable warning:" | /bin/gzip -6 </code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>то есть в качестве архиватора будет вызываться не gzip а этот скрипт, который входной поток пропустит через grep, вырезая DataTable warning, а остальное передавая gzip, as planned.</p><br/>
+<p>Кстати, как вариант — можно включить дублирование лога в консоль (sv_logecho 1), выключить ведение основного лога (sv_logfile 0) и активировать запись консольного, и иметь дело только с ним. В лог будет писаться микс вида:</p><br/>
+<pre><code>   07/24/2016 - 18:50:46: DataTable warning: (class info_particle_system): Out-of-range value (-1.000000 / -1.000000)
+   07/24/2016 - 18:52:21: Attempted to add job to job queue that has already been completed
+   07/24/2016 - 18:57:11: DataTable warning: (class info_particle_system): Out-of-range value (-1.000000 / -1.000000)
+   07/24/2016 - 18:57:48: L 07/24/2016 - 18:57:48: "GLaDOS&lt;20&gt;&lt;BOT&gt;&lt;Red&gt;" triggered "player_builtobject"
+   07/24/2016 - 18:57:50: L 07/24/2016 - 18:57:50: "Companion Cube&lt;34&gt;&lt;BOT&gt;&lt;Blue&gt;" killed "GLaDOS&lt;20&gt;&lt;BOT&gt;&lt;Red&gt;" with "knife"
+   07/24/2016 - 19:00:24: L 07/24/2016 - 19:00:24: "AimBot&lt;23&gt;&lt;BOT&gt;&lt;Red&gt;" triggered "domination" against "DeadHead&lt;10&gt;&lt;BOT&gt;&lt;Blue&gt;"
+   07/24/2016 - 19:00:25: L 07/24/2016 - 19:00:25: "AimBot&lt;23&gt;&lt;BOT&gt;&lt;Red&gt;" triggered "killedobject" (object "OBJ_SENTRYGUN")
+   07/24/2016 - 19:00:32: DataTable warning: info_particle_system: Out-of-range value (1.000000/1.000000)
+   07/24/2016 - 19:00:49: DataTable warning: (class info_particle_system): Out-of-range value (-1.000000 / -1.000000)</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Единственное неудобство — дублирование меток времени у вставок из игрового лога. Можно отключить у консольного (con_timestamp 0), но это тоже не дело. Если только пропускать этот лог через rsyslog, в ruleset парсить с помощью regex и формировать новый файл с использованием своего шаблона. Но это для энтузиастов.</p><br/>
+<h2 id="logi-servera-statistiki">Логи сервера статистики</h2><br/>
+<p>Сервер статистики HLstatsX у нас настроен так, что логи его создаются в ~/stat/scripts/logs/, и по своему содержимому практически аналогичны серверным логам, поэтому после первоначальной настройки, когда покажется что всё заработало, их мы отключаем, установив в ~/stat/scripts/hlstats.conf параметр "DebugLevel 0"</p><br/>
+<h1 id="privyazka-k-steam-i-quickplay">Привязка к Steam и QuickPlay</h1><br/>
+<p>При запуске наших серверов наверняка бросались в глаза сообщения (строки 2 и 7):</p><br/>
+<pre><code>   Setting breakpad minidump AppID = 232250
+   No account token specified; logging into anonymous game server account.  (Use sv_setsteamaccount to login to a persistent account.)
+   ConVarRef room_type doesn't point to an existing ConVar
+   Executing dedicated server config file server1.cfg
+   ...
+   Connection to game coordinator established.
+   tf_server_identity_account_id not set; not logging into registered account
+   *** ~/cfg/server1.cfg
+   ...</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Первое сообщение уведомляет, что наш сервер подключен к мастер-серверам Valve "анонимно" (хотя кто знает, что сервер сливает при подключении...), без входа в серверную учётную запись. Второе сообщение — о том, что мы не зарегистрированы в QuickPlay. Посмотрим поподробнее.</p><br/>
+<h2 id="servernaya-uchyotnaya-zapis">Серверная учётная запись</h2><br/>
+<p>Это относительно недавнее нововведение, анонсированное в феврале 2014 года — <a href="https://list.valvesoftware.com/cgi-bin/mailman/private/hlds_announce/2014-February/000863.html">hlds_announce</a>, либо в открытом доступе, например, <a href="https://www.mail-archive.com/hlds_linux@list.valvesoftware.com/msg74576.html">тут</a>. На данный момент актуально лишь для двух игр — Counter-Strike: Global Offensive и Team Fortress 2, причём для первой регистрация обязательна. Регистрация сервера даёт как приятную, так и полезную особенности. Приятная — при смене адреса или порта у нашего сервера, новый адрес автоматически обновится в закладках у игроков, которые его в своё время добавили. Ну и полезная — позволяет теперь Valve, при обнаружении что тот или иной игровой сервер (пока только для CS:GO) нарушает их политику, блокировать не ip адрес целиком, а лишь конкретный Steam аккаунт нарушителя, на который куплена игра и к которому привязан этот серверный аккаунт. А точнее — все аккаунты Steam, к которым привязан номер телефона аккаунта-нарушителя. Большое облегчение для владельцев игровых хостингов CS:GO, наверное.</p><br/>
+<p>Но вернёмся к нашей игре. В упомянутом анонсе Valve от 2014 года описан процесс регистрации посредством получения ключа к api на <a href="http://steamcommunity.com/dev">http://steamcommunity.com/dev</a>, последующим запросом с ним к IGameServersService/CreateAccount и так далее. Для общего развития можно пройти через это всё, а можно (XXI век всё же) перейти на страницу <a href="http://steamcommunity.com/dev/managegameservers">http://steamcommunity.com/dev/managegameservers</a>, что мы и сделаем. Там же приведены актуальные требования для регистрации. На настоящий момент они таковы:</p><br/>
+<ul>
+<li>Ваш аккаунт Steam не должен быть заблокирован.</li>
+<li>Ваш аккаунт Steam должен иметь неограниченные права.</li>
+<li>К вашему аккаунту Steam должен быть прикреплен действующий номер телефона.</li>
+<li>На вашем аккаунте Steam должна быть игра, для которой вы создаете аккаунт сервера.</li>
+<li>Вы можете создать до 1000 аккаунтов серверов игры.</li>
+</ul><br/>
+<p>Лучше не использовать основной игровой аккаунт, если он у вас есть, а завести новый. Запускаем клиент Steam, регистрируем новую учётную запись (п.1 — ok), пополняем счёт на эквивалент 5 USD (п.2 — ok), в свойствах аккаунта привязываем номер телефона (п.3 — ok), добавляем в библиотеку игр Team Fortress 2 (п.4 — ok). Учитывая утвердительный ответ на вопрос "Do VAC and Game bans apply to all accounts on a phone number?" в [Базе Знаний] (<a href="https://support.steampowered.com/kb_article.php?ref=8625-WRAH-9030">https://support.steampowered.com/kb_article.php?ref=8625-WRAH-9030</a>), имеет смысл использовать отдельный телефонный номер, только для этого аккаунта. Достаточно лишь привязать номер, активировать Steam Guard нет необходимости:</p><br/>
+<p></p><br/>
+<p>Если все требования мы выполнили, то переходим на страницу <a href="https://steamcommunity.com/dev/managegameservers">https://steamcommunity.com/dev/managegameservers</a>, логинимся, если ещё не, и в самом низу видим поля для получения нового токена. Заполняем. Выполняем.</p><br/>
+<p></p><br/>
+<p>Если всё успешно, то в табличке мы видим наш gameserver login token:</p><br/>
+<p></p><br/>
+<p>Его мы прописываем в ~/cfg/autoexec1.cfg:</p><br/>
+<div class="spoiler"><b class="spoiler_title">autoexec1.cfg</b><div class="spoiler_text"><pre><code>//...
+
+// Steam Gameserver Account
+sv_setsteamaccount 3A820F219B470281C00IDDQD00A4D210</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Запускаем первый сервер, смотрим (строки 2 и 8):</p><br/>
+<pre><code>   Setting breakpad minidump AppID = 232250
+   Logging into Steam game server account
+   ConVarRef room_type doesn't point to an existing ConVar
+   Executing dedicated server config file server1.cfg
+   ...
+   Connection to Steam servers successful.
+      Public IP is 192.0.2.0.
+   Assigned persistent gameserver Steam ID [G:1:21].
+   VAC secure mode is activated.</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Вместо привычного "Assigned anonymous gameserver Steam ID [A:1:1724597452:5521]" мы видим наш теперь постоянный Steam ID — [G:1:21]. "G" — GameServer, а ранее был "A" — AnonGameServer. Подробнее — в <a href="https://developer.valvesoftware.com/wiki/SteamID">wiki</a>.</p><br/>
+<p>Теперь на локальном компьютере запустим Team Fortress 2 из обычного, игрового аккаунта, добавляем, если ещё не, наш сервер в закладки. Открываем каталог <code>C:\Program Files\Steam\userdata\&lt;игровой id&gt;\7\remote\</code>. Там должен быть файлик serverbrowser_hist.vdf, в котором хранятся закладки и история. Ищем в закладках наш сервер и видим, что теперь для него прописан серверный аккаунт (строка 9):</p><br/>
+<pre><code>   "Favorites"
+   {
+     "4"
+     {
+       "name"         "192.0.2.0:27015"
+       "address"      "192.0.2.0:27015"
+       "LastPlayed"   "1476177442"
+       "appid"        "0"
+       "accountid"    "21"
+     }
+   }</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Идентификатор accountid совпадает с тем, который мы увидели в консоли сервера.</p><br/>
+<p>Необходимо иметь в виду, что полученный нами токен при его неиспользовании в течение некоторого времени блокируется и необходимо использовать команду "Regenerate token" на той странице, где мы его получали.</p><br/>
+<p>Так что если при запуске сервера выдаются сообщения вида:</p><br/>
+<pre><code>   Could not establish connection to Steam servers.  (Result = 106)
+   enum_names.cpp (136) : Assertion Failed: Missing String for EResult (106)</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>то, как правило, это означает что токен недействителен — либо истёк срок неактивности, либо ошибка в самой записи токена. Смотрим на странице <a href="http://steamcommunity.com/dev/managegameservers">http://steamcommunity.com/dev/managegameservers</a>, не истёк ли срок годности токена. Зная свой Steam Web API Key можно использовать интерфейс <a href="https://api.steampowered.com/IGameServersService/GetAccountList/v0001/?key=Steam_Web_API_Key">IGameServersService</a> — для каждого login_token смотреть его is_expired.</p><br/>
+<h2 id="quickplay">QuickPlay</h2><br/>
+<p>UPDATE, пока номер готовился в печать: На данный момент the quickplay system is no longer in use for Team Fortress 2.</p><br/>
+<p></p><br/>
+<p>Поэтому я просто оставлю это здеь.</p><br/>
+<p>Для привлечения игроков на сервера сообщества была создана система QuickPlay. Требования к серверам время от времени меняются, поэтому с актуальными критериями лучше ознакомиться на <a href="https://support.steampowered.com/kb_article.php?ref=2825-AFGJ-3513">https://support.steampowered.com/kb_article.php?ref=2825-AFGJ-3513</a>. На данный момент основных требований несколько — сервер должен быть зарегистрирован, настройки сервера, карты и модификации должны соответствовать указанным в статье. Наш первый сервер выполняет все требования, за исключением регистрации, которой сейчас и займёмся. Это не та регистрация с использованием sv_setsteamaccount из секции выше, а отдельная, для осуществления которой на свойм компьютере запускаем клиента Steam, логинимся с той же учётной записью, которую создали ранее — это не обязательно, но так будет единообразнее. Запускаем игру Team Fortress 2, открываем в игре консоль — <code>~</code>, вводим там команду cl_gameserver_create_identity. Нам в ответ выдаст:</p><br/>
+<pre><code>   cl_gameserver_create_identity
+   Request to create a game server account sent--please wait.
+   Game server account created successfully!
+   Set these convars on your game server to have it log in and receive benefits:
+   tf_server_identity_account_id 284181
+   tf_server_identity_token "18a&gt;qPosnHYia?a"</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Вот эти две последние строчки мы прописываем в ~/cfg/autoexec1.cfg:</p><br/>
+<div class="spoiler"><b class="spoiler_title">autoexec1.cfg</b><div class="spoiler_text"><pre><code>//...
+
+// QuickPlay
+tf_server_identity_account_id 284181
+tf_server_identity_token "18a&gt;qPosnHYia?a"</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Запускаем первый сервер, смотрим (строки 2, 9, 10):</p><br/>
+<pre><code>   Connection to game coordinator established.
+   Received auth challenge; signing into gameserver account...
+   *** ~/cfg/server1.cfg
+   ...
+   Connection to Steam servers successful.
+      Public IP is 192.0.2.0.
+   Assigned persistent gameserver Steam ID [G:1:21].
+   VAC secure mode is activated.
+   Game server authentication: SUCCESS! Standing: Good. Trend: Steady
+      Successfully logged into gameserver account 284181.
+   For more information about gameserver accounts, visit https://support.steampowered.com/kb_article.php?ref=2825-AFGJ-3513.</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Ну всё, теперь ждём, когда к нам толпой повалят игроки.</p><br/>
+<p>Если понадобится временно вывести сервер из QuickPlay, то не обязательно править autoexec1.cfg и перезапускать сервер. Можно использовать команду tf_server_identity_disable_quickplay 1.</p><br/>
+<p>Со временем, обещает Valve, эти tf_server<em>identity</em> аккаунты будут заменены серверными учётными записями.</p><br/>
+<ul>
+<li><a href="https://habrahabr.ru/post/312922/">Часть 1</a> — Установка клиента Steam и сервера Team Fortress 2, базовая настройка, обновления</li>
+<li><a href="https://habrahabr.ru/post/312928/">Часть 2</a> — Записи (Replay), SourceTV, Fast Download, боты</li>
+<li><a href="https://habrahabr.ru/post/312936/">Часть 4</a> — Сервер статистики HLstatsX</li>
+</ul></div></div></div><!----><!----></div><!----><!----></div><!--]--><!----><div class="tm-article-presenter__meta" data-test-id="article-meta-links"><div class="tm-separated-list tag-list tm-article-presenter__meta-list"><span class="tm-separated-list__title">Теги:</span><ul class="tm-separated-list__list"><!--[--><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[srcds]" class="link"><span>srcds</span></a><!--]--></li><!--]--><!----></ul></div><div class="tm-separated-list tm-article-presenter__meta-list"><span class="tm-separated-list__title">Хабы:</span><ul class="tm-separated-list__list"><!--[--><li class="tm-separated-list__item"><!--[--><a href="/ru/hubs/nix/" class="link"><!--[--><span>*nix</span><!--]--></a><!--]--></li><!--]--><!----></ul></div></div><!----><!--]--></article><!--]--></div><!----></div><div style="" class="tm-article-sticky-panel" data-test-id="article-sticky-panel"><div class="tm-data-icons tm-data-icons tm-data-icons_space-big tm-article-sticky-panel__icons" data-test-id="article-stats-icons"><div class="article-rating tm-data-icons__item" data-v-b9b05a90><div class="tm-votes-meter votes-switcher" data-v-b9b05a90><svg class="tm-svg-img tm-votes-meter__icon tm-votes-meter__icon tm-votes-meter__icon_appearance-article" height="24" width="24"><title>Всего голосов 18: ↑16 и ↓2</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-rating"></use></svg><span class="tm-votes-meter__value tm-votes-meter__value_positive tm-votes-meter__value_appearance-article tm-votes-meter__value_rating tm-votes-meter__value" data-test-id="votes-meter-value" title="Всего голосов 18: ↑16 и ↓2">+12</span></div><!--teleport start--><!--teleport end--><!----></div><!----><!----><button class="bookmarks-button tm-data-icons__item" title="Добавить в закладки" type="button" data-v-861e2740><span class="tm-svg-icon__wrapper icon" data-v-861e2740><svg class="tm-svg-img tm-svg-icon" height="24" width="24"><title>Добавить в закладки</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-favorite"></use></svg></span><span class="counter" title="Количество пользователей, добавивших публикацию в закладки" data-v-861e2740>68</span></button><div class="sharing tm-data-icons__item" title="Поделиться" data-v-daf6ee1d><button class="sharing-button" type="button" data-v-daf6ee1d><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon" data-v-daf6ee1d><path fill="currentColor" d="M13.8 13.8V18l7.2-6.6L13.8 5v3.9C5 8.9 3 18.6 3 18.6c2.5-4.4 6-4.8 10.8-4.8z"></path></svg></button><!--teleport start--><!--teleport end--></div><div class="article-comments-counter-link-wrapper tm-data-icons__item" title="Читать комментарии" data-v-8d952463><a href="/ru/articles/312934/comments/" class="article-comments-counter-link" data-test-id="counter-comments" data-v-8d952463><!--[--><svg class="tm-svg-img icon" height="24" width="24" data-v-8d952463><title>Комментарии</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-comments"></use></svg><span class="value" data-v-8d952463>6</span><!--]--></a><!----></div><!--[--><!--[--><!--[--><!----><!--]--><!--]--><!--]--><!--teleport start--><!--teleport end--><!----></div></div></div><!--[--><!--]--><div class="tm-article-presenter__footer"><!--[--><!--[--><div class="tm-article-blocks"><!----><!--[--><section class="tm-block tm-block tm-block_spacing-bottom"><!----><!--[--><div class="tm-block__body tm-block__body tm-block__body_variant-balanced"><!--[--><div class="article-author" data-test-id="article-author-info" data-async-called="true" data-v-af0d0f90><!--[--><!--]--><div class="tm-user-card tm-user-card tm-user-card_variant-article user-card" data-async-called="true" data-v-af0d0f90><div class="tm-user-card__info-container"><div class="tm-user-card__header"><div class="tm-user-card__header-data"><a href="/ru/users/abrca/" class="tm-user-card__userpic tm-user-card__userpic_size-40"><!--[--><div class="tm-entity-image"><!--[--><!--]--></div><!--]--></a><div class="tm-user-card__meta"><div class="tm-counter-container karma" title=" 17 голосов " data-v-544d285f><div class="tm-counter-container__header"><!--[--><div class="karma-display positive" data-v-544d285f data-v-3881f4ba>13</div><!----><!--]--></div><div class="tm-counter-container__footer"><!--[--><div class="karma-text" data-v-544d285f>Карма</div><!--teleport start--><!--teleport end--><!--]--></div></div><div class="tm-counter-container"><div class="tm-counter-container__header"><!--[--><!--[--><!--]--><div class="tm-votes-lever tm-votes-lever tm-votes-lever_appearance-rating"><!----><div class="tm-votes-lever__score tm-votes-lever__score_appearance-rating tm-votes-lever__score" data-test-id="lever-score"><!--[--><span><span class="tm-votes-lever__score-counter tm-votes-lever__score-counter_rating tm-votes-lever__score-counter" data-test-id="votes-score-counter">0</span></span><!--]--></div><!----></div><!--]--></div><div class="tm-counter-container__footer"><!--[--><span class="tm-rating__text tm-rating__text">Общий рейтинг</span><!--]--></div></div></div></div></div><div class="tm-user-card__info tm-user-card__info_variant-article tm-user-card__info"><div class="tm-user-card__title tm-user-card__title_variant-article tm-user-card__title"><!----><a href="/ru/users/abrca/" class="tm-user-card__nickname tm-user-card__nickname tm-user-card__nickname_variant-article"><!--[-->@abrca<!--]--></a><!----></div><p class="tm-user-card__short-info tm-user-card__short-info_variant-article tm-user-card__short-info" data-test-id="user-card-speciality">Пользователь</p></div></div><!----><div class="tm-user-card__buttons tm-user-card__buttons_variant-article tm-user-card__buttons"><!----><div class="tm-user-card__button"><div class="tm-button-follow tm-user-card__button-follow"><!----><button class="tm-button-follow__button tm-button-follow__button_big" data-test-id="follow-button" type="button">Подписаться</button></div></div><!----><!--[--><div class="tm-user-card__button tm-user-card__button_write" data-test-id="user-card-conversations"><svg class="tm-svg-img tm-user-card__button-icon" height="16" width="16"><title>Отправить сообщение</title><use xlink:href="/img/megazord-v28.cba4c116..svg#mail"></use></svg></div><!--]--><!----><!----></div><!----></div><div class="author-contacts" data-test-id="author-contacts" data-v-af0d0f90><!----><!----><!----></div></div><!--]--></div><!--]--><!----></section><!----><!--[--><div class="sponsor-block" style="--d75346b8:0;--11dbf66e:100%;" data-v-580b3119><div class="title" data-v-580b3119>Хабр доступен 24/7 благодаря поддержке друзей</div><div class="content-container" data-v-580b3119><div class="content" data-v-580b3119><div class="content-title-container" data-v-580b3119><div class="content-title" data-v-580b3119>Хабр Курсы для всех</div><div class="sponsor-mark" data-v-580b3119>РЕКЛАМА</div></div><div class="content-text" data-v-580b3119> Практикум, Хекслет, SkyPro, авторские курсы — собрали всех и попросили скидки. Осталось выбрать! </div><a class="content-action" href="https://career.habr.com/courses/?erid=2VSb5wDLYUH&amp;utm_source=habr&amp;utm_medium=sponsorship_hub" target="_blank" data-v-580b3119><button class="btn btn_solid btn_small tm-button_color-horizon" tabindex="0" type="button" data-v-580b3119><!--[--><!--[-->Перейти<!--]--><!--]--></button></a></div></div><div class="footer" data-v-580b3119><!----></div><!----></div><!--]--><!--]--><div class="tm-article-blocks__comments"><div id="publication-comments" class="tm-article-page-comments"><div><!--[--><div class="article-comments-counter-link-wrapper tm-article-comments-counter-button" data-v-8d952463><a href="/ru/articles/312934/comments/" class="article-comments-counter-link button-style" data-test-id="counter-comments" data-v-8d952463><!--[--><svg class="tm-svg-img icon icon--contrasted" height="24" width="24" data-v-8d952463><title>Комментарии</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-comments"></use></svg><span class="value value--contrasted" data-v-8d952463> Комментарии 6 </span><!--]--></a><!----></div><!--]--></div></div></div><!--[--><!--[--><!--]--><section class="tm-block tm-block tm-block_spacing-bottom"><header class="tm-block__header tm-block__header tm-block__header_variant-borderless"><div class="tm-block__header-container"><h2 class="tm-block__title tm-block__title tm-block__title_variant-large">Публикации</h2><!--[--><!--]--></div><!----></header><!--[--><div class="tm-block__body tm-block__body tm-block__body_variant-condensed-slim"><!--[--><!--[--><div class="tabs" data-test-id="container" data-v-681e7545><div class="" data-test-id="scroll-area" data-v-681e7545><!--[--><span class="tab-item" data-v-681e7545><button class="active slim tab-link" data-v-681e7545>Лучшие за сутки</button></span><span class="tab-item" data-v-681e7545><button class="slim tab-link" data-v-681e7545>Похожие</button></span><!--]--></div><!----></div><div class="similar-and-daily__tab-view"><div class="daily-articles-list"><ul class="article-card-list" data-v-7f7081d6><!--[--><!--]--><div class="tm-bordered-card" data-v-7f7081d6><!----><!--[--><!--]--></div></ul><div class="daily-articles-block__button-container"><button class="btn btn_transparent btn_small tm-button_color-horizon" tabindex="0" type="button"><!--[--><!--[-->Показать лучшие за всё время<!--]--><!--]--></button></div></div><!----></div><!--]--><!--]--></div><!--]--><!----></section><!--[--><div><div class="placeholder-wrapper"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="tm-placeholder-promo"><div class="tm-placeholder-promo__header"><div class="tm-placeholder__line tm-placeholder__line_promo-title"></div></div><div class="tm-placeholder-promo__body"><div class="tm-placeholder-promo__posts"><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div></div><div class="tm-placeholder-promo__dots"><div class="tm-placeholder-promo__dot"></div><div class="tm-placeholder-promo__dot"></div><div class="tm-placeholder-promo__dot"></div></div></div></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div></div><div><div class="placeholder-wrapper"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="tm-placeholder-inset tm-placeholder-salary"><div class="tm-placeholder-inset__header"><div class="tm-placeholder__line tm-placeholder__line_inset-header loads"></div></div><div class="tm-placeholder-salary__body"><div class="tm-placeholder-salary__text"><div class="tm-placeholder__line tm-placeholder__line_salary_average"></div><div class="tm-placeholder-salary__description"><div class="tm-placeholder__line loads"></div><div class="tm-placeholder__line loads"></div><div class="tm-placeholder__line loads"></div><div class="tm-placeholder__line loads"></div></div></div><div class="tm-placeholder-salary__image loads"></div></div><div class="tm-placeholder-inset__footer tm-placeholder-inset__footer_salary"><div class="tm-placeholder__line tm-placeholder__line_inset-footer loads"></div></div></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div></div><!--]--><!----><!--[--><!--]--><!--]--></div><!----><!--]--><!--]--></div></div><!--]--></div><!--]--></div></div><div class="tm-page__sidebar"><!--[--><div class="sidebar" data-v-0050f56d><div id="sidebar-window-placement" data-v-0050f56d></div><!--[--><!--]--></div><!--]--></div></div><!--]--></div><!----></div></main><!----></div><div class="tm-footer-menu"><div class="tm-page-width"><!--[--><div class="tm-footer-menu__container"><!--[--><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Ваш аккаунт</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr/?back=/ru/articles/312934/&amp;hl=ru" rel="nofollow" target="_self">Войти</a></li><li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr-register/?back=/ru/articles/312934/&amp;hl=ru" rel="nofollow" target="_self">Регистрация</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Разделы</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/ru/articles/" class="footer-menu__item-link">Статьи</a></li><li class="tm-footer-menu__list-item"><a href="/ru/news/" class="footer-menu__item-link">Новости</a></li><li class="tm-footer-menu__list-item"><a href="/ru/hubs/" class="footer-menu__item-link">Хабы</a></li><li class="tm-footer-menu__list-item"><a href="/ru/companies/" class="footer-menu__item-link">Компании</a></li><li class="tm-footer-menu__list-item"><a href="/ru/users/" class="footer-menu__item-link">Авторы</a></li><li class="tm-footer-menu__list-item"><a href="/ru/sandbox/" class="footer-menu__item-link">Песочница</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Информация</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/ru/docs/help/" class="footer-menu__item-link">Устройство сайта</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/authors/codex/" class="footer-menu__item-link">Для авторов</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/companies/corpblogs/" class="footer-menu__item-link">Для компаний</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/docs/transparency/" class="footer-menu__item-link">Документы</a></li><li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/agreement/?hl=ru_RU" target="_blank">Соглашение</a></li><li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/confidential/?hl=ru_RU" target="_blank">Конфиденциальность</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Услуги</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/corporate-blogs/" target="_blank">Корпоративный блог</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/advertising/" target="_blank">Медийная реклама</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/native-special/" target="_blank">Нативные проекты</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/education-programs/" target="_blank">Образовательные программы</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/hello-startup/" target="_blank">Стартапам</a></li><!--]--></ul></div></div><!--]--></div><!--]--></div></div><div class="tm-footer"><div class="tm-page-width"><!--[--><div class="tm-footer__container"><!----><div class="social-icons tm-footer__social" data-v-d6e8cb42><!--[--><a class="tm-svg-icon__wrapper social-icon" href="https://vk.com/habr" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>VK</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-vk"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="https://telegram.me/habr_com" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Telegram</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-telegram"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="http://www.youtube.com/@Habr_com" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Youtube</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-youtube"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="https://dzen.ru/habr" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Яндекс Дзен</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-dzen"></use></svg></a><!--]--></div><!--teleport start--><!--teleport end--><button class="tm-footer__link"><!----> Настройка языка</button><a href="/ru/feedback/" class="tm-footer__link">Техническая поддержка</a><div class="tm-footer-copyright"><span class="tm-copyright"><span class="tm-copyright__years">© 2006–2026,</span><span class="tm-copyright__name"><a class="tm-copyright__link" href="https://company.habr.com/" rel="noopener" target="_blank"> Habr </a></span></span></div></div><!--]--></div></div><!----><!----><!--]--></div><!----></div></div>
+    <div id="overlays"><!--teleport start anchor--><template><!----></template><!--teleport anchor--><!--teleport start anchor--><template><!----></template><!--teleport anchor--><!--teleport start anchor--><template><!----></template><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--></div>
+    
+    
+    
+    
+  
+  
+    
+  
+    </body>
+
+    </html>

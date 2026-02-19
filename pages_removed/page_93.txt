@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <title>Артём Кухаренко, основатель компании NTechLab — о распознавании лиц, потенциале нейросетей и бизнесе &#x2F; Хабр</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+  </head>
+  <body>
+    
+    <div id="mount"><div id="app"><div class="tm-layout__wrapper"><!--[--><!----><div></div><div class="header-banner-wrapper"><div class="element-wrapper above-header" style="--754c4550:100%;--56cb6579:auto;"><!--[--><div class="placeholder-wrapper banner-container__placeholder"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="adfox-banner-placeholder above-header" data-v-24012b5e><div class="image loads" data-v-24012b5e></div><div class="lines" data-v-24012b5e><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div></div></div><!----><!----><!----></div><!--[--><div id="adfox_175449164307199013_aboveHeader" class="banner-target"></div><!--]--><!--]--></div></div><header class="tm-header tm-header" data-test-id="header"><!----><!----><div class="tm-page-width"><!--[--><div class="tm-header__container"><button aria-expanded="false" aria-label="Toggle menu" class="burger-button tm-header__button tm-header__burger" data-v-56ed7aae><span class="line top" data-v-56ed7aae></span><span class="line middle" data-v-56ed7aae></span><span class="line bottom" data-v-56ed7aae></span></button><span class="tm-header__logo-wrap"><a class="tm-header__logo tm-header__logo_hl-ru tm-header__logo" href="/ru/feed"><svg class="tm-svg-img tm-header__icon" height="16" width="16"><title>Хабр</title><use xlink:href="/img/habr-logo-ru.svg#logo"></use></svg></a></span><span class="tm-header__divider"></span><!--[--><a class="tm-header__all-flows" href="/ru/articles/">Все потоки</a><!--]--><!----><div class="tm-header-user-menu tm-base-layout__user-menu"><a href="/ru/search/" class="tm-header-user-menu__item tm-header-user-menu__search" data-test-id="search-button"><svg class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_search" height="24" width="24"><title>Поиск</title><use xlink:href="/img/megazord-v28.cba4c116..svg#search"></use></svg></a><!----><!----><div class="tm-header-user-menu__item tm-header-user-menu__write"><a href="/ru/sandbox/start/" class=""><svg class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_write" height="24" width="24"><title>Написать публикацию</title><use xlink:href="/img/megazord-v28.cba4c116..svg#write"></use></svg></a><!----></div><!--[--><div class="tm-header-user-menu__item"><button class="tm-header-user-menu__toggle" data-test-id="user-menu-settings"><svg class="tm-svg-img tm-header-user-menu__icon" height="24" width="24"><title>Настройки</title><use xlink:href="/img/megazord-v28.cba4c116..svg#page-settings"></use></svg></button></div><a href="https://habr.com/kek/v1/auth/habrahabr/?back=/ru/articles/313076/&amp;hl=ru" rel="nofollow" class="tm-header-user-menu__item tm-header-user-menu__login" role="button"><!--[-->Войти<!--]--></a><!--]--><template><!----></template><!--teleport start--><!--teleport end--></div></div><!--]--></div></header><div class="tm-layout"><div class="tm-page-progress-bar"></div><!----><div class="tm-page-width"><!--[--><!----><!----><!----><!--]--></div><main class="tm-layout__container"><div class="tm-page" hl="ru" data-async-called="true" style="--a414e232:300px;--10c4682a:0;--19620736:0;"><!----><div class="tm-page-width"><!--[--><!----><div class="tm-page__wrapper"><!----><div class="tm-page__main_has-sidebar tm-page__main"><div class="pull-down"><!----><div class="pull-down__header" style="height:0px;"><div class="pull-down__content" style="bottom:10px;"><svg class="tm-svg-img pull-down__icon pull-down__arrow" height="24" width="24"><title>Обновить</title><use xlink:href="/img/megazord-v28.cba4c116..svg#pull-arrow"></use></svg></div></div><!--[--><div><!--[--><!----><div class="tm-article-presenter" data-async-called="true"><!--[--><!--]--><div class="tm-article-presenter__body" data-test-id="article-body"><div class="tm-misprint-area"><div class="tm-misprint-area__wrapper"><!--[--><article class="tm-article-presenter__content tm-article-presenter__content_narrow"><!--[--><div class="tm-article-presenter__header"><!--[--><!--]--><div class="article-snippet tm-article-presenter__snippet" data-v-085cd854><!--[--><!--]--><div class="meta-container" data-v-085cd854><div class="meta" data-v-085cd854><span class="tm-user-info author" data-v-085cd854><a href="/ru/users/semen_grinshtein/" class="tm-user-info__userpic" data-test-id="user-info-pic"><!--[--><div class="tm-entity-image"></div><!--]--></a><span class="tm-user-info__user tm-user-info__user_appearance-default" data-test-id="user-info-description"><a href="/ru/users/semen_grinshtein/" class="tm-user-info__username" data-test-id="user-info-username"><!--[-->semen_grinshtein<!--]--></a><!----><!--[--><span class="tm-article-datetime-published" data-v-085cd854><time data-allow-mismatch datetime="2016-10-19T08:45:24.000Z" title="2016-10-19, 08:45">19  окт  2016 в 08:45</time></span><!--]--></span></span></div><div class="controls" data-v-085cd854><!----><!----><!----><!----></div></div><h1 class="tm-title tm-title_h1" lang="ru" data-test-id="articleTitle" data-v-085cd854><span>Артём Кухаренко, основатель компании NTechLab — о распознавании лиц, потенциале нейросетей и бизнесе</span></h1><div class="stats" data-test-id="articleStats" data-v-085cd854><!----><div class="tm-article-reading-time" data-v-085cd854><span class="tm-svg-icon__wrapper tm-article-reading-time__icon"><svg class="tm-svg-img tm-svg-icon" height="24" width="24"><title>Время на прочтение</title><use xlink:href="/img/megazord-v28.cba4c116..svg#clock"></use></svg></span><span class="tm-article-reading-time__label">8 мин</span></div><span class="tm-icon-counter tm-data-icons__item reach-counter" data-v-085cd854><svg class="tm-svg-img tm-icon-counter__icon" height="24" width="24"><title>Охват и читатели</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-views"></use></svg><span class="tm-icon-counter__value" title="28592">29K</span></span></div><div class="tm-publication-hubs__container" data-test-id="articleHubsList" data-v-085cd854><div class="tm-publication-hubs"><!--[--><span class="tm-publication-hub__link-container"><a href="/ru/hubs/career/" class="tm-publication-hub__link"><!--[--><span>Карьера в IT-индустрии</span><!----><!--]--></a></span><span class="tm-publication-hub__link-container"><a href="/ru/hubs/startuprise/" class="tm-publication-hub__link"><!--[--><span>Развитие стартапа</span><!----><!--]--></a></span><span class="tm-publication-hub__link-container"><a href="/ru/hubs/dev_management/" class="tm-publication-hub__link"><!--[--><span>Управление разработкой</span><span class="tm-article-snippet__profiled-hub" title="Профильный хаб"> * </span><!--]--></a></span><!--]--></div></div><div class="tm-article-labels" data-test-id="articleLabels" data-v-085cd854 data-v-bfa2437b><div class="tm-article-labels__container" data-v-bfa2437b><!----><!--[--><!----><!--[--><!--]--><!--]--></div></div><!----><!----><!--teleport start--><!--teleport end--></div></div><!--[--><!----><div class="article-body" data-gallery-root lang="ru" data-v-aad06d04><div data-v-aad06d04><!--[--><!--]--></div><div id="post-content-body" data-v-aad06d04><div><div class="article-formatted-body article-formatted-body article-formatted-body_version-1"><div xmlns="http://www.w3.org/1999/xhtml"><br/>
+<br/>
+Про <a href="http://ntechlab.ru">NTechLab</a> все услышали в тот момент, когда демонстратор идентификационного алгоритма FindFace стал доступен в Сети — людей шокировало, что вот так просто, несколькими кликами, можно по фотографии определить сетевые координаты чуть ли не любого человека: прохожего, пассажира напротив и так далее.<br/>
+<br/>
+Хотя путь Артёма Кухаренко по пути распознавания лиц начался задолго до этого, а наиболее значительно точкой, на самом деле, была победа в конкурсе Вашингтонского университета MegaFace — вчера компания анонсировала свой облачный SaaS-продукт <a href="https://findface.pro/#home">FindFace.pro</a>, которому уже сейчас сулят большое будущее.<br/>
+<br/>
+Мы поговорили с Артёмом про алгоритмы и бизнес, а также перспективы технологий умного распознания объектов.<a name="habracut"></a><br/>
+<blockquote>Артем Кухаренко получил высшее образование в МГУ им. М.В. Ломоносова, где окончил факультет вычислительной математики и кибернетики. Студентом работал в Лаборатории компьютерной графики и мультимедиа МГУ.<br/>
+<br/>
+2013 — начал сотрудничать с лабораторией e-Lab американского университета Purdue.<br/>
+<br/>
+2014 — Артем Кухаренко стал сотрудником Московского исследовательского центра Samsung. В это же время выступил как автор ряда научных статей по тематике нейронных сетей.</blockquote><br/>
+<strong>То, чем вы занимаетесь, не похоже на большинство стартапов. Что стало триггером к тому, чтобы начать делать этот проект?</strong><br/>
+<br/>
+Там вообще много факторов. У меня в МГУ был диплом по распознаванию лиц. В то время мы только начинали изучать нейронные сети и в основном применяли так называемые hand-crufted features – алгоритмы, например, SVM поверх LBP или HoG дескрипторов, которые возникли еще до нейронных сетей.<br/>
+<br/>
+Потом я работал в разных компаниях. В них тогда уже начали активно применять нейронные сети. Мы поняли, что с помощью нейронных сетей можно улучшить качество работы в различных областях.<br/>
+<br/>
+В свободное от работы время я разработал приложение, которое распознает породы собак и показал его друзьям. Они познакомили меня с инвесторами. Вместе мы придумали несколько вариантов применения технологии и поняли как на этом заработать деньги. В результате пришли к распознаванию лиц.<br/>
+<br/>
+<strong>Кто ваши инвесторы?</strong><br/>
+<br/>
+Это частные лица. Теперь один из них стал сооснователем. Другие тоже близки к этому. Сейчас они уделяют проекту 25-50% своего времени.<br/>
+<br/>
+<strong>Тогда, наверное, правильнее будет назвать их партнерами?</strong><br/>
+<br/>
+Да. Кроме того, подобралась классная команда инженеров-разработчиков. Изначально мы занимались разработкой втроем. Как раз тогда нам удалось придумать и реализовать алгоритм распознавания лиц, который победил на конкурсе The MegaFace Benchmark. Его проводил Вашингтонский университет. Нужно было распознавать лица в базе из 1 миллиона человек. Ранее подобные конкурсы проводились по небольшим базам, а в MegaFace все было приближено к реальным условиям.<br/>
+<br/>
+Естественно участвовало более 100 команд со всего мира. И мы тоже отправили свой алгоритм – просто чтобы понять на каком этапе развития мы находимся. И вдруг заняли первое место. С этого момента появился очень большой интерес со стороны клиентов, инвесторов, прессы. И мы начали активно разрабатывать b2b-продукты.<br/>
+<br/>
+<strong>FindFace появился чуть позже?</strong><br/>
+<br/>
+Да. Изначально мы делали поисковый движок, чтобы искать по большим массивам фотографий (до 1 миллиарда). Возможно, именно поэтому мы и заняли первое место. Точность поиска – первый важный критерий. А второй – скорость поиска. Если алгоритм будет искать за полчаса или даже за минуту, это никому особо не интересно.<br/>
+<br/>
+<strong>Насколько вы вообще задумывались о приватности как таковой? Все уже давным-давно есть в интернете. Там нет людей, которые профессионально занимаются шпионажем. Отдавая свои фотографии Facebook, Google, VK, мы должны понимать, что в какой-то момент они будут осуществлять поиск по этим фотографиям. Какое у тебя мнение о негативных последствиях реализации алгоритмов распознавания?</strong><br/>
+<br/>
+Когда мы создавали алгоритм, нам, инженерам, было просто интересно сделать его эффективным. И только потом мы начали задумываться о том как правильно его применять и выпускать в виде продуктов для широкой аудитории. Но мы решили, что, когда появляются мощные технологии, люди должны о них знать. Если бы мы отдали технологию только спецслужбам, которые бы ее использовали, и никто бы о ней не знал, – это одно. А мы выложили ее в открытое пользование – это другое. Люди про нее знают и делают выводы, что выкладывать в сети, а что – нет.<br/>
+<br/>
+<strong>Общественное мнение подстроится само, зная о существовании этой вещи.</strong><br/>
+<br/>
+Тем не менее, нам приходило много благодарственных писем из МВД, полиции и тд.<br/>
+<br/>
+<strong>Наблюдая за твоим профилем в Facebook, я заметил, что после появления FindFace у тебя сменились фотографии, общий фон – случился такой «звездный час». После MegaFace пришло много заказов, клиентов. Компания начинает расти серьезными темпами или существуют структурные препятствия на пути к коммерциализации данных решений? Какие планы по поводу бизнеса?</strong><br/>
+<br/>
+У нас растет все очень быстро по всем направлениям. В компании около 25 человек. До нового года будет порядка 30. Нужно быстро набрать команду, «заскейлиться». Кажется, мы хорошо справляемся с этим. У нас компания разделена на три логических составляющих – бизнес-подразделение, продуктовая команда (делает конечный продукт) и лаборатория (улучшает алгоритмы, качество поиска и тд).<br/>
+<br/>
+Сейчас у нас более 500 заявок от клиентов. В какой-то момент мы столкнулись с тем, что заказов очень много, а как такового продукта для бизнеса нет.<br/>
+<br/>
+<strong>В каком виде это может существовать на рынке? SaaS, Black box serverside-приложение, мобильное приложение?</strong><br/>
+<br/>
+FindFace – это просто демонстрация нашего алгоритма. На нем деньги мы зарабатывать не планируем. Сейчас мы запускаем облачный сервис FindFace Cloud API (SaaS), он позволяет загружать фотографию и осуществлять по ней поиск. <br/>
+<br/>
+<br/>
+<br/>
+<blockquote>18 октября компания NTechLab <a href="https://techcrunch.com/2016/10/18/ntechlab-aims-new-findface-pro-facial-recognition-service-at-businesses/">представила</a> решение для бизнеса — продукт FindFace.Pro. <br/>
+<br/>
+Продукт позволяет интегрировать технологии для распознавания лиц со сторонними приложениями через «облако», <a href="https://findface.pro/cloud_api.html#">говорится</a> в описании сервиса. С его помощью можно обнаруживать лица на снимках, идентифицировать и формировать базу для дальнейшего использования.<br/>
+<br/>
+Продукт ориентирован на магазины, казино, компании, которые занимаются организацией концертов и прочих массовых мероприятий, и другие предприятия. При заключении соглашения NTechLab зачисляет клиенту на счёт $100, на которые он может сделать 18 тысяч запросов на распознавание лица или создать галерею на 10 тысяч лиц в течение трёх месяцев.</blockquote>Сервис востребован во многих индустриях – от социальных сетей и сервисов для знакомств до ритейла и систем безопасности.<br/>
+<br/>
+Это применимо в ритейле: например, есть магазин и база постоянных покупателей. Кроме того, технология находит применение в банковской сфере – подтверждение платежей по селфи, авторизация.<br/>
+<br/>
+Есть всевозможное применение в области развлечений: например, поиск похожих людей. В дейтинг-сервисах это можно использовать для модерации фотографий, так как использование чужих фото – актуальная проблема для всех социальных сетей.<br/>
+<br/>
+<strong>Вы были на CyberCrime – это тоже один из примеров использования.</strong><br/>
+<br/>
+Да. Еще был проект с Alfa Future People – там много фотографов. У них был чат-бот, который показывал пользователям фото со всех мероприятий, которые тот или иной человек посетил.<br/>
+<br/>
+Второй наш продукт – это SDK. Библиотека написана на С++, она предоставляет механизмы для детектирования лиц, построения вектора признаков, базы и поиска в этой базе. Это интересно всевозможным интеграторам, которые в свои продукты будут встраивать SDK по лицензии.<br/>
+<br/>
+Получается, что у нас есть SaaS, SDK, а также кастомные решения для крупных проектов.<br/>
+<br/>
+<strong>Не так давно Facebook запустил сервис проверки видео на наличие дубликатов. Каждое видео проверяется с целью выявить выкладывал его сам правообладатель или нет. У них используется технология, аналогичная вашей?</strong><br/>
+<br/>
+Как я понимаю, они ищут полное соответствие. А мы находим по одной фотографии не ту же самую, а набор похожих. Это может сработать в борьбе с фейковыми аккаунтами. Мы сейчас как раз общаемся с несколькими крупными социальными сетями. Они хотят встроить наш алгоритм. У них как раз проблема с поиском по большим базам фотографий. А пока у них сидит «армия» модераторов, которые это делают вручную.<br/>
+<br/>
+<strong>Вашим целевым потребителем является государство. Им эти продукты необходимы больше всех. Но никакой политики пока не случилось с вами? Не возникнет ли проблемы, если вы будете продавать свои продукты не только в России, но и в США например?</strong><br/>
+<br/>
+Пока нет. У нас чисто рыночная история. Нет никаких предпочтений. Более того, мы строим глобальную компанию. Мы сделали SaaS как раз для этого. Его проще продавать во всем мире.<br/>
+<br/>
+<strong>Что будет с NTechLab к 2020 году? Сколько будет сотрудников? Будет ли ваш офис только в Москве, или вы откроете штаб-квартиру где-нибудь в штатах?</strong><br/>
+<br/>
+Офис в штатах у нас будет до конца 2016 года. У нас есть план – к 2020 году встроить наш алгоритм во все камеры.<br/>
+<br/>
+<strong>Во все видео и фотокамеры, которые выпускаются коммерчески?</strong><br/>
+<br/>
+Да. Но возможно, мы еще будем заниматься другими задачами: например, применение deep learning в медицине.<br/>
+<br/>
+<strong>Это то, что сейчас Watson делает? Диагностика в основном, да?</strong><br/>
+<br/>
+Да. Медицина – первое, что приходит на ум. Но на следующий год нам хватит текущих задач, распознавание эмоций, пола и тд.<br/>
+<br/>
+<strong>Как вы планируете реализовать распознавание эмоций? Тоже проводить обучение: грустный человек / веселый человек?</strong><br/>
+<br/>
+Да. У нас оно уже идет. Мы сейчас тестируем эту фичу. Возможно, скоро в SaaS она появится. Понятно, что там не будет такого, как в сериале Lie to me. Никакой магии не будет, но на уровне человека, который не пытается скрыть эмоции, распознавание будет происходить.<br/>
+<br/>
+<br/>
+<br/>
+<strong>Я знаю, что технологии распознавания лиц до появления нейронных сетей строились на фиксации, определения положения некоторых точек на лице человека. Как это реализовано у вас?</strong><br/>
+<br/>
+Мы не пытаемся находить какие-то точки. Нейросеть получает на вход лицо целиком и правильные ответы по распознаванию: «Это Вася, это Петя, это Маша». В процессе обучения на последнем слое формируется вектор признаков, который содержит всю информацию о лице. На промежуточных слоях вычисляются важные по мнению нейронной сети признаки.<br/>
+<br/>
+Если правильно задать структуру, на последнем слое у нас получается вектор признаков из 80 чисел.<br/>
+<br/>
+<strong>То есть, 80 параметров, определяющих уникальность некоторого лица?</strong><br/>
+<br/>
+Да, 80 чисел – это менее половины килобайта. Поэтому у нас эффективно получается делать поиск по большим базам и экономично расходовать память на хранение признаков.<br/>
+<br/>
+<strong>Какие мощности нужны для этого?</strong><br/>
+<br/>
+Когда сеть обучена, она может эффективно работать на обычном компьютере. Например, FindFace работает на пяти серверах Amazon EC2 – причем, не на топовых машинах. Система держит 50 запросов в секунду при поиске по базе в 250 миллионов фотографий.<br/>
+<br/>
+<strong>А если нам нужно ее обучить?</strong><br/>
+<br/>
+Обучаем мы ее на GPU, потому что это лучше всего подходит для обучения нейросетей. Одно обучение на 20 миллионах фотографий идет в среднем месяц в нашем случае. Но у нас тут еще стоят сервера, на которых параллельно идет порядка 20 экспериментов.<br/>
+<br/>
+<strong>То есть, не нужен один полный суперкомпьютер GPU, достаточно какого-то кластера?</strong><br/>
+<br/>
+Да.<br/>
+<br/>
+<strong>Насколько сложнее работать с видео, чем с фото?</strong><br/>
+<br/>
+Видео от фотографии отличается только количество кадров. Поэтому при работе с видео увеличиваются требования к скорости алгоритма. С точки зрения обучения ничего не меняется.<br/>
+<br/>
+<strong>SaaS, который вы запускаете, позволит работать с видео?</strong><br/>
+<br/>
+Нет, но SDK работает с видео. Слать в облако весь поток видео выглядит не очень разумно. Там будет модуль с детектором лиц. Поэтому для SaaS нужно выбирать кадры и по отдельности отправлять их в облако.<br/>
+<br/>
+<strong>Насколько дорого стоит разработка подобных программных решений? Насколько цена продукта высока для потребителя?</strong><br/>
+<br/>
+Все зависит от проекта. SaaS на тысячу запросов стоит от $1 до $5.<br/>
+<br/>
+<strong>Значит, это массовый продукт?</strong><br/>
+<br/>
+Конечно. То есть для какого-то event’a или магазина это будет стоить порядка нескольких сотен долларов в месяц. Если есть крупные индивидуальные проекты, цена будет другой.<br/>
+<br/>
+<br/>
+<br/>
+<strong>Еще про технологии. В основе SaaS и SDK лежит один и тот же алгоритм. SDK написан на С++. Понятно почему: работает быстро и надежно. Какие еще языки, технологии вы используете?</strong><br/>
+<br/>
+Для обучения мы используем стандартные библиотеки – Caffe, Theano, Torch7. Пишем на Python, C++ и платформа Cuda. С помощью Cuda на GPU обучение проходит гораздо быстрее. Python нам нужен в основном для экспериментов, чтобы можно было что-то написать, попробовать. Облако тоже написано на нем, потому что это удобнее.<br/>
+<br/>
+<strong>Какие требования вы предъявляете к программистам в R&amp;D?</strong><br/>
+<br/>
+Здесь важнее не языки и технологии, а знание алгоритмов, в общем, требования к математической подготовке. Конечно, нужны какие-то знания в области machine learning и С-подобных языков.<br/>
+<br/>
+Если говорить про продуктовую команду, то там, конечно же, нужен С++.<br/>
+<br/>
+<br/>
+<em>Фото: Александр Уткин</em><br/>
+<br/>
+<strong>Вопрос про базы данных. Где это все хранится?</strong><br/>
+<br/>
+Если мы говорим про поисковый индекс, это наша разработка. Она позволяет меньше чем за секунду искать в больших базах данных. Это является частью продукта.<br/>
+Если говорить про хранение информации о пользователях, большого значения база данных тут не имеет. Мы используем Mongo. Но там нет ничего связанного с поиском.<br/>
+<br/>
+<strong>Много людей начали деньги предлагать после того, как вы стали известны?</strong><br/>
+<br/>
+Много, но мы пока еще ни у кого не взяли деньги. В ближайшее время мы закроем раунд.<br/>
+<br/>
+<strong>Ты не так давно ездил в США. Это была твоя первая поездка?</strong><br/>
+<br/>
+Да.<br/>
+<br/>
+<strong>Большой ли был интерес непосредственно к тебе? С кем ты общался? Правильно ли я понимаю, что ты там совмещал и отдых, и бизнес?</strong><br/>
+<br/>
+Мы ездили весной. Недавно мои партнеры ездили в США без меня. Интерес огромный: мы пообщались и с инвесторами, и с клиентами. С некоторыми из них у нас хорошие отношения, мы работаем, отправили им SDK.<br/>
+<br/>
+<strong>С разработчиками тебе удалось пообщаться? Кого-то пригласить на работу?</strong><br/>
+<br/>
+Нет. Но у нас вся разработка сейчас в России, и в этом есть много плюсов, в частности, экономических. Мы будем открывать офисы в Долине, а через какое-то время – в Европе.</div></div></div><!----><!----></div><!----><!----></div><!--]--><!----><div class="tm-article-presenter__meta" data-test-id="article-meta-links"><div class="tm-separated-list tag-list tm-article-presenter__meta-list"><span class="tm-separated-list__title">Теги:</span><ul class="tm-separated-list__list"><!--[--><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D1%8B%D0%B5+%D1%81%D0%B5%D1%82%D0%B8]" class="link"><span>нейронные сети</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[saas]" class="link"><span>saas</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%BB%D0%B5%D0%BA%D1%82]" class="link"><span>искусственный интеллект</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[%D1%80%D0%B0%D1%81%D0%BF%D0%BE%D0%B7%D0%BD%D0%B0%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+%D0%BB%D0%B8%D1%86]" class="link"><span>распознавание лиц</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D0%B8%D0%B5+%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF%D0%B0]" class="link"><span>развитие стартапа</span></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[%D0%B2%D0%B5%D0%BD%D1%87%D1%83%D1%80%D0%BD%D1%8B%D0%B5+%D0%B8%D0%BD%D0%B2%D0%B5%D1%81%D1%82%D0%B8%D1%86%D0%B8%D0%B8]" class="link"><span>венчурные инвестиции</span></a><!--]--></li><!--]--><!----></ul></div><div class="tm-separated-list tm-article-presenter__meta-list"><span class="tm-separated-list__title">Хабы:</span><ul class="tm-separated-list__list"><!--[--><li class="tm-separated-list__item"><!--[--><a href="/ru/hubs/career/" class="link"><!--[--><span>Карьера в IT-индустрии</span><!--]--></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/hubs/startuprise/" class="link"><!--[--><span>Развитие стартапа</span><!--]--></a><!--]--></li><li class="tm-separated-list__item"><!--[--><a href="/ru/hubs/dev_management/" class="link"><!--[--><span>Управление разработкой</span><!--]--></a><!--]--></li><!--]--><!----></ul></div></div><!----><!--]--></article><!--]--></div><!----></div><div style="" class="tm-article-sticky-panel" data-test-id="article-sticky-panel"><div class="tm-data-icons tm-data-icons tm-data-icons_space-big tm-article-sticky-panel__icons" data-test-id="article-stats-icons"><div class="article-rating tm-data-icons__item" data-v-b9b05a90><div class="tm-votes-meter votes-switcher" data-v-b9b05a90><svg class="tm-svg-img tm-votes-meter__icon tm-votes-meter__icon tm-votes-meter__icon_appearance-article" height="24" width="24"><title>Всего голосов 43: ↑40 и ↓3</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-rating"></use></svg><span class="tm-votes-meter__value tm-votes-meter__value_positive tm-votes-meter__value_appearance-article tm-votes-meter__value_rating tm-votes-meter__value" data-test-id="votes-meter-value" title="Всего голосов 43: ↑40 и ↓3">+35</span></div><!--teleport start--><!--teleport end--><!----></div><!----><!----><button class="bookmarks-button tm-data-icons__item" title="Добавить в закладки" type="button" data-v-861e2740><span class="tm-svg-icon__wrapper icon" data-v-861e2740><svg class="tm-svg-img tm-svg-icon" height="24" width="24"><title>Добавить в закладки</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-favorite"></use></svg></span><span class="counter" title="Количество пользователей, добавивших публикацию в закладки" data-v-861e2740>72</span></button><div class="sharing tm-data-icons__item" title="Поделиться" data-v-daf6ee1d><button class="sharing-button" type="button" data-v-daf6ee1d><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon" data-v-daf6ee1d><path fill="currentColor" d="M13.8 13.8V18l7.2-6.6L13.8 5v3.9C5 8.9 3 18.6 3 18.6c2.5-4.4 6-4.8 10.8-4.8z"></path></svg></button><!--teleport start--><!--teleport end--></div><div class="article-comments-counter-link-wrapper tm-data-icons__item" title="Читать комментарии" data-v-8d952463><a href="/ru/articles/313076/comments/" class="article-comments-counter-link" data-test-id="counter-comments" data-v-8d952463><!--[--><svg class="tm-svg-img icon" height="24" width="24" data-v-8d952463><title>Комментарии</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-comments"></use></svg><span class="value" data-v-8d952463>13</span><!--]--></a><!----></div><!--[--><!--[--><!--[--><!----><!--]--><!--]--><!--]--><!--teleport start--><!--teleport end--><!----></div></div></div><!--[--><!--]--><div class="tm-article-presenter__footer"><!--[--><!--[--><div class="tm-article-blocks"><!----><!--[--><section class="tm-block tm-block tm-block_spacing-bottom"><!----><!--[--><div class="tm-block__body tm-block__body tm-block__body_variant-balanced"><!--[--><div class="article-author" data-test-id="article-author-info" data-async-called="true" data-v-af0d0f90><!--[--><!--]--><div class="tm-user-card tm-user-card tm-user-card_variant-article user-card" data-async-called="true" data-v-af0d0f90><div class="tm-user-card__info-container"><div class="tm-user-card__header"><div class="tm-user-card__header-data"><a href="/ru/users/semen_grinshtein/" class="tm-user-card__userpic tm-user-card__userpic_size-40"><!--[--><div class="tm-entity-image"></div><!--]--></a><div class="tm-user-card__meta"><div class="tm-counter-container karma" title=" 460 голосов " data-v-544d285f><div class="tm-counter-container__header"><!--[--><div class="karma-display positive" data-v-544d285f data-v-3881f4ba>44</div><!----><!--]--></div><div class="tm-counter-container__footer"><!--[--><div class="karma-text" data-v-544d285f>Карма</div><!--teleport start--><!--teleport end--><!--]--></div></div><div class="tm-counter-container"><div class="tm-counter-container__header"><!--[--><!--[--><!--]--><div class="tm-votes-lever tm-votes-lever tm-votes-lever_appearance-rating"><!----><div class="tm-votes-lever__score tm-votes-lever__score_appearance-rating tm-votes-lever__score" data-test-id="lever-score"><!--[--><span><span class="tm-votes-lever__score-counter tm-votes-lever__score-counter_rating tm-votes-lever__score-counter" data-test-id="votes-score-counter">0</span></span><!--]--></div><!----></div><!--]--></div><div class="tm-counter-container__footer"><!--[--><span class="tm-rating__text tm-rating__text">Общий рейтинг</span><!--]--></div></div></div></div></div><div class="tm-user-card__info tm-user-card__info_variant-article tm-user-card__info"><div class="tm-user-card__title tm-user-card__title_variant-article tm-user-card__title"><span class="tm-user-card__name tm-user-card__name_variant-article tm-user-card__name">Гриша Гринштейн</span><a href="/ru/users/semen_grinshtein/" class="tm-user-card__nickname tm-user-card__nickname tm-user-card__nickname_variant-article"><!--[-->@semen_grinshtein<!--]--></a><!----></div><p class="tm-user-card__short-info tm-user-card__short-info_variant-article tm-user-card__short-info" data-test-id="user-card-speciality">Пользователь</p></div></div><!----><div class="tm-user-card__buttons tm-user-card__buttons_variant-article tm-user-card__buttons"><!----><div class="tm-user-card__button"><div class="tm-button-follow tm-user-card__button-follow"><!----><button class="tm-button-follow__button tm-button-follow__button_big" data-test-id="follow-button" type="button">Подписаться</button></div></div><!----><!--[--><div class="tm-user-card__button tm-user-card__button_write" data-test-id="user-card-conversations"><svg class="tm-svg-img tm-user-card__button-icon" height="16" width="16"><title>Отправить сообщение</title><use xlink:href="/img/megazord-v28.cba4c116..svg#mail"></use></svg></div><!--]--><!----><!----></div><!----></div><div class="author-contacts" data-test-id="author-contacts" data-v-af0d0f90><!----><!----><!----></div></div><!--]--></div><!--]--><!----></section><!----><!--[--><div class="sponsor-block" style="--d75346b8:0;--11dbf66e:100%;" data-v-580b3119><div class="title" data-v-580b3119>Хабр доступен 24/7 благодаря поддержке друзей</div><div class="content-container" data-v-580b3119><div class="content" data-v-580b3119><div class="content-title-container" data-v-580b3119><div class="content-title" data-v-580b3119>Хабр Курсы для всех</div><div class="sponsor-mark" data-v-580b3119>РЕКЛАМА</div></div><div class="content-text" data-v-580b3119> Практикум, Хекслет, SkyPro, авторские курсы — собрали всех и попросили скидки. Осталось выбрать! </div><a class="content-action" href="https://career.habr.com/courses/?erid=2VSb5wDLYUH&amp;utm_source=habr&amp;utm_medium=sponsorship_hub" target="_blank" data-v-580b3119><button class="btn btn_solid btn_small tm-button_color-horizon" tabindex="0" type="button" data-v-580b3119><!--[--><!--[-->Перейти<!--]--><!--]--></button></a></div></div><div class="footer" data-v-580b3119><!----></div><!----></div><!--]--><!--]--><div class="tm-article-blocks__comments"><div id="publication-comments" class="tm-article-page-comments"><div><!--[--><div class="article-comments-counter-link-wrapper tm-article-comments-counter-button" data-v-8d952463><a href="/ru/articles/313076/comments/" class="article-comments-counter-link button-style" data-test-id="counter-comments" data-v-8d952463><!--[--><svg class="tm-svg-img icon icon--contrasted" height="24" width="24" data-v-8d952463><title>Комментарии</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-comments"></use></svg><span class="value value--contrasted" data-v-8d952463> Комментарии 13 </span><!--]--></a><!----></div><!--]--></div></div></div><!--[--><!--[--><!--]--><section class="tm-block tm-block tm-block_spacing-bottom"><header class="tm-block__header tm-block__header tm-block__header_variant-borderless"><div class="tm-block__header-container"><h2 class="tm-block__title tm-block__title tm-block__title_variant-large">Публикации</h2><!--[--><!--]--></div><!----></header><!--[--><div class="tm-block__body tm-block__body tm-block__body_variant-condensed-slim"><!--[--><!--[--><div class="tabs" data-test-id="container" data-v-681e7545><div class="" data-test-id="scroll-area" data-v-681e7545><!--[--><span class="tab-item" data-v-681e7545><button class="active slim tab-link" data-v-681e7545>Лучшие за сутки</button></span><span class="tab-item" data-v-681e7545><button class="slim tab-link" data-v-681e7545>Похожие</button></span><!--]--></div><!----></div><div class="similar-and-daily__tab-view"><div class="daily-articles-list"><ul class="article-card-list" data-v-7f7081d6><!--[--><!--]--><div class="tm-bordered-card" data-v-7f7081d6><!----><!--[--><!--]--></div></ul><div class="daily-articles-block__button-container"><button class="btn btn_transparent btn_small tm-button_color-horizon" tabindex="0" type="button"><!--[--><!--[-->Показать лучшие за всё время<!--]--><!--]--></button></div></div><!----></div><!--]--><!--]--></div><!--]--><!----></section><!--[--><div><div class="placeholder-wrapper"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="tm-placeholder-promo"><div class="tm-placeholder-promo__header"><div class="tm-placeholder__line tm-placeholder__line_promo-title"></div></div><div class="tm-placeholder-promo__body"><div class="tm-placeholder-promo__posts"><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div></div><div class="tm-placeholder-promo__dots"><div class="tm-placeholder-promo__dot"></div><div class="tm-placeholder-promo__dot"></div><div class="tm-placeholder-promo__dot"></div></div></div></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div></div><div><div class="placeholder-wrapper"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="tm-placeholder-inset tm-placeholder-salary"><div class="tm-placeholder-inset__header"><div class="tm-placeholder__line tm-placeholder__line_inset-header loads"></div></div><div class="tm-placeholder-salary__body"><div class="tm-placeholder-salary__text"><div class="tm-placeholder__line tm-placeholder__line_salary_average"></div><div class="tm-placeholder-salary__description"><div class="tm-placeholder__line loads"></div><div class="tm-placeholder__line loads"></div><div class="tm-placeholder__line loads"></div><div class="tm-placeholder__line loads"></div></div></div><div class="tm-placeholder-salary__image loads"></div></div><div class="tm-placeholder-inset__footer tm-placeholder-inset__footer_salary"><div class="tm-placeholder__line tm-placeholder__line_inset-footer loads"></div></div></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div></div><!--]--><!----><!--[--><!--]--><!--]--></div><!----><!--]--><!--]--></div></div><!--]--></div><!--]--></div></div><div class="tm-page__sidebar"><!--[--><div class="sidebar" data-v-0050f56d><div id="sidebar-window-placement" data-v-0050f56d></div><!--[--><!--]--></div><!--]--></div></div><!--]--></div><!----></div></main><!----></div><div class="tm-footer-menu"><div class="tm-page-width"><!--[--><div class="tm-footer-menu__container"><!--[--><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Ваш аккаунт</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr/?back=/ru/articles/313076/&amp;hl=ru" rel="nofollow" target="_self">Войти</a></li><li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr-register/?back=/ru/articles/313076/&amp;hl=ru" rel="nofollow" target="_self">Регистрация</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Разделы</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/ru/articles/" class="footer-menu__item-link">Статьи</a></li><li class="tm-footer-menu__list-item"><a href="/ru/news/" class="footer-menu__item-link">Новости</a></li><li class="tm-footer-menu__list-item"><a href="/ru/hubs/" class="footer-menu__item-link">Хабы</a></li><li class="tm-footer-menu__list-item"><a href="/ru/companies/" class="footer-menu__item-link">Компании</a></li><li class="tm-footer-menu__list-item"><a href="/ru/users/" class="footer-menu__item-link">Авторы</a></li><li class="tm-footer-menu__list-item"><a href="/ru/sandbox/" class="footer-menu__item-link">Песочница</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Информация</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/ru/docs/help/" class="footer-menu__item-link">Устройство сайта</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/authors/codex/" class="footer-menu__item-link">Для авторов</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/companies/corpblogs/" class="footer-menu__item-link">Для компаний</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/docs/transparency/" class="footer-menu__item-link">Документы</a></li><li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/agreement/?hl=ru_RU" target="_blank">Соглашение</a></li><li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/confidential/?hl=ru_RU" target="_blank">Конфиденциальность</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Услуги</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/corporate-blogs/" target="_blank">Корпоративный блог</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/advertising/" target="_blank">Медийная реклама</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/native-special/" target="_blank">Нативные проекты</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/education-programs/" target="_blank">Образовательные программы</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/hello-startup/" target="_blank">Стартапам</a></li><!--]--></ul></div></div><!--]--></div><!--]--></div></div><div class="tm-footer"><div class="tm-page-width"><!--[--><div class="tm-footer__container"><!----><div class="social-icons tm-footer__social" data-v-d6e8cb42><!--[--><a class="tm-svg-icon__wrapper social-icon" href="https://vk.com/habr" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>VK</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-vk"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="https://telegram.me/habr_com" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Telegram</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-telegram"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="http://www.youtube.com/@Habr_com" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Youtube</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-youtube"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="https://dzen.ru/habr" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Яндекс Дзен</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-dzen"></use></svg></a><!--]--></div><!--teleport start--><!--teleport end--><button class="tm-footer__link"><!----> Настройка языка</button><a href="/ru/feedback/" class="tm-footer__link">Техническая поддержка</a><div class="tm-footer-copyright"><span class="tm-copyright"><span class="tm-copyright__years">© 2006–2026,</span><span class="tm-copyright__name"><a class="tm-copyright__link" href="https://company.habr.com/" rel="noopener" target="_blank"> Habr </a></span></span></div></div><!--]--></div></div><!----><!----><!--]--></div><!----></div></div>
+    <div id="overlays"><!--teleport start anchor--><template><!----></template><!--teleport anchor--><!--teleport start anchor--><template><!----></template><!--teleport anchor--><!--teleport start anchor--><template><!----></template><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--></div>
+    
+    
+    
+    
+  
+  
+    
+  
+    </body>
+
+    </html>

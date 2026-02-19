@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <title>Настройка выделенного сервера Source под Linux, часть 2 &#x2F; Хабр</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+  </head>
+  <body>
+    
+    <div id="mount"><div id="app"><div class="tm-layout__wrapper"><!--[--><!----><div></div><div class="header-banner-wrapper"><div class="element-wrapper above-header" style="--754c4550:100%;--56cb6579:auto;"><!--[--><div class="placeholder-wrapper banner-container__placeholder"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="adfox-banner-placeholder above-header" data-v-24012b5e><div class="image loads" data-v-24012b5e></div><div class="lines" data-v-24012b5e><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div><div class="line loads" data-v-24012b5e></div></div></div><!----><!----><!----></div><!--[--><div id="adfox_175449164307199013_aboveHeader" class="banner-target"></div><!--]--><!--]--></div></div><header class="tm-header tm-header" data-test-id="header"><!----><!----><div class="tm-page-width"><!--[--><div class="tm-header__container"><button aria-expanded="false" aria-label="Toggle menu" class="burger-button tm-header__button tm-header__burger" data-v-56ed7aae><span class="line top" data-v-56ed7aae></span><span class="line middle" data-v-56ed7aae></span><span class="line bottom" data-v-56ed7aae></span></button><span class="tm-header__logo-wrap"><a class="tm-header__logo tm-header__logo_hl-ru tm-header__logo" href="/ru/feed"><svg class="tm-svg-img tm-header__icon" height="16" width="16"><title>Хабр</title><use xlink:href="/img/habr-logo-ru.svg#logo"></use></svg></a></span><span class="tm-header__divider"></span><!--[--><a class="tm-header__all-flows" href="/ru/articles/">Все потоки</a><!--]--><!----><div class="tm-header-user-menu tm-base-layout__user-menu"><a href="/ru/search/" class="tm-header-user-menu__item tm-header-user-menu__search" data-test-id="search-button"><svg class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_search" height="24" width="24"><title>Поиск</title><use xlink:href="/img/megazord-v28.cba4c116..svg#search"></use></svg></a><!----><!----><div class="tm-header-user-menu__item tm-header-user-menu__write"><a href="/ru/sandbox/start/" class=""><svg class="tm-svg-img tm-header-user-menu__icon tm-header-user-menu__icon_write" height="24" width="24"><title>Написать публикацию</title><use xlink:href="/img/megazord-v28.cba4c116..svg#write"></use></svg></a><!----></div><!--[--><div class="tm-header-user-menu__item"><button class="tm-header-user-menu__toggle" data-test-id="user-menu-settings"><svg class="tm-svg-img tm-header-user-menu__icon" height="24" width="24"><title>Настройки</title><use xlink:href="/img/megazord-v28.cba4c116..svg#page-settings"></use></svg></button></div><a href="https://habr.com/kek/v1/auth/habrahabr/?back=/ru/articles/312928/&amp;hl=ru" rel="nofollow" class="tm-header-user-menu__item tm-header-user-menu__login" role="button"><!--[-->Войти<!--]--></a><!--]--><template><!----></template><!--teleport start--><!--teleport end--></div></div><!--]--></div></header><div class="tm-layout"><div class="tm-page-progress-bar"></div><!----><div class="tm-page-width"><!--[--><!----><!----><!----><!--]--></div><main class="tm-layout__container"><div class="tm-page" hl="ru" data-async-called="true" style="--a414e232:300px;--10c4682a:0;--19620736:0;"><!----><div class="tm-page-width"><!--[--><!----><div class="tm-page__wrapper"><!----><div class="tm-page__main_has-sidebar tm-page__main"><div class="pull-down"><!----><div class="pull-down__header" style="height:0px;"><div class="pull-down__content" style="bottom:10px;"><svg class="tm-svg-img pull-down__icon pull-down__arrow" height="24" width="24"><title>Обновить</title><use xlink:href="/img/megazord-v28.cba4c116..svg#pull-arrow"></use></svg></div></div><!--[--><div><!--[--><!----><div class="tm-article-presenter" data-async-called="true"><!--[--><!--]--><div class="tm-article-presenter__body" data-test-id="article-body"><div class="tm-misprint-area"><div class="tm-misprint-area__wrapper"><!--[--><article class="tm-article-presenter__content tm-article-presenter__content_narrow"><!--[--><div class="tm-article-presenter__header"><!--[--><!--]--><div class="article-snippet tm-article-presenter__snippet" data-v-085cd854><!--[--><!--]--><div class="meta-container" data-v-085cd854><div class="meta" data-v-085cd854><span class="tm-user-info author" data-v-085cd854><a href="/ru/users/abrca/" class="tm-user-info__userpic" data-test-id="user-info-pic"><!--[--><div class="tm-entity-image"><!--[--><!--]--></div><!--]--></a><span class="tm-user-info__user tm-user-info__user_appearance-default" data-test-id="user-info-description"><a href="/ru/users/abrca/" class="tm-user-info__username" data-test-id="user-info-username"><!--[-->abrca<!--]--></a><!----><!--[--><span class="tm-article-datetime-published" data-v-085cd854><time data-allow-mismatch datetime="2016-10-17T15:56:40.000Z" title="2016-10-17, 15:56">17  окт  2016 в 15:56</time></span><!--]--></span></span></div><div class="controls" data-v-085cd854><!----><!----><!----><!----></div></div><h1 class="tm-title tm-title_h1" lang="ru" data-test-id="articleTitle" data-v-085cd854><span>Настройка выделенного сервера Source под Linux, часть 2</span></h1><div class="stats" data-test-id="articleStats" data-v-085cd854><!----><div class="tm-article-reading-time" data-v-085cd854><span class="tm-svg-icon__wrapper tm-article-reading-time__icon"><svg class="tm-svg-img tm-svg-icon" height="24" width="24"><title>Время на прочтение</title><use xlink:href="/img/megazord-v28.cba4c116..svg#clock"></use></svg></span><span class="tm-article-reading-time__label">22 мин</span></div><span class="tm-icon-counter tm-data-icons__item reach-counter" data-v-085cd854><svg class="tm-svg-img tm-icon-counter__icon" height="24" width="24"><title>Охват и читатели</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-views"></use></svg><span class="tm-icon-counter__value" title="7998">8K</span></span></div><div class="tm-publication-hubs__container" data-test-id="articleHubsList" data-v-085cd854><div class="tm-publication-hubs"><!--[--><span class="tm-publication-hub__link-container"><a href="/ru/hubs/nix/" class="tm-publication-hub__link"><!--[--><span>*nix</span><span class="tm-article-snippet__profiled-hub" title="Профильный хаб"> * </span><!--]--></a></span><!--]--></div></div><div class="tm-article-labels" data-test-id="articleLabels" data-v-085cd854 data-v-bfa2437b><div class="tm-article-labels__container" data-v-bfa2437b><!----><!--[--><div class="tm-publication-label tm-publication-label_variant-tutorial" data-v-bfa2437b><span>Туториал</span></div><!--[--><!--]--><!--]--></div></div><!----><!----><!--teleport start--><!--teleport end--></div></div><!--[--><!----><div class="article-body" data-gallery-root lang="ru" data-v-aad06d04><div data-v-aad06d04><!--[--><!--]--></div><div id="post-content-body" data-v-aad06d04><div><div class="article-formatted-body article-formatted-body article-formatted-body_version-1"><div xmlns="http://www.w3.org/1999/xhtml"><ul>
+<li>Записи<br/>
+<ul>
+<li>Настройка веб-сервера</li>
+<li>Настройка игрового сервера</li>
+<li>Включение</li>
+<li>Обслуживание</li>
+</ul></li>
+<li>SourceTV</li>
+<li>Ускорение скачивания контента (Fast Download)<br/>
+<ul>
+<li>Настройка веб-сервера</li>
+<li>Настройка игрового сервера</li>
+</ul></li>
+<li>Боты<br/>
+<ul>
+<li>Поддержваемая карта</li>
+<li>Пользовательсякая карта<a name="habracut"></a></li>
+</ul></li>
+</ul><br/>
+<h1 id="zapisi">Записи</h1><br/>
+<p>Записи (Replays) в Team Fortress 2 — это возможность, на стороне сервера — создания записи последней жизни игрока, а на стороне клиента — её просмотра, редактирования, сохранения и публикации. Является расширением SourceTV.</p><br/>
+<p>Записи должны быть явно разрешены в командной строке сервера, включены и настроены в конфигурационном файле, выполняемом до загрузки карты. Кроме того, должен быть предварительно настроен веб-сервер для отдачи записей игрокам.</p><br/>
+<h2 id="nastroyka-veb-servera">Настройка веб-сервера</h2><br/>
+<p>Для наглядности мы заведём в DNS отдельный поддомен replay.example.org, создадим каталог /var/www/replay.example.org, и для удобства вынесем запись логов в отдельные файлы и предоставим возможность пользователю game читать их.</p><br/>
+<p>Из-под root создаём каталоги, устанавливаем владельца (game:game) и права — пользователю game на запись, остальным (веб-серверу) — на чтение. Можно заодно сделать символьные ссылки для удобства. Данный веб-сервер будет общим для обоих игровых серверов, но каждый из них будет использовать отдельные каталоги для выкладывания записей.</p><br/>
+<pre><code class="dos">   # mkdir -p /var/www/replay.example.org/{htdocs/server1,htdocs/server2,log}
+   # chown -R game:game /var/www/replay.example.org
+   # chmod -R 755 /var/www/replay.example.org
+   # ln -s /var/www/replay.example.org/log /home/game/log/www-replay</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>В нашей конфигурации по умолчанию все логи веб-сервера имеют владельца nginx:adm и права 640, то есть они недоступны обычным пользователям. Корректируем это для данного случая:</p><br/>
+<pre><code class="dos">   # touch /var/www/replay.example.org/log/{access,error}.log
+   # chmod 644 /var/www/replay.example.org/log/*.log</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Таким образом пользователю game наши логи станут доступны для чтения. Но только до первой их ротации. Исправляем и это. В каталоге /etc/logrotate.d копируем файл nginx в srcds-nginx, в нём прописываем путь к логам и в строчке <code>create 640 nginx adm</code> исправляем маску прав доступа с 640 на 644:</p><br/>
+<div class="spoiler"><b class="spoiler_title">srcds-nginx</b><div class="spoiler_text"><pre><code>#/etc/logrotate.d/srcds-nginx
+
+/var/www/stat.example.org/log/*.log
+/var/www/fastdl.example.org/log/*.log
+/var/www/replay.example.org/log/*.log
+{
+        daily
+        missingok
+        rotate 52
+        compress
+        delaycompress
+        notifempty
+        create 644 nginx adm
+        sharedscripts
+        postrotate
+                if [ -f /var/run/nginx.pid ]; then
+                        kill -USR1 `cat /var/run/nginx.pid`
+                fi
+        endscript
+}</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Здесь мы в путях для ротации указали заодно каталоги с логами от сервера статистики HLstatsX и от сервера Fast Download.</p><br/>
+<p>Из-под root создаём файл конфигурации веб-сервера, /etc/nginx/conf.d/replay.example.org.conf:</p><br/>
+<div class="spoiler"><b class="spoiler_title">replay.example.org.conf</b><div class="spoiler_text"><pre><code># /etc/nginx/conf.d/replay.example.org.conf
+
+server
+{
+    server_name             replay.example.org;
+    listen                  80;
+    root                    /var/www/replay.example.org/htdocs;
+    disable_symlinks        on;
+    autoindex               off;
+    access_log              /var/www/replay.example.org/log/access.log main;
+    error_log               /var/www/replay.example.org/log/error.log warn;
+}</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Это, конечно, несколько упрощённый вариант. Так как в нашем случае веб-сервер находится на том же компьютере, что и игровые сервера и делит с ними один канал в интернет, то имеет смысл прописать дополнительные ограничения по ширине канала для отдачи записей. Но, в отличие от настроек Fast Download, устанавливать дополнительные проверки по referer нет необходимости.</p><br/>
+<p>Прописываем вызов replay.example.org.conf в основной файл /etc/nginx/nginx.conf если ещё не, затем тестируем конфигурацию и перезапускаем nginx.</p><br/>
+<pre><code class="dos">   # nginx -t
+   # systemctl reload nginx</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Далее продолжаем как пользователь game.</p><br/>
+<h2 id="nastroyka-igrovogo-servera">Настройка игрового сервера</h2><br/>
+<p>По умолчанию, при разрешении записей, сервера при запуске будут пытаться выполнить файл конфигурации ~/tf2/tf/cfg/replay.cfg. Так как мы записи включаем на обоих серверах, отдельные настройки которых обязательно должны быть различны, то как и в предыдущих случаях, мы готовим индивидуальные файлы для каждого сервера.</p><br/>
+<p>В каталоге ~/tf2/tf/cfg есть файл replay_example.cfg, изучаем его и создаём свой собственный. Для первого сервера, ~/cfg/replay1.cfg:</p><br/>
+<div class="spoiler"><b class="spoiler_title">replay1.cfg</b><div class="spoiler_text"><pre><code>echo "*** ~/cfg/replay1.cfg"
+
+replay_name "Бот для записей"
+
+replay_local_fileserver_path /var/www/replay.example.org/htdocs/server1
+
+replay_fileserver_offload_enable 0
+
+replay_fileserver_host replay.example.org
+
+replay_fileserver_path /server1
+
+replay_enable 1</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Здесь:</p><br/>
+<p><code>replay_name</code><br/>
+имя специального бота для записи, как он будет виден в списке наблюдателей (spectators).</p><br/>
+<p><code>replay_local_fileserver_path</code><br/>
+каталог, куда будут помещаться готовые файлы с записями. Должен быть индивидуальным для каждого игрового сервера и доступен для чтения веб-сервером.</p><br/>
+<p><code>replay_fileserver_offload_enable</code><br/>
+если 1 — то записи выгружаются по ftp на другой сервер, который уже сам их раздаёт по http. Не наш случай.</p><br/>
+<p>если 0 — то раздачей занимается веб-сервер на нашей машине.</p><br/>
+<p><code>replay_fileserver_host</code><br/>
+имя или ip веб-сервера</p><br/>
+<p><code>replay_fileserver_path</code><br/>
+часть url — путь к записям, как отображается веб-сервером.</p><br/>
+<p><code>replay_enable</code><br/>
+собственно, включает записи на сервере.</p><br/>
+<p>Таким образом из переменных replay_local_fileserver_path, replay_fileserver_host, replay_fileserver_path и не упомянутых здесь replay_fileserver_protocol (="http") и replay_fileserver_port (="80") формируется url вида "<a href="http://replay.example.org:80/server1">http://replay.example.org:80/server1</a>", который передаётся клиенту для скачивания записей. А переменная replay_local_fileserver_path задаёт фактическое местоположение каталога в файловой системе и равна root из файла конфигурации nginx + replay_fileserver_path.</p><br/>
+<p>Копируем этот файл в replay2.cfg, исправляем пути server1 -&gt; server2</p><br/>
+<div class="spoiler"><b class="spoiler_title">replay2.cfg</b><div class="spoiler_text"><pre><code>echo "*** ~/cfg/replay2.cfg"
+
+replay_name "My replay bot"
+
+replay_local_fileserver_path /var/www/replay.example.org/htdocs/server2
+
+replay_fileserver_offload_enable 0
+
+replay_fileserver_host replay.example.org
+
+replay_fileserver_path /server2
+
+replay_enable 1</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Делаем ссылки в ~/tf2/tf/cfg:</p><br/>
+<pre><code class="bash">   $ ln -s -v ~/cfg/replay{1,2}.cfg ~/tf2/tf/cfg/</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Стоит иметь в виду, что эти файлы конфигурации выполняются лишь при первоначальном запуске сервера, после autoexec.cfg. При смене карт они не задействуются.</p><br/>
+<p>Ещё из более-менее полезных консольных переменных:</p><br/>
+<p><code>replay_dopublishtest</code><br/>
+проводит тест готовности сервера (игрового и веб) к записям — проверят доступность путей в файловой системе, имя веб-сервера и так далее.</p><br/>
+<p><code>replay_data_lifespan</code><br/>
+задаёт количество дней (по умолчанию 1 сутки), по прошествии которых записи на сервере будут помечаться как "несвежие", что позволит ручной или автоматической очистке их удалить.</p><br/>
+<p><code>replay_docleanup</code><br/>
+удаляет "несвежие" записи. С параметром 'force' удаляет вообще все записи.</p><br/>
+<p><code>replay_fileserver_autocleanup</code><br/>
+по умолчанию 0 — выкл, запускает автоматическую очистку "несвежих" записей между раундами.</p><br/>
+<p><code>replay_dofileserver_cleanup_on_start</code><br/>
+по умолчанию 1 — вкл, при старте сервера запускает автоматическую очистку "несвежих" записей, как в ~/tf2/tf/replay/server{1,2}, так и в каталоге веб-сервера /var/www/replay.example.org/htdocs/server{1,2}.</p><br/>
+<p><code>replay_record_voice</code><br/>
+по умолчанию 1 — вкл, записывать голосовой чат игроков.</p><br/>
+<p>Список актуальных, в данной версии движка Steam, переменных можно посмотреть, введя в консоли сервера <code>find replay_</code>.</p><br/>
+<h2 id="vklyuchenie">Включение</h2><br/>
+<p>В скрипты запуска серверов start{1,2}.sh, в командную строку мы дописываем:</p><br/>
+<p>Для первого сервера:</p><br/>
+<div class="spoiler"><b class="spoiler_title">start1.sh</b><div class="spoiler_text"><pre><code>CMDLINE="...
+    -replay reply1.cfg -replayserverdir server1 \
+    ...</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Для второго:</p><br/>
+<div class="spoiler"><b class="spoiler_title">start2.sh</b><div class="spoiler_text"><pre><code>CMDLINE="...
+    -replay reply2.cfg -replayserverdir server2 \
+    ...</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Здесь команда "-replay" включает функции записи и при запуске сервера выполняет указанный файл конфигурации. Вторая команда, "-replayserverdir" в качестве параметра принимает имя каталога (от пути ~/tf2/tf/replay/), в котором каждый сервер будет накапливать записи.</p><br/>
+<p>Всё, можно запускать сервера и пробовать. В игровом клиенте, в браузере серверов около имени нашего сервера, рядом с щитком VAC появится характерная иконка Записей.</p><br/>
+<p>При включении записей, на сервере появляется бот в режиме наблюдателя, который собственно и ведёт записи и при этом занимает один игровой слот. Поэтому установленное при запуске сервера максимальное количество игроков "+maxplayers 24" увеличивается на одного, то есть в нашем случае становится равным двадцати пяти (а при включении SteamTV — двадцати шести).</p><br/>
+<p>В старых руководствах по настройке записей обычно указывается параметр командной строки сервера "-replay_port", но мы про него и не упоминаем, так как он был отменён ещё в далёком 2011 году — <a href="http://store.steampowered.com/news/6282/">store.steampowered.com/news/6282/</a></p><br/>
+<blockquote>При использовании плагинов, облегчающих массовые действия над игроками (в том числе идущие в комплекте с SourceMod), следует аккуратно относиться к боту записей. Во всяком случае, не стоит ненароком кикать его с сервера :)</blockquote><br/>
+<h2 id="obsluzhivanie">Обслуживание</h2><br/>
+<p>Файлы записей, хотя и невелики по размеру, но всё же занимают место на диске, как в каталоге replay, так и в /var/www/. И бывает, что, несмотря на установленную дату старения в одни сутки (replay_data_lifespan 1) и включенную автоочистку этих каталогов (replay_dofileserver_cleanup_on_start 1), старые файлы автоматически не удаляются. Даже при ручном запуске replay_docleanup. Поэтому для подстраховки добавим принудительную очистку старых записей, запустив <code>crontab -e</code> и дописав в конец:</p><br/>
+<div class="spoiler"><b class="spoiler_title">crontab</b><div class="spoiler_text"><pre><code>0  3  * * * /usr/bin/find ~/tf2/tf/replay/server{1,2}/* -type f -mtime +10 -delete
+0  3  * * * /usr/bin/find /var/www/replay.example.org/htdocs/server{1,2}/* -type f -mtime +10 -delete</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Предварительно неплохо бы убедиться, что cron использует шелл, поддерживающий расширение скобок — "{1,2}"</p><br/>
+<p>Чтение access.log показывает, что порой игроки, а точнее их игровые клиенты при подключении к нашему серверу пытаются сказать записи игр, в которые они играли и три недели назад.</p><br/>
+<p>Ещё момент — следует учитывать, что Записи кушают процессорное время. Пример загрузки приведён в конце раздела "Боты"</p><br/>
+<h1 id="sourcetv">SourceTV</h1><br/>
+<p>Теперь настроим SourceTV. Это пригодится для онлайн трансляций мировых чемпионатов, когда мы будем их у себя проводить.</p><br/>
+<p>SourceTV позволяет зрителям, посредством своих клиентов Team Fortress 2 наблюдать за ходом игры на сервере. При использовании цепочек прокси серверов, размер аудитории практически не ограничен, но в данном случае, когда трансляция игры будет осуществляться лишь силами нашего игрового сервера, количество зрителей имеет смысл лимитировать, так как каждый из них потребляет и ресурсы процессора и канал в интернет.</p><br/>
+<p>Так как при первоначальной настройке запуска игровых серверов мы уже указали в командной строке "+tv_port" со своим номером порта для каждого сервера, то можно сразу перейти к файлам конфигурации.</p><br/>
+<p>Так же как и для настройки записей, SourceTV должен быть активирован до загрузки карты, то есть команда "tv_enable 1" должна быть выполнена либо в командной строке запуска сервера либо в файле autoexec.cfg. Вдобавок, опытным путём было установлено, что аналогичное требование и у команды "tv_name".</p><br/>
+<p>Поскольку настройки SourceTV наших серверов фиксированы и при каждой смене карты меняться не планируются, то все общие мы включим в autoexec.cfg, индивидуальные — в autoexec{1,2}.cfg.</p><br/>
+<p>В ~/cfg/autoexec.cfg добавляем общие настройки:</p><br/>
+<div class="spoiler"><b class="spoiler_title">autoexec.cfg</b><div class="spoiler_text"><pre><code>//...
+
+// SourceTV
+// Заголовок в окне у зрителя
+tv_title "Хлеба и зрелищ!"
+
+// Пароль на подключение
+// tv_password ""
+
+// Максимальное количество зрителей
+tv_maxclients 5
+
+// Ширина канала для каждого зрителя
+tv_maxrate 0
+
+// Транслировать всё (1) или только POV оператора (0)
+tv_transmitall 1
+
+// Задержка в вещании
+tv_delay 20
+
+// Разрешить человека-оператора
+tv_allow_camera_man 0
+
+// Начало записи в файл
+//tv_record &lt;filename&gt;
+
+// Остановка записи
+//tv_stoprecord
+
+// Автоматическая запись
+tv_autorecord 1</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Здесь:</p><br/>
+<p><code>tv_title</code><br/>
+заголовок в окне у зрителя при просмотре трансляции.</p><br/>
+<p><code>tv_password</code><br/>
+пароль на подключение к трансляции.</p><br/>
+<p><code>tv_maxclients</code><br/>
+максимальное количество зрителей, от 0 до 255, по умолчанию 128. Если нужна не онлайн трансляция, а только запись игры (tv_record, tv_autorecord), то можно выставить в ноль.</p><br/>
+<p><code>tv_maxrate</code><br/>
+максимальная ширина канала на каждого игрока, по умолчанию — 8000 бит/сек, при установке в 0 — без ограничений. Параметр тесно увязан с предыдущим параметром, особенно если планируется полностью заполненный зрителями сервер.</p><br/>
+<p><code>tv_transmitall</code><br/>
+по умолчанию ("0"), зрителям передаётся лишь то, что показывает оператор SourceTV (ИИ либо специально обученный человек). При установке в "1", зрителям передаётся вся информация об игре, и они могут переключаться между POV от разных игроков, либо вообще парить над/под картой. При включении параметра в два-три раза увеличивается требуемая ширина канала для каждого зрителя.</p><br/>
+<p><code>tv_delay</code><br/>
+задержка трансляции зрителям в секундах, по умолчанию 30. Служит для уменьшения читерства, когда зритель может давать подсказки игроку.</p><br/>
+<p><code>tv_delaymapchange</code><br/>
+задерживать ("1") или нет ("0" — по умолчанию) смену карты, до тех пор, пока не закончится трансляция (из-за задержки tv_delay).</p><br/>
+<p><code>tv_delaymapchange_protect</code><br/>
+защищает ("1" — по умолчанию) или нет ("0") от смены карты вручную до тех пор, пока не закончится раунд.</p><br/>
+<p><code>tv_allow_camera_man</code><br/>
+разрешать ("1" — по умолчанию) или нет ("0") игрокам-наблюдателям становиться операторами SourceTV. Если "0" — то только автоматическое управление камерой.</p><br/>
+<p><code>tv_autorecord</code><br/>
+при включении ("1") автоматически начинаются записываться все игры в файлы с именами вида <code>auto-&lt;YYYYMMDD&gt;-&lt;hhmm&gt;-&lt;имя карты&gt;.dem</code> в каталог ~/tf2/tf, например "auto-20160630-2208-koth_sawmill.dem".</p><br/>
+<blockquote>При установке пароля ("tv_password &lt;пароль&gt;"), зрители не смогут подключиться из браузера серверов — им постоянно будет отказано с сообщением: "Disconnect: Bad spectator password", а в консоли сервера будет написано "Dropped &lt;игрок&gt; from server (Bad spectator password)". Для подключения, зрителям надо будет в консоли (<code>~</code>) игры ввести <code>password &lt;пароль&gt;</code>, закрыть консоль, а затем попробовать подключиться. Либо сразу в консоли ввести <code>connect 192.0.2.0:27020; password &lt;пароль&gt;</code>.</blockquote><p>В ~/cfg/autoexec1.cfg дописываем в конец:</p><br/>
+<div class="spoiler"><b class="spoiler_title">autoexec1.cfg</b><div class="spoiler_text"><pre><code>//...
+
+// Включаем SourceTV
+tv_enable 1
+
+// Имя сервера в браузере
+tv_name "SourceTV at Public Server No 1"</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Здесь:</p><br/>
+<p><code>tv_name</code><br/>
+имя SourceTV сервера, как оно будет показываться в браузере серверов, в закладке "Наблюдение".</p><br/>
+<p><code>tv_enable</code><br/>
+включает ("1") или нет ("0", по умолчанию) SourceTV на сервере.</p><br/>
+<p>Аналогично корректируем ~/cfg/autoexec2.cfg</p><br/>
+<div class="spoiler"><b class="spoiler_title">autoexec2.cfg</b><div class="spoiler_text"><pre><code>//...
+
+tv_enable 1
+
+tv_name "SoutceTV at Private Server No 2"
+
+tv_autorecord 0</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>А вот для второго сервера мы в autoexec2.cfg отключили автоматическую запись. Существует проблема при включении автоматической записи ("tv_autorecord 1") на картах, подключённых из Steam Workshop, у которых имя выглядит как "workshop/", либо "workshop/.ugc" — то есть в любом случае содержит слеш "/", что приводит к корявому формированию имени файла у tv_autorecord в схеме <code>auto-&lt;YYYYMMDD&gt;-&lt;hhmm&gt;-&lt;имя карты&gt;.dem</code> и ругани в логах вида:<br/>
+<pre><code>   Failed to write file /home/game/tf2/tf/replay/server2/sessions/20160702-074150-workshop/cp_orange_x3.ugc454299390.dmx
+   Failed to write file /home/game/tf2/tf/replay/server2/blocks/20160702-074150-workshop/cp_orange_x3.ugc454299390_part_0.dmx
+
+   ********************************************************************************
+   *
+   *   Replay recording shutting down due to publishing error!  Recording will begin
+   *   at the beginning of the next round, but may fail again.
+   *
+   ********************************************************************************
+
+   ERROR: Publish timed out after 60 seconds.</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>и, как следствие, отключению записей. Как вариант, можно продумать схему с использованием "tv_record", позволяющей ручное указание имени файла для записи.</p><br/>
+<p>При включении SourceTV на сервере появляется бот в режиме наблюдателя, который занимается трансляцией игры и при этом занимает один игровой слот. Поэтому установленное при запуске сервера максимальное количество игроков "+maxplayers 24" увеличивается на одного, то есть в нашем случае становится равным двадцати пяти (а при включении Replay — двадцати шести).</p><br/>
+<p>Итак, команды прописаны, перезапускаем сервер и смотрим что получается. Так как у нас так же включены записи, которые тоже занимают свой игровой слот, то мы видим:</p><br/>
+<pre><code>   *** ~/cfg/autoexec.cfg (global)
+   --------------------------------------------------------
+   sv_pure set to 2.
+   --------------------------------------------------------
+   maxplayers set to 25
+   *** ~/cfg/autoexec1.cfg
+   Server logging enabled.
+   Server logging data to file /home/game/log/server1/L1008000.log
+   maxplayers set to 26 (extra slot was added for SourceTV)
+   ...
+   Cannot verify load for invalid steam ID [A:1:0:1]
+   Cannot verify load for invalid steam ID [A:1:1:1]
+   Recording SourceTV demo to auto-20161008-1155-cp_granary.dem...
+   Connection to game coordinator established.
+   *** ~/cfg/server1.cfg
+   ...
+   SourceTV broadcast active.
+   Connection to Steam servers successful.
+      Public IP is 192.0.2.0.</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Итак, в начале максимальное количество игроков на сервере было увеличено с 24 до 25 — это отработал параметр командной строки "-replay", включились записи. Затем ещё один дополнительный слот был добавлен для SourceTV — это сработал "tv_enable 1" из autoexec1.cfg. На ругань про invalid steam ID [A:1:0:1] не обращаем внимание — это наши боты записи и трансляции, ради которых сервер добавил игровые слоты. Далее началась запись демки в файл ~/tf2/tf/auto-20161008-1155-cp_granary.dem — сработал параметр "tv_autorecord 1" из autoexec.cfg. И наконец нам констатировали, что SourceTV broadcast active.</p><br/>
+<p>Заработало. Можно заселить какую-нибудь карту ботами, подключиться зрителем и посмотреть, как выглядит трансляция при различных режимах tv_transmitall, tv_allow_camera_man.</p><br/>
+<p>Может случиться так, что слоты добавлены, а про "SourceTV broadcast active." ни слова, да и при вводе в консоли сервера команда <code>tv_status</code> оно ругается "SourceTV not active.", хотя введённая тут же <code>tv_enable</code> сообщает что всё ок — "tv_enable = 1 ( def. 0 )". В таком случае надо попробовать сменить карту — <code>changelevel &lt;имя карты&gt;</code>. Если после смены всё заработало — то значит всё же SourceTV изначально так не активировался до загрузки первой карты — надо смотреть настройки.</p><br/>
+<p>Команды, которые могут пригодиться:</p><br/>
+<p><code>tv_record &lt;имя файла&gt;</code><br/>
+начинает запись, сохраняемую в файл &lt;имя файла&gt;. Записываются все события, вне зависимости от того, что видит оператор.</p><br/>
+<p><code>tv_stoprecord</code><br/>
+останавливает запись.</p><br/>
+<p><code>tv_clients</code><br/>
+показывает информацию о подключённых зрителях.</p><br/>
+<p><code>tv_msg</code><br/>
+отправить сообщение всем зрителям (появится посреди экрана).</p><br/>
+<p><code>tv_status</code><br/>
+выводит краткую информацию о статусе сервера — время онлайн, FPS, количество зрителей, используемую полосу канала и тому подобное.</p><br/>
+<p>Список актуальных, в данной версии игрового сервера, переменных можно посмотреть, введя в консоли сервера <code>find tv_</code>.</p><br/>
+<h1 id="uskorenie-skachivaniya-kontenta-fast-download">Ускорение скачивания контента (Fast Download)</h1><br/>
+<p>Если мы будем использовать на своих серверах карты, модели, звуки, не входящие в стандартную поставку Team Fortress 2 и отсутствующие в Steam Workshop, то при подключении нового игрока ему необходимо будет скачать к себе на игровой компьютер наши игровые материалы (если их у него ещё нет). По умолчанию они будут скачиваться с нашего игрового сервера — этот режим называется Slow Download. Но так как игровой сервер это всё же не специализированный веб-сервер, то при частой установке новых пользовательских карт и высокой нагрузке, разумно было бы возложить функции по отдаче карт (а также звуков, моделей и так далее) на специально обученный веб-сервер. Который, по счастливому стечению обстоятельств у нас уже есть. Этот функционал и называется Fast Download.</p><br/>
+<h2 id="nastroyka-veb-servera-1">Настройка веб-сервера</h2><br/>
+<p>Для использования Fast Download необходимо указать веб-серверу использование каталога со структурой подкаталогов вида </p><br/>
+<pre><code>   dir/maps
+   dir/materials
+   dir/sound
+   ...</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>где "dir" — корневой каталог для Fast Download. Создать его в /home/game мы не можем — домашний каталог у нас с правами rwx------, что не позволяет веб-серверу видеть эти файлы. Поэтому мы создадим эти каталоги где-нибудь вне пределов домашней директории пользователя game.</p><br/>
+<p>Для упрощения настройки, пропишем у себя в DNS отдельный поддомен fastdl.example.org, создадим каталог /var/www/fastdl.example.org, и для удобства вынесем запись логов в отдельные файлы и предоставим возможность пользователю game читать их.</p><br/>
+<p>Из-под root создаём каталоги, устанавливаем владельца (game:game) и права — пользователю game на запись, остальным (веб-серверу) — на чтение. Можно заодно сделать символьные ссылки для удобства. Каталог Fast Download будет общим для обоих игровых серверов.</p><br/>
+<pre><code class="dos">   # mkdir -p /var/www/fastdl.example.org/htdocs/{maps,materials,sound}
+   # mkdir /var/www/fastdl.example.org/log
+   # chown -R game:game /var/www/fastdl.example.org
+   # chmod -R 755 /var/www/fastdl.example.org
+   # ln -s /var/www/fastdl.example.org/htdocs /home/game/fastdl
+   # ln -s /var/www/fastdl.example.org/log /home/game/log/www-fastdl</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>В нашей конфигурации по умолчанию все логи веб-сервера имеют владельца nginx:adm и права 640, то есть они недоступны обычным пользователям. Корректируем это для данного случая:</p><br/>
+<pre><code class="dos">   # touch /var/www/fastdl.example.org/log/{access,error}.log
+   # chmod 644 /var/www/fastdl.example.org/log/*.log</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Таким образом пользователю game наши логи станут доступны для чтения. Но только до первой их ротации. Исправляем и это. В каталоге /etc/logrotate.d копируем файл nginx в srcds-nginx, в нём прописываем путь к логам и в строчке <code>create 640 nginx adm</code> исправляем маску прав доступа с 640 на 644:</p><br/>
+<div class="spoiler"><b class="spoiler_title">srcds-nginx</b><div class="spoiler_text"><pre><code>#/etc/logrotate.d/srcds-nginx
+
+/var/www/stat.example.org/log/*.log
+/var/www/fastdl.example.org/log/*.log
+/var/www/replay.example.org/log/*.log
+{
+        daily
+        missingok
+        rotate 52
+        compress
+        delaycompress
+        notifempty
+        create 644 nginx adm
+        sharedscripts
+        postrotate
+                if [ -f /var/run/nginx.pid ]; then
+                        kill -USR1 `cat /var/run/nginx.pid`
+                fi
+        endscript
+}</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Здесь мы в путях для ротации указали заодно каталоги с логами от сервера статистики HLstatsX и от сервера с записями.</p><br/>
+<p>Есть ещё один забавный момент, который следует учесть. Для большинства серверов он вряд ли станет актуальным, но всё же. Ничто не мешает владельцу какого-нибудь игрового сервера с такими же как у нас пользовательскими картами, не со злобы, а для экономии своего траффика, в своих настройках Fast Download указать адрес нашего веб-сервера (узнать его просто — достаточно ввести <code>sv_downloadurl</code> в консоли игрового клиента, подсоединившись к серверу).</p><br/>
+<p>Обнаружить таких паразитов можно по referer, с которым от нас скачиваются карты. Так, при скачивании карты игровым клиентом, с подачи нашего игрового сервера в логе веб-сервера появляется запись вида:</p><br/>
+<pre><code>   198.51.100.0 http://fastdl.example.org - [16/Jun/2016:20:08:28 +0600] "GET /maps/cp_orange_x5.bsp.bz2 HTTP/1.1" 200 2685506 "hl2://192.0.2.0:27015" "Half-Life 2" 0.453 "-"</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Обращаем внимание на referer. Учтём это при настройке.</p><br/>
+<p>Итак, принимаемся за настройку веб-сервера. Сначала сделаем определение, с правильным ли referer скачивают нашу карту. В главном файле /etc/nginx/nginx.conf, в секции http {}, перед включением файла конфигурации для нашего виртуального хоста fastdl.example.org, вписываем:</p><br/>
+<div class="spoiler"><b class="spoiler_title">nginx.conf</b><div class="spoiler_text"><pre><code># /etc/nginx/nginx.conf
+
+http {
+#   &lt;...&gt;
+    map $http_referer $bad_client {
+        default                      1;
+        "hl2://192.0.2.0:27015"      0;
+        "hl2://192.0.2.0:27016"      0;
+    }
+
+    include                     /etc/nginx/conf.d/fastdl.example.org.conf;
+}</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Тут всё просто. Если заголовок $http_referer соответствует одному из наших серверов, то переменная $bad_client (со значением по умолчанию 1) принимает значение 0.</p><br/>
+<p>Теперь создаём файл конфигурации нашего виртуального сервера /etc/nginx/conf.d/fastdl.example.org.conf.</p><br/>
+<div class="spoiler"><b class="spoiler_title">fastdl.example.org.conf</b><div class="spoiler_text"><pre><code>#/etc/nginx/conf.d/fastdl.example.org.conf
+
+server
+{
+    server_name                 fastdl.example.org;
+    listen                      80;
+    root                        /var/www/fastdl.example.org/htdocs;
+    disable_symlinks            on;
+    default_type                application/octet-stream;
+
+    if ($bad_client) {
+    # Желающие могут поиздеваться в стиле https://habrahabr.ru/post/272261/, с учётом местной специфики
+        return   403;
+    }
+
+    access_log                  /var/www/fastdl.example.org/log/access.log main;
+    error_log                   /var/www/fastdl.example.org/log/error.log warn;
+}</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Тут ещё проще — проверяем ту переменную $bad_client, и к нарушителям применяем санкции.</p><br/>
+<p>Вообще, у nginx есть директива valid_referers, но для нашего нестандартного $http_referer, с его нетипичной схемой, да и номером порта её не очень удобно применять. С map нагляднее.</p><br/>
+<p>Прописываем вызов fastdl.example.org.conf в основной файл nginx.conf если ещё не, затем тестируем конфигурацию и перезапускаем nginx.</p><br/>
+<pre><code class="dos">   # nginx -t
+   # systemctl reload nginx</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Далее продолжаем как пользователь game.</p><br/>
+<h2 id="nastroyka-igrovogo-servera-1">Настройка игрового сервера</h2><br/>
+<p>Пользовательские карты весьма хорошо сжимаются, поэтому их можно отдавать игрокам в архивированном виде (в формате bzip2), но при этом необходимо иметь несжатую карту (.bsp) в соответствующем каталоге игрового сервера. Например, если мы где-нибудь разжились понравившейся нам картой cp_orange_x5 (данная карта приведена только для примера — она существует в природе, но на момент написания материала её не было в Steam Workshop), то делаем следующее:</p><br/>
+<pre><code class="bash">   $ mv cp_orange_x5.bsp ~/fastdl/maps
+   $ ln -s ~/fastdl/maps/cp_orange_x5.bsp ~/tf2/tf/maps
+   $ bzip2 --compress --keep --verbose --best ~/fastdl/maps/cp_orange_x5.bsp</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>То есть нестандартные карты мы будем хранить в каталоге ~/fastdl/maps, рядом с сжатыми и символьной ссылкой подключать в каталог к стандартным. Вариант, конечно, обсуждаемый, но не лучше и не хуже других. Файлы конфигураций для карт вида &lt;имя карты&gt;.cfg необходимо создавать в ~/tf2/tf/cfg (ну или просто в ~/cfg, а туда указывать ссылкой).</p><br/>
+<p>Теперь прописываем настройки игрового сервера в ~/cfg/autoexec.cfg:</p><br/>
+<div class="spoiler"><b class="spoiler_title">autoexec.cfg</b><div class="spoiler_text"><pre><code>//...
+
+// Fast Download
+
+// Адрес веб-сервера, откуда игрокам будет отдаваться пользовательский контент
+// Для отключения Fast Download указываем sv_downloadurl ""
+sv_downloadurl "http://fastdl.example.org"
+
+// Разрешает игроку загружать файлы на сервер (например, спреи). Нефиг.
+sv_allowupload 0
+
+// Разрешает игроку скачивать файлы с сервера
+// влияет лишь на Slow Download. Здесь приводим просто для демонстрации.
+sv_allowdownload 1</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Проверим как всё работает. Если сервер не запущен, то запускаем. Если он уже работает, то перезапускаем, чтобы вынудить его перечитать autoexec.cfg с нашими новыми настройками Fast Download.</p><br/>
+<blockquote>Вообще-то вполне себе допускается вызов одних файлов конфигурации из других — <code>exec &lt;configfile&gt;</code> или из консоли. Тогда можно те же команды Fast Download вынести в отдельный файл конфигурации, включить вызов его в autoexec.cfg, а при необходимости "освежить" настройки запускать его ручками в консоли, либо вызывать из того же server.cfg. Может быть удобно при отладке настроек, чтобы каждый раз не перегружать игровой сервер. Хотя его перезагрузка позволит отработать изменения, внесённые но забытые в тот же autoexec.cfg :-)</blockquote><p>У себя в игровом компьютере в каталоге SteamApps\common\Team Fortress 2\tf\download\maps\ ищем cp_orange_x5.bsp, если есть — удаляем (нам надо чтобы она скачалась заново).</p><br/>
+<p>Запускаем у себя игру, подключаемся к нашему серверу, смотрим, скачивается ли карта с Fast Download (в окошке должно быть написано именно "Downloading maps/cp_orange_x5.bsp.bz2" — с .bz2 расширением):</p><br/>
+<p></p><br/>
+<p>(На картинке карта _x3, но суть та же).</p><br/>
+<p>Естественно, предполагается что у игроков в настройках клиента разрешена загрузка контента с сервера, как минимум "Загружать только карты" (cl_downloadfilter mapsonly), иначе будет выдано сообщение "Map is missing".</p><br/>
+<p></p><br/>
+<p>Можем попробовать браузером скачать карту <a href="http://fastdl.example.org/maps/cp_orange_x5.bsp.bz2">http://fastdl.example.org/maps/cp_orange_x5.bsp.bz2</a>, если видим "403 Forbidden" — так и должно быть, referer не <code>hl2://192.0.2.0</code>, радуемся.</p><br/>
+<p>Один момент:</p><br/>
+<p>Раз мы заявили возможность Fast Download (указав не пустой параметр sv_downloadurl), то при скачивании с веб-сервера, что хорошо видно в его логах, у игроков клиенты сначала пытаются скачать &lt;имя карты&gt;.bsp.bz2, в случае ошибки 404 пытаются скачать несжатую карту, без расширения .bz2 — &lt;имя карты&gt;.bsp. В случае облома и в этой попытке, игроку НЕ предоставляется возможности скачать карту с самого игрового сервера из ~/tf2/tf/maps через Slow Download, а сообщается, что карта не найдена.</p><br/>
+<p></p><br/>
+<h1 id="boty">Боты</h1><br/>
+<p>В Team Fortress 2 есть два типа ботов — с искусственным интеллектом и без. Боты с ИИ активно действуют в игре, их можно активировать без использования читерских команд (то есть при sv_cheats 0), на них можно зарабатывать многие достижения. Боты без ИИ — "куклы", активируются с использованием читерских команд (sv_cheats 1).</p><br/>
+<p>Официальная <a href="http://wiki.teamfortress.com/wiki/Bot">TF wiki</a> говорит, что боты с ИИ корректно работают на большинстве карт King of the Hill (<code>koth_*</code>), некоторых Payload картах (<code>pl_*</code>), Dustbowl и Gorge, картах Capture the Flag (<code>ctf_*</code>) и Mann Manor (<code>cp_manor_event</code>). Возможно использование ботов на других картах, но с некоторой предварительной подготовкой. И при этом они не будут настолько же хороши как живые игроки. Впрочем, те же медики подлечить сумеют. Попробуем оба варианта.</p><br/>
+<h2 id="podderzhvaemaya-karta">Поддержваемая карта</h2><br/>
+<p>Попробуем добавить ботов на карту koth_sawmill, которая их поддерживает by design. У нас оба сервера на 24 игрока. Точнее, на 24 игровых слота, но в данном примере эту разницу в нюансах не учитываем. Сделаем так, что если игроков меньше 24, то остальные игровые слоты сервера будут заняты ботами. Новый игрок вошёл в игру — бот исчез. Игрок вышел — бот добавился. Экспериментировать будем на втором, подопытном сервере. Чтобы каждый раз не набирать команды в консоли сервера, укажем их в файле конфигурации для данной карты ~/cfg/koth_sawmill.cfg:</p><br/>
+<div class="spoiler"><b class="spoiler_title">koth_sawmill.cfg</b><div class="spoiler_text"><pre><code>echo "*** ~/cfg/koth_sawmill.cfg"
+
+// Уровень игры ботов
+tf_bot_difficulty 3
+
+// Режим добавления ботов в игру
+tf_bot_join_after_player 0
+
+// Возрождение ботов
+tf_bot_keep_class_after_death 0
+
+// Тип применения квоты на ботов
+tf_bot_quota_mode fill
+
+// Размер квоты ботов в игре
+tf_bot_quota 24</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre></div></div><br/>
+<p>Здесь мы сделали:</p><br/>
+<p><code>tf_bot_difficulty 3</code><br/>
+Уровень игры ботов. 0=easy, 1=normal, 2=hard, 3=expert.</p><br/>
+<p><code>tf_bot_join_after_player 0</code><br/>
+Боты будут добавлены в игру при старте сервера (0), либо при входе первого игрока (1), а до его входа карта будет без ботов.</p><br/>
+<p><code>tf_bot_keep_class_after_death 0</code><br/>
+После смерти, боты будут всегда возрождаться тем же классом (скаут, солдат, ...), какой получили при создании (1) или другим (0), на усмотрение ИИ.</p><br/>
+<p><code>tf_bot_quota 24</code><br/>
+Совместно со следующим параметром, задаёт квоту ботов в игре. Используется, если следующий параметр tf_bot_quota_mode установлен в "fill" или "match", но не более количества игровых слотов, заданных +maxplayers в командной строке запуска сервера.</p><br/>
+<p><code>tf_bot_quota_mode fill</code><br/>
+Тип применения квоты на ботов:</p><br/>
+<p>"normal" — сервер не будет добавлять/убирать ботов без прямой команды (tf_bot_add / tf_bot_kick)</p><br/>
+<p>"fill" — сервер будет поддерживать общее количество (ботов + живых игроков) в размере, заданном параметром tf_bot_quota</p><br/>
+<p>"match" — сервер будет поддерживать соотношение живых игроков к ботам как 1:N, где N задано параметром tf_bot_quota.</p><br/>
+<p><code>tf_bot_add [количество] [класс] [команда] [уровень] [имя]</code><br/>
+Принудительное добавление ботов, при этом они не подвержены автоматическому регулированию квотой (но, в любом случае, не более maxplayers)</p><br/>
+<p>[Класс] — Demoman, Engineer, HeavyWeapons, Medic, Pyro, Scout, Soldier, Sniper, Spy</p><br/>
+<p>[Команда] — red или blue</p><br/>
+<p>[Уровень] — аналогичен tf_bot_difficulty, только для данного бота. 0=easy, 1=normal, 2=hard, 3=expert.</p><br/>
+<p>По нашей политике, все файлы конфигурации стараемся держать в ~/cfg, поэтому делаем ссылку в ~/tf2/tf/cfg:</p><br/>
+<pre><code class="bash">   $ ln -s ~/cfg/koth_sawmill.cfg ~/tf2/tf/cfg</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>Запускаем сервер, если не запущен ранее, вводим в консоли команду смены карты: <code>changelevel koth_sawmill</code>. Входим в игру, быстро огребаем от двенадцати expert-lvl ботов и идём исправлять tf_bot_difficulty на 1 :-)</p><br/>
+<h2 id="polzovatelsyakaya-karta">Пользовательсякая карта</h2><br/>
+<p>Теперь добавим ботов на произвольную карту. В данном случае cp_orange_x3.</p><br/>
+<p>Копируем koth_sawmill.cfg в cp_orange_x3.cfg, учитывая что эта карта подключена из Steam Workshop:</p><br/>
+<pre><code class="bash">   $ mkdir ~/tf2/tf/cfg/workshop
+   $ cp ~/cfg/koth_sawmill.cfg ~/tf2/tf/cfg/workshop/cp_orange_x3.ugc454299390.cfg</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>И желательно в cp_orange_x3.ugc454299390.cfg исправить в echo имя файла, во избежание непоняток.</p><br/>
+<p>Меняем карту. В консоли сервера вводим <code>changelevel workshop/cp_orange_x3.ugc454299390</code>. Входим в игру и видим невесёлую картину — ребята стоят, скучают:</p><br/>
+<p></p><br/>
+<p>Не отчаиваемся. В консоли игрового сервера, вводим команды: <code>sv_cheats 1</code> — разрешает использование чит-команд и следом <code>nav_generate</code> — создаёт навигационную сетку (сохраняемую в файле &lt;имя карты&gt;.nav), используя которую боты могут двигаться. Ждём некоторое время...</p><br/>
+<pre><code>   Generating Navigation Mesh...
+   Sampling walkable space...
+   Sampling walkable space...
+   Sampling walkable space...
+   Creating navigation areas from sampled data...
+   Connecting navigation areas...
+   Merging navigation areas...
+   Created new fencetop area 1781(fc537be) between 3(1f542dcf) and 49(274fa843)
+   Finding hiding spots...DONE
+   Finding encounter spots...DONE
+   Finding sniper spots...DONE
+   Computing mesh visibility...
+   Computing mesh visibility... 0%
+   Computing mesh visibility... 1%
+   Computing mesh visibility... 5%
+   Computing mesh visibility... 17%
+   Can't compute incursion distances from the Red spawn room(s). &lt;...&gt;
+   Can't compute incursion distances from the Blue spawn room(s). &lt;...&gt;
+   Computing mesh visibility... 84%
+   Optimizing mesh visibility...
+   NavMesh Visibility List Lengths:  min = 12, avg = 104, max = 280
+   Computing mesh visibility...DONE
+   Finding earliest occupy times...DONE
+   Start custom...
+   Post custom...
+   Custom game-specific analysis...DONE
+   Generation complete!  77.8 seconds elapsed.
+   Navigation map '/home/game/tf2/tf\maps\workshop/cp_orange_x3.ugc454299390.nav' saved.
+   [TF Workshop] Preparing map ID 454299390
+   [TF Workshop] Successfully prepared client map from workshop [ workshop/cp_orange_x3.ugc454299390 ]
+   ---- Host_Changelevel ----
+   и так далее.</code><div class="code-explainer"><a href="https://sourcecraft.dev/" class="tm-button code-explainer__link" style="visibility: hidden;"></a></div></pre><br/>
+<p>После чего сервер перегружает уровень. Кстати вот тут и проявилась польза от прозорливо указанного параметра "sv_cheats 0" в server2.cfg. При смене карты, произошедшей выше, вручную включенный sv_cheats сбросился в 0, и можно не задумываться — а не забыли ли мы выключить то, что включили.</p><br/>
+<p>Входим в игру — и всё в порядке, боты ожили и на этой карте. Точки захватываются, враги убивают, медики лечат. Хотя инженеры и шпионы не покидают точку респауна.</p><br/>
+<p>Но на мало-мальски сложных картах маршруты движения ботов могут быть очень неоптимальными, для исправления этого есть возможность корректировки навигационной сетки. Перечень навигационных команд приведён в <a href="https://developer.valvesoftware.com/wiki/Navigation_Mesh_Commands">Navigation Mesh Commands</a>, а скачать уже готовые и оптимизированные файлы можно на <a href="http://forums.steampowered.com/forums/showthread.php?t=1264447">Steam Users Forum</a>.</p><br/>
+<p>Ещё есть "кукольные" боты (Puppet bots). Они обделены ИИ и могут либо стоять на месте, либо двигаться, повинуясь командам игрока. Здесь мы их не рассматриваем. Подробнее о них можно прочитать в TF Wiki, по ссылке в начале главы. А заодно и посмотреть впечатляющий ролик <a href="https://youtu.be/Dn9970dxQ2g">https://youtu.be/Dn9970dxQ2g</a></p><br/>
+<p>Следует иметь в виду, что боты, как ни странно, кушают процессорное время. В качестве <em>демонстрационного</em> примера, вот вывод программы top для трёх запущенных игровых серверов на хиленьком Atom N2800:</p><br/>
+<p></p><br/>
+<p>На первом сервере 24 бота с активной жизненной позицией (и сервер перегружен и ощутимо лагает, играть невозможно), на втором 12, на третьем ботов нет. Ах да, ещё на первом и третьем сервере включены Записи. Если на том же третьем их выключить, то его загрузка будет вдвое ниже, менее 7%. Ну и tf_bot_join_after_player 1 снизит нагрузку на серверах без игроков.</p><br/>
+<p>И, логичный, но не всегда очевидный момент — настройки ботов (да и не только их), заданные в файлах конфигурации карт (koth_sawmill.cfg и cp_orange_x3.ugc454299390.cfg в нашем примере) не сбрасываются при смене карты, а продолжают действовать и на следующих картах, при их ротации. Другое дело, что поведение ботов будет зависеть от типа карты — как было продемонстрировано в примерах выше, на каких-то картах боты могут быть активны "из коробки", на других картах, без сгенерированных .nav файлов они будут стоять на точках респауна. Поэтому, если требуется включать ботов только на некоторых картах, то имеет смысл прописать tf_bot_quota 0 в server{1,2}.cfg — при смене карты количество ботов будет равно нулю, а уже в файлах конфигурации для конкретной карты их можно включать целенаправленно.</p><br/>
+<ul>
+<li><a href="https://habrahabr.ru/post/312922/">Часть 1</a> — Установка клиента Steam и сервера Team Fortress 2, базовая настройка, обновления</li>
+<li><a href="https://habrahabr.ru/post/312934/">Часть 3</a> — Установка MetaMod и SourceMod, скрипты запуска, логи, аккаунт Steam и <del>QuickPlay</del></li>
+<li><a href="https://habrahabr.ru/post/312936/">Часть 4</a> — Сервер статистики HLstatsX</li>
+</ul></p></div></div></div><!----><!----></div><!----><!----></div><!--]--><!----><div class="tm-article-presenter__meta" data-test-id="article-meta-links"><div class="tm-separated-list tag-list tm-article-presenter__meta-list"><span class="tm-separated-list__title">Теги:</span><ul class="tm-separated-list__list"><!--[--><li class="tm-separated-list__item"><!--[--><a href="/ru/search/?target_type=posts&amp;order=relevance&amp;q=[srcds]" class="link"><span>srcds</span></a><!--]--></li><!--]--><!----></ul></div><div class="tm-separated-list tm-article-presenter__meta-list"><span class="tm-separated-list__title">Хабы:</span><ul class="tm-separated-list__list"><!--[--><li class="tm-separated-list__item"><!--[--><a href="/ru/hubs/nix/" class="link"><!--[--><span>*nix</span><!--]--></a><!--]--></li><!--]--><!----></ul></div></div><!----><!--]--></article><!--]--></div><!----></div><div style="" class="tm-article-sticky-panel" data-test-id="article-sticky-panel"><div class="tm-data-icons tm-data-icons tm-data-icons_space-big tm-article-sticky-panel__icons" data-test-id="article-stats-icons"><div class="article-rating tm-data-icons__item" data-v-b9b05a90><div class="tm-votes-meter votes-switcher" data-v-b9b05a90><svg class="tm-svg-img tm-votes-meter__icon tm-votes-meter__icon tm-votes-meter__icon_appearance-article" height="24" width="24"><title>Всего голосов 18: ↑16 и ↓2</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-rating"></use></svg><span class="tm-votes-meter__value tm-votes-meter__value_positive tm-votes-meter__value_appearance-article tm-votes-meter__value_rating tm-votes-meter__value" data-test-id="votes-meter-value" title="Всего голосов 18: ↑16 и ↓2">+12</span></div><!--teleport start--><!--teleport end--><!----></div><!----><!----><button class="bookmarks-button tm-data-icons__item" title="Добавить в закладки" type="button" data-v-861e2740><span class="tm-svg-icon__wrapper icon" data-v-861e2740><svg class="tm-svg-img tm-svg-icon" height="24" width="24"><title>Добавить в закладки</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-favorite"></use></svg></span><span class="counter" title="Количество пользователей, добавивших публикацию в закладки" data-v-861e2740>75</span></button><div class="sharing tm-data-icons__item" title="Поделиться" data-v-daf6ee1d><button class="sharing-button" type="button" data-v-daf6ee1d><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon" data-v-daf6ee1d><path fill="currentColor" d="M13.8 13.8V18l7.2-6.6L13.8 5v3.9C5 8.9 3 18.6 3 18.6c2.5-4.4 6-4.8 10.8-4.8z"></path></svg></button><!--teleport start--><!--teleport end--></div><div class="article-comments-counter-link-wrapper tm-data-icons__item" title="Читать комментарии" data-v-8d952463><a href="/ru/articles/312928/comments/" class="article-comments-counter-link" data-test-id="counter-comments" data-v-8d952463><!--[--><svg class="tm-svg-img icon" height="24" width="24" data-v-8d952463><title>Комментарии</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-comments"></use></svg><span class="value" data-v-8d952463>0</span><!--]--></a><!----></div><!--[--><!--[--><!--[--><!----><!--]--><!--]--><!--]--><!--teleport start--><!--teleport end--><!----></div></div></div><!--[--><!--]--><div class="tm-article-presenter__footer"><!--[--><!--[--><div class="tm-article-blocks"><!----><!--[--><section class="tm-block tm-block tm-block_spacing-bottom"><!----><!--[--><div class="tm-block__body tm-block__body tm-block__body_variant-balanced"><!--[--><div class="article-author" data-test-id="article-author-info" data-async-called="true" data-v-af0d0f90><!--[--><!--]--><div class="tm-user-card tm-user-card tm-user-card_variant-article user-card" data-async-called="true" data-v-af0d0f90><div class="tm-user-card__info-container"><div class="tm-user-card__header"><div class="tm-user-card__header-data"><a href="/ru/users/abrca/" class="tm-user-card__userpic tm-user-card__userpic_size-40"><!--[--><div class="tm-entity-image"><!--[--><!--]--></div><!--]--></a><div class="tm-user-card__meta"><div class="tm-counter-container karma" title=" 17 голосов " data-v-544d285f><div class="tm-counter-container__header"><!--[--><div class="karma-display positive" data-v-544d285f data-v-3881f4ba>13</div><!----><!--]--></div><div class="tm-counter-container__footer"><!--[--><div class="karma-text" data-v-544d285f>Карма</div><!--teleport start--><!--teleport end--><!--]--></div></div><div class="tm-counter-container"><div class="tm-counter-container__header"><!--[--><!--[--><!--]--><div class="tm-votes-lever tm-votes-lever tm-votes-lever_appearance-rating"><!----><div class="tm-votes-lever__score tm-votes-lever__score_appearance-rating tm-votes-lever__score" data-test-id="lever-score"><!--[--><span><span class="tm-votes-lever__score-counter tm-votes-lever__score-counter_rating tm-votes-lever__score-counter" data-test-id="votes-score-counter">0</span></span><!--]--></div><!----></div><!--]--></div><div class="tm-counter-container__footer"><!--[--><span class="tm-rating__text tm-rating__text">Общий рейтинг</span><!--]--></div></div></div></div></div><div class="tm-user-card__info tm-user-card__info_variant-article tm-user-card__info"><div class="tm-user-card__title tm-user-card__title_variant-article tm-user-card__title"><!----><a href="/ru/users/abrca/" class="tm-user-card__nickname tm-user-card__nickname tm-user-card__nickname_variant-article"><!--[-->@abrca<!--]--></a><!----></div><p class="tm-user-card__short-info tm-user-card__short-info_variant-article tm-user-card__short-info" data-test-id="user-card-speciality">Пользователь</p></div></div><!----><div class="tm-user-card__buttons tm-user-card__buttons_variant-article tm-user-card__buttons"><!----><div class="tm-user-card__button"><div class="tm-button-follow tm-user-card__button-follow"><!----><button class="tm-button-follow__button tm-button-follow__button_big" data-test-id="follow-button" type="button">Подписаться</button></div></div><!----><!--[--><div class="tm-user-card__button tm-user-card__button_write" data-test-id="user-card-conversations"><svg class="tm-svg-img tm-user-card__button-icon" height="16" width="16"><title>Отправить сообщение</title><use xlink:href="/img/megazord-v28.cba4c116..svg#mail"></use></svg></div><!--]--><!----><!----></div><!----></div><div class="author-contacts" data-test-id="author-contacts" data-v-af0d0f90><!----><!----><!----></div></div><!--]--></div><!--]--><!----></section><!----><!--[--><div class="sponsor-block" style="--d75346b8:0;--11dbf66e:100%;" data-v-580b3119><div class="title" data-v-580b3119>Хабр доступен 24/7 благодаря поддержке друзей</div><div class="content-container" data-v-580b3119><div class="content" data-v-580b3119><div class="content-title-container" data-v-580b3119><div class="content-title" data-v-580b3119>Хабр Курсы для всех</div><div class="sponsor-mark" data-v-580b3119>РЕКЛАМА</div></div><div class="content-text" data-v-580b3119> Практикум, Хекслет, SkyPro, авторские курсы — собрали всех и попросили скидки. Осталось выбрать! </div><a class="content-action" href="https://career.habr.com/courses/?erid=2VSb5wDLYUH&amp;utm_source=habr&amp;utm_medium=sponsorship_hub" target="_blank" data-v-580b3119><button class="btn btn_solid btn_small tm-button_color-horizon" tabindex="0" type="button" data-v-580b3119><!--[--><!--[-->Перейти<!--]--><!--]--></button></a></div></div><div class="footer" data-v-580b3119><!----></div><!----></div><!--]--><!--]--><div class="tm-article-blocks__comments"><div id="publication-comments" class="tm-article-page-comments"><div><!--[--><div class="article-comments-counter-link-wrapper tm-article-comments-counter-button" data-v-8d952463><a href="/ru/articles/312928/comments/" class="article-comments-counter-link button-style" data-test-id="counter-comments" data-v-8d952463><!--[--><svg class="tm-svg-img icon icon--contrasted" height="24" width="24" data-v-8d952463><title>Комментарии</title><use xlink:href="/img/megazord-v28.cba4c116..svg#counter-comments"></use></svg><span class="value value--contrasted" data-v-8d952463> Комментировать </span><!--]--></a><!----></div><!--]--></div></div></div><!--[--><!--[--><!--]--><section class="tm-block tm-block tm-block_spacing-bottom"><header class="tm-block__header tm-block__header tm-block__header_variant-borderless"><div class="tm-block__header-container"><h2 class="tm-block__title tm-block__title tm-block__title_variant-large">Публикации</h2><!--[--><!--]--></div><!----></header><!--[--><div class="tm-block__body tm-block__body tm-block__body_variant-condensed-slim"><!--[--><!--[--><div class="tabs" data-test-id="container" data-v-681e7545><div class="" data-test-id="scroll-area" data-v-681e7545><!--[--><span class="tab-item" data-v-681e7545><button class="active slim tab-link" data-v-681e7545>Лучшие за сутки</button></span><span class="tab-item" data-v-681e7545><button class="slim tab-link" data-v-681e7545>Похожие</button></span><!--]--></div><!----></div><div class="similar-and-daily__tab-view"><div class="daily-articles-list"><ul class="article-card-list" data-v-7f7081d6><!--[--><!--]--><div class="tm-bordered-card" data-v-7f7081d6><!----><!--[--><!--]--></div></ul><div class="daily-articles-block__button-container"><button class="btn btn_transparent btn_small tm-button_color-horizon" tabindex="0" type="button"><!--[--><!--[-->Показать лучшие за всё время<!--]--><!--]--></button></div></div><!----></div><!--]--><!--]--></div><!--]--><!----></section><!--[--><div><div class="placeholder-wrapper"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="tm-placeholder-promo"><div class="tm-placeholder-promo__header"><div class="tm-placeholder__line tm-placeholder__line_promo-title"></div></div><div class="tm-placeholder-promo__body"><div class="tm-placeholder-promo__posts"><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div><div class="tm-placeholder-promo__post"><div class="tm-placeholder-promo__image"></div><div class="tm-placeholder__line tm-placeholder__line_post-title"></div></div></div><div class="tm-placeholder-promo__dots"><div class="tm-placeholder-promo__dot"></div><div class="tm-placeholder-promo__dot"></div><div class="tm-placeholder-promo__dot"></div></div></div></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div></div><div class="placeholder-wrapper"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><div class="tm-placeholder-inset tm-placeholder-courses"><div class="tm-placeholder-inset__header"><div class="tm-placeholder__line tm-placeholder__line_inset-header loads"></div></div><div class="tm-placeholder-inset__body"><ul class="tm-placeholder-list"><!--[--><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder-list__title-container"><div class="tm-placeholder__company-avatar"></div><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder-list__title-container"><div class="tm-placeholder__company-avatar"></div><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder-list__title-container"><div class="tm-placeholder__company-avatar"></div><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder-list__title-container"><div class="tm-placeholder__company-avatar"></div><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><li class="tm-placeholder-list__item tm-placeholder-list__item_inset"><div class="tm-placeholder-list__title-container"><div class="tm-placeholder__company-avatar"></div><div class="tm-placeholder__line tm-placeholder__line_item-title loads"></div></div><div class="tm-project-block-items__properties"><!--[--><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><span class="tm-project-block-items__property-item"><span class="tm-placeholder__line loads" style="width:100px;"></span></span><!--]--></div></li><!--]--></ul></div><div class="tm-placeholder-inset__footer"><div class="tm-placeholder__line tm-placeholder__line_inset-footer loads"></div></div></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div><!--]--><!----><!--[--><!--]--><!--]--></div><!----><!--]--><!--]--></div></div><!--]--></div><!--]--></div></div><div class="tm-page__sidebar"><!--[--><div class="sidebar" data-v-0050f56d><div id="sidebar-window-placement" data-v-0050f56d></div><!--[--><!--]--></div><!--]--></div></div><!--]--></div><!----></div></main><!----></div><div class="tm-footer-menu"><div class="tm-page-width"><!--[--><div class="tm-footer-menu__container"><!--[--><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Ваш аккаунт</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr/?back=/ru/articles/312928/&amp;hl=ru" rel="nofollow" target="_self">Войти</a></li><li class="tm-footer-menu__list-item"><a href="/kek/v1/auth/habrahabr-register/?back=/ru/articles/312928/&amp;hl=ru" rel="nofollow" target="_self">Регистрация</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Разделы</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/ru/articles/" class="footer-menu__item-link">Статьи</a></li><li class="tm-footer-menu__list-item"><a href="/ru/news/" class="footer-menu__item-link">Новости</a></li><li class="tm-footer-menu__list-item"><a href="/ru/hubs/" class="footer-menu__item-link">Хабы</a></li><li class="tm-footer-menu__list-item"><a href="/ru/companies/" class="footer-menu__item-link">Компании</a></li><li class="tm-footer-menu__list-item"><a href="/ru/users/" class="footer-menu__item-link">Авторы</a></li><li class="tm-footer-menu__list-item"><a href="/ru/sandbox/" class="footer-menu__item-link">Песочница</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Информация</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="/ru/docs/help/" class="footer-menu__item-link">Устройство сайта</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/authors/codex/" class="footer-menu__item-link">Для авторов</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/companies/corpblogs/" class="footer-menu__item-link">Для компаний</a></li><li class="tm-footer-menu__list-item"><a href="/ru/docs/docs/transparency/" class="footer-menu__item-link">Документы</a></li><li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/agreement/?hl=ru_RU" target="_blank">Соглашение</a></li><li class="tm-footer-menu__list-item"><a href="https://account.habr.com/info/confidential/?hl=ru_RU" target="_blank">Конфиденциальность</a></li><!--]--></ul></div></div><div class="tm-footer-menu__block"><p class="tm-footer-menu__block-title">Услуги</p><div class="tm-footer-menu__block-content"><ul class="tm-footer-menu__list"><!--[--><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/corporate-blogs/" target="_blank">Корпоративный блог</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/advertising/" target="_blank">Медийная реклама</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/native-special/" target="_blank">Нативные проекты</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/education-programs/" target="_blank">Образовательные программы</a></li><li class="tm-footer-menu__list-item"><a href="https://company.habr.com/ru/hello-startup/" target="_blank">Стартапам</a></li><!--]--></ul></div></div><!--]--></div><!--]--></div></div><div class="tm-footer"><div class="tm-page-width"><!--[--><div class="tm-footer__container"><!----><div class="social-icons tm-footer__social" data-v-d6e8cb42><!--[--><a class="tm-svg-icon__wrapper social-icon" href="https://vk.com/habr" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>VK</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-vk"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="https://telegram.me/habr_com" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Telegram</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-telegram"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="http://www.youtube.com/@Habr_com" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Youtube</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-youtube"></use></svg></a><a class="tm-svg-icon__wrapper social-icon" href="https://dzen.ru/habr" rel="nofollow noopener noreferrer" target="_blank" data-v-d6e8cb42><svg class="tm-svg-img tm-svg-icon" height="36" width="36"><title>Яндекс Дзен</title><use xlink:href="/img/new-social-icons-sprite.svg#social-logo-dzen"></use></svg></a><!--]--></div><!--teleport start--><!--teleport end--><button class="tm-footer__link"><!----> Настройка языка</button><a href="/ru/feedback/" class="tm-footer__link">Техническая поддержка</a><div class="tm-footer-copyright"><span class="tm-copyright"><span class="tm-copyright__years">© 2006–2026,</span><span class="tm-copyright__name"><a class="tm-copyright__link" href="https://company.habr.com/" rel="noopener" target="_blank"> Habr </a></span></span></div></div><!--]--></div></div><!----><!----><!--]--></div><!----></div></div>
+    <div id="overlays"><!--teleport start anchor--><template><!----></template><!--teleport anchor--><!--teleport start anchor--><template><!----></template><!--teleport anchor--><!--teleport start anchor--><template><!----></template><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--><!--teleport start anchor--><!----><!--teleport anchor--></div>
+    
+    
+    
+    
+  
+  
+    
+  
+    </body>
+
+    </html>
